@@ -425,6 +425,55 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
 </header>
 
 <main class="wrap">
+  <section id="news">
+    <div class="sec-head"><div><div class="eyebrow">Defence sector news</div><h2>What happened this week</h2></div>
+      <div class="filters" role="group" aria-label="Filter news by region">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="1" aria-pressed="false">Norway</button>
+        <button type="button" data-f="2" aria-pressed="false">Nordics</button>
+        <button type="button" data-f="3" aria-pressed="false">Ukraine</button>
+        <button type="button" data-f="4" aria-pressed="false">Europe</button>
+      </div>
+    </div>
+    <div class="news" id="newslist"></div>
+  </section>
+
+  <section id="press">
+    <div class="sec-head"><div><div class="eyebrow">FD · Forsvaret · FMA</div><h2>Press releases for defence startups</h2></div><p>Official releases that touch procurement, industry, Ukraine and the users you sell to. Open one for the startup angle.</p></div>
+    <div class="press">
+      <div class="plist" id="plist"></div>
+      <aside class="toolkit"><b>Procurement toolkit</b><ul id="toolkit"></ul></aside>
+    </div>
+  </section>
+
+  <section id="funding">
+    <div class="sec-head"><div><div class="eyebrow">Money on the table</div><h2>Funding &amp; tenders</h2></div><p>Open funding calls and live tenders worth a founder's time. Open items first, with the deadline.</p></div>
+    <h3 class="subh">Funding calls</h3>
+    <div class="fund" id="fundlist"></div>
+    <h3 class="subh">Open tenders</h3>
+    <div class="tend" id="tendlist"></div>
+  </section>
+
+  <section id="capital">
+    <div class="sec-head"><div><div class="eyebrow">Who is raising, who is investing</div><h2>Investors &amp; rounds</h2></div><p id="roundsctx"></p></div>
+    <h3 class="subh">Recent defence rounds</h3>
+    <div class="filters" role="group" aria-label="Filter rounds by region" id="rfilters" style="margin-bottom:10px"></div>
+    <div class="tend" id="roundlist"></div>
+    <h3 class="subh">Defence investors</h3>
+    <div class="filters" role="group" aria-label="Filter investors by region" id="ifilters" style="margin-bottom:10px"></div>
+    <div class="fund" id="invlist"></div>
+  </section>
+
+  <section id="events">
+    <div class="sec-head"><div><div class="eyebrow">Calendar and notes</div><h2>Events &amp; meetings</h2></div><p>Defence events worth your time in Norway, the Nordics and Europe, plus takeaways from meetings the team attended.</p></div>
+    <h3 class="subh">Coming up</h3>
+    <div class="cal" id="cal"></div>
+    <h3 class="subh">Recently</h3>
+    <div class="cal" id="calpast"></div>
+    <h3 class="subh">Notes from the field</h3>
+    <div class="events" id="evlist"></div>
+  </section>
+
   <section id="next">
     <div class="sec-head"><div><div class="eyebrow">Deadlines and dates</div><h2>Next 30 days</h2></div><p>Every funding deadline, tender deadline and event in the next 30 days, in one list.</p></div>
     <div class="nx" id="nextlist"></div>
@@ -462,52 +511,6 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
     <p class="foot" id="natosrc"></p>
   </section>
 
-  <section id="news">
-    <div class="sec-head"><div><div class="eyebrow">Defence sector news</div><h2>What happened this week</h2></div>
-      <div class="filters" role="group" aria-label="Filter news by region">
-        <button type="button" data-f="all" aria-pressed="true">All</button>
-        <button type="button" data-f="1" aria-pressed="false">Norway</button>
-        <button type="button" data-f="2" aria-pressed="false">Nordics</button>
-        <button type="button" data-f="3" aria-pressed="false">Ukraine</button>
-        <button type="button" data-f="4" aria-pressed="false">Europe</button>
-      </div>
-    </div>
-    <div class="news" id="newslist"></div>
-  </section>
-
-  <section id="press">
-    <div class="sec-head"><div><div class="eyebrow">FD · Forsvaret · FMA</div><h2>Press releases for startups</h2></div><p>Official releases that touch procurement, industry, Ukraine and the users you sell to. Open one for the startup angle.</p></div>
-    <div class="press">
-      <div class="plist" id="plist"></div>
-      <aside class="toolkit"><b>Procurement toolkit</b><ul id="toolkit"></ul></aside>
-    </div>
-  </section>
-  <section id="funding">
-    <div class="sec-head"><div><div class="eyebrow">Money on the table</div><h2>Funding &amp; tenders</h2></div><p>Open funding calls and live tenders worth a founder's time. Open items first, with the deadline.</p></div>
-    <h3 class="subh">Funding calls</h3>
-    <div class="fund" id="fundlist"></div>
-    <h3 class="subh">Open tenders</h3>
-    <div class="tend" id="tendlist"></div>
-  </section>
-  <section id="capital">
-    <div class="sec-head"><div><div class="eyebrow">Who is raising, who is investing</div><h2>Investors &amp; rounds</h2></div><p id="roundsctx"></p></div>
-    <h3 class="subh">Recent defence rounds</h3>
-    <div class="filters" role="group" aria-label="Filter rounds by region" id="rfilters" style="margin-bottom:10px"></div>
-    <div class="tend" id="roundlist"></div>
-    <h3 class="subh">Defence investors</h3>
-    <div class="filters" role="group" aria-label="Filter investors by region" id="ifilters" style="margin-bottom:10px"></div>
-    <div class="fund" id="invlist"></div>
-  </section>
-
-  <section id="events">
-    <div class="sec-head"><div><div class="eyebrow">Calendar and notes</div><h2>Events &amp; meetings</h2></div><p>Defence events worth your time in Norway, the Nordics and Europe, plus takeaways from meetings the team attended.</p></div>
-    <h3 class="subh">Coming up</h3>
-    <div class="cal" id="cal"></div>
-    <h3 class="subh">Recently</h3>
-    <div class="cal" id="calpast"></div>
-    <h3 class="subh">Notes from the field</h3>
-    <div class="events" id="evlist"></div>
-  </section>
   <section id="readings">
     <div class="sec-head"><div><div class="eyebrow">Reading list</div><h2>Useful readings</h2></div><p>Reports worth your time, with a short summary of why.</p></div>
     <div class="reads" id="reads"></div>
@@ -953,7 +956,7 @@ function route(){
 addEventListener("hashchange", route); route();
 
 /* Sections: fold, counts, grouped menu, at-a-glance */
-const GROUPS = {week:["next","situation","news","press"], start:["needs","nato"], money:["funding","capital"], learn:["events","readings","start","network"]};
+const GROUPS = {week:["news","press","next","situation"], start:["needs","nato"], money:["funding","capital"], learn:["events","readings","start","network"]};
 const DEFAULT_FOLDED = ["nato","readings","network"];
 let folded; try { folded = JSON.parse(localStorage.getItem("mlw-folded") || "null"); } catch(_) {}
 if (!Array.isArray(folded)) folded = DEFAULT_FOLDED.slice();
