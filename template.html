@@ -61,7 +61,7 @@ nav.toc a:hover{color:var(--band-ink);border-bottom-color:var(--signal)}
 
 main section{padding-block:48px 8px;scroll-margin-top:60px}
 .sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:10px 24px;margin-bottom:22px}
-.sec-head > div{display:grid;gap:6px;min-width:0}
+.sec-head > div:not(.filters){display:grid;gap:6px;min-width:0}
 .sec-head p{margin:0;color:var(--muted);max-width:70ch}
 
 /* Situation */
@@ -209,6 +209,9 @@ main section{padding-block:48px 8px;scroll-margin-top:60px}
 .cal.past .crow{opacity:.8}
 @media (max-width:640px){.crow{grid-template-columns:1fr}.crow a.cgo{justify-self:start}}
 
+.flags{display:inline-flex;align-items:center;margin-right:7px;vertical-align:-1px;flex:none}
+.flag{display:block;width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);flex:none}
+.flags .flag+.flag{margin-left:-5px;box-shadow:0 0 0 1px rgba(0,0,0,.18),-1px 0 0 1px var(--surface)}
 /* Next 30 days */
 .nx{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:0 24px;border-top:2px solid var(--ink)}
 .nrow{display:grid;grid-template-columns:62px minmax(0,1fr) auto;gap:2px 12px;align-items:start;padding:11px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
@@ -538,6 +541,45 @@ function clamp(box, sel, n, noun){
 phoneMQ.addEventListener("change", () => { clamps.forEach((v, box) => clamp(box, ...v)); if (typeof drawMap === "function") drawMap(); });
 
 
+/* Flags: small inline SVGs, so they look the same on every device */
+const FLAGS = (() => {
+  const r = (x,y,w,h,c) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${c}"/>`;
+  const nordic = (bg, outer, inner) => r(0,0,18,12,bg) + r(5,0,3.2,12,outer) + r(0,4.4,18,3.2,outer) + (inner ? r(5.8,0,1.6,12,inner) + r(0,5.2,18,1.6,inner) : "");
+  const h3 = (a,b,c) => r(0,0,18,4,a) + r(0,4,18,4,b) + r(0,8,18,4,c);
+  const v3 = (a,b,c) => r(0,0,6,12,a) + r(6,0,6,12,b) + r(12,0,6,12,c);
+  const eu = () => r(0,0,18,12,"#003399") + Array.from({length:12},(_,i)=>{const a=i*Math.PI/6; return `<circle cx="${(9+3.6*Math.cos(a)).toFixed(2)}" cy="${(6+3.6*Math.sin(a)).toFixed(2)}" r=".55" fill="#FFCC00"/>`;}).join("");
+  const us = () => Array.from({length:7},(_,i)=>r(0,i*12/7,18,12/7,i%2?"#fff":"#B22234")).join("") + r(0,0,8,12*4/7,"#3C3B6E");
+  const gb = () => r(0,0,18,12,"#012169") + `<path d="M0,0L18,12M18,0L0,12" stroke="#fff" stroke-width="2.4"/><path d="M0,0L18,12M18,0L0,12" stroke="#C8102E" stroke-width=".8"/>` + r(7.2,0,3.6,12,"#fff") + r(0,4.2,18,3.6,"#fff") + r(8,0,2,12,"#C8102E") + r(0,5,18,2,"#C8102E");
+  const svg = {
+    NO: nordic("#BA0C2F","#fff","#00205B"), SE: nordic("#006AA7","#FECC00"), FI: nordic("#fff","#002F6C"), DK: nordic("#C8102E","#fff"), IS: nordic("#02529C","#fff","#DC1E35"),
+    EE: h3("#0072CE","#000","#fff"), LT: h3("#FDB913","#006A44","#C1272D"), LV: r(0,0,18,12,"#9E3039") + r(0,4.8,18,2.4,"#fff"),
+    DE: h3("#000","#DD0000","#FFCE00"), NL: h3("#AE1C28","#fff","#21468B"), FR: v3("#0055A4","#fff","#EF4135"), BE: v3("#000","#FDDA24","#EF3340"), IT: v3("#009246","#fff","#CE2B37"),
+    UA: r(0,0,18,6,"#0057B7") + r(0,6,18,6,"#FFD700"), PL: r(0,0,18,6,"#fff") + r(0,6,18,6,"#DC143C"), ES: r(0,0,18,12,"#AA151B") + r(0,3,18,6,"#F1BF00"),
+    PT: r(0,0,7,12,"#006600") + r(7,0,11,12,"#FF0000") + `<circle cx="7" cy="6" r="2.2" fill="#FFCC00"/>`, CH: r(0,0,18,12,"#DA291C") + r(7.9,3,2.2,6,"#fff") + r(6,4.9,6,2.2,"#fff"),
+    US: us(), GB: gb(), EU: eu(),
+    NATO: r(0,0,18,12,"#004990") + `<circle cx="9" cy="6" r="3.2" fill="none" stroke="#fff" stroke-width=".5"/><polygon points="9,1.8 9.8,5.2 13.2,6 9.8,6.8 9,10.2 8.2,6.8 4.8,6 8.2,5.2" fill="#fff"/>`
+  };
+  const names = {NO:"Norway",SE:"Sweden",FI:"Finland",DK:"Denmark",IS:"Iceland",EE:"Estonia",LT:"Lithuania",LV:"Latvia",DE:"Germany",NL:"Netherlands",FR:"France",BE:"Belgium",IT:"Italy",UA:"Ukraine",PL:"Poland",ES:"Spain",PT:"Portugal",CH:"Switzerland",US:"United States",GB:"United Kingdom",EU:"European Union",NATO:"NATO"};
+  const words = [
+    ["NORDIC", /nordic|norden/], ["NO", /norw|norge|norsk|oslo|trondheim|horten|kjeller|kirkenes|finnmark|investinor|andøya|kongsberg|nammo|forsvar|\bffi\b|\bfma\b|radionor/], ["SE", /swed|stockholm|gothenburg|göteborg|kungsbacka/],
+    ["FI", /finland|finnish|helsinki|tampere/], ["DK", /denmark|danish|copenhagen|haderslev/], ["IS", /iceland/], ["EE", /estonia|tallinn/], ["LV", /latvia|riga\b/], ["LT", /lithuania|vilnius/],
+    ["UA", /ukrain|kyiv|lviv|brave1/], ["DE", /german|munich|berlin|hamburg|hanover|nuremberg|bundeswehr/], ["FR", /france|french|paris/], ["GB", /united kingdom|\buk\b|london|cambridge|british/],
+    ["NL", /netherlands|dutch|amsterdam|rotterdam/], ["BE", /belgium|brussels/], ["PL", /poland|polish|warsaw|krak[oó]w/], ["PT", /portugal|lisbon/], ["ES", /spain|spanish|madrid/], ["IT", /italy|italian|rome\b/],
+    ["CH", /switzerland|swiss|zurich/], ["US", /\busa\b|united states|american/], ["NATO", /\bnato\b/], ["EU", /\beu\b|europe/]
+  ];
+  const detect = text => { const t = String(text||"").toLowerCase(), hits = [];
+    words.forEach(([cc, re]) => { const m = t.match(re); if (m) hits.push([m.index, cc]); });
+    hits.sort((a,b)=>a[0]-b[0]); let out = [];
+    hits.forEach(([,cc]) => { if (cc==="NORDIC") out.push("NO","SE","DK","FI"); else out.push(cc); });
+    out = [...new Set(out)];
+    if (out.some(c => c!=="EU" && c!=="NATO")) out = out.filter(c => c!=="EU");
+    return out.slice(0, 4); };
+  const one = cc => `<svg class="flag" viewBox="0 0 18 12" role="img" aria-label="${names[cc]}"><title>${names[cc]}</title>${svg[cc]}</svg>`;
+  return { detect, html: (text, fallback) => { let cs = detect(text); if (!cs.length && fallback) cs = detect(fallback);
+    return cs.length ? `<span class="flags">${cs.map(one).join("")}</span>` : ""; } };
+})();
+const flags = (t, f) => FLAGS.html(t, f);
+
 /* In-page jumps for links that point at a section */
 document.addEventListener("click", e => {
   const a = e.target.closest("a[data-jump]"); if (!a) return; e.preventDefault();
@@ -553,7 +595,7 @@ const linkAttrs = u => u.startsWith("#event-") || u.startsWith("#press-") ? "" :
 /* Situation */
 const levelLabel = {elevated:"Elevated", war:"Active war", calm:"Stable"};
 $("#sit").innerHTML = L.situation.map(s => `
-  <article><header><h3>${esc(s.region)}</h3><span class="pill ${esc(s.level)}">${esc(levelLabel[s.level]||s.level)}</span></header>
+  <article><header><h3>${flags(s.region)}${esc(s.region)}</h3><span class="pill ${esc(s.level)}">${esc(levelLabel[s.level]||s.level)}</span></header>
   <p>${esc(s.text)}</p>
   <div class="srcs"><span>Sources:</span>${s.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join("")}</div></article>`).join("");
 
@@ -562,9 +604,9 @@ const groups = [[1,"Norway","Priority 1"],[2,"The Nordics","Priority 2"],[3,"Ukr
 function renderNews(f){
   $("#newslist").innerHTML = groups.filter(g => f==="all" || String(g[0])===f).map(([p,name,lab]) => {
     const items = L.news.filter(n => n.pri===p).sort((a,b)=> (b.date||"").localeCompare(a.date||""));
-    return `<div class="ngroup"><header><span class="prio">${lab}</span><b>${name}</b><span class="muted" style="font-size:13px">${items.length} items</span></header>
+    return `<div class="ngroup"><header><span class="prio">${lab}</span><b>${flags(name)}${name}</b><span class="muted" style="font-size:13px">${items.length} items</span></header>
       <div class="nlist">${items.map(n => `<div class="nitem"><time datetime="${esc(n.date)}">${n.approx?"~":""}${short(n.date)}</time><div>
-        <h4><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h4>
+        <h4>${flags(n.region)}<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h4>
         <p>${esc(n.summary)}</p><div class="meta">${n.region && n.region!==name && !(p===2&&n.region==="Nordics") ? `<span class="tag">${esc(n.region)}</span>`:""}${esc(n.source)}</div></div></div>`).join("") || `<div class="empty">Nothing new today.</div>`}</div></div>`;
   }).join("");
   document.querySelectorAll("#newslist .nlist").forEach(b => clamp(b, ".nitem", 3, "items"));
@@ -577,7 +619,7 @@ renderNews("all");
 $("#reads").innerHTML = L.readings.map((r,i) => `
   <article class="read${i===0?" feature":""}"><div style="display:grid;gap:8px;align-content:start">
     <div class="tags">${r.tags.map(t=>`<span class="${t==="Must read"?"hot":""}">${esc(t)}</span>`).join("")}</div>
-    <h3>${esc(r.title)}</h3><div class="by">${esc(r.publisher)} · ${/^\d{4}-\d\d/.test(r.date)?fmtDate(r.date):esc(r.date)}</div></div>
+    <h3>${flags(r.tags.join(" "))}${esc(r.title)}</h3><div class="by">${esc(r.publisher)} · ${/^\d{4}-\d\d/.test(r.date)?fmtDate(r.date):esc(r.date)}</div></div>
     <div style="display:grid;gap:10px;align-content:start">${r.tldr?`<p class="bl"><b>Bottom line</b>${esc(r.tldr)}</p>`:""}<p>${esc(r.summary)}</p>
     ${r.url ? `<a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open the report ↗</a>` : `<span class="by">File: ${esc(r.file||"")}</span>`}</div></article>`).join("");
 clamp($("#reads"), ".read", 4, "readings");
@@ -585,14 +627,14 @@ clamp($("#reads"), ".read", 4, "readings");
 /* Press */
 $("#plist").innerHTML = L.press.slice().sort((a,b)=>(b.date||"0").localeCompare(a.date||"0")).map(p => `
   <a class="prow" href="#press-${esc(p.id)}"><span class="org ${esc(p.org)}">${esc(p.org)}</span><span class="mono muted" style="font-size:12.5px">${p.date?short(p.date):"Recent"}</span>
-  <span class="pt">${esc(p.title)}<small>${esc(p.titleNo)}</small>${p.tldr?`<span class="bline">Bottom line: ${esc(p.tldr)}</span>`:""}</span><span class="arrow" aria-hidden="true">→</span></a>`).join("");
+  <span class="pt">${flags("Norway")}${esc(p.title)}<small>${esc(p.titleNo)}</small>${p.tldr?`<span class="bline">Bottom line: ${esc(p.tldr)}</span>`:""}</span><span class="arrow" aria-hidden="true">→</span></a>`).join("");
 clamp($("#plist"), ".prow", 5, "press releases");
 $("#toolkit").innerHTML = L.toolkit.map(t => `<li><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.label)}</a></li>`).join("");
 
 /* Events */
 $("#evlist").innerHTML = S.events.map(e => `
   <a class="ev" href="#event-${esc(e.id)}"><div class="kind"><span class="eyebrow">${esc(e.kind)}</span><span class="eyebrow">${/^\d{4}-\d\d-\d\d$/.test(e.date)?fmtDate(e.date):esc(e.date)}</span></div>
-  <h3>${esc(e.title)}</h3><p class="muted" style="font-size:13.5px">${esc(e.where)}</p><p class="bl"><b>Bottom line</b>${esc(e.tldr)}</p><span class="more">Read the notes →</span></a>`).join("");
+  <h3>${flags(e.title+" "+e.where, e.who)}${esc(e.title)}</h3><p class="muted" style="font-size:13.5px">${esc(e.where)}</p><p class="bl"><b>Bottom line</b>${esc(e.tldr)}</p><span class="more">Read the notes →</span></a>`).join("");
 
 /* Next 30 days */
 (() => {
@@ -600,14 +642,14 @@ $("#evlist").innerHTML = S.events.map(e => `
   const lim = new Date(Date.parse(today+"T12:00:00Z")+30*864e5).toISOString().slice(0,10);
   const days = s => Math.round((Date.parse(s+"T12:00:00Z")-Date.parse(today+"T12:00:00Z"))/864e5);
   const items = [];
-  (L.funding||[]).forEach(f => { if (f.status==="open" && f.deadline && f.deadline>=today && f.deadline<=lim) items.push({d:f.deadline, t:"Funding", title:f.title, sub:`Deadline · ${f.funder}`, url:f.url}); });
-  (L.tenders||[]).forEach(t => { if (t.deadline && t.deadline>=today && t.deadline<=lim) items.push({d:t.deadline, t:"Tender", title:t.title, sub:`Deadline · ${t.buyer} · ${t.value}`, url:t.url}); });
-  (L.calendar||[]).forEach(e => { if (!e.approx && e.end>=today && e.start<=lim) items.push({d:e.start<today?today:e.start, live:e.start<=today, t:"Event", title:e.title, sub:`${e.city}${e.country!=="Norway"?", "+e.country:""} · ${e.kind}`, url:e.url}); });
+  (L.funding||[]).forEach(f => { if (f.status==="open" && f.deadline && f.deadline>=today && f.deadline<=lim) items.push({d:f.deadline, fl:f.funder+" "+f.title, t:"Funding", title:f.title, sub:`Deadline · ${f.funder}`, url:f.url}); });
+  (L.tenders||[]).forEach(t => { if (t.deadline && t.deadline>=today && t.deadline<=lim) items.push({d:t.deadline, fl:"Norway", t:"Tender", title:t.title, sub:`Deadline · ${t.buyer} · ${t.value}`, url:t.url}); });
+  (L.calendar||[]).forEach(e => { if (!e.approx && e.end>=today && e.start<=lim) items.push({d:e.start<today?today:e.start, fl:e.country+" "+e.title, live:e.start<=today, t:"Event", title:e.title, sub:`${e.city}${e.country!=="Norway"?", "+e.country:""} · ${e.kind}`, url:e.url}); });
   items.sort((a,b)=>a.d.localeCompare(b.d));
   const dd = s => { const x=new Date(s+"T12:00:00"); return `${x.toLocaleDateString("en-GB",{day:"numeric",month:"short"})}<small>${x.toLocaleDateString("en-GB",{weekday:"short"})}</small>`; };
   const left = i => { if (i.live) return "On now"; const n = days(i.d); return n===0 ? "Today" : n===1 ? "Tomorrow" : `${n} days`; };
   $("#nextlist").innerHTML = items.map(i => `<a class="nrow" href="${esc(i.url)}"${linkAttrs(i.url)}><span class="nd">${dd(i.d)}</span>
-    <span><b><span class="ty ${i.t}">${i.t}</span>${esc(i.title)}</b><span class="nsub">${esc(i.sub)}</span></span>
+    <span><b><span class="ty ${i.t}">${i.t}</span>${flags(i.fl)}${esc(i.title)}</b><span class="nsub">${esc(i.sub)}</span></span>
     <span class="nleft${!i.live && days(i.d)<=7 && i.t!=="Event" ? " urgent" : ""}">${left(i)}</span></a>`).join("") || `<div class="empty">Nothing due in the next 30 days.</div>`;
   clamp($("#nextlist"), ".nrow", 6, "dates");
 })();
@@ -640,7 +682,7 @@ $("#evlist").innerHTML = S.events.map(e => `
   const I = DATA.insights; if (!I) { $("#needs").hidden = true; return; }
   $("#needs-note").textContent = `${I.note} Last reviewed ${fmtDate(I.reviewed)}.`;
   const draw = v => {
-    $("#needs-grid").innerHTML = ["Norway","Europe"].map(reg => `<div class="ncol"><header><b>${reg}</b><span class="muted" style="font-size:13px">${v==="problems"?"Biggest problems":"Most wanted technologies"}</span></header>
+    $("#needs-grid").innerHTML = ["Norway","Europe"].map(reg => `<div class="ncol"><header><b>${flags(reg)}${reg}</b><span class="muted" style="font-size:13px">${v==="problems"?"Biggest problems":"Most wanted technologies"}</span></header>
       ${I[v][reg].map((x,i) => `<div class="nitem2"><span class="rank2">${i+1}</span><div><b>${esc(x.title)}</b><p>${esc(x.why)}</p>
         <p class="opp" data-l="${v==="problems"?"Startup angle":"Who builds it"}">${esc(v==="problems"?x.startup:x.examples)}</p>
         <div class="srcs"><span>Sources:</span>${x.src.map(s=>`<a href="${esc(s.url)}"${linkAttrs(s.url)}>${esc(s.label)}</a>`).join("")}</div></div></div>`).join("")}</div>`).join("");
@@ -663,14 +705,14 @@ $("#evlist").innerHTML = S.events.map(e => `
   filt($("#rfilters"), ORDER.filter(r => rounds.some(x=>x.region===r)), cur => {
     const list = rounds.filter(r => cur==="all" || r.region===cur);
     $("#roundlist").innerHTML = list.map(r => `<div class="trow"><div class="amt">${esc(r.amount)}<small>${esc(r.round)} · ${dlabel(r.date)}</small></div>
-      <div class="cbody"><b>${esc(r.company)}</b><span class="cmeta"><span class="rgn">${esc(r.region)}</span>${esc(r.country)} · ${esc(r.what)}</span><span class="cmeta">Investors: ${esc(r.investors)}</span></div>
+      <div class="cbody"><b>${flags(r.country)}${esc(r.company)}</b><span class="cmeta"><span class="rgn">${esc(r.region)}</span>${esc(r.country)} · ${esc(r.what)}</span><span class="cmeta">Investors: ${esc(r.investors)}</span></div>
       <a class="cgo" href="${esc(r.url)}" target="_blank" rel="noopener">Source ↗</a></div>`).join("") || `<div class="empty">No rounds listed.</div>`;
     delete $("#roundlist").dataset.open; clamp($("#roundlist"), ".trow", 5, "rounds");
   });
   const inv = L.investors || [];
   filt($("#ifilters"), ORDER.filter(r => inv.some(x=>x.region===r)), cur => {
     const list = inv.filter(i => cur==="all" || i.region===cur).sort((a,b)=>ORDER.indexOf(a.region)-ORDER.indexOf(b.region));
-    $("#invlist").innerHTML = list.map(i => `<article class="fcard"><div class="fhead"><h4>${esc(i.name)}</h4><span class="st rolling">${esc(i.region)}</span></div>
+    $("#invlist").innerHTML = list.map(i => `<article class="fcard"><div class="fhead"><h4>${flags(i.region==="NATO" ? "NATO "+i.base : i.base, i.region)}${esc(i.name)}</h4><span class="st rolling">${esc(i.region)}</span></div>
       <div class="fmeta"><span><b>${esc(i.base)}</b> · ${esc(i.stage)}</span><span>${esc(i.focus)}</span><span>Fund: ${esc(i.size)}</span></div>
       <p class="bl"><b>Bottom line</b>${esc(i.note)}</p><a class="go" style="font-weight:600;font-size:14px" href="${esc(i.url)}" target="_blank" rel="noopener">More ↗</a></article>`).join("") || `<div class="empty">No investors listed.</div>`;
     delete $("#invlist").dataset.open; clamp($("#invlist"), ".fcard", 4, "investors");
@@ -685,13 +727,13 @@ $("#evlist").innerHTML = S.events.map(e => `
   const ST = {open:"Open", rolling:"Rolling", upcoming:"Coming", closed:"Closed"}, ORD = {open:0, rolling:1, upcoming:2, closed:3};
   const fund = (L.funding||[]).map(f => (f.status==="open" && f.deadline && f.deadline<today) ? {...f, status:"closed"} : f)
     .sort((a,b) => ORD[a.status]-ORD[b.status] || String(a.deadline||"9").localeCompare(String(b.deadline||"9")));
-  $("#fundlist").innerHTML = fund.map(f => `<article class="fcard ${esc(f.status)}"><div class="fhead"><h4>${esc(f.title)}</h4><span class="st ${esc(f.status)}">${ST[f.status]||esc(f.status)}</span></div>
+  $("#fundlist").innerHTML = fund.map(f => `<article class="fcard ${esc(f.status)}"><div class="fhead"><h4>${flags(f.funder+" "+f.title)}${esc(f.title)}</h4><span class="st ${esc(f.status)}">${ST[f.status]||esc(f.status)}</span></div>
     <div class="fmeta"><span><b>${esc(f.funder)}</b> · ${esc(f.amount)}</span><span>${esc(f.who)}</span>${f.deadline&&f.status==="open"?`<span><b>Deadline ${fd(f.deadline)}</b> (${daysTo(f.deadline)} days)</span>`:""}</div>
     <p class="bl"><b>Bottom line</b>${esc(f.tldr)}</p><a class="go" style="font-weight:600;font-size:14px" href="${esc(f.url)}" target="_blank" rel="noopener">Read the call ↗</a></article>`).join("") || `<div class="empty">No funding calls listed.</div>`;
   const tend = (L.tenders||[]).filter(t => !t.deadline || t.deadline>=today).sort((a,b)=>String(a.deadline||"9999").localeCompare(String(b.deadline||"9999")));
   $("#tendlist").innerHTML = tend.map(t => { const n = t.deadline ? daysTo(t.deadline) : null;
     return `<div class="trow"><div class="tdl${n!==null&&n<=10?" soon":""}">${t.deadline ? (n>365 ? `Open until<small>${fd(t.deadline)}</small>` : `${fd(t.deadline)}<small>${n} days left</small>`) : `See notice<small>deadline in documents</small>`}</div>
-      <div class="cbody"><b>${esc(t.title)}</b><span class="cmeta">${esc(t.buyer)} · ${esc(t.kind)} · ${esc(t.value)}</span><p class="ctl">${esc(t.tldr)}</p></div>
+      <div class="cbody"><b>${flags("Norway")}${esc(t.title)}</b><span class="cmeta">${esc(t.buyer)} · ${esc(t.kind)} · ${esc(t.value)}</span><p class="ctl">${esc(t.tldr)}</p></div>
       <a class="cgo" href="${esc(t.url)}" target="_blank" rel="noopener">Doffin ↗</a></div>`; }).join("") || `<div class="empty">No open tenders listed.</div>`;
   clamp($("#fundlist"), ".fcard", 4, "funding calls"); clamp($("#tendlist"), ".trow", 4, "tenders");
 })();
@@ -706,8 +748,8 @@ $("#evlist").innerHTML = S.events.map(e => `
     : e.start===e.end ? `${day(e.start)}<small>${d(e.start).toLocaleDateString("en-GB",{weekday:"short"})}</small>`
     : `${day(e.start)}–<br>${day(e.end)}`;
   const row = e => { const ext = !e.url.startsWith("#");
-    return `<div class="crow"><div class="cdate">${dateBlock(e)}</div><div class="cbody"><b>${esc(e.title)}</b>
-      <span class="cmeta">${e.country==="Norway"?'<span class="no">Norway</span>':""}${esc(e.city)}${e.country!=="Norway"?", "+esc(e.country):""} · ${esc(e.kind)} · ${esc(e.org)}</span>
+    return `<div class="crow"><div class="cdate">${dateBlock(e)}</div><div class="cbody"><b>${flags(e.country+" "+e.title)}${esc(e.title)}</b>
+      <span class="cmeta">${esc(e.city)}${e.country!=="Norway"?", "+esc(e.country):""} · ${esc(e.kind)} · ${esc(e.org)}</span>
       <p class="ctl">${esc(e.tldr)}</p></div><a class="cgo" href="${esc(e.url)}"${ext?' target="_blank" rel="noopener"':""}>${ext?"Event page ↗":"Our notes →"}</a></div>`; };
   const up = cal.filter(e=>e.end>=today).sort((a,b)=>a.start.localeCompare(b.start));
   let last = "", html = "";
@@ -746,7 +788,7 @@ function personHtml(p){
   const acts = live && canWrite && p.id ? `<span class="acts">${confirmDel===p.id
     ? `<button type="button" class="danger" data-del="${esc(p.id)}">Yes, delete</button><button type="button" data-keep>Keep</button>`
     : `<button type="button" data-edit="${esc(p.id)}">Edit</button><button type="button" data-ask="${esc(p.id)}">Delete</button>`}</span>` : "";
-  return `<div class="person"><span class="cat">${esc(p.cat||"Uncategorised")}</span><b>${esc(p.name)}</b>
+  return `<div class="person"><span class="cat">${esc(p.cat||"Uncategorised")}</span><b>${flags(p.org+" "+p.note)}${esc(p.name)}</b>
     <span class="org2">${esc([p.role,p.org].filter(Boolean).join(" · "))}</span>${p.note?`<span class="note">${esc(p.note)}</span>`:""}
     ${contact?`<span class="contact">${contact}</span>`:""}${acts}</div>`;
 }
@@ -881,7 +923,7 @@ function dossier(id){
   if (c) {
     const rank = ranked.findIndex(x=>x.id===id)+1, pct = c.gdpPct;
     const pos = v => Math.min(100, v/6*100);
-    div.innerHTML = `<div style="display:grid;gap:4px"><span class="eyebrow">${esc(c.iso)} · ${c.founding?"Founding member":"NATO member"}</span><h3>${esc(c.name)}</h3>
+    div.innerHTML = `<div style="display:grid;gap:4px"><span class="eyebrow">${esc(c.iso)} · ${c.founding?"Founding member":"NATO member"}</span><h3>${flags(c.name)}${esc(c.name)}</h3>
       <span class="joined">Joined ${fmtJoin(c.joined)}</span></div>
       ${c.spendUsdM!=null ? `<div class="stats"><div><small>Budget 2026e</small><b>$${fmtM(c.spendUsdM)}</b><small>${esc(c.natCur)}</small></div>
         <div><small>Share of GDP</small><b>${pct.toFixed(2)}%</b><small>#${rank} of ${ranked.length}</small></div>
