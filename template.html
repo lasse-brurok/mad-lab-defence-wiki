@@ -46,7 +46,7 @@ button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:v
 
 /* Command band */
 .band{background:var(--band);color:var(--band-ink)}
-.band .wrap{padding-block:36px 0;display:grid;gap:18px}
+.band > .wrap:first-child{padding-block:36px 0;display:grid;gap:18px}
 .band .eyebrow{color:var(--signal)}
 .band h1{font-size:clamp(38px,6.4vw,68px);font-weight:800;font-stretch:78%;text-transform:uppercase;letter-spacing:.01em}
 .band h1 span{color:var(--band-muted);font-weight:600}
@@ -55,7 +55,50 @@ button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:v
 .stamp b{color:var(--band-ink);font-weight:600}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3fb27f;margin-right:6px;vertical-align:1px}
 nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--band);border-top:1px solid var(--band-line);margin-top:22px}
-nav.toc .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+nav.toc > .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+nav.toc button.menu{flex:none;background:none;border:0;border-bottom:2px solid transparent;border-radius:0;color:var(--band-muted);font:600 14px var(--body);padding:12px 12px;display:inline-flex;align-items:center;gap:6px}
+nav.toc button.menu i{font-style:normal;font-size:11px;transition:transform .2s}
+nav.toc button.menu:hover,nav.toc button.menu[aria-expanded="true"]{color:var(--band-ink);border-bottom-color:var(--signal)}
+nav.toc button.menu[aria-expanded="true"] i{transform:rotate(180deg)}
+nav.toc button.tools{margin-left:auto;font-weight:500;font-size:12.5px}
+.navpanel{position:absolute;left:0;right:0;top:100%;background:var(--surface);color:var(--ink);border-bottom:2px solid var(--ink);box-shadow:0 14px 28px rgba(0,0,0,.22);max-height:70vh;overflow:auto}
+.navpanel .wrap{display:grid !important;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:4px;padding-block:12px;overflow:visible}
+.navpanel a{display:grid;gap:2px;padding:10px 12px;color:var(--ink);text-decoration:none;border-radius:3px}
+.navpanel a:hover,.navpanel a:focus-visible{background:var(--accent-soft)}
+.navpanel a b{font-size:15px;display:flex;align-items:center;gap:8px}
+.navpanel a span{font-size:13px;color:var(--muted)}
+.navpanel a em{font:600 11px var(--mono);font-style:normal;color:var(--accent)}
+.glance{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,100%),1fr));gap:1px;background:var(--band-line);border:1px solid var(--band-line)}
+.glance a{background:var(--band);padding:12px 14px;color:var(--band-ink);text-decoration:none;display:grid;gap:3px;align-content:start}
+.glance a:hover{background:var(--band-line)}
+.glance b{font:800 28px/1 var(--display);font-stretch:85%}
+.glance b.hot{color:var(--signal)}
+.glance span{font-size:12.5px;color:var(--band-muted);line-height:1.3}
+.sectog{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sectog:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+.sectog .chev{width:22px;height:22px;color:var(--muted);transition:transform .2s;flex:none}
+.cnt{font:600 11.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:5px 7px;border-radius:2px;white-space:nowrap}
+main section.collapsed{padding-block:20px 0}
+main section.collapsed > :not(.sec-head){display:none !important}
+main section.collapsed .sec-head{margin-bottom:0;padding-bottom:18px;border-bottom:1px solid var(--line)}
+main section.collapsed .sec-head .filters{display:none}
+main section.collapsed .sectog .chev{transform:rotate(-90deg)}
+@media (prefers-reduced-motion:reduce){.sectog .chev,nav.toc button.menu i{transition:none}}
+.less-btn{color:var(--muted)}
+/* compact readings */
+.rlist{display:grid;border-top:1px solid var(--line);grid-column:1/-1}
+.rrow{border-bottom:1px solid var(--line)}
+.rrow summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 22px;gap:4px 12px;padding:12px 4px;align-items:start}
+.rrow summary::-webkit-details-marker{display:none}
+.rrow summary:hover b{color:var(--accent)}
+.rrow b{font-size:16px;line-height:1.3;display:block}
+.rrow .by{font-size:13px;color:var(--muted);display:block;margin-top:2px}
+.rrow .tl{display:block;font-size:14px;font-weight:600;margin-top:4px}
+.rrow .tl::before{content:"Bottom line: ";color:var(--signal)}
+.rrow .chev{width:20px;height:20px;color:var(--muted);transition:transform .2s;margin-top:2px}
+.rrow[open] .chev{transform:rotate(180deg)}
+.rrow .rbody{padding:0 4px 14px;display:grid;gap:8px;max-width:75ch}
+.rrow .rbody p{margin:0;font-size:15px}
 nav.toc a{flex:none;color:var(--band-muted);text-decoration:none;font:600 13px var(--body);padding:12px 12px;border-bottom:2px solid transparent}
 nav.toc a:hover{color:var(--band-ink);border-bottom-color:var(--signal)}
 
@@ -344,6 +387,12 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
   .pitch{grid-template-columns:1fr}
 }
 @media (max-width:640px){
+  .glance{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .glance a{padding:10px}
+  .glance b{font-size:23px}
+  .glance span{font-size:11.5px}
+  nav.toc button.menu{padding:12px 9px;font-size:13.5px}
+  .navpanel a{padding:9px 6px}
   .sit{grid-template-columns:1fr}
   .ngroup{grid-template-columns:1fr}
   .nitem{grid-template-columns:1fr;gap:2px}
@@ -362,21 +411,16 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
     <p>The situation, the market, the reading list and the people. Everything a new founder in the defence track needs in their first week.</p>
     <div class="stamp"><span><i class="dot"></i>Last updated <b id="updated">–</b></span><span>Refreshes every morning at 08:00</span></div>
   </div>
+    <div class="wrap" style="padding-block:18px 0"><div class="glance" id="glance" aria-label="At a glance"></div></div>
   <nav class="toc" aria-label="Sections">
-    <div class="wrap">
-      <a href="#next" data-scroll>Next 30 days</a>
-      <a href="#situation" data-scroll>Situation</a>
-      <a href="#start" data-scroll>Start here</a>
-      <a href="#needs" data-scroll>What defence needs</a>
-      <a href="#nato" data-scroll>NATO map</a>
-      <a href="#news" data-scroll>News</a>
-      <a href="#press" data-scroll>Press releases</a>
-      <a href="#funding" data-scroll>Funding &amp; tenders</a>
-      <a href="#capital" data-scroll>Investors &amp; rounds</a>
-      <a href="#events" data-scroll>Events &amp; meetings</a>
-      <a href="#readings" data-scroll>Readings</a>
-      <a href="#network" data-scroll>Network</a>
+    <div class="wrap" id="navbar">
+      <button type="button" class="menu" data-menu="week" aria-expanded="false">This week <i aria-hidden="true">▾</i></button>
+      <button type="button" class="menu" data-menu="start" aria-expanded="false">Get started <i aria-hidden="true">▾</i></button>
+      <button type="button" class="menu" data-menu="money" aria-expanded="false">Money <i aria-hidden="true">▾</i></button>
+      <button type="button" class="menu" data-menu="learn" aria-expanded="false">Learn &amp; meet <i aria-hidden="true">▾</i></button>
+      <button type="button" class="menu tools" id="toggle-all">Collapse all</button>
     </div>
+    <div class="navpanel" id="navpanel" hidden><div class="wrap" id="navlinks"></div></div>
   </nav>
 </header>
 
@@ -522,20 +566,22 @@ const fmtDate = (iso, opts) => { if(!iso) return "Recent"; const d = new Date(is
 const short = iso => fmtDate(iso, {day:"numeric", month:"short", timeZone:"Europe/Oslo"});
 const L = DATA.live, N = DATA.nato, S = DATA.static;
 
-/* Phone: shorten long lists */
+/* Long lists: show the first few, with Show more / Show less */
 const phoneMQ = matchMedia("(max-width:700px)");
 const clamps = new Map();
 function clamp(box, sel, n, noun){
   if (!box) return; clamps.set(box, [sel, n, noun]);
   box.querySelectorAll(":scope > .more-btn").forEach(b => b.remove());
   const items = [...box.querySelectorAll(sel)];
-  const show = !phoneMQ.matches || items.length <= n + 1 || box.dataset.open === "1";
-  items.forEach((it, i) => it.hidden = !show && i >= n);
+  const lim = phoneMQ.matches ? n : Math.ceil(n * 1.6);
+  if (items.length <= lim + 1) { items.forEach(it => it.hidden = false); box.querySelectorAll(":scope > .month").forEach(m => m.hidden = false); return; }
+  const open = box.dataset.open === "1";
+  items.forEach((it, i) => it.hidden = !open && i >= lim);
   box.querySelectorAll(":scope > .month").forEach(m => { let e = m.nextElementSibling; m.hidden = !!(e && e.hidden); });
-  if (show) return;
-  const b = document.createElement("button"); b.type = "button"; b.className = "more-btn";
-  b.textContent = `Show ${items.length - n} more ${noun}`;
-  b.addEventListener("click", () => { box.dataset.open = "1"; clamp(box, sel, n, noun); });
+  const b = document.createElement("button"); b.type = "button"; b.className = "more-btn" + (open ? " less-btn" : "");
+  b.textContent = open ? `Show less` : `Show ${items.length - lim} more ${noun}`;
+  b.setAttribute("aria-expanded", open);
+  b.addEventListener("click", () => { box.dataset.open = open ? "" : "1"; clamp(box, sel, n, noun); if (open) box.scrollIntoView({block:"nearest"}); });
   box.append(b);
 }
 phoneMQ.addEventListener("change", () => { clamps.forEach((v, box) => clamp(box, ...v)); if (typeof drawMap === "function") drawMap(); });
@@ -583,7 +629,7 @@ const flags = (t, f) => FLAGS.html(t, f);
 /* In-page jumps for links that point at a section */
 document.addEventListener("click", e => {
   const a = e.target.closest("a[data-jump]"); if (!a) return; e.preventDefault();
-  const go = () => { const t = document.querySelector(a.getAttribute("href")); if (t) t.scrollIntoView(); };
+  const go = () => { const t = document.querySelector(a.getAttribute("href")); if (t) { if (t.matches("main section")) setCollapsed(t, false); t.scrollIntoView(); } closeMenu(); };
   if (location.hash) { history.replaceState(null,"",location.pathname+location.search); route(); requestAnimationFrame(go); } else go();
 });
 const linkAttrs = u => u.startsWith("#event-") || u.startsWith("#press-") ? "" : u.startsWith("#") ? " data-jump" : ' target="_blank" rel="noopener"';
@@ -616,13 +662,18 @@ document.querySelectorAll("[data-f]").forEach(b => b.addEventListener("click", (
 renderNews("all");
 
 /* Readings */
-$("#reads").innerHTML = L.readings.map((r,i) => `
-  <article class="read${i===0?" feature":""}"><div style="display:grid;gap:8px;align-content:start">
-    <div class="tags">${r.tags.map(t=>`<span class="${t==="Must read"?"hot":""}">${esc(t)}</span>`).join("")}</div>
-    <h3>${flags(r.tags.join(" "))}${esc(r.title)}</h3><div class="by">${esc(r.publisher)} · ${/^\d{4}-\d\d/.test(r.date)?fmtDate(r.date):esc(r.date)}</div></div>
-    <div style="display:grid;gap:10px;align-content:start">${r.tldr?`<p class="bl"><b>Bottom line</b>${esc(r.tldr)}</p>`:""}<p>${esc(r.summary)}</p>
-    ${r.url ? `<a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open the report ↗</a>` : `<span class="by">File: ${esc(r.file||"")}</span>`}</div></article>`).join("");
-clamp($("#reads"), ".read", 4, "readings");
+const chevSvg = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+const rdate = r => /^\d{4}-\d\d/.test(r.date) ? fmtDate(r.date) : esc(r.date);
+const rlink = r => r.url ? `<a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open the report ↗</a>` : `<span class="by">File: ${esc(r.file||"")}</span>`;
+{ const [f, ...rest] = L.readings;
+  $("#reads").innerHTML = `<article class="read feature"><div style="display:grid;gap:8px;align-content:start">
+    <div class="tags">${f.tags.map(t=>`<span class="${t==="Must read"?"hot":""}">${esc(t)}</span>`).join("")}</div>
+    <h3>${flags(f.tags.join(" "))}${esc(f.title)}</h3><div class="by">${esc(f.publisher)} · ${rdate(f)}</div></div>
+    <div style="display:grid;gap:10px;align-content:start">${f.tldr?`<p class="bl"><b>Bottom line</b>${esc(f.tldr)}</p>`:""}<p>${esc(f.summary)}</p>${rlink(f)}</div></article>
+    <div class="rlist" id="rlist">${rest.map(r => `<details class="rrow"><summary><span><b>${flags(r.tags.join(" "))}${esc(r.title)}</b>
+      <span class="by">${esc(r.publisher)} · ${rdate(r)} · ${r.tags.map(esc).join(", ")}</span>${r.tldr?`<span class="tl">${esc(r.tldr)}</span>`:""}</span>${chevSvg}</summary>
+      <div class="rbody"><p>${esc(r.summary)}</p>${rlink(r)}</div></details>`).join("")}</div>`; }
+clamp($("#rlist"), ".rrow", 5, "readings");
 
 /* Press */
 $("#plist").innerHTML = L.press.slice().sort((a,b)=>(b.date||"0").localeCompare(a.date||"0")).map(p => `
@@ -803,6 +854,7 @@ function renderNet(){
         : `<div class="empty">${live && canWrite ? `No contacts yet. Use “+ Add contact” and put ${esc(o)} as the relationship holder.` : "No contacts listed yet."}</div>`}</div>`;
   }).join("");
   $("#owners").innerHTML = html || `<div class="empty">No one matches that search.</div>`;
+  if (typeof updateCounts === "function" && window.__countsReady) updateCounts();
   if (!$("#q").value.trim()) document.querySelectorAll("#owners .people").forEach(b => clamp(b, ".person", 4, "contacts"));
 }
 function openForm(p){
@@ -899,6 +951,75 @@ function route(){
   else { d.hidden=true; d.innerHTML=""; $("#home").hidden=false; }
 }
 addEventListener("hashchange", route); route();
+
+/* Sections: fold, counts, grouped menu, at-a-glance */
+const GROUPS = {week:["next","situation","news","press"], start:["start","needs","nato"], money:["funding","capital"], learn:["events","readings","network"]};
+const DEFAULT_FOLDED = ["nato","readings","network"];
+let folded; try { folded = JSON.parse(localStorage.getItem("mlw-folded") || "null"); } catch(_) {}
+if (!Array.isArray(folded)) folded = DEFAULT_FOLDED.slice();
+const saveFolded = () => { try { localStorage.setItem("mlw-folded", JSON.stringify(folded)); } catch(_) {} };
+const sections = [...document.querySelectorAll("main section[id]")];
+function setCollapsed(sec, on, persist = true){
+  sec.classList.toggle("collapsed", on);
+  const b = sec.querySelector(".sectog"); if (b) b.setAttribute("aria-expanded", !on);
+  folded = on ? [...new Set([...folded, sec.id])] : folded.filter(x => x !== sec.id);
+  if (persist) saveFolded();
+  $("#toggle-all").textContent = sections.every(x => x.classList.contains("collapsed")) ? "Expand all" : "Collapse all";
+  if (!on && persist && sec.id === "nato" && typeof drawMap === "function") drawMap();
+}
+sections.forEach(sec => {
+  const h2 = sec.querySelector(".sec-head h2"); if (!h2) return;
+  const title = h2.textContent;
+  h2.innerHTML = `<button type="button" class="sectog" aria-expanded="true"><span>${esc(title)}</span><span class="cnt" data-cnt></span>${chevSvg}</button>`;
+  h2.querySelector(".sectog").addEventListener("click", () => setCollapsed(sec, !sec.classList.contains("collapsed")));
+  setCollapsed(sec, folded.includes(sec.id), false);
+});
+$("#toggle-all").addEventListener("click", () => { const all = $("#toggle-all").textContent === "Collapse all"; sections.forEach(x => setCollapsed(x, all)); });
+
+const today0 = new Date().toLocaleDateString("en-CA",{timeZone:"Europe/Oslo"});
+function counts(){
+  const ppl = document.querySelectorAll("#owners .person").length || S.network.reduce((a,o)=>a+o.people.length,0);
+  const openF = (L.funding||[]).filter(f => f.status==="open" && f.deadline >= today0).length;
+  const tend = (L.tenders||[]).filter(t => !t.deadline || t.deadline >= today0).length;
+  const up = (L.calendar||[]).filter(e => e.end >= today0).length;
+  return {
+    next: `${document.querySelectorAll("#nextlist .nrow").length} dates`, situation: `${L.situation.length} regions`,
+    start: `${S.startHere ? S.startHere.phases.reduce((a,p)=>a+p.steps.length,0) : 0} steps`, needs: "Top 5 + 5", nato: `${N.countries.length} allies`,
+    news: `${L.news.length} items`, press: `${L.press.length} releases`, funding: `${openF} open · ${tend} tenders`,
+    capital: `${(L.rounds||[]).length} rounds · ${(L.investors||[]).length} investors`, events: `${up} upcoming`,
+    readings: `${L.readings.length} reports`, network: `${ppl} contacts`
+  };
+}
+const DESC = {next:"Deadlines and events, next 30 days", situation:"Norway, Nordics, Ukraine, Europe", news:"Defence-sector news by priority", press:"FD, Forsvaret and FMA releases",
+  start:"Ten steps from idea to first contract", needs:"Top problems and wanted technologies", nato:"Map of all 32 allies",
+  funding:"Open calls and live tenders", capital:"Who is raising and who invests", events:"Calendar and meeting notes", readings:"Reports with bottom lines", network:"Who can introduce you"};
+function updateCounts(){
+  const c = counts();
+  sections.forEach(sec => { const el = sec.querySelector("[data-cnt]"); if (el) el.textContent = c[sec.id] || ""; });
+  const tiles = [
+    ["next", document.querySelectorAll("#nextlist .nrow").length, "dates in the next 30 days"],
+    ["funding", (L.funding||[]).filter(f => f.status==="open" && f.deadline >= today0).length, "funding calls open now", true, "funding call open now"],
+    ["funding", (L.tenders||[]).filter(t => !t.deadline || t.deadline >= today0).length, "open tenders for startups"],
+    ["news", L.news.filter(n => n.pri===1).length, "Norway news items"],
+    ["capital", (L.rounds||[]).length, "recent defence funding rounds"],
+    ["network", c.network.split(" ")[0], "people who can introduce you"]
+  ];
+  $("#glance").innerHTML = tiles.map(([id, v, label, hot, one]) => `<a href="#${id}" data-jump><b class="${hot && +v > 0 ? "hot" : ""}">${esc(String(v))}</b><span>${esc(+v === 1 && one ? one : label)}</span></a>`).join("");
+}
+updateCounts(); window.__countsReady = true;
+
+let menuOpen = null;
+function closeMenu(){ menuOpen = null; $("#navpanel").hidden = true; document.querySelectorAll("#navbar .menu[data-menu]").forEach(b => b.setAttribute("aria-expanded", "false")); }
+document.querySelectorAll("#navbar .menu[data-menu]").forEach(btn => btn.addEventListener("click", e => {
+  e.stopPropagation(); const g = btn.dataset.menu;
+  if (menuOpen === g) return closeMenu();
+  menuOpen = g; const c = counts();
+  document.querySelectorAll("#navbar .menu[data-menu]").forEach(b => b.setAttribute("aria-expanded", b === btn));
+  $("#navlinks").innerHTML = GROUPS[g].map(id => `<a href="#${id}" data-jump><b>${esc((document.querySelector(`#${id} .sectog span`)||{}).textContent || id)} <em>${esc(c[id]||"")}</em></b><span>${esc(DESC[id]||"")}</span></a>`).join("");
+  $("#navpanel").hidden = false;
+}));
+document.addEventListener("click", e => { if (menuOpen && !e.target.closest("#navpanel") && !e.target.closest("#navbar")) closeMenu(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && menuOpen) closeMenu(); });
 
 /* NATO map */
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
