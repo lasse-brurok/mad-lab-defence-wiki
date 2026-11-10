@@ -103,8 +103,8 @@ def password():
         f = ROOT / ".site-password"
         if f.exists():
             pw = f.read_text(encoding="utf-8").strip()
-    if not pw or len(pw) < 12:
-        print("Site build stopped: set WIKI_PASSWORD or put a password of 12+ characters in .site-password")
+    if not pw or len(pw) < 8:
+        print("Site build stopped: set WIKI_PASSWORD or put a password of 8+ characters in .site-password")
         sys.exit(1)
     return pw
 
