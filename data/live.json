@@ -394,6 +394,10 @@
    "url": "https://www.doffin.no/"
   },
   {
+   "label": "Doffin: all open FMA tenders",
+   "url": "https://www.doffin.no/search?searchString=Forsvarsmateriell&type=COMPETITION&status=ACTIVE"
+  },
+  {
    "label": "FMA: for suppliers",
    "url": "https://www.fma.no/for-leverandorer"
   },
@@ -856,6 +860,208 @@
    "org": "DSEI",
    "tldr": "One of the world's largest defence fairs. Book stands and meetings months ahead.",
    "url": "https://www.unmannedsystemstechnology.com/events/dsei/"
+  }
+ ],
+ "funding": [
+  {
+   "id": "fr-iou",
+   "title": "Innovative public procurement (Innovative offentlige anskaffelser)",
+   "funder": "Research Council of Norway",
+   "status": "open",
+   "deadline": "2026-12-01",
+   "amount": "Project support",
+   "who": "Public-sector buyers apply; startups join as the supplier side",
+   "tldr": "Find a public buyer, Forsvaret included, that will apply with you before 1 December.",
+   "url": "https://www.forskningsradet.no/utlysninger/2026/innovative-offentlige-anskaffelser/"
+  },
+  {
+   "id": "in-usa",
+   "title": "Defence and security technology in the USA",
+   "funder": "Innovasjon Norge",
+   "status": "rolling",
+   "deadline": null,
+   "amount": "Export programme",
+   "who": "Norwegian defence and security tech companies",
+   "tldr": "Rolling intake for getting into the US defence market.",
+   "url": "https://www.innovasjonnorge.no/tjeneste/forsvars-og-sikkerhetsteknologi-i-usa"
+  },
+  {
+   "id": "nif",
+   "title": "NATO Innovation Fund",
+   "funder": "NATO Innovation Fund",
+   "status": "rolling",
+   "deadline": null,
+   "amount": "Venture capital (equity)",
+   "who": "Deep-tech startups in NATO countries",
+   "tldr": "A EUR 1 bn NATO-backed VC fund. Pitch any time.",
+   "url": "https://www.nif.fund/"
+  },
+  {
+   "id": "in-edf",
+   "title": "EDF application advice",
+   "funder": "Innovasjon Norge",
+   "status": "rolling",
+   "deadline": null,
+   "amount": "Advice",
+   "who": "Norwegian companies preparing EU defence bids",
+   "tldr": "Free help to get ready for the 2027 EDF calls. Start now; consortia take months.",
+   "url": "https://www.innovasjonnorge.no/tjeneste/det-europeiske-forsvarsfondet-(edf)"
+  },
+  {
+   "id": "fr-centres",
+   "title": "Centres for defence capability, security and preparedness",
+   "funder": "Research Council of Norway",
+   "status": "upcoming",
+   "deadline": null,
+   "amount": "Up to NOK 450 m for 5–9 centres",
+   "who": "Only applicants who sent a sketch by 5 June 2026",
+   "tldr": "Main call moved to early 2027. Join a centre consortium if you missed the sketch.",
+   "url": "https://www.forskningsradet.no/utlysninger/2026/senter-forsvarsevne-sikkerhet-beredskap/"
+  },
+  {
+   "id": "investinor-ukraine",
+   "title": "NOK 1 bn Ukraine defence investment scheme",
+   "funder": "Investinor (Nansen programme)",
+   "status": "upcoming",
+   "deadline": null,
+   "amount": "Fund investments, NOK 1 bn over 3 years",
+   "who": "Norwegian-based funds investing in Ukrainian defence companies",
+   "tldr": "Proposed November 2026. Norwegian–Ukrainian ventures should talk to fund managers now.",
+   "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-styrker-norske-investeringer-i-ukraina-med-1-milliard-kroner/id3190722/"
+  },
+  {
+   "id": "brave-international",
+   "title": "Brave International",
+   "funder": "Brave1 with partner countries",
+   "status": "upcoming",
+   "deadline": null,
+   "amount": "Over EUR 100 m in total",
+   "who": "Ukrainian and foreign companies; products tested in Ukraine",
+   "tldr": "Foreign firms can now win Brave1 grants. First joint calls not yet dated.",
+   "url": "https://mod.gov.ua/en/news/over-100-million-for-defense-technologies-government-gives-the-green-light-to-international-grants-from-brave1-and-partner-countries"
+  },
+  {
+   "id": "brave-norway",
+   "title": "Brave Norway",
+   "funder": "Brave1 and FFI",
+   "status": "upcoming",
+   "deadline": null,
+   "amount": "EUR 20 m programme",
+   "who": "Ukrainian and Norwegian defence startups (drones, AI)",
+   "tldr": "The Norway–Ukraine startup programme. Watch FFI and Brave1 for the next call.",
+   "url": "https://digitalstate.gov.ua/news/tech/brave-norway-eur20m-to-boost-defense-innovation-between-ukraine-and-norway"
+  },
+  {
+   "id": "diana-2027",
+   "title": "NATO DIANA challenge programme",
+   "funder": "NATO DIANA",
+   "status": "closed",
+   "deadline": null,
+   "amount": "EUR 100k Phase 1 + 200 test centres",
+   "who": "Companies registered in NATO countries",
+   "tldr": "2027 call closed 3 July 2026. Prepare now for the next call, usually mid-year.",
+   "url": "https://www.diana.nato.int/challenges.html"
+  },
+  {
+   "id": "edf-2026",
+   "title": "European Defence Fund (EDF) 2026 calls",
+   "funder": "European Commission",
+   "status": "closed",
+   "deadline": null,
+   "amount": "EU grants, mostly consortia",
+   "who": "EU and EEA companies, Norway included",
+   "tldr": "2026 calls closed 29 September. The 2027 work programme comes next.",
+   "url": "https://eudis.europa.eu/eudis-tracks/disruptive-technologies_en"
+  },
+  {
+   "id": "in-linc",
+   "title": "LINC: Launchpad for Innovative Norwegian Companies",
+   "funder": "Innovasjon Norge, FFI, NADIC",
+   "status": "closed",
+   "deadline": null,
+   "amount": "Accelerator",
+   "who": "Norwegian defence and dual-use startups",
+   "tldr": "2026 intake closed 20 April. Expect the next round in spring 2027.",
+   "url": "https://www.innovasjonnorge.no/tjeneste/linc-launchpad-for-innovative-norwegian-companies"
+  }
+ ],
+ "tenders": [
+  {
+   "id": "dps-rpas",
+   "title": "Dynamic purchasing system: drone systems (RPAS)",
+   "buyer": "Forsvaret (FLO)",
+   "value": "NOK 600 m",
+   "published": "2024-09-20",
+   "deadline": "2034-09-22",
+   "kind": "Open purchasing system",
+   "tldr": "Drone makers can apply to join at any time and then bid on Forsvaret's drone buys.",
+   "url": "https://www.doffin.no/notices/2024-113399"
+  },
+  {
+   "id": "dps-ship-tech",
+   "title": "Dynamic purchasing system: ship technology services",
+   "buyer": "FMA, Forsvaret, FFI, Forsvarsbygg, NSM",
+   "value": "NOK 230 m",
+   "published": "2024-07-02",
+   "deadline": "2031-07-31",
+   "kind": "Open purchasing system",
+   "tldr": "Maritime tech and engineering firms can join any time to bid on ship-related jobs.",
+   "url": "https://www.doffin.no/notices/2024-110157"
+  },
+  {
+   "id": "p1118-pq",
+   "title": "P1118 standardized vessels: prequalification",
+   "buyer": "FMA",
+   "value": "Not stated",
+   "published": "2026-11-06",
+   "deadline": null,
+   "kind": "Prequalification",
+   "tldr": "Yards bid; autonomy, sensor and C2 startups should team up with them now.",
+   "url": "https://www.doffin.no/notices/2026-117271"
+  },
+  {
+   "id": "lms-ai",
+   "title": "Digital learning platform for the defence sector (incl. AI content)",
+   "buyer": "FMA",
+   "value": "NOK 39 m",
+   "published": "2026-10-30",
+   "deadline": "2026-11-30",
+   "kind": "Competition",
+   "tldr": "SaaS learning platform with AI for content and analysis. Fits training-tech startups.",
+   "url": "https://www.doffin.no/notices/2026-116855"
+  },
+  {
+   "id": "lab-services",
+   "title": "Laboratory services for the Norwegian defence",
+   "buyer": "FMA",
+   "value": "NOK 6 m",
+   "published": "2026-10-19",
+   "deadline": "2026-11-19",
+   "kind": "Competition",
+   "tldr": "Small, closing soon. Relevant for testing and lab companies.",
+   "url": "https://www.doffin.no/notices/2026-116170"
+  },
+  {
+   "id": "fma-advisory",
+   "title": "Procurement advisory to FMA",
+   "buyer": "FMA",
+   "value": "NOK 126 m",
+   "published": "2026-10-21",
+   "deadline": "2026-11-19",
+   "kind": "Framework agreement",
+   "tldr": "Consultancy work inside FMA; useful if you sell procurement expertise.",
+   "url": "https://www.doffin.no/notices/2026-116324"
+  },
+  {
+   "id": "unclassified-it",
+   "title": "Operation of Forsvaret's unclassified internet services",
+   "buyer": "FMA",
+   "value": "NOK 20 m",
+   "published": "2026-11-06",
+   "deadline": "2026-12-07",
+   "kind": "Competition",
+   "tldr": "Hosting and operations incl. Azure. For IT and cloud operators.",
+   "url": "https://www.doffin.no/notices/2026-117219"
   }
  ]
 }

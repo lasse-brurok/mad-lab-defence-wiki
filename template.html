@@ -170,6 +170,26 @@ main section{padding-block:48px 8px;scroll-margin-top:60px}
 .ev .kind{display:flex;justify-content:space-between;gap:8px}
 .ev p{margin:0;font-size:15px}
 .ev .more{font-weight:600;font-size:14px;color:var(--accent)}
+.fund{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.fcard{background:var(--surface);border:1px solid var(--line);padding:16px;display:grid;gap:8px;align-content:start;min-width:0}
+.fcard.closed{opacity:.72}
+.fhead{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.fcard h4{margin:0;font:700 16px/1.3 var(--body)}
+.fmeta{font-size:13px;color:var(--muted);display:grid;gap:2px}
+.fmeta b{color:var(--ink);font-weight:600}
+.st{font:700 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:5px 7px;border-radius:2px;white-space:nowrap}
+.st.open{background:#dcefe3;color:#1d6b3a}
+.st.rolling{background:var(--accent-soft);color:var(--accent)}
+.st.upcoming{background:var(--signal-soft);color:var(--signal)}
+.st.closed{background:var(--land);color:var(--muted)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .st.open{background:#173826;color:#7fd3a0}}
+:root[data-theme="dark"] .st.open{background:#173826;color:#7fd3a0}
+.tend{border-top:2px solid var(--ink)}
+.trow{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:4px 18px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start}
+.tdl{font:700 14px/1.3 var(--mono);font-variant-numeric:tabular-nums}
+.tdl small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.tdl.soon{color:var(--war)}
+@media (max-width:640px){.trow{grid-template-columns:1fr}}
 .subh{font:800 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin:26px 0 10px;color:var(--muted)}
 .subh:first-of-type{margin-top:0}
 .cal{border-top:2px solid var(--ink)}
@@ -276,6 +296,7 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
       <a href="#nato" data-scroll>NATO map</a>
       <a href="#news" data-scroll>News</a>
       <a href="#press" data-scroll>Press releases</a>
+      <a href="#funding" data-scroll>Funding &amp; tenders</a>
       <a href="#events" data-scroll>Events &amp; meetings</a>
       <a href="#readings" data-scroll>Readings</a>
       <a href="#network" data-scroll>Network</a>
@@ -324,6 +345,13 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
       <div class="plist" id="plist"></div>
       <aside class="toolkit"><b>Procurement toolkit</b><ul id="toolkit"></ul></aside>
     </div>
+  </section>
+  <section id="funding">
+    <div class="sec-head"><div><div class="eyebrow">Money on the table</div><h2>Funding &amp; tenders</h2></div><p>Open funding calls and live tenders worth a founder's time. Open items first, with the deadline.</p></div>
+    <h3 class="subh">Funding calls</h3>
+    <div class="fund" id="fundlist"></div>
+    <h3 class="subh">Open tenders</h3>
+    <div class="tend" id="tendlist"></div>
   </section>
   <section id="events">
     <div class="sec-head"><div><div class="eyebrow">Calendar and notes</div><h2>Events &amp; meetings</h2></div><p>Defence events worth your time in Norway, the Nordics and Europe, plus takeaways from meetings the team attended.</p></div>
@@ -430,6 +458,24 @@ $("#toolkit").innerHTML = L.toolkit.map(t => `<li><a href="${esc(t.url)}" target
 $("#evlist").innerHTML = S.events.map(e => `
   <a class="ev" href="#event-${esc(e.id)}"><div class="kind"><span class="eyebrow">${esc(e.kind)}</span><span class="eyebrow">${/^\d{4}-\d\d-\d\d$/.test(e.date)?fmtDate(e.date):esc(e.date)}</span></div>
   <h3>${esc(e.title)}</h3><p class="muted" style="font-size:13.5px">${esc(e.where)}</p><p class="bl"><b>Bottom line</b>${esc(e.tldr)}</p><span class="more">Read the notes →</span></a>`).join("");
+
+/* Funding & tenders */
+(() => {
+  const today = new Date().toLocaleDateString("en-CA",{timeZone:"Europe/Oslo"});
+  const fd = s => new Date(s+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+  const daysTo = s => Math.round((new Date(s+"T12:00:00") - new Date(today+"T12:00:00"))/864e5);
+  const ST = {open:"Open", rolling:"Rolling", upcoming:"Coming", closed:"Closed"}, ORD = {open:0, rolling:1, upcoming:2, closed:3};
+  const fund = (L.funding||[]).map(f => (f.status==="open" && f.deadline && f.deadline<today) ? {...f, status:"closed"} : f)
+    .sort((a,b) => ORD[a.status]-ORD[b.status] || String(a.deadline||"9").localeCompare(String(b.deadline||"9")));
+  $("#fundlist").innerHTML = fund.map(f => `<article class="fcard ${esc(f.status)}"><div class="fhead"><h4>${esc(f.title)}</h4><span class="st ${esc(f.status)}">${ST[f.status]||esc(f.status)}</span></div>
+    <div class="fmeta"><span><b>${esc(f.funder)}</b> · ${esc(f.amount)}</span><span>${esc(f.who)}</span>${f.deadline&&f.status==="open"?`<span><b>Deadline ${fd(f.deadline)}</b> (${daysTo(f.deadline)} days)</span>`:""}</div>
+    <p class="bl"><b>Bottom line</b>${esc(f.tldr)}</p><a class="go" style="font-weight:600;font-size:14px" href="${esc(f.url)}" target="_blank" rel="noopener">Read the call ↗</a></article>`).join("") || `<div class="empty">No funding calls listed.</div>`;
+  const tend = (L.tenders||[]).filter(t => !t.deadline || t.deadline>=today).sort((a,b)=>String(a.deadline||"9999").localeCompare(String(b.deadline||"9999")));
+  $("#tendlist").innerHTML = tend.map(t => { const n = t.deadline ? daysTo(t.deadline) : null;
+    return `<div class="trow"><div class="tdl${n!==null&&n<=10?" soon":""}">${t.deadline ? (n>365 ? `Open until<small>${fd(t.deadline)}</small>` : `${fd(t.deadline)}<small>${n} days left</small>`) : `See notice<small>deadline in documents</small>`}</div>
+      <div class="cbody"><b>${esc(t.title)}</b><span class="cmeta">${esc(t.buyer)} · ${esc(t.kind)} · ${esc(t.value)}</span><p class="ctl">${esc(t.tldr)}</p></div>
+      <a class="cgo" href="${esc(t.url)}" target="_blank" rel="noopener">Doffin ↗</a></div>`; }).join("") || `<div class="empty">No open tenders listed.</div>`;
+})();
 
 /* Calendar */
 (() => {

@@ -39,6 +39,18 @@ def check_live(live):
     for i, r in enumerate(live.get("readings", [])):
         if not r.get("tldr"):
             errors.append(f"readings[{i}] is missing 'tldr' (one-line bottom line)")
+    for i, f in enumerate(live.get("funding", [])):
+        for k in ("id", "title", "funder", "status", "amount", "who", "tldr", "url"):
+            if not f.get(k):
+                errors.append(f"funding[{i}] is missing '{k}'")
+        if f.get("status") not in ("open", "rolling", "upcoming", "closed"):
+            errors.append(f"funding[{i}] status must be open, rolling, upcoming or closed")
+        if f.get("status") == "open" and not f.get("deadline"):
+            errors.append(f"funding[{i}] is open but has no deadline")
+    for i, t in enumerate(live.get("tenders", [])):
+        for k in ("id", "title", "buyer", "value", "kind", "tldr", "url"):
+            if not t.get(k):
+                errors.append(f"tenders[{i}] is missing '{k}'")
     for i, e in enumerate(live.get("calendar", [])):
         for k in ("id", "title", "start", "end", "city", "country", "kind", "org", "tldr", "url"):
             if not e.get(k):
