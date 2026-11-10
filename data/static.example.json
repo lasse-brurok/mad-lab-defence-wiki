@@ -1,0 +1,59 @@
+{
+ "networkPitch": {
+  "source": "Notes from Emil",
+  "intro": "Our network has to give founders speed. That means two things.",
+  "offers": [
+   {
+    "title": "Customers",
+    "text": "Direct end-user access in Ukraine, invites to the right rooms in Norway, and go-to-market paths to NATO and EU ministries of defence."
+   },
+   {
+    "title": "Infrastructure",
+    "text": "Free engine hot-fire rigs, hypersonic wind tunnels, metal printers, CNC machinery and runways."
+   }
+  ],
+  "categories": [
+   "Defence founders",
+   "Combat operators (typically Ukrainian)",
+   "Superconnectors (typically clusters)",
+   "Manufacturers and research labs",
+   "Defence contractors to partner with",
+   "Military buyers"
+  ]
+ },
+ "network": [
+  {
+   "owner": "Example owner",
+   "people": [
+    {
+     "name": "Example Person",
+     "role": "CEO",
+     "org": "Example Defence AS",
+     "note": "Replace with real data in data/static.json (not committed).",
+     "cat": "Defence founders"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "id": "example-event",
+   "title": "Example meeting",
+   "kind": "Meeting",
+   "date": "2026",
+   "where": "Oslo",
+   "who": "Example",
+   "source": "Example",
+   "tldr": "Real meeting notes live in data/static.json, which is not committed.",
+   "sections": [
+    {
+     "h": "Notes",
+     "items": [
+      "Example item"
+     ]
+    }
+   ],
+   "link": null
+  }
+ ]
+}

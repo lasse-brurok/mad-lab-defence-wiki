@@ -1,0 +1,8 @@
+# Private: contacts, phone numbers and meeting notes. Only the encrypted copy in docs/ is published.
+data/static.json
+# Plain (unencrypted) build output; the claude.ai artifact is published from here.
+dist/
+# Site password. Never commit.
+.site-password
+.DS_Store
+__pycache__/

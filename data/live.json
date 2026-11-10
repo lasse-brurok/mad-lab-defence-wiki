@@ -1,0 +1,861 @@
+{
+ "updatedAt": "2026-11-10T21:00:00+01:00",
+ "situation": [
+  {
+   "region": "Norway",
+   "level": "elevated",
+   "text": "PST calls this Norway's most serious security situation since the Second World War and expects Russian intelligence activity to rise, focused on military targets, allied exercises, support to Ukraine and the High North. This week the Armed Forces moved NASAMS sensors and about 30 soldiers to Kirkenes to detect drones at the Russian border. The government also proposed NOK 1 bn to channel private capital into Ukraine's defence industry.",
+   "sources": [
+    {
+     "label": "PST",
+     "url": "https://www.pst.no/trusselbilde/norsk-trusselvurdering/"
+    },
+    {
+     "label": "Regjeringen",
+     "url": "https://www.regjeringen.no/no/aktuelt/styrker-evnen-til-a-oppdage-droner-i-finnmark/id3191003/"
+    }
+   ]
+  },
+  {
+   "region": "The Nordics",
+   "level": "elevated",
+   "text": "All four Nordic allies are rearming fast: Denmark spends 3.49% of GDP in 2026, Sweden 3.22%, Norway 3.17% and Finland 2.65%. Nordic defence ministers meet in Oslo on 11–12 November under Norway's NORDEFCO chairmanship, while NATO's Dynamic Merlin anti-submarine exercise started in the Baltic Sea on 9 November.",
+   "sources": [
+    {
+     "label": "Regjeringen",
+     "url": "https://www.regjeringen.no/en/whats-new/nordic-defence-ministers-meeting-in-oslo-1112-november/id3191962/"
+    },
+    {
+     "label": "NATO",
+     "url": "https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2026-en.pdf"
+    }
+   ]
+  },
+  {
+   "region": "Ukraine",
+   "level": "war",
+   "text": "The front is largely deadlocked, with 127–190 clashes a day and the heaviest fighting around Pokrovsk and Kostiantynivka. Russia, Ukraine and the US held about four hours of talks in Abu Dhabi on 10 November. Ukraine keeps scaling drone buying: units have ordered more than 903,000 items worth USD 1.39 bn through Brave1 Market.",
+   "sources": [
+    {
+     "label": "NPR",
+     "url": "https://npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks"
+    },
+    {
+     "label": "Ukrinform",
+     "url": "https://www.ukrinform.net/rubric-ato/4183175-war-update-156-clashes-on-front-line-over-past-day-fiercest-fighting-in-pokrovsk-sector.html"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "level": "elevated",
+   "text": "Russia's hybrid campaign is escalating, with arson, sabotage, cyberattacks, drone incursions and GPS jamming against countries that back Kyiv. A leaked Commission draft says the EU's 2030 readiness goals are at risk and only a third of counter-drone programmes will deliver by 2030. NATO allies will spend USD 1.81 trillion on defence in 2026, and all except Slovenia are above 2% of GDP.",
+   "sources": [
+    {
+     "label": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-10/russia-s-hybrid-warfare-how-moscow-uses-sabotage-cyberattacks-disinformation"
+    },
+    {
+     "label": "Euronews",
+     "url": "https://www.euronews.com/2026/11/04/europes-military-readiness-plans-at-risk-despite-record-defence-spending"
+    }
+   ]
+  }
+ ],
+ "news": [
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-10",
+   "title": "MoD orders Forsvaret, FFI, FMA and Forsvarsbygg to fix audit findings",
+   "summary": "The Auditor General found possible material errors in the 2025 accounts. FMA risks booking purchases in the wrong year, so suppliers should expect tighter invoicing and delivery documentation.",
+   "source": "Regjeringen",
+   "url": "https://www.regjeringen.no/no/aktuelt/ber-etatane-utarbeida-tiltak/id3192243/"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-09",
+   "title": "Kongsberg and Navantia sign MoU on undersea solutions",
+   "summary": "The Norwegian and Spanish groups will cooperate on underwater systems, an area where Norwegian autonomy firms have strong competence.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en/briefs"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-06",
+   "title": "Army receives first M3N amphibious bridge and ferry system",
+   "summary": "FMA delivered the first M3N system to the Army, improving river-crossing mobility.",
+   "source": "FMA",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/norge-har-mottatt-det-forste-amfibiske-bro-og-fergesystemet-m3n-til-haeren"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-04",
+   "title": "FMA opens prequalification for up to 28 new Navy and Coast Guard vessels",
+   "summary": "Two contracts, ships built in Norway (hulls may be built abroad). Apply through Mercell; notice is on Doffin. Subsuppliers should position with the yards now.",
+   "source": "FMA",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/forsvarsmateriell-inviterer-norske-verft-til-konkurranse-om-nye-fartoy-til-sjoforsvaret"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-03",
+   "title": "NOK 1 bn to bring Norwegian private capital into Ukraine's defence industry",
+   "summary": "Investinor will invest Nansen programme money through Norwegian-based funds that back Ukrainian defence companies, over three years.",
+   "source": "Regjeringen",
+   "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-styrker-norske-investeringer-i-ukraina-med-1-milliard-kroner/id3190722/"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-03",
+   "title": "Drone detection sensors deployed in Kirkenes",
+   "summary": "NASAMS sensors and about 30 soldiers from the Garrison of Sør-Varanger will watch for drones at the Russian border. Described as preventive.",
+   "source": "Regjeringen",
+   "url": "https://www.regjeringen.no/no/aktuelt/styrker-evnen-til-a-oppdage-droner-i-finnmark/id3191003/"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-03",
+   "title": "Government proposes tougher anti-espionage laws and more PST powers",
+   "summary": "The proposal widens what counts as illegal intelligence activity and gives PST broader investigative tools.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en/briefs"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-03",
+   "title": "Poland's army recommends Kongsberg's Protector RS4 for K2PL tanks",
+   "summary": "A Polish alternative weapon station fell short in tests, opening the door for Kongsberg.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en/briefs"
+  },
+  {
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-11",
+   "title": "Nordic defence ministers meet in Oslo, 11–12 November",
+   "summary": "Norway hosts NORDEFCO as 2026 chair. Agenda: Nordic cooperation within NATO and total defence. Press briefing on 12 November.",
+   "source": "Regjeringen",
+   "url": "https://www.regjeringen.no/en/whats-new/nordic-defence-ministers-meeting-in-oslo-1112-november/id3191962/"
+  },
+  {
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-09",
+   "title": "NATO's Dynamic Merlin anti-submarine exercise begins in the Baltic",
+   "summary": "Allied navies train submarine hunting in Nordic-Baltic waters.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en"
+  },
+  {
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-07",
+   "title": "Denmark weighs letting its Armed Forces track drones; awards Saab a direct contract",
+   "summary": "Denmark is considering new powers for the military to track drones and has directly awarded Saab a contract worth billions of kronor. Babcock and Saab Denmark also signed an LoI on Arrowhead frigates.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/latest",
+   "approx": true
+  },
+  {
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-05",
+   "title": "Swedish defence minister meets industry in Gothenburg; EU Commissioner Kubilius visits",
+   "summary": "Pål Jonson met defence companies on 3–5 November, and EU Defence Commissioner Andrius Kubilius visited Sweden on 5–6 November.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en",
+   "approx": true
+  },
+  {
+   "pri": 2,
+   "region": "Finland",
+   "date": "2026-11-04",
+   "title": "Finland ranks second in European defence-tech venture funding",
+   "summary": "A strong signal for Nordic founders: Finnish capital and MoD are both open to new entrants.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/latest",
+   "approx": true
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-10",
+   "title": "Russia–Ukraine–US talks in Abu Dhabi",
+   "summary": "Nearly four hours of US-mediated talks, while the armies remain largely deadlocked on the front.",
+   "source": "NPR",
+   "url": "https://npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-09",
+   "title": "156 clashes in a day; Pokrovsk sector the hottest",
+   "summary": "Ukraine's General Staff reports heavy fighting near Pokrovsk and Kostiantynivka.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4183175-war-update-156-clashes-on-front-line-over-past-day-fiercest-fighting-in-pokrovsk-sector.html"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-06",
+   "title": "MoD and Brave1 scale up EW-resistant drone swarm control",
+   "summary": "The technology lets groups of drones fly autonomously without GPS, resistant to electronic warfare.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4182112-ukraines-defense-ministry-brave1-scale-up-ewresistant-group-drone-control-technology.html"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-03",
+   "title": "Brave1 funds drone-launched air-to-air missiles against jet Shaheds",
+   "summary": "A grant competition to cut the cost of intercepting jet-powered drones. Open to Ukraine-registered companies only, so a local partner is needed.",
+   "source": "DroneXL",
+   "url": "https://dronexl.co/2026/11/03/ukraine-brave1-drone-launched-air-to-air-missile-radar-grants/"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-02",
+   "title": "Brave1 Market passes 903,000 items ordered (USD 1.39 bn)",
+   "summary": "More than 774,000 drones and other items delivered. Interceptor drones are the most ordered category.",
+   "source": "Ministry of Defence of Ukraine",
+   "url": "https://mod.gov.ua/en/news/troops-have-ordered-over-590-000-ua-vs-through-brave1-market-since-the-start-of-the-year",
+   "approx": true
+  },
+  {
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-10",
+   "title": "How Russia wages hybrid war on Europe",
+   "summary": "Arson, sabotage, cyberattacks and armed drone incursions aimed at countries that back Kyiv.",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-10/russia-s-hybrid-warfare-how-moscow-uses-sabotage-cyberattacks-disinformation"
+  },
+  {
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-09",
+   "title": "Newsroom bomb threats follow wave of European flight hoaxes",
+   "summary": "A new pattern of disruptive hoaxes adds to pressure on European infrastructure and services.",
+   "source": "Insurance Journal",
+   "url": "https://www.insurancejournal.com/news/international/2026/11/09/892102.htm"
+  },
+  {
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-04",
+   "title": "EU readiness 2030 at risk despite record spending",
+   "summary": "A leaked Commission draft says only a third of counter-drone programmes will deliver by 2030, although counter-drone investment grew sixfold from 2024 to 2025.",
+   "source": "Euronews",
+   "url": "https://www.euronews.com/2026/11/04/europes-military-readiness-plans-at-risk-despite-record-defence-spending"
+  },
+  {
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-03",
+   "title": "Russian sabotage tests NATO's eastern flank as Washington reviews troop deployments",
+   "summary": "Hacks on refrigeration systems join arson, bomb plots, cable threats and airspace incursions.",
+   "source": "Washington Times",
+   "url": "https://www.washingtontimes.com/news/2026/nov/3/russian-sabotage-tests-natos-eastern-flank-washington-reviews-troop/"
+  }
+ ],
+ "press": [
+  {
+   "id": "fd-audit-actions",
+   "org": "FD",
+   "date": "2026-11-10",
+   "type": "Nyhet",
+   "titleNo": "Ber etatane utarbeida tiltak",
+   "title": "MoD asks agencies to prepare corrective actions after audit",
+   "summary": "Riksrevisjonen found that the 2025 accounts of Forsvaret, FFI and FMA may contain material errors, and could not give an opinion on Forsvarsbygg. The MoD has ordered concrete action plans with reporting requirements. Forsvaret must strengthen inventory control with an annual stock-count plan, FMA risks booking purchases in the wrong fiscal year, and Forsvarsbygg gets an external review of its financial management.",
+   "startup": "Expect stricter documentation on deliveries, invoice timing and inventory traceability when you sell to FMA or Forsvaret. There may be demand for inventory, traceability and financial-control tools.",
+   "url": "https://www.regjeringen.no/no/aktuelt/ber-etatane-utarbeida-tiltak/id3192243/",
+   "tldr": "Expect stricter paperwork when you deliver to FMA and Forsvaret."
+  },
+  {
+   "id": "fd-nordefco-oslo",
+   "org": "FD",
+   "date": "2026-11-06",
+   "type": "Presseinvitasjon",
+   "titleNo": "Nordisk forsvarsministermøte i Oslo 11.–12. november",
+   "title": "Nordic defence ministers' meeting in Oslo",
+   "summary": "Norway chairs NORDEFCO in 2026 and hosts the Nordic defence ministers in Oslo on 11–12 November. Topics include stronger Nordic defence cooperation within NATO and total defence. A press briefing is held on 12 November.",
+   "startup": "Nordic joint procurement and shared test arenas are growing. A product that fits several Nordic forces is easier to scale than one built for Norway only.",
+   "url": "https://www.regjeringen.no/no/aktuelt/nordisk-forsvarsministermote-i-oslo-11.12.-november/id3191962/",
+   "tldr": "Build for all the Nordic forces, not Norway alone."
+  },
+  {
+   "id": "fd-ukraine-invest",
+   "org": "FD",
+   "date": "2026-11-03",
+   "type": "Pressemelding",
+   "titleNo": "Regjeringen styrker norske investeringer i Ukraina med 1 milliard kroner",
+   "title": "NOK 1 bn to strengthen Norwegian investment in Ukraine",
+   "summary": "A NOK 1 bn framework over three years, taken from the military part of the Nansen programme and placed under the Ministry of Trade, Industry and Fisheries. Investinor manages it by investing in Norwegian-based funds that back Ukrainian defence companies. Investinor picks the funds; the fund managers pick the companies. Direct co-investments may follow.",
+   "startup": "Norwegian–Ukrainian joint ventures and Ukrainian partners of Norwegian startups may become investable through these funds. Talk to Investinor and Norwegian defence-tech fund managers early.",
+   "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-styrker-norske-investeringer-i-ukraina-med-1-milliard-kroner/id3190722/",
+   "tldr": "New NOK 1 bn fund route makes Norwegian–Ukrainian ventures easier to finance."
+  },
+  {
+   "id": "fd-finnmark-drones",
+   "org": "FD",
+   "date": "2026-11-03",
+   "type": "Nyhet",
+   "titleNo": "Styrker evnen til å oppdage droner i Finnmark",
+   "title": "Stronger drone detection in Finnmark",
+   "summary": "The Armed Forces place air-surveillance sensors (NASAMS) in Kirkenes to detect and warn of drones in the border area. About 30 soldiers from the Garrison of Sør-Varanger will be stationed there through the year. The deployment is preventive. Police enforce drone rules and the Armed Forces assist on request.",
+   "startup": "Clear demand signal for low-cost drone detection and early warning in Arctic conditions. No tender is attached, but this is a use case to pitch to the Home Guard, FFI and FMA.",
+   "url": "https://www.regjeringen.no/no/aktuelt/styrker-evnen-til-a-oppdage-droner-i-finnmark/id3191003/",
+   "tldr": "Clear demand for cheap Arctic drone detection, but no tender yet."
+  },
+  {
+   "id": "fd-engineering-education",
+   "org": "FD",
+   "date": "2026-10-20",
+   "type": "Nyhet",
+   "titleNo": "Regjeringen foreslår fireårig militær ingeniørutdanning",
+   "title": "Four-year military engineering degree proposed",
+   "summary": "The government proposes a four-year military engineering education and more flexible engineering studies to meet the defence sector's need for technical staff.",
+   "startup": "Competition for engineers will grow. Partnerships with the Defence University College and student projects can be a recruitment channel.",
+   "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-foreslar-firearig-militar-ingeniorutdanning-og-mer-fleksible-ingeniorstudier/id3179024/",
+   "tldr": "Hiring engineers will get harder; partner with the military schools early."
+  },
+  {
+   "id": "fma-vessels-pq",
+   "org": "FMA",
+   "date": "2026-11-04",
+   "type": "Konkurranse",
+   "titleNo": "Forsvarsmateriell inviterer norske verft til konkurranse om nye fartøy til Sjøforsvaret",
+   "title": "Norwegian yards invited to compete for new Navy vessels",
+   "summary": "National prequalification for up to 28 standardized vessels for the Navy, Coast Guard and allies: up to 10 ocean-going and 18 coastal. Split into two contracts to widen Norwegian participation. Vessels must be built in Norway; hulls may be built abroad. Apply via Mercell (documents, timeline, deadline); the notice is also on Doffin. Only a limited number of qualified suppliers will be invited to bid. Contact: forsvarsmateriell@fma.no, +47 23 09 30 03.",
+   "startup": "Startups will not build ships, but autonomy, sensors, C2 software, drone hangars and maintenance tech can ride along as subsuppliers. Talk to the yards that prequalify.",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/forsvarsmateriell-inviterer-norske-verft-til-konkurranse-om-nye-fartoy-til-sjoforsvaret",
+   "tldr": "Big ship deal: get in as a subsupplier through the yards."
+  },
+  {
+   "id": "fma-p1118-signal",
+   "org": "FMA",
+   "date": "2026-10-20",
+   "type": "Markedssignal",
+   "titleNo": "Forsvarsmateriell signaliserer konkurransemodell for standardiserte fartøy",
+   "title": "Market signal: competition model for standardized vessels (P1118)",
+   "summary": "Up to 20 ocean-going vessels planned for Norway, the UK and Lithuania, split into one contract for up to 14 naval vessels and one for up to 6 coast guard vessels. One bidder should not win both. Target: contracts in 2027 and first delivery in 2030. The signal is preliminary and may change.",
+   "startup": "Market signals are FMA's early warning to industry. Read P1118 now if your product belongs on a ship; integration slots are decided early.",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/forsvarsmateriell-signaliserer-konkurransemodell-for-standardiserte-fartoy-til-sjoforsvaret",
+   "tldr": "Contracts in 2027, first ships in 2030; integration slots are decided now."
+  },
+  {
+   "id": "fma-m3n",
+   "org": "FMA",
+   "date": "2026-11-06",
+   "type": "Nyhet",
+   "titleNo": "Norge har mottatt det første amfibiske bro- og fergesystemet M3N til Hæren",
+   "title": "First M3N amphibious bridge and ferry system delivered to the Army",
+   "summary": "FMA delivered the first M3N amphibious bridging and ferry system to the Army, giving better mobility across rivers and fjords.",
+   "startup": "Limited direct relevance. Shows the Army's focus on mobility and logistics, where autonomy and maintenance tools can add value.",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/norge-har-mottatt-det-forste-amfibiske-bro-og-fergesystemet-m3n-til-haeren",
+   "tldr": "Low direct relevance; shows focus on Army mobility."
+  },
+  {
+   "id": "fors-nodnett",
+   "org": "Forsvaret",
+   "date": null,
+   "type": "Nyhet",
+   "titleNo": "Forsvaret moderniserer Nødnett-terminalene",
+   "title": "Armed Forces modernise Nødnett radio terminals",
+   "summary": "1,320 new Nødnett terminals (Motorola MXP600), about 650 replacing first-generation units. The Army's 280 terminals come through TC Connect; the Home Guard gets 290. The goal is better direct communication with civilian emergency services and Nordic partners.",
+   "startup": "Total defence means military and civilian systems must talk to each other. Interoperability with Nødnett and TETRA is a plus for comms and C2 products.",
+   "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/forsvaret-moderniserer-nodnett-terminalene",
+   "tldr": "Make your comms and C2 products work with civilian emergency radio."
+  },
+  {
+   "id": "fors-fosk",
+   "org": "Forsvaret",
+   "date": "2026-10-23",
+   "type": "Nyhet",
+   "titleNo": "Våpenskjold til Forsvarets nye avdeling",
+   "title": "New Operational Support Command (FOSK) from 1 January 2027",
+   "summary": "FLO and the Armed Forces Medical Services merge into the Norwegian Armed Forces Operational Support Command (FOSK) on 1 January 2027. FOSK supports other units with resources from the defence sector and the wider total defence system.",
+   "startup": "A new buyer organisation for logistics, maintenance and medical solutions. Map who owns what in FOSK before 2027.",
+   "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/vapenskjold-til-forsvarets-nye-avdeling",
+   "tldr": "A new logistics and medical buyer from January 2027."
+  }
+ ],
+ "toolkit": [
+  {
+   "label": "Doffin: national tender database",
+   "url": "https://www.doffin.no/"
+  },
+  {
+   "label": "FMA: for suppliers",
+   "url": "https://www.fma.no/for-leverandorer"
+  },
+  {
+   "label": "FMA: news and market signals",
+   "url": "https://www.fma.no/aktuelt-og-media/nyheter"
+  },
+  {
+   "label": "Investinor (Ukraine scheme)",
+   "url": "https://www.investinor.no/"
+  },
+  {
+   "label": "Brave1 (Ukraine)",
+   "url": "https://brave1.gov.ua/en/"
+  }
+ ],
+ "readings": [
+  {
+   "title": "The “Battle of Norway”",
+   "publisher": "Sahaidachnyi Security Center, supported by Buntar Aerospace",
+   "date": "2026",
+   "tags": [
+    "Norway",
+    "Ukraine",
+    "Must read"
+   ],
+   "summary": "Argues that the most likely attack on Norway is not a ground invasion of Finnmark but a 'Battle of Britain' in the drone era: mass drone and missile strikes, sea drones and sabotage against energy, subsea cables and logistics. It sees a threat window of 2027–2029, while most Norwegian programmes mature in 2029–2036. Biggest gaps: counter-drone and ballistic defence, sabotage detection at sea, tactical electronic warfare and manpower in Finnmark. Recommends a standing Ukraine–Norway capability partnership, starting with a Home Guard counter-drone shield.",
+   "url": null,
+   "file": "The_Battle_of_Norway_Brochure___.pdf (team folder)",
+   "tldr": "Norway's real gap is cheap mass defence against drones and sabotage, and Ukraine can help close it fast."
+  },
+  {
+   "title": "National Threat Assessment 2026",
+   "publisher": "PST",
+   "date": "2026-02-06",
+   "tags": [
+    "Norway",
+    "Threats"
+   ],
+   "summary": "Russian and Chinese intelligence activity is expected to rise, with focus on military targets, Ukraine support, the High North and critical infrastructure. Essential context for anyone selling security or surveillance tech.",
+   "url": "https://www.pst.no/wp-content/uploads/2026/02/National-Threat-Assessment-2026.pdf",
+   "tldr": "Russian and Chinese spying in Norway is rising; expect stricter security demands on suppliers."
+  },
+  {
+   "title": "Fokus 2026",
+   "publisher": "Norwegian Intelligence Service (Etterretningstjenesten)",
+   "date": "2026",
+   "tags": [
+    "Norway",
+    "Threats"
+   ],
+   "summary": "The intelligence service's annual open assessment of the external threats to Norway, with Russia's military posture in the north at the centre.",
+   "url": "https://www.forsvaret.no/aktuelt-og-presse/publikasjoner/fokus",
+   "tldr": "Russia's military power in the north remains the core threat to Norway."
+  },
+  {
+   "title": "Defence Expenditure of NATO Countries (2014–2026)",
+   "publisher": "NATO",
+   "date": "2026-07-07",
+   "tags": [
+    "NATO",
+    "Data"
+   ],
+   "summary": "Official spending, share of GDP, equipment share and personnel for all allies. The numbers on the map above come from here.",
+   "url": "https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2026-en.pdf",
+   "tldr": "Every ally but Slovenia now spends 2%+ of GDP; the money is there."
+  },
+  {
+   "title": "Forsvarsløftet: long-term plan for the defence sector 2025–2036",
+   "publisher": "Ministry of Defence",
+   "date": "2024-04-05",
+   "tags": [
+    "Norway",
+    "Procurement"
+   ],
+   "summary": "The cross-party plan behind about NOK 600 bn in extra defence spending over 12 years. Tells you what Norway will buy and when.",
+   "url": "https://www.regjeringen.no/contentassets/de1d4d8802954db8972b8a8cee757921/no/pdfs/forsvarsloftet.pdf",
+   "tldr": "NOK 600 bn extra over 12 years: this is Norway's shopping list."
+  },
+  {
+   "title": "Meld. St. 33 (2024–2025): status of the long-term plan",
+   "publisher": "Ministry of Defence",
+   "date": "2025",
+   "tags": [
+    "Norway",
+    "Procurement"
+   ],
+   "summary": "Progress, challenges and risks in delivering the long-term plan. Useful to see where programmes are late and where faster solutions are needed.",
+   "url": "https://www.regjeringen.no/no/dokumenter/meld.-st.-33-20242025/id3108413/?ch=1",
+   "tldr": "Several programmes are late; that is where faster solutions are welcome."
+  },
+  {
+   "title": "Roadmap for increased production capacity in the defence industry",
+   "publisher": "Ministry of Defence",
+   "date": "2025",
+   "tags": [
+    "Norway",
+    "Industry"
+   ],
+   "summary": "The government's roadmap for scaling Norwegian defence production. Relevant for manufacturers and suppliers to the primes.",
+   "url": "https://www.regjeringen.no/contentassets/5ce00b8e76ed4ff49c08f59adbfc98af/no/pdfs/veikart-for-okt-produksjonskapasitet-i-forsvarsind.pdf",
+   "tldr": "Norway wants more production at home; manufacturers and subsuppliers benefit."
+  },
+  {
+   "title": "New law on defence and security procurement (report)",
+   "publisher": "Ministry of Defence",
+   "date": "2025",
+   "tags": [
+    "Norway",
+    "Procurement",
+    "Regulation"
+   ],
+   "summary": "Proposal for a new procurement law for defence and security. Shapes how startups can be bought from in the future.",
+   "url": "https://www.regjeringen.no/contentassets/63ae2f5c59c04e0798a62a67e644679f/rapport-ny-lov-om-forsvars-og-sikkerhetsanskaffelser.pdf",
+   "tldr": "Procurement rules are being rewritten; watch how they treat small firms."
+  },
+  {
+   "title": "National Security Strategy",
+   "publisher": "Government of Norway",
+   "date": "2025",
+   "tags": [
+    "Norway",
+    "Strategy"
+   ],
+   "summary": "Norway's first national security strategy, tying together defence, total defence, economy and technology.",
+   "url": "https://www.regjeringen.no/no/dokumenter/nasjonal-sikkerhetsstrategi/id3099304/",
+   "tldr": "Security now spans defence, economy and technology, which widens the dual-use market."
+  },
+  {
+   "title": "Readiness Roadmap 2030",
+   "publisher": "European Commission",
+   "date": "2025-10-16",
+   "tags": [
+    "Europe",
+    "Strategy"
+   ],
+   "summary": "The EU's four flagships, including the European Drone Defence Initiative and Eastern Flank Watch, with milestones to 2030.",
+   "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/readiness-roadmap-2030_en",
+   "tldr": "The EU wants a working drone shield and eastern flank watch by 2027–2030."
+  },
+  {
+   "title": "White Paper for European Defence – Readiness 2030",
+   "publisher": "European Commission",
+   "date": "2025-03",
+   "tags": [
+    "Europe",
+    "Funding"
+   ],
+   "summary": "The ReArm Europe plan, up to EUR 800 bn, and the SAFE loan instrument. Explains where EU defence money flows.",
+   "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/introducing-white-paper-european-defence-and-rearm-europe-plan-readiness-2030_en",
+   "tldr": "Up to EUR 800 bn in EU defence money; SAFE loans favour European suppliers."
+  },
+  {
+   "title": "Defence spending: who is doing what? (July 2026)",
+   "publisher": "ICDS",
+   "date": "2026-07-09",
+   "tags": [
+    "NATO",
+    "Data"
+   ],
+   "summary": "Country-by-country analysis of NATO's 2026 figures and the path to the Hague 3.5% + 1.5% target.",
+   "url": "https://icds.ee/en/defence-spending-who-is-doing-what-july-2026/",
+   "tldr": "Spending is rising everywhere, fastest on the eastern flank and in the Nordics."
+  },
+  {
+   "title": "Russia's hybrid warfare campaign in Europe",
+   "publisher": "House of Commons Library",
+   "date": "2026",
+   "tags": [
+    "Europe",
+    "Threats"
+   ],
+   "summary": "Briefing on sabotage, cyberattacks, disinformation and drone incursions across Europe.",
+   "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-12272/",
+   "tldr": "Sabotage and drone incursions are the new normal, creating demand for protection of critical infrastructure."
+  },
+  {
+   "title": "Ukraine Support Tracker",
+   "publisher": "Kiel Institute",
+   "date": "Ongoing",
+   "tags": [
+    "Ukraine",
+    "Data"
+   ],
+   "summary": "Tracks military, financial and humanitarian aid to Ukraine by country.",
+   "url": "https://www.ifw-kiel.de/topics/war-against-ukraine/ukraine-support-tracker/",
+   "tldr": "Shows who funds Ukraine and how much, so you can see where the money is."
+  }
+ ],
+ "calendar": [
+  {
+   "id": "eudis-hackathon-no",
+   "title": "EUDIS Defence Hackathon Norway",
+   "start": "2026-10-15",
+   "end": "2026-10-17",
+   "approx": false,
+   "city": "Kjeller",
+   "country": "Norway",
+   "kind": "Hackathon",
+   "org": "Kjeller Innovasjon and Startuplab (EU Defence Innovation Scheme)",
+   "tldr": "EU-funded hackathon for defence builders and startups in Norway.",
+   "url": "https://thedefender.media/en/events/eudis-defence-hackathon-spring-2026-norway/"
+  },
+  {
+   "id": "oslo-defsec-2026",
+   "title": "Oslo DefSec Industry Forum",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "approx": false,
+   "city": "Oslo",
+   "country": "Norway",
+   "kind": "Conference",
+   "org": "TheFactory",
+   "tldr": "Norway's defence-innovation debate in one morning. Our notes are below.",
+   "url": "#event-oslo-defsec"
+  },
+  {
+   "id": "open-arms-fest-oslo",
+   "title": "Open Arms Fest 2026",
+   "start": "2026-10-29",
+   "end": "2026-10-31",
+   "approx": false,
+   "city": "Oslo",
+   "country": "Norway",
+   "kind": "Expo",
+   "org": "Ukrainian defence-tech platform (touring Oslo, Stockholm, Helsinki, Tallinn)",
+   "tldr": "Ukrainian defence-tech companies met Norwegian government and business in Oslo.",
+   "url": "https://www.nucc.no/events/open-arms-fest-2026---ukrainian-defence-technology-and-culture"
+  },
+  {
+   "id": "nordic-defense-summit-2026",
+   "title": "Nordic Defense Summit 2026",
+   "start": "2026-11-04",
+   "end": "2026-11-05",
+   "approx": false,
+   "city": "Oslo and Horten",
+   "country": "Norway",
+   "kind": "Conference + live demo",
+   "org": "Nordic Defense Summit",
+   "tldr": "Matchmaking and a live field demo with Nordic startups and Ukraine's Iron Cluster. Jan Dyre in our network runs it.",
+   "url": "https://nordicdefensesummit.no/"
+  },
+  {
+   "id": "nordefco-oslo",
+   "title": "Nordic defence ministers' meeting",
+   "start": "2026-11-11",
+   "end": "2026-11-12",
+   "approx": false,
+   "city": "Oslo",
+   "country": "Norway",
+   "kind": "Ministerial",
+   "org": "Ministry of Defence (NORDEFCO chair)",
+   "tldr": "Closed meeting; watch the 12 November press briefing for Nordic joint buying and total defence news.",
+   "url": "https://www.regjeringen.no/en/whats-new/nordic-defence-ministers-meeting-in-oslo-1112-november/id3191962/"
+  },
+  {
+   "id": "rebuild-ukraine-2026",
+   "title": "ReBuild Ukraine 2026 with Team Norway",
+   "start": "2026-11-11",
+   "end": "2026-11-13",
+   "approx": false,
+   "city": "Warsaw",
+   "country": "Poland",
+   "kind": "Expo",
+   "org": "NUCC (Norwegian-Ukrainian Chamber of Commerce)",
+   "tldr": "Norwegian pavilion and a side event on financing Norwegian–Ukrainian business (11 Nov, 18:00). NUCC is in our network.",
+   "url": "https://nucc.no/events/rebuild-ukraine-2026"
+  },
+  {
+   "id": "slush-2026",
+   "title": "Slush 2026",
+   "start": "2026-11-18",
+   "end": "2026-11-19",
+   "approx": false,
+   "city": "Helsinki",
+   "country": "Finland",
+   "kind": "Startup conference",
+   "org": "Slush",
+   "tldr": "Europe's biggest startup event, with growing dual-use and defence tracks. Day 0 events on 17 November.",
+   "url": "https://slush.org/"
+  },
+  {
+   "id": "neds-2026",
+   "title": "NEDS 2026 (NIDV Exhibition Defence & Security)",
+   "start": "2026-11-18",
+   "end": "2026-11-19",
+   "approx": false,
+   "city": "Rotterdam",
+   "country": "Netherlands",
+   "kind": "Trade fair",
+   "org": "NIDV",
+   "tldr": "Matchmaking day on 18 Nov (separate sign-up), expo on 19 Nov. A door into the Dutch MoD and MINDbase.",
+   "url": "https://www.hollandhightech.nl/en/news-calendar/calendar/neds-2026"
+  },
+  {
+   "id": "dronedefense-hackathon-26",
+   "title": "DroneDefenseHackathon26 Nordic",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
+   "approx": false,
+   "city": "Stockholm",
+   "country": "Sweden",
+   "kind": "Hackathon",
+   "org": "KTH",
+   "tldr": "Counter-drone hackathon open to startups. Good for finding C-UAS talent and partners.",
+   "url": "https://nordicdefencesector.com/events/kth-center-dronedefensehackathon26-nordic"
+  },
+  {
+   "id": "arctic-lion-2026",
+   "title": "Arctic Lion Defence Summit",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "approx": false,
+   "city": "Tampere",
+   "country": "Finland",
+   "kind": "Conference",
+   "org": "Arctic Lion",
+   "tldr": "How to commercialise cold-weather innovation for defence. Directly relevant to Arctic use cases.",
+   "url": "https://nordicdefencesector.com/events/arctic-lion-defence-summit"
+  },
+  {
+   "id": "secd-day-2027",
+   "title": "SecD-Day Conference & Exhibition",
+   "start": "2027-02-02",
+   "end": "2027-02-03",
+   "approx": false,
+   "city": "Helsinki",
+   "country": "Finland",
+   "kind": "Conference + expo",
+   "org": "SecD-Day",
+   "tldr": "Finland's defence and security tech show. The Finnish MoD is easier to approach than most.",
+   "url": "https://nordicdefencesector.com/events/secd-day-conference-exhibition"
+  },
+  {
+   "id": "osc-2027",
+   "title": "Oslo Security Conference 2027",
+   "start": "2027-02-01",
+   "end": "2027-02-14",
+   "approx": true,
+   "city": "Oslo",
+   "country": "Norway",
+   "kind": "Conference",
+   "org": "Norwegian Atlantic Committee (formerly Leangkollen)",
+   "tldr": "Norway's main security-policy conference, usually in the first half of February. Dates not yet announced.",
+   "url": "https://atlanterhavskomiteen.no/en/leangkollen-security-conference"
+  },
+  {
+   "id": "msc-2027",
+   "title": "Munich Security Conference",
+   "start": "2027-02-12",
+   "end": "2027-02-14",
+   "approx": false,
+   "city": "Munich",
+   "country": "Germany",
+   "kind": "Conference",
+   "org": "Munich Security Conference",
+   "tldr": "Where Europe's defence agenda for the year gets set. Side events matter more than the main stage for startups.",
+   "url": "https://securityconference.org/en/news/full/date-munich-security-conference-2027/"
+  },
+  {
+   "id": "ai-defence-summit-2027",
+   "title": "AI in Defence Summit",
+   "start": "2027-03-01",
+   "end": "2027-03-01",
+   "approx": false,
+   "city": "Brussels",
+   "country": "Belgium",
+   "kind": "Conference",
+   "org": "AI in Defence Summit",
+   "tldr": "One day on defence AI with founders, investors and EU officials.",
+   "url": "https://aidefencesummit.eu/"
+  },
+  {
+   "id": "enforce-tac-2027",
+   "title": "Enforce Tac 2027",
+   "start": "2027-03-01",
+   "end": "2027-03-03",
+   "approx": false,
+   "city": "Nuremberg",
+   "country": "Germany",
+   "kind": "Trade fair",
+   "org": "NürnbergMesse",
+   "tldr": "Germany's fair for internal and external security. Fast-growing defence and drone halls.",
+   "url": "https://www.enforcetac.com/en"
+  },
+  {
+   "id": "dsei-germany-2027",
+   "title": "DSEI Germany",
+   "start": "2027-03-09",
+   "end": "2027-03-12",
+   "approx": false,
+   "city": "Hanover",
+   "country": "Germany",
+   "kind": "Trade fair",
+   "org": "DSEI",
+   "tldr": "New German edition of DSEI. A route into the Bundeswehr supply chain.",
+   "url": "https://www.dsei-germany.com/"
+  },
+  {
+   "id": "defence-expo-sweden-2027",
+   "title": "Defence Expo Sweden",
+   "start": "2027-04-13",
+   "end": "2027-04-13",
+   "approx": false,
+   "city": "Stockholm",
+   "country": "Sweden",
+   "kind": "Trade fair",
+   "org": "Defence Expo Sweden",
+   "tldr": "Swedish defence trade fair. Meet FMV suppliers and Saab's supply chain.",
+   "url": "https://nordicdefencesector.com/events/defence-expo-sweden-2"
+  },
+  {
+   "id": "cuas-europe-2027",
+   "title": "Counter UAS Technology Europe",
+   "start": "2027-04-13",
+   "end": "2027-04-15",
+   "approx": false,
+   "city": "London",
+   "country": "United Kingdom",
+   "kind": "Conference",
+   "org": "Defence iQ",
+   "tldr": "Europe's main counter-drone conference; the 2026 edition sold out.",
+   "url": "https://www.unmannedsystemstechnology.com/events/counter-uas-technology-europe/"
+  },
+  {
+   "id": "hsbo-2027",
+   "title": "HSBO 2027",
+   "start": "2027-05-25",
+   "end": "2027-05-27",
+   "approx": false,
+   "city": "Gothenburg",
+   "country": "Sweden",
+   "kind": "Conference",
+   "org": "HSBO Forum",
+   "tldr": "Naval and amphibious defence, with counter-drone and unmanned vessels on the agenda.",
+   "url": "https://nordicdefencesector.com/events/hsbo-2027"
+  },
+  {
+   "id": "arctic15-defence-2027",
+   "title": "ARCTIC15 Defence Tech Summit",
+   "start": "2027-06-16",
+   "end": "2027-06-17",
+   "approx": false,
+   "city": "Helsinki",
+   "country": "Finland",
+   "kind": "Startup conference",
+   "org": "ARCTIC15",
+   "tldr": "Built for defence startups, investors and primes. Cheap ticket, high founder density.",
+   "url": "https://arctic15.com/arctic15-startup-conference-2027/defence-tech-summit/"
+  },
+  {
+   "id": "dsei-2027",
+   "title": "DSEI 2027",
+   "start": "2027-09-07",
+   "end": "2027-09-10",
+   "approx": false,
+   "city": "London",
+   "country": "United Kingdom",
+   "kind": "Trade fair",
+   "org": "DSEI",
+   "tldr": "One of the world's largest defence fairs. Book stands and meetings months ahead.",
+   "url": "https://www.unmannedsystemstechnology.com/events/dsei/"
+  }
+ ]
+}

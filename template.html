@@ -1,0 +1,668 @@
+<title>Mad Lab Defence Wiki</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: briefing-book. A dark command band on top, then stacked sections on a cool paper ground, one map+dossier split in the middle. Steel blue for NATO, signal amber for alerts. */
+:root{
+  --bg:#eef1f2; --surface:#ffffff; --ink:#13202a; --muted:#56646f; --line:#d4dadf;
+  --accent:#1d4f91; --accent-soft:#dde7f3; --signal:#b4520c; --signal-soft:#f8e7d9; --war:#a3271f; --war-soft:#f6dedb;
+  --band:#0f1c26; --band-ink:#e6edf2; --band-muted:#9fb0bd; --band-line:#253543;
+  --seq1:#dbe6f2; --seq2:#b5cce6; --seq3:#86aad6; --seq4:#5786c2; --seq5:#2f62a6; --seq6:#173f78;
+  --land:#dfe3e6; --sea:#f6f8f9; --partner:#e3b62b; --adversary:#b9b2ab; --stroke:#ffffff;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif; --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d151b; --surface:#14202a; --ink:#e2e9ee; --muted:#93a3af; --line:#25333e;
+  --accent:#7fb0ea; --accent-soft:#1a2d44; --signal:#f0a35e; --signal-soft:#3a2818; --war:#f08077; --war-soft:#3b1d1b;
+  --band:#081016; --band-ink:#e6edf2; --band-muted:#8fa0ad; --band-line:#1d2a35;
+  --seq1:#1e3047; --seq2:#24426a; --seq3:#2c5a92; --seq4:#3d76b8; --seq5:#6797d3; --seq6:#a6c6ee;
+  --land:#24313b; --sea:#111b22; --partner:#d4a71f; --adversary:#4a4642; --stroke:#0d151b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d151b; --surface:#14202a; --ink:#e2e9ee; --muted:#93a3af; --line:#25333e;
+  --accent:#7fb0ea; --accent-soft:#1a2d44; --signal:#f0a35e; --signal-soft:#3a2818; --war:#f08077; --war-soft:#3b1d1b;
+  --band:#081016; --band-ink:#e6edf2; --band-muted:#8fa0ad; --band-line:#1d2a35;
+  --seq1:#1e3047; --seq2:#24426a; --seq3:#2c5a92; --seq4:#3d76b8; --seq5:#6797d3; --seq6:#a6c6ee;
+  --land:#24313b; --sea:#111b22; --partner:#d4a71f; --adversary:#4a4642; --stroke:#0d151b; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--band)}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+h2{font-size:clamp(26px,3.4vw,34px);font-weight:750;font-stretch:85%;letter-spacing:-.005em}
+h3{font-size:19px;font-weight:700;font-stretch:90%}
+.eyebrow{font:600 11.5px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+button{font:600 14px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:6px 12px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* Command band */
+.band{background:var(--band);color:var(--band-ink)}
+.band .wrap{padding-block:36px 0;display:grid;gap:18px}
+.band .eyebrow{color:var(--signal)}
+.band h1{font-size:clamp(38px,6.4vw,68px);font-weight:800;font-stretch:78%;text-transform:uppercase;letter-spacing:.01em}
+.band h1 span{color:var(--band-muted);font-weight:600}
+.band p{margin:0;color:var(--band-muted);max-width:68ch}
+.stamp{display:flex;flex-wrap:wrap;gap:8px 18px;font:13px var(--mono);color:var(--band-muted)}
+.stamp b{color:var(--band-ink);font-weight:600}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3fb27f;margin-right:6px;vertical-align:1px}
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--band);border-top:1px solid var(--band-line);margin-top:22px}
+nav.toc .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+nav.toc a{flex:none;color:var(--band-muted);text-decoration:none;font:600 13px var(--body);padding:12px 12px;border-bottom:2px solid transparent}
+nav.toc a:hover{color:var(--band-ink);border-bottom-color:var(--signal)}
+
+main section{padding-block:48px 8px;scroll-margin-top:60px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:10px 24px;margin-bottom:22px}
+.sec-head > div{display:grid;gap:6px;min-width:0}
+.sec-head p{margin:0;color:var(--muted);max-width:70ch}
+
+/* Situation */
+.sit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.sit article{background:var(--surface);padding:20px 22px;display:grid;gap:10px;align-content:start;min-width:0}
+.sit header{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.sit h3{font-size:22px}
+.sit p{margin:0;max-width:66ch}
+.pill{font:600 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border-radius:2px;white-space:nowrap}
+.pill.elevated{background:var(--signal-soft);color:var(--signal)}
+.pill.war{background:var(--war-soft);color:var(--war)}
+.pill.calm{background:var(--accent-soft);color:var(--accent)}
+.srcs{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px}
+.srcs span{color:var(--muted)}
+
+/* NATO map */
+.nato{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:0;border:1px solid var(--line);background:var(--surface)}
+.mapbox{position:relative;border-right:1px solid var(--line);background:var(--sea);min-width:0}
+.mapbox svg{display:block;width:100%;height:auto;aspect-ratio:4/3.1}
+.maptools{position:absolute;left:12px;top:12px;display:flex;gap:6px;flex-wrap:wrap}
+.maptools button{font-size:12.5px;padding:5px 10px}
+.country{stroke:var(--stroke);stroke-width:.6;cursor:default}
+.country.member,.country.ctx{cursor:pointer}
+.country.member:hover,.country.ctx:hover{filter:brightness(1.12)}
+.country.sel{stroke:var(--signal);stroke-width:2}
+.mini{cursor:pointer;stroke:var(--stroke);stroke-width:1.2}
+.mini.sel{stroke:var(--signal);stroke-width:2.2}
+.legend{position:absolute;left:12px;bottom:12px;background:var(--surface);border:1px solid var(--line);padding:8px 10px;font:11.5px var(--mono);display:grid;gap:6px;max-width:calc(100% - 24px)}
+.legend .ramp{display:flex;gap:0}
+.legend .ramp i{display:block;width:30px;height:9px}
+.legend .ticks{display:flex;font-size:10.5px;color:var(--muted)}
+.legend .ticks span{width:30px;text-align:left}
+.legend .keys{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--muted)}
+.legend .keys i{display:inline-block;width:10px;height:10px;margin-right:5px;vertical-align:-1px}
+.dossier{padding:22px;display:grid;gap:16px;align-content:start;min-width:0}
+.dossier select{font:15px var(--body);padding:7px 8px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);width:100%}
+.dossier h3{font-size:30px;font-weight:800;font-stretch:80%}
+.joined{font-size:14.5px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.stats div{background:var(--surface);padding:10px 12px;display:grid;gap:2px;min-width:0}
+.stats b{font:600 20px/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.stats small{font-size:11.5px;color:var(--muted)}
+.gdpbar{display:grid;gap:4px}
+.gdpbar .track{position:relative;height:10px;background:var(--seq1);border-radius:1px}
+.gdpbar .fill{position:absolute;inset:0 auto 0 0;background:var(--accent)}
+.gdpbar .mark{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink)}
+.gdpbar .scale{position:relative;height:14px;font:10.5px var(--mono);color:var(--muted)}
+.gdpbar .scale span{position:absolute;transform:translateX(-50%)}
+.dossier ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:15px}
+.kv{font-size:14px;display:grid;gap:2px}
+.kv span{color:var(--muted);font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.foot{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+
+/* News */
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.news{display:grid;gap:28px}
+.ngroup{display:grid;grid-template-columns:200px minmax(0,1fr);gap:16px;border-top:2px solid var(--ink);padding-top:14px}
+.ngroup > header{display:grid;gap:4px;align-content:start}
+.ngroup > header b{font:800 24px/1 var(--display);font-stretch:80%;text-transform:uppercase}
+.prio{font:600 11px var(--mono);letter-spacing:.1em;color:var(--signal)}
+.nlist{display:grid;gap:0}
+.nitem{display:grid;grid-template-columns:86px minmax(0,1fr);gap:4px 14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.nitem:first-child{padding-top:0}
+.nitem time{font:12.5px/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.nitem h4{margin:0;font:700 16.5px/1.35 var(--body)}
+.nitem h4 a{color:var(--ink);text-decoration:none}
+.nitem h4 a:hover{color:var(--accent);text-decoration:underline}
+.nitem p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:75ch}
+.nitem .meta{font-size:12.5px;color:var(--muted);font-family:var(--mono);margin-top:4px}
+.tag{font:600 10.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-right:8px}
+
+/* Readings */
+.reads{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.read{background:var(--surface);border:1px solid var(--line);padding:18px;display:grid;gap:10px;align-content:start;min-width:0}
+.read.feature{grid-column:1/-1;border-color:var(--ink);grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:10px 28px}
+.read.feature h3{font-size:28px;font-stretch:80%}
+.read .by{font-size:13px;color:var(--muted)}
+.read p{margin:0;font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font:600 10.5px var(--mono);letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--line);padding:2px 6px;color:var(--muted)}
+.tags span.hot{border-color:var(--signal);color:var(--signal)}
+.read .go{font-weight:600;font-size:14px}
+.bl{margin:0;padding:8px 10px;background:var(--signal-soft);border-left:3px solid var(--signal);font-size:14.5px;font-weight:600;line-height:1.45;color:var(--ink)}
+.bl b{display:block;font:600 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--signal);margin-bottom:2px}
+.pt .bline{display:block;font-weight:600;font-size:13.5px;color:var(--signal);margin-top:4px}
+
+/* Press */
+.press{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;align-items:start}
+.plist{border-top:1px solid var(--line)}
+.prow{display:grid;grid-template-columns:84px 92px minmax(0,1fr) 20px;gap:12px;align-items:baseline;padding:13px 6px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.prow:hover{background:var(--surface)}
+.prow:hover .pt{color:var(--accent)}
+.org{font:700 11px var(--mono);letter-spacing:.06em;padding:3px 6px;border-radius:2px;text-align:center;background:var(--accent-soft);color:var(--accent)}
+.org.FMA{background:var(--signal-soft);color:var(--signal)}
+.org.Forsvaret{background:var(--land);color:var(--ink)}
+.pt{font-weight:700;font-size:15.5px;line-height:1.35}
+.pt small{display:block;font-weight:400;color:var(--muted);font-size:13px;margin-top:2px}
+.arrow{color:var(--muted)}
+.toolkit{background:var(--surface);border:1px solid var(--line);padding:16px;display:grid;gap:8px;font-size:14.5px}
+.toolkit ul{margin:0;padding-left:18px;display:grid;gap:6px}
+
+/* Events */
+.events{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.ev{background:var(--surface);border:1px solid var(--line);padding:18px;display:grid;gap:10px;align-content:start;color:var(--ink);text-decoration:none;min-width:0}
+.ev:hover{border-color:var(--accent)}
+.ev .kind{display:flex;justify-content:space-between;gap:8px}
+.ev p{margin:0;font-size:15px}
+.ev .more{font-weight:600;font-size:14px;color:var(--accent)}
+.subh{font:800 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin:26px 0 10px;color:var(--muted)}
+.subh:first-of-type{margin-top:0}
+.cal{border-top:2px solid var(--ink)}
+.cal .month{font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--signal);padding:14px 0 4px}
+.crow{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:4px 18px;align-items:start;padding:12px 0;border-bottom:1px solid var(--line)}
+.cdate{font:700 15px/1.25 var(--mono);font-variant-numeric:tabular-nums}
+.cdate small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.cbody{display:grid;gap:4px;min-width:0}
+.cbody b{font-size:16.5px;line-height:1.3}
+.cmeta{font-size:13px;color:var(--muted)}
+.cmeta .no{font:700 10.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--war-soft);color:var(--war);padding:1px 6px;border-radius:2px;margin-right:6px}
+.ctl{font-size:14.5px;font-weight:600;margin:0}
+.ctl::before{content:"Bottom line: ";color:var(--signal)}
+.crow a.cgo{font-size:14px;font-weight:600;white-space:nowrap}
+.cal.past .crow{opacity:.8}
+@media (max-width:640px){.crow{grid-template-columns:1fr}.crow a.cgo{justify-self:start}}
+
+/* Network */
+.pitch{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:22px}
+.pitch > div{background:var(--surface);padding:18px 20px;display:grid;gap:10px;align-content:start;min-width:0}
+.pitch dl{margin:0;display:grid;gap:10px}
+.pitch dt{font:700 15px var(--body)}
+.pitch dd{margin:0;font-size:15px}
+.cats{display:flex;flex-wrap:wrap;gap:6px}
+.cats button{font-size:12.5px;padding:4px 9px}
+.netbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.netbar input{font:15px var(--body);padding:7px 10px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);flex:1 1 220px;min-width:0}
+.owners{display:grid;gap:22px}
+.owner > header{display:flex;gap:10px;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:4px}
+.owner > header b{font:800 20px var(--display);font-stretch:85%}
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 22px}
+.person{padding:10px 0;border-bottom:1px solid var(--line);display:grid;gap:2px;min-width:0}
+.person b{font-size:15.5px}
+.person .org2{font-size:14px}
+.person .note{font-size:13.5px;color:var(--muted)}
+.person .contact{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:13px var(--mono);margin-top:3px}
+.person .contact button{font:600 11px var(--mono);padding:2px 6px}
+.person .cat{font:600 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.person .acts{display:flex;gap:6px;margin-top:4px}
+.person .acts button{font:600 11.5px var(--body);padding:2px 8px}
+.person .acts button.danger{color:var(--war);border-color:var(--war)}
+button.primary{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+button.primary:hover{filter:brightness(1.08)}
+.netstatus{margin:-6px 0 14px;font-size:13.5px;color:var(--muted);min-height:1em}
+.netstatus:empty{display:none}
+.cform{background:var(--surface);border:1px solid var(--accent);padding:18px;margin-bottom:22px;display:grid;gap:14px}
+.cform .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.cform label{display:grid;gap:4px;font-size:13px;font-weight:600;color:var(--muted);min-width:0}
+.cform label.wide{grid-column:1/-1}
+.cform input,.cform select,.cform textarea{font:15px var(--body);font-weight:400;padding:7px 9px;border:1px solid var(--line);border-radius:3px;background:var(--bg);color:var(--ink);width:100%;min-width:0}
+.cform textarea{resize:vertical}
+.factions{display:flex;gap:8px;flex-wrap:wrap}
+.ferr{margin:0;color:var(--war);font-size:14px}
+.ferr:empty{display:none}
+.empty{font-size:14px;color:var(--muted);padding:10px 0}
+
+/* Detail views */
+.detail{padding-block:32px 64px}
+.back{display:inline-flex;gap:6px;align-items:center;margin-bottom:22px}
+.detail article{background:var(--surface);border:1px solid var(--line);padding:clamp(18px,4vw,36px);display:grid;gap:18px;max-width:860px}
+.detail h2{font-size:clamp(28px,4.4vw,40px)}
+.detail .lead{font-size:18px;margin:0;max-width:68ch}
+.detail .box{background:var(--accent-soft);padding:14px 16px;border-left:3px solid var(--accent)}
+.detail .box b{display:block;font:600 11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;color:var(--accent)}
+.detail .box p{margin:0}
+.detail h3{font-size:18px;margin-top:6px}
+.detail ul{margin:6px 0 0;padding-left:20px;display:grid;gap:6px;max-width:72ch}
+.detail .facts{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px;color:var(--muted)}
+.detail .facts b{color:var(--ink);font-weight:600}
+
+footer.page{padding-block:48px;color:var(--muted);font-size:13.5px}
+footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-top:18px}
+
+@media (max-width:900px){
+  .nato{grid-template-columns:1fr}
+  .mapbox{border-right:0;border-bottom:1px solid var(--line)}
+  .press{grid-template-columns:1fr}
+  .read.feature{grid-template-columns:1fr}
+  .pitch{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .sit{grid-template-columns:1fr}
+  .ngroup{grid-template-columns:1fr}
+  .nitem{grid-template-columns:1fr;gap:2px}
+  .prow{grid-template-columns:auto minmax(0,1fr);gap:4px 10px}
+  .prow .pt{grid-column:1/-1}
+  .prow .arrow{display:none}
+  .legend .keys{display:none}
+  .stats b{font-size:17px}
+}
+</style>
+
+<div id="home">
+<header class="band">
+  <div class="wrap">
+    <div class="eyebrow">AI Mad Lab · Onboarding for defence startups</div>
+    <h1>Mad Lab Defence <span>Wiki</span></h1>
+    <p>The situation, the market, the reading list and the people. Everything a new founder in the defence track needs in their first week.</p>
+    <div class="stamp"><span><i class="dot"></i>Last updated <b id="updated">–</b></span><span>Refreshes every morning at 08:00</span></div>
+  </div>
+  <nav class="toc" aria-label="Sections">
+    <div class="wrap">
+      <a href="#situation" data-scroll>Situation</a>
+      <a href="#nato" data-scroll>NATO map</a>
+      <a href="#news" data-scroll>News</a>
+      <a href="#press" data-scroll>Press releases</a>
+      <a href="#events" data-scroll>Events &amp; meetings</a>
+      <a href="#readings" data-scroll>Readings</a>
+      <a href="#network" data-scroll>Network</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section id="situation">
+    <div class="sec-head"><div><div class="eyebrow">Situation report</div><h2>Where things stand</h2></div><p>War, threats and security in four sentences each, from Oslo outward.</p></div>
+    <div class="sit" id="sit"></div>
+  </section>
+
+  <section id="nato">
+    <div class="sec-head"><div><div class="eyebrow">32 allies</div><h2>NATO at a glance</h2></div><p>Click a country to see when it joined, how big its defence is and what matters for a founder. Colour shows 2026 defence spending as a share of GDP.</p></div>
+    <div class="nato">
+      <div class="mapbox">
+        <svg id="map" viewBox="0 0 800 620" role="img" aria-label="Map of NATO member countries coloured by defence spending as a share of GDP"></svg>
+        <div class="maptools">
+          <button type="button" id="v-eu" aria-pressed="true">Europe</button>
+          <button type="button" id="v-atl" aria-pressed="false">North Atlantic</button>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="dossier" id="dossier"></div>
+    </div>
+    <p class="foot" id="natosrc"></p>
+  </section>
+
+  <section id="news">
+    <div class="sec-head"><div><div class="eyebrow">Defence sector news</div><h2>What happened this week</h2></div>
+      <div class="filters" role="group" aria-label="Filter news by region">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="1" aria-pressed="false">Norway</button>
+        <button type="button" data-f="2" aria-pressed="false">Nordics</button>
+        <button type="button" data-f="3" aria-pressed="false">Ukraine</button>
+        <button type="button" data-f="4" aria-pressed="false">Europe</button>
+      </div>
+    </div>
+    <div class="news" id="newslist"></div>
+  </section>
+
+  <section id="press">
+    <div class="sec-head"><div><div class="eyebrow">FD · Forsvaret · FMA</div><h2>Press releases for startups</h2></div><p>Official releases that touch procurement, industry, Ukraine and the users you sell to. Open one for the startup angle.</p></div>
+    <div class="press">
+      <div class="plist" id="plist"></div>
+      <aside class="toolkit"><b>Procurement toolkit</b><ul id="toolkit"></ul></aside>
+    </div>
+  </section>
+  <section id="events">
+    <div class="sec-head"><div><div class="eyebrow">Calendar and notes</div><h2>Events &amp; meetings</h2></div><p>Defence events worth your time in Norway, the Nordics and Europe, plus takeaways from meetings the team attended.</p></div>
+    <h3 class="subh">Coming up</h3>
+    <div class="cal" id="cal"></div>
+    <h3 class="subh">Recently</h3>
+    <div class="cal" id="calpast"></div>
+    <h3 class="subh">Notes from the field</h3>
+    <div class="events" id="evlist"></div>
+  </section>
+  <section id="readings">
+    <div class="sec-head"><div><div class="eyebrow">Reading list</div><h2>Useful readings</h2></div><p>Reports worth your time, with a short summary of why.</p></div>
+    <div class="reads" id="reads"></div>
+  </section>
+
+  <section id="network">
+    <div class="sec-head"><div><div class="eyebrow">Who we know</div><h2>Network</h2></div><p>People the team can introduce you to, grouped by who holds the relationship. Ask that person for the intro. Team members can add and edit contacts here.</p></div>
+    <div class="pitch" id="pitch"></div>
+    <div class="netbar">
+      <input id="q" type="search" placeholder="Search name, company or topic" aria-label="Search the network">
+      <button type="button" id="addc" class="primary" hidden>+ Add contact</button>
+      <div class="cats" id="cats" role="group" aria-label="Filter by category"></div>
+    </div>
+    <p class="netstatus" id="netstatus" role="status"></p>
+    <form id="cform" class="cform" hidden>
+      <h3 id="cform-title">Add a contact</h3>
+      <div class="grid">
+        <label>Name *<input id="f-name" required maxlength="120" autocomplete="off"></label>
+        <label>Company or organisation<input id="f-org" maxlength="120" autocomplete="off"></label>
+        <label>Role<input id="f-role" maxlength="120" autocomplete="off"></label>
+        <label>Category<select id="f-cat"></select></label>
+        <label>Relationship held by *<input id="f-owner" required maxlength="60" list="owner-list" autocomplete="off"><datalist id="owner-list"></datalist></label>
+        <label>Phone<input id="f-phone" type="tel" maxlength="40" autocomplete="off"></label>
+        <label>Email<input id="f-email" type="email" maxlength="120" autocomplete="off"></label>
+        <label>LinkedIn or website<input id="f-link" type="url" maxlength="300" placeholder="https://" autocomplete="off"></label>
+        <label class="wide">Why they matter<textarea id="f-note" rows="2" maxlength="500"></textarea></label>
+      </div>
+      <p class="ferr" id="ferr" role="alert"></p>
+      <div class="factions"><button type="submit" class="primary" id="fsave">Save contact</button><button type="button" id="fcancel">Cancel</button></div>
+    </form>
+    <div class="owners" id="owners"></div>
+  </section>
+</main>
+</div>
+
+<div id="detail" class="wrap detail" hidden></div>
+
+<footer class="page"><div class="wrap">
+  <span>Internal onboarding page for AI Mad Lab defence startups. Contact details are for intros only; do not share outside the programme.</span>
+  <span>News and press summaries are written by Claude from public sources and refreshed daily. Always open the source before acting on it.</span>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate = (iso, opts) => { if(!iso) return "Recent"; const d = new Date(iso.length===10 ? iso+"T12:00:00" : iso); if (isNaN(d)) return esc(iso); return d.toLocaleDateString("en-GB", opts || {day:"numeric", month:"short", year:"numeric", timeZone:"Europe/Oslo"}); };
+const short = iso => fmtDate(iso, {day:"numeric", month:"short", timeZone:"Europe/Oslo"});
+const L = DATA.live, N = DATA.nato, S = DATA.static;
+
+/* Timestamp */
+(() => { const d = new Date(L.updatedAt);
+  $("#updated").textContent = d.toLocaleString("en-GB",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Oslo"}) + " (Oslo)"; })();
+
+/* Situation */
+const levelLabel = {elevated:"Elevated", war:"Active war", calm:"Stable"};
+$("#sit").innerHTML = L.situation.map(s => `
+  <article><header><h3>${esc(s.region)}</h3><span class="pill ${esc(s.level)}">${esc(levelLabel[s.level]||s.level)}</span></header>
+  <p>${esc(s.text)}</p>
+  <div class="srcs"><span>Sources:</span>${s.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join("")}</div></article>`).join("");
+
+/* News */
+const groups = [[1,"Norway","Priority 1"],[2,"The Nordics","Priority 2"],[3,"Ukraine","Priority 3"],[4,"Europe","Priority 4"]];
+function renderNews(f){
+  $("#newslist").innerHTML = groups.filter(g => f==="all" || String(g[0])===f).map(([p,name,lab]) => {
+    const items = L.news.filter(n => n.pri===p).sort((a,b)=> (b.date||"").localeCompare(a.date||""));
+    return `<div class="ngroup"><header><span class="prio">${lab}</span><b>${name}</b><span class="muted" style="font-size:13px">${items.length} items</span></header>
+      <div class="nlist">${items.map(n => `<div class="nitem"><time datetime="${esc(n.date)}">${n.approx?"~":""}${short(n.date)}</time><div>
+        <h4><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h4>
+        <p>${esc(n.summary)}</p><div class="meta">${n.region && n.region!==name && !(p===2&&n.region==="Nordics") ? `<span class="tag">${esc(n.region)}</span>`:""}${esc(n.source)}</div></div></div>`).join("") || `<div class="empty">Nothing new today.</div>`}</div></div>`;
+  }).join("");
+}
+document.querySelectorAll("[data-f]").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll("[data-f]").forEach(x => x.setAttribute("aria-pressed", x===b)); renderNews(b.dataset.f); }));
+renderNews("all");
+
+/* Readings */
+$("#reads").innerHTML = L.readings.map((r,i) => `
+  <article class="read${i===0?" feature":""}"><div style="display:grid;gap:8px;align-content:start">
+    <div class="tags">${r.tags.map(t=>`<span class="${t==="Must read"?"hot":""}">${esc(t)}</span>`).join("")}</div>
+    <h3>${esc(r.title)}</h3><div class="by">${esc(r.publisher)} · ${/^\d{4}-\d\d/.test(r.date)?fmtDate(r.date):esc(r.date)}</div></div>
+    <div style="display:grid;gap:10px;align-content:start">${r.tldr?`<p class="bl"><b>Bottom line</b>${esc(r.tldr)}</p>`:""}<p>${esc(r.summary)}</p>
+    ${r.url ? `<a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open the report ↗</a>` : `<span class="by">File: ${esc(r.file||"")}</span>`}</div></article>`).join("");
+
+/* Press */
+$("#plist").innerHTML = L.press.slice().sort((a,b)=>(b.date||"0").localeCompare(a.date||"0")).map(p => `
+  <a class="prow" href="#press-${esc(p.id)}"><span class="org ${esc(p.org)}">${esc(p.org)}</span><span class="mono muted" style="font-size:12.5px">${p.date?short(p.date):"Recent"}</span>
+  <span class="pt">${esc(p.title)}<small>${esc(p.titleNo)}</small>${p.tldr?`<span class="bline">Bottom line: ${esc(p.tldr)}</span>`:""}</span><span class="arrow" aria-hidden="true">→</span></a>`).join("");
+$("#toolkit").innerHTML = L.toolkit.map(t => `<li><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.label)}</a></li>`).join("");
+
+/* Events */
+$("#evlist").innerHTML = S.events.map(e => `
+  <a class="ev" href="#event-${esc(e.id)}"><div class="kind"><span class="eyebrow">${esc(e.kind)}</span><span class="eyebrow">${/^\d{4}-\d\d-\d\d$/.test(e.date)?fmtDate(e.date):esc(e.date)}</span></div>
+  <h3>${esc(e.title)}</h3><p class="muted" style="font-size:13.5px">${esc(e.where)}</p><p class="bl"><b>Bottom line</b>${esc(e.tldr)}</p><span class="more">Read the notes →</span></a>`).join("");
+
+/* Calendar */
+(() => {
+  const cal = L.calendar || [];
+  const today = new Date().toLocaleDateString("en-CA",{timeZone:"Europe/Oslo"});
+  const d = s => new Date(s+"T12:00:00");
+  const day = s => d(s).toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+  const dateBlock = e => e.approx ? `${d(e.start).toLocaleDateString("en-GB",{month:"short",year:"numeric"})}<small>date TBC</small>`
+    : e.start===e.end ? `${day(e.start)}<small>${d(e.start).toLocaleDateString("en-GB",{weekday:"short"})}</small>`
+    : `${day(e.start)}–<br>${day(e.end)}`;
+  const row = e => { const ext = !e.url.startsWith("#");
+    return `<div class="crow"><div class="cdate">${dateBlock(e)}</div><div class="cbody"><b>${esc(e.title)}</b>
+      <span class="cmeta">${e.country==="Norway"?'<span class="no">Norway</span>':""}${esc(e.city)}${e.country!=="Norway"?", "+esc(e.country):""} · ${esc(e.kind)} · ${esc(e.org)}</span>
+      <p class="ctl">${esc(e.tldr)}</p></div><a class="cgo" href="${esc(e.url)}"${ext?' target="_blank" rel="noopener"':""}>${ext?"Event page ↗":"Our notes →"}</a></div>`; };
+  const up = cal.filter(e=>e.end>=today).sort((a,b)=>a.start.localeCompare(b.start));
+  let last = "", html = "";
+  for (const e of up) { const m = d(e.start).toLocaleDateString("en-GB",{month:"long",year:"numeric"}); if (m!==last) { html += `<div class="month">${m}</div>`; last = m; } html += row(e); }
+  $("#cal").innerHTML = html || `<div class="empty">No upcoming events listed yet.</div>`;
+  const cutoff = new Date(Date.now()-45*864e5).toLocaleDateString("en-CA",{timeZone:"Europe/Oslo"});
+  const past = cal.filter(e=>e.end<today && e.end>=cutoff).sort((a,b)=>b.end.localeCompare(a.end));
+  $("#calpast").classList.add("past");
+  $("#calpast").innerHTML = past.map(row).join("") || `<div class="empty">Nothing in the last six weeks.</div>`;
+})();
+
+/* Network */
+const P = S.networkPitch;
+$("#pitch").innerHTML = `<div><span class="eyebrow">From ${esc(P.source)}</span><h3>${esc(P.intro)}</h3><dl>${P.offers.map(o=>`<div><dt>${esc(o.title)}</dt><dd>${esc(o.text)}</dd></div>`).join("")}</dl></div>
+  <div><span class="eyebrow">Who we collect</span><ul style="margin:0;padding-left:18px;display:grid;gap:4px">${P.categories.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`;
+const TEAM = S.network.map(o=>o.owner);
+const BASE_CATS = ["Defence founders","Combat operators","Superconnectors","Manufacturers and research labs","Defence contractors","Military buyers"];
+const fallback = S.network.flatMap(o=>o.people.map(p=>({...p, owner:o.owner})));
+let people = fallback, live = false, canWrite = false, db = null, uid = null, editing = null, confirmDel = null, netCat = "all", saving = false;
+const setStatus = t => { $("#netstatus").textContent = t; };
+const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "";
+function cats(){ return [...new Set([...BASE_CATS, ...people.map(p=>p.cat).filter(Boolean)])]; }
+function renderCats(){
+  if (netCat!=="all" && !cats().includes(netCat)) netCat="all";
+  $("#cats").innerHTML = `<button type="button" data-c="all" aria-pressed="${netCat==="all"}">All</button>` + cats().map(c=>`<button type="button" data-c="${esc(c)}" aria-pressed="${netCat===c}">${esc(c)}</button>`).join("");
+  $("#f-cat").innerHTML = cats().map(c=>`<option>${esc(c)}</option>`).join("");
+  $("#owner-list").innerHTML = owners().map(o=>`<option value="${esc(o)}"></option>`).join("");
+}
+function owners(){ const extra = [...new Set(people.map(p=>p.owner).filter(o=>o && !TEAM.includes(o)))].sort(); return [...TEAM, ...extra]; }
+function personHtml(p){
+  const link = safeUrl(p.link);
+  const contact = [p.phone?`<span>${esc(p.phone)}</span><button type="button" data-copy="${esc(p.phone)}">Copy</button>`:"",
+    p.email?`<span>${esc(p.email)}</span><button type="button" data-copy="${esc(p.email)}">Copy</button>`:"",
+    link?`<a href="${esc(link)}" target="_blank" rel="noopener">${/linkedin\.com/i.test(link)?"LinkedIn":"Website"} ↗</a>`:""].join("");
+  const acts = live && canWrite && p.id ? `<span class="acts">${confirmDel===p.id
+    ? `<button type="button" class="danger" data-del="${esc(p.id)}">Yes, delete</button><button type="button" data-keep>Keep</button>`
+    : `<button type="button" data-edit="${esc(p.id)}">Edit</button><button type="button" data-ask="${esc(p.id)}">Delete</button>`}</span>` : "";
+  return `<div class="person"><span class="cat">${esc(p.cat||"Uncategorised")}</span><b>${esc(p.name)}</b>
+    <span class="org2">${esc([p.role,p.org].filter(Boolean).join(" · "))}</span>${p.note?`<span class="note">${esc(p.note)}</span>`:""}
+    ${contact?`<span class="contact">${contact}</span>`:""}${acts}</div>`;
+}
+function renderNet(){
+  const q = $("#q").value.trim().toLowerCase();
+  const html = owners().map(o => {
+    const all = people.filter(p=>p.owner===o).sort((a,b)=>String(a.name).localeCompare(String(b.name)));
+    const ppl = all.filter(p => (netCat==="all"||p.cat===netCat) && (!q || [p.name,p.org,p.role,p.note,p.cat].join(" ").toLowerCase().includes(q)));
+    if (!ppl.length && (q || netCat!=="all")) return "";
+    return `<div class="owner"><header><b>${esc(o)}</b><span class="muted" style="font-size:13px">${all.length ? all.length+(all.length===1?" contact":" contacts") : ""}</span></header>
+      ${ppl.length ? `<div class="people">${ppl.map(personHtml).join("")}</div>`
+        : `<div class="empty">${live && canWrite ? `No contacts yet. Use “+ Add contact” and put ${esc(o)} as the relationship holder.` : "No contacts listed yet."}</div>`}</div>`;
+  }).join("");
+  $("#owners").innerHTML = html || `<div class="empty">No one matches that search.</div>`;
+}
+function openForm(p){
+  editing = p ? p.id : null; renderCats();
+  $("#cform-title").textContent = p ? `Edit ${p.name}` : "Add a contact";
+  const v = p || {cat:"Defence founders"};
+  for (const k of ["name","org","role","owner","phone","email","link","note"]) $("#f-"+k).value = v[k] || "";
+  $("#f-cat").value = v.cat || "Defence founders"; $("#ferr").textContent = "";
+  $("#cform").hidden = false; $("#f-name").focus();
+}
+function closeForm(){ $("#cform").hidden = true; editing = null; }
+$("#addc").addEventListener("click", () => openForm(null));
+$("#fcancel").addEventListener("click", closeForm);
+$("#cform").addEventListener("submit", async e => {
+  e.preventDefault(); if (saving || !db) return;
+  const val = k => $("#f-"+k).value.trim();
+  const rec = {name:val("name"), org:val("org"), role:val("role"), cat:$("#f-cat").value, owner:val("owner"), phone:val("phone"), email:val("email"), link:val("link"), note:val("note")};
+  if (!rec.name || !rec.owner) { $("#ferr").textContent = "Add a name and who holds the relationship."; return; }
+  if (rec.link && !safeUrl(rec.link)) { $("#ferr").textContent = "The link must start with https://"; return; }
+  saving = true; $("#fsave").disabled = true; $("#fsave").textContent = "Saving…";
+  try {
+    rec.updatedAt = new Date().toISOString(); if (uid) rec.updatedBy = uid;
+    if (editing) { await db.collection("contacts").doc(editing).update(rec); }
+    else { rec.createdAt = rec.updatedAt; if (uid) rec.createdBy = uid; await db.collection("contacts").add(rec); }
+    closeForm(); setStatus(`Saved ${rec.name}.`); setTimeout(()=>{ if ($("#netstatus").textContent.startsWith("Saved")) setStatus(""); }, 3000);
+  } catch (err) {
+    if (err && err.code === "invalid_argument") { canWrite = false; $("#addc").hidden = true; closeForm(); renderNet();
+      setStatus("You can view the network but not edit it. Ask the page owner for Contributor access."); }
+    else if (err && err.code === "quota_exceeded") $("#ferr").textContent = "The contact list is full. Delete some old contacts first.";
+    else $("#ferr").textContent = "Could not save right now. Check your connection and try again.";
+  } finally { saving = false; $("#fsave").disabled = false; $("#fsave").textContent = "Save contact"; }
+});
+$("#owners").addEventListener("click", async e => {
+  const ed = e.target.closest("[data-edit]"), ask = e.target.closest("[data-ask]"), del = e.target.closest("[data-del]"), keep = e.target.closest("[data-keep]");
+  if (ed) { openForm(people.find(p=>p.id===ed.dataset.edit)); $("#cform").scrollIntoView({block:"nearest"}); }
+  if (ask) { confirmDel = ask.dataset.ask; renderNet(); }
+  if (keep) { confirmDel = null; renderNet(); }
+  if (del && db) { const id = del.dataset.del, name = (people.find(p=>p.id===id)||{}).name || "Contact"; confirmDel = null;
+    try { await db.collection("contacts").doc(id).delete(); setStatus(`Deleted ${name}.`); }
+    catch (err) { setStatus(err && err.code==="invalid_argument" ? "You don't have access to delete contacts." : "Could not delete right now. Try again."); renderNet(); } }
+});
+$("#q").addEventListener("input", renderNet);
+$("#cats").addEventListener("click", e => { const b = e.target.closest("[data-c]"); if(!b) return; netCat=b.dataset.c;
+  document.querySelectorAll("[data-c]").forEach(x=>x.setAttribute("aria-pressed", x===b)); renderNet(); });
+document.addEventListener("click", e => { const b = e.target.closest("[data-copy]"); if(!b) return;
+  const t = b.dataset.copy; const done = () => { b.textContent="Copied"; setTimeout(()=>b.textContent="Copy",1400); };
+  try { navigator.clipboard.writeText(t).then(done).catch(()=>selectText(b.previousElementSibling)); } catch(_) { selectText(b.previousElementSibling); } });
+function selectText(el){ if(!el) return; const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+renderCats(); renderNet();
+(async () => {
+  if (!window.claude || !window.claude.use) { setStatus("This is an offline copy. Open the wiki on claude.ai to see live contacts and add your own."); return; }
+  const [d, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+  if (!d) { setStatus("Sign in to claude.ai to see the live contact list and add your own. Showing the starting list."); return; }
+  db = d;
+  let w = null;
+  if (user) { try { uid = await user.id(); } catch(_) {} try { w = await user.can("data.write"); } catch(_) {} }
+  canWrite = w !== false;
+  setStatus("Loading contacts…");
+  const timer = setTimeout(() => setStatus(live ? "Can't reach the contact list right now. This may be out of date." : "Can't reach the contact list right now. Showing the starting list."), 10000);
+  db.collection("contacts").onSnapshot(snap => {
+    if (!snap.metadata.fromCache) { clearTimeout(timer); if (/^(Loading|Can't)/.test($("#netstatus").textContent)) setStatus(""); }
+    if (snap.empty && snap.metadata.fromCache) return;
+    people = snap.docs.map(x => ({id:x.id, ...x.data()})); live = true;
+    if (confirmDel && !people.some(p=>p.id===confirmDel)) confirmDel = null;
+    $("#addc").hidden = !canWrite; renderCats(); renderNet();
+  }, err => { clearTimeout(timer); live = false; people = fallback; $("#addc").hidden = true; closeForm(); renderCats(); renderNet();
+    if (err.code !== "revoked") setStatus("The live contact list is unavailable. Showing the starting list."); });
+})();
+
+/* In-page section links (hash is reserved for detail views) */
+document.querySelectorAll("[data-scroll]").forEach(a => a.addEventListener("click", e => { e.preventDefault();
+  const go = () => document.querySelector(a.getAttribute("href")).scrollIntoView();
+  if (location.hash) { history.replaceState(null,"",location.pathname+location.search); route(); requestAnimationFrame(go); } else go(); }));
+
+/* Detail views */
+function route(){
+  const h = location.hash.slice(1), d = $("#detail");
+  let html = null;
+  if (h.startsWith("press-")) { const p = L.press.find(x=>x.id===h.slice(6)); if (p) html = `
+    <article><div class="facts"><span class="org ${esc(p.org)}">${esc(p.org)}</span><span><b>${esc(p.type)}</b></span><span>${p.date?fmtDate(p.date):"Date not stated"}</span></div>
+    <h2>${esc(p.title)}</h2><p class="muted" style="margin:0">Original title: ${esc(p.titleNo)}</p>
+    ${p.tldr?`<p class="bl" style="font-size:17px"><b>Bottom line</b>${esc(p.tldr)}</p>`:""}
+    <p class="lead">${esc(p.summary)}</p>
+    <div class="box"><b>What it means for startups</b><p>${esc(p.startup)}</p></div>
+    <a class="go" href="${esc(p.url)}" target="_blank" rel="noopener">Read the full release at the source ↗</a></article>`; }
+  if (h.startsWith("event-")) { const e = S.events.find(x=>x.id===h.slice(6)); if (e) html = `
+    <article><div class="facts"><span><b>${esc(e.kind)}</b></span><span>${/^\d{4}-\d\d-\d\d$/.test(e.date)?fmtDate(e.date):esc(e.date)}</span><span>${esc(e.where)}</span><span>Source: ${esc(e.source)}</span></div>
+    <h2>${esc(e.title)}</h2><p class="muted" style="margin:0">With ${esc(e.who)}</p>
+    <p class="bl" style="font-size:17px"><b>Bottom line</b>${esc(e.tldr)}</p>
+    ${e.sections.map(s=>`<div><h3>${esc(s.h)}</h3><ul>${s.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}
+    ${e.link?`<a class="go" href="${esc(e.link)}" target="_blank" rel="noopener">Open the full summary and transcripts ↗</a>`:""}</article>`; }
+  if (html) { d.innerHTML = `<button type="button" class="back" id="back">← Back to the wiki</button>` + html; d.hidden=false; $("#home").hidden=true; window.scrollTo(0,0);
+    $("#back").addEventListener("click", () => { const sec = h.startsWith("press-") ? "#press" : "#events"; history.replaceState(null,"",location.pathname+location.search); route(); requestAnimationFrame(()=>document.querySelector(sec).scrollIntoView()); }); }
+  else { d.hidden=true; d.innerHTML=""; $("#home").hidden=false; }
+}
+addEventListener("hashchange", route); route();
+
+/* NATO map */
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const byId = new Map(N.countries.map(c=>[c.id,c])), ctx = new Map(N.context.map(c=>[c.id,c]));
+const ranked = N.countries.filter(c=>c.gdpPct!=null).sort((a,b)=>b.gdpPct-a.gdpPct);
+const TH = [2.0,2.5,3.0,3.5,5.0];
+const bucket = v => v==null ? -1 : TH.filter(t=>v>=t).length;
+const fmtM = m => m>=1e6 ? (m/1e6).toFixed(2)+"tn" : m>=1000 ? (m/1000).toFixed(m>=100000?0:1)+"bn" : m+"m";
+const fmtJoin = iso => new Date(iso+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+$("#natosrc").innerHTML = `Source: <a href="${esc(N.source.url)}" target="_blank" rel="noopener">${esc(N.source.title)}</a>. ${esc(N.source.note)}`;
+$("#legend").innerHTML = `<span>Defence spending, % of GDP (2026e)</span><div class="ramp">${[1,2,3,4,5,6].map(i=>`<i style="background:var(--seq${i})"></i>`).join("")}</div>
+  <div class="ticks"><span>&lt;2</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>5+</span></div>
+  <div class="keys"><span><i style="background:var(--partner)"></i>Ukraine (partner)</span><span><i style="background:var(--adversary)"></i>Russia, Belarus</span></div>`;
+const select = document.createElement("select"); select.id="cpick"; select.setAttribute("aria-label","Choose a NATO country");
+select.innerHTML = N.countries.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("") + `<optgroup label="Not members">${N.context.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("")}</optgroup>`;
+select.addEventListener("change", () => pick(select.value));
+
+let selected = "578", view = "eu", paths, minis;
+function dossier(id){
+  const c = byId.get(id), k = ctx.get(id), box = $("#dossier"); box.innerHTML=""; box.append(select); select.value = id;
+  const div = document.createElement("div"); div.style.cssText="display:grid;gap:16px";
+  if (c) {
+    const rank = ranked.findIndex(x=>x.id===id)+1, pct = c.gdpPct;
+    const pos = v => Math.min(100, v/6*100);
+    div.innerHTML = `<div style="display:grid;gap:4px"><span class="eyebrow">${esc(c.iso)} · ${c.founding?"Founding member":"NATO member"}</span><h3>${esc(c.name)}</h3>
+      <span class="joined">Joined ${fmtJoin(c.joined)}</span></div>
+      ${c.spendUsdM!=null ? `<div class="stats"><div><small>Budget 2026e</small><b>$${fmtM(c.spendUsdM)}</b><small>${esc(c.natCur)}</small></div>
+        <div><small>Share of GDP</small><b>${pct.toFixed(2)}%</b><small>#${rank} of ${ranked.length}</small></div>
+        <div><small>Active forces</small><b>${Math.round(c.personnelK*1000).toLocaleString("en-GB")}</b><small>personnel</small></div></div>
+      <div class="gdpbar" aria-label="${pct.toFixed(2)} percent of GDP against the 2 and 3.5 percent targets"><div class="track"><div class="fill" style="width:${pos(pct)}%"></div>
+        <div class="mark" style="left:${pos(2)}%" title="2% floor"></div><div class="mark" style="left:${pos(3.5)}%" title="3.5% Hague target by 2035"></div></div>
+        <div class="scale"><span style="left:0;transform:none">0%</span><span style="left:${pos(2)}%">2% floor</span><span style="left:${pos(3.5)}%">3.5% by 2035</span><span style="left:100%;transform:translateX(-100%)">6%</span></div></div>`
+      : `<div class="stats"><div style="grid-column:1/-1"><small>Armed forces</small><b>None</b><small>Not in NATO's spending tables</small></div></div>`}
+      <div class="kv"><span>Procurement agency</span>${esc(c.agency)}</div>
+      <ul>${c.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul>`;
+  } else if (k) {
+    div.innerHTML = `<div style="display:grid;gap:4px"><span class="eyebrow">${k.role==="partner"?"Partner, not a member":"Outside NATO"}</span><h3>${esc(k.name)}</h3></div><ul>${k.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul>`;
+  }
+  box.append(div);
+}
+function pick(id){ selected=id; paths && paths.classed("sel", d=>d.id===id); minis && minis.classed("sel", d=>d.id===id); dossier(id); }
+function fill(d){ const c=byId.get(d.id); if (c) { const b=bucket(c.gdpPct); return b<0 ? "url(#hatch)" : css("--seq"+(b+1)); }
+  const k=ctx.get(d.id); if (k) return k.role==="partner" ? css("--partner") : css("--adversary"); return css("--land"); }
+function drawMap(){
+  if (!window.d3 || !window.topojson || !DATA.geo) { $("#map").outerHTML = `<p style="padding:24px">The map could not load. Use the country list on the right.</p>`; dossier(selected); return; }
+  const svg = d3.select("#map"); svg.selectAll("*").remove();
+  const W=800,H=620, feats = topojson.feature(DATA.geo, DATA.geo.objects.countries).features.filter(f=>f.id);
+  const frame = view==="eu" ? {type:"MultiPoint",coordinates:[[-24,36],[42,36],[-24,70],[42,70],[10,71.5],[10,35]]} : {type:"MultiPoint",coordinates:[[-125,28],[40,34],[-140,62],[42,70],[-60,74],[-95,25]]};
+  const proj = (view==="eu" ? d3.geoAzimuthalEqualArea().rotate([-10,-53]) : d3.geoAzimuthalEqualArea().rotate([45,-55])).fitExtent([[10,50],[W-10,H-10]], frame);
+  const path = d3.geoPath(proj);
+  const defs = svg.append("defs"); const pat = defs.append("pattern").attr("id","hatch").attr("width",6).attr("height",6).attr("patternUnits","userSpaceOnUse").attr("patternTransform","rotate(45)");
+  pat.append("rect").attr("width",6).attr("height",6).attr("fill",css("--seq1")); pat.append("line").attr("x1",0).attr("y1",0).attr("x2",0).attr("y2",6).attr("stroke",css("--seq4")).attr("stroke-width",2);
+  svg.append("rect").attr("width",W).attr("height",H).attr("fill",css("--sea"));
+  svg.append("path").datum(d3.geoGraticule10()).attr("d",path).attr("fill","none").attr("stroke",css("--line")).attr("stroke-width",.5);
+  paths = svg.append("g").selectAll("path").data(feats).join("path")
+    .attr("class", d => "country" + (byId.has(d.id)?" member":"") + (ctx.has(d.id)?" ctx":"") + (d.id===selected?" sel":""))
+    .attr("d", path).attr("fill", fill)
+    .attr("tabindex", d => byId.has(d.id)||ctx.has(d.id) ? 0 : null)
+    .attr("aria-label", d => (byId.get(d.id)||ctx.get(d.id)||{}).name || null)
+    .on("click", (e,d) => { if (byId.has(d.id)||ctx.has(d.id)) pick(d.id); })
+    .on("keydown", (e,d) => { if ((e.key==="Enter"||e.key===" ") && (byId.has(d.id)||ctx.has(d.id))) { e.preventDefault(); pick(d.id); } });
+  paths.append("title").text(d => { const c=byId.get(d.id); return c ? `${c.name}${c.gdpPct!=null?` · ${c.gdpPct.toFixed(2)}% of GDP`:""}` : (ctx.get(d.id)||{}).name || ""; });
+  paths.filter(d=>d.id===selected).raise();
+  const small = ["442","499","807","705","008"];
+  const mf = feats.filter(f=>small.includes(f.id)).map(f=>({id:f.id, xy:path.centroid(f)})).filter(m=>m.xy.every(Number.isFinite));
+  minis = svg.append("g").selectAll("circle").data(mf).join("circle").attr("class", d=>"mini"+(d.id===selected?" sel":""))
+    .attr("cx",d=>d.xy[0]).attr("cy",d=>d.xy[1]).attr("r", view==="eu"?5:3.5).attr("fill", d=>fill(d)).on("click",(e,d)=>pick(d.id));
+  minis.append("title").text(d=>byId.get(d.id).name);
+  dossier(selected);
+}
+function setView(v){ view=v; $("#v-eu").setAttribute("aria-pressed", v==="eu"); $("#v-atl").setAttribute("aria-pressed", v==="atl"); drawMap(); }
+$("#v-eu").addEventListener("click", ()=>setView("eu")); $("#v-atl").addEventListener("click", ()=>setView("atl"));
+drawMap();
+const mq = matchMedia("(prefers-color-scheme: dark)"); mq.addEventListener && mq.addEventListener("change", drawMap);
+new MutationObserver(drawMap).observe(document.documentElement, {attributes:true, attributeFilter:["data-theme"]});
+</script>
