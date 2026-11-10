@@ -1,0 +1,260 @@
+{
+ "reviewed": "2026-11-10",
+ "note": "Our synthesis of public sources, reviewed by hand. Rankings are judgement, not official lists.",
+ "problems": {
+  "Norway": [
+   {
+    "title": "Mass drone and missile attacks",
+    "why": "Norway has almost no defence against cheap drones and ballistic missiles. The most likely attack is a drone-and-missile campaign on energy, ports and bases, not a ground invasion.",
+    "startup": "Cheap, layered counter-drone for the Home Guard and critical sites.",
+    "src": [
+     {
+      "label": "The Battle of Norway",
+      "url": "#readings"
+     },
+     {
+      "label": "Kirkenes drone sensors",
+      "url": "https://www.regjeringen.no/no/aktuelt/styrker-evnen-til-a-oppdage-droner-i-finnmark/id3191003/"
+     }
+    ]
+   },
+   {
+    "title": "Sabotage at sea and on the seabed",
+    "why": "Subsea cables, pipelines and offshore energy feed Europe. PST reports Russian and Chinese mapping of coastal infrastructure.",
+    "startup": "Underwater sensing, seabed monitoring and anomaly detection.",
+    "src": [
+     {
+      "label": "PST threat assessment 2026",
+      "url": "https://www.pst.no/wp-content/uploads/2026/02/National-Threat-Assessment-2026.pdf"
+     }
+    ]
+   },
+   {
+    "title": "Too few people for a huge territory",
+    "why": "A long coast and Arctic border with a small population and a small army. Adding people is not realistic.",
+    "startup": "Autonomy and remote operation, so one operator runs many systems.",
+    "src": [
+     {
+      "label": "The Battle of Norway",
+      "url": "#readings"
+     }
+    ]
+   },
+   {
+    "title": "Too slow from idea to capability",
+    "why": "Most big programmes mature in 2029–2036, but the threat window is 2027–2029. Speakers at the Oslo DefSec Forum said Norway has the money but buys too slowly.",
+    "startup": "Ship fast, prove it in tests, and use open purchasing systems to get in early.",
+    "src": [
+     {
+      "label": "Oslo DefSec notes",
+      "url": "#event-oslo-defsec"
+     },
+     {
+      "label": "Status of the long-term plan",
+      "url": "https://www.regjeringen.no/no/dokumenter/meld.-st.-33-20242025/id3108413/?ch=1"
+     }
+    ]
+   },
+   {
+    "title": "Weak domestic production and supply security",
+    "why": "In a crisis the shop is closed. Powder, explosives, spare parts and components are bottlenecks, and too little of the Ukraine money is spent in Norway.",
+    "startup": "Additive manufacturing, local production and components free of Chinese parts.",
+    "src": [
+     {
+      "label": "Production roadmap",
+      "url": "https://www.regjeringen.no/contentassets/5ce00b8e76ed4ff49c08f59adbfc98af/no/pdfs/veikart-for-okt-produksjonskapasitet-i-forsvarsind.pdf"
+     },
+     {
+      "label": "Oslo DefSec notes",
+      "url": "#event-oslo-defsec"
+     }
+    ]
+   }
+  ],
+  "Europe": [
+   {
+    "title": "Air and missile defence, drones included",
+    "why": "The EU names air and missile defence its first capability gap. Only a third of EU counter-drone programmes are expected to deliver by 2030.",
+    "startup": "Interceptors and sensors that are cheaper than the threat.",
+    "src": [
+     {
+      "label": "EU White Paper",
+      "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/introducing-white-paper-european-defence-and-rearm-europe-plan-readiness-2030_en"
+     },
+     {
+      "label": "Euronews",
+      "url": "https://www.euronews.com/2026/11/04/europes-military-readiness-plans-at-risk-despite-record-defence-spending"
+     }
+    ]
+   },
+   {
+    "title": "Not enough ammunition, missiles and factories",
+    "why": "Europe cannot yet produce at wartime volume. Ammunition and missiles are a named EU priority, and Ukraine shows how fast stocks run out.",
+    "startup": "Manufacturing tech, automation and suppliers to the primes.",
+    "src": [
+     {
+      "label": "EU White Paper",
+      "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/introducing-white-paper-european-defence-and-rearm-europe-plan-readiness-2030_en"
+     }
+    ]
+   },
+   {
+    "title": "Russia's hybrid campaign",
+    "why": "Arson, sabotage, cyberattacks, GPS jamming and drone incursions against countries that back Ukraine, below the threshold of war.",
+    "startup": "Critical-infrastructure protection, cyber and resilient navigation.",
+    "src": [
+     {
+      "label": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-10/russia-s-hybrid-warfare-how-moscow-uses-sabotage-cyberattacks-disinformation"
+     },
+     {
+      "label": "House of Commons Library",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-12272/"
+     }
+    ]
+   },
+   {
+    "title": "Slow and fragmented procurement",
+    "why": "27 national markets and slow processes. The Commission's own draft says the 2030 readiness goals are at risk despite record spending.",
+    "startup": "Sell to several countries at once through joint buys and EU programmes.",
+    "src": [
+     {
+      "label": "Euronews",
+      "url": "https://www.euronews.com/2026/11/04/europes-military-readiness-plans-at-risk-despite-record-defence-spending"
+     }
+    ]
+   },
+   {
+    "title": "Dependence on the US for key enablers",
+    "why": "Satellites, ISR, airlift and communications still depend heavily on the US, and Washington is reviewing its troop deployments.",
+    "startup": "European space ISR, secure comms and data, free of US export control.",
+    "src": [
+     {
+      "label": "EU White Paper",
+      "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/introducing-white-paper-european-defence-and-rearm-europe-plan-readiness-2030_en"
+     },
+     {
+      "label": "Washington Times",
+      "url": "https://www.washingtontimes.com/news/2026/nov/3/russian-sabotage-tests-natos-eastern-flank-washington-reviews-troop/"
+     }
+    ]
+   }
+  ]
+ },
+ "tech": {
+  "Norway": [
+   {
+    "title": "Counter-drone: cheap detection and interceptors",
+    "why": "Detection is the bottleneck. Passive radar, acoustic and RF sensors plus interceptor drones, built for the Home Guard.",
+    "examples": "Stendr, Squarehead, Kirkenes sensors",
+    "src": [
+     {
+      "label": "Seminar notes",
+      "url": "#event-ukraine-seminar"
+     }
+    ]
+   },
+   {
+    "title": "Uncrewed systems in the air, on the surface and under water",
+    "why": "Forsvaret runs an open NOK 600 m purchasing system for drones, and the Navy is getting unmanned systems for infrastructure protection.",
+    "examples": "Six Robotics, Maritime Robotics, Kongsberg HUGIN",
+    "src": [
+     {
+      "label": "Drone purchasing system",
+      "url": "https://www.doffin.no/notices/2024-113399"
+     }
+    ]
+   },
+   {
+    "title": "Underwater sensing and seabed protection",
+    "why": "Norway leads in autonomous underwater vehicles and hydroacoustics, and has the most seabed infrastructure to guard.",
+    "examples": "Kongsberg, FFI, NORSAR",
+    "src": [
+     {
+      "label": "The Battle of Norway",
+      "url": "#readings"
+     }
+    ]
+   },
+   {
+    "title": "EW-resilient comms and navigation without GPS",
+    "why": "Russia jams GPS in the north. Systems must keep working when links and satellites are denied.",
+    "examples": "Radionor, Farsight Vision",
+    "src": [
+     {
+      "label": "The Battle of Norway",
+      "url": "#readings"
+     }
+    ]
+   },
+   {
+    "title": "AI for command, control and sensor fusion",
+    "why": "C2 at operational level is one of Norway's worst bottlenecks; the new C2 suite is not ready before 2030. Forskningsrådet funds a more data-driven defence.",
+    "examples": "Mime/THOR programme, KAHU",
+    "src": [
+     {
+      "label": "Forskningsrådet call",
+      "url": "https://www.forskningsradet.no/utlysninger/2026/samarbeidsprosjekt-mer-datadrevet-forsvar/"
+     }
+    ]
+   }
+  ],
+  "Europe": [
+   {
+    "title": "Drones and counter-drones at scale",
+    "why": "The European Drone Defence Initiative is one of four EU flagships. Drone and interceptor makers are raising the biggest rounds.",
+    "examples": "Helsing, Quantum Systems, STARK, TEKEVER",
+    "src": [
+     {
+      "label": "Readiness Roadmap 2030",
+      "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/readiness-roadmap-2030_en"
+     }
+    ]
+   },
+   {
+    "title": "Low-cost interceptors for air defence",
+    "why": "Shooting down a cheap drone with an expensive missile does not scale. NATO DIANA lists scalable air-defence countermeasures as a challenge.",
+    "examples": "Cambridge Aerospace, Ukrainian interceptor makers such as Vyriy",
+    "src": [
+     {
+      "label": "NATO DIANA 2027 challenges",
+      "url": "https://www.diana.nato.int/challenges.html"
+     }
+    ]
+   },
+   {
+    "title": "AI and autonomy for uncrewed systems",
+    "why": "Multidomain autonomy is a DIANA challenge area, and AI-first companies are Europe's most valuable defence startups.",
+    "examples": "Helsing, Harmattan AI",
+    "src": [
+     {
+      "label": "NATO DIANA 2027 challenges",
+      "url": "https://www.diana.nato.int/challenges.html"
+     }
+    ]
+   },
+   {
+    "title": "Space-based ISR and secure communications",
+    "why": "Europe wants its own eyes and links in orbit to reduce dependence on the US.",
+    "examples": "ICEYE, Open Cosmos",
+    "src": [
+     {
+      "label": "EU White Paper",
+      "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/introducing-white-paper-european-defence-and-rearm-europe-plan-readiness-2030_en"
+     }
+    ]
+   },
+   {
+    "title": "Electronic warfare, cyber and resilience in contested environments",
+    "why": "AI, quantum, cyber and EW form one EU priority area, and operational resilience is a DIANA challenge.",
+    "examples": "Ukrainian EW makers, Nordic cyber firms",
+    "src": [
+     {
+      "label": "NATO DIANA 2027 challenges",
+      "url": "https://www.diana.nato.int/challenges.html"
+     }
+    ]
+   }
+  ]
+ }
+}

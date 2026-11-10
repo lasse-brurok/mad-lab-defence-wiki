@@ -250,6 +250,22 @@ main section{padding-block:48px 8px;scroll-margin-top:60px}
 .donebox input{width:18px;height:18px;accent-color:var(--accent)}
 @media (max-width:1000px){.phases{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.phases{grid-template-columns:1fr}.sbody{padding-left:12px}}
+/* What defence needs */
+.needs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.ncol > header{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:4px}
+.ncol > header b{font:800 22px var(--display);font-stretch:80%;text-transform:uppercase}
+.nitem2{display:grid;grid-template-columns:34px minmax(0,1fr);gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.rank2{font:800 26px/1 var(--display);color:var(--signal)}
+.nitem2 b{font-size:16px;line-height:1.3;display:block}
+.nitem2 p{margin:3px 0 0;font-size:14.5px}
+.nitem2 .opp{font-size:14px;font-weight:600;margin-top:5px}
+.nitem2 .opp::before{content:attr(data-l);font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--signal);margin-right:6px}
+.nitem2 .srcs{margin-top:5px}
+/* Investors & rounds */
+.amt{font:700 14px/1.3 var(--mono);font-variant-numeric:tabular-nums}
+.amt small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.rgn{font:700 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-right:6px}
+@media (max-width:760px){.needs{grid-template-columns:1fr}}
 /* Network */
 .pitch{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:22px}
 .pitch > div{background:var(--surface);padding:18px 20px;display:grid;gap:10px;align-content:start;min-width:0}
@@ -308,7 +324,9 @@ button.primary:hover{filter:brightness(1.08)}
   button,select{min-height:42px}
   .maptools button{min-height:38px}
   .person .contact button{min-height:34px;padding-inline:10px}
-  .srcs a,.cgo,.go,.read .go,.fcard a.go,.back{display:inline-block;padding-block:9px}
+  .cgo,.go,.read .go,.fcard a.go,.back{display:inline-block;padding-block:9px}
+  .srcs{align-items:center}
+  .srcs a{display:inline-block;padding-block:5px}
   nav.toc a{padding-block:14px}
   .cats button,.filters button{min-height:38px}
 }
@@ -346,10 +364,12 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
       <a href="#next" data-scroll>Next 30 days</a>
       <a href="#situation" data-scroll>Situation</a>
       <a href="#start" data-scroll>Start here</a>
+      <a href="#needs" data-scroll>What defence needs</a>
       <a href="#nato" data-scroll>NATO map</a>
       <a href="#news" data-scroll>News</a>
       <a href="#press" data-scroll>Press releases</a>
       <a href="#funding" data-scroll>Funding &amp; tenders</a>
+      <a href="#capital" data-scroll>Investors &amp; rounds</a>
       <a href="#events" data-scroll>Events &amp; meetings</a>
       <a href="#readings" data-scroll>Readings</a>
       <a href="#network" data-scroll>Network</a>
@@ -372,6 +392,16 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
     <div class="sec-head"><div><div class="eyebrow">For new founders</div><h2>Start here</h2></div><p id="startintro"></p></div>
     <div class="progress" id="progress"></div>
     <div class="phases" id="phases"></div>
+  </section>
+
+  <section id="needs">
+    <div class="sec-head"><div><div class="eyebrow">Where the demand is</div><h2>What defence needs</h2></div>
+      <div class="filters" role="group" aria-label="Show problems or technologies">
+        <button type="button" data-nv="problems" aria-pressed="true">5 biggest problems</button>
+        <button type="button" data-nv="tech" aria-pressed="false">5 most wanted technologies</button>
+      </div></div>
+    <div class="needs" id="needs-grid"></div>
+    <p class="foot" id="needs-note"></p>
   </section>
 
   <section id="nato">
@@ -418,6 +448,16 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
     <h3 class="subh">Open tenders</h3>
     <div class="tend" id="tendlist"></div>
   </section>
+  <section id="capital">
+    <div class="sec-head"><div><div class="eyebrow">Who is raising, who is investing</div><h2>Investors &amp; rounds</h2></div><p id="roundsctx"></p></div>
+    <h3 class="subh">Recent defence rounds</h3>
+    <div class="filters" role="group" aria-label="Filter rounds by region" id="rfilters" style="margin-bottom:10px"></div>
+    <div class="tend" id="roundlist"></div>
+    <h3 class="subh">Defence investors</h3>
+    <div class="filters" role="group" aria-label="Filter investors by region" id="ifilters" style="margin-bottom:10px"></div>
+    <div class="fund" id="invlist"></div>
+  </section>
+
   <section id="events">
     <div class="sec-head"><div><div class="eyebrow">Calendar and notes</div><h2>Events &amp; meetings</h2></div><p>Defence events worth your time in Norway, the Nordics and Europe, plus takeaways from meetings the team attended.</p></div>
     <h3 class="subh">Coming up</h3>
@@ -593,6 +633,48 @@ $("#evlist").innerHTML = S.events.map(e => `
     done = c.checked ? [...new Set([...done, id])] : done.filter(x => x !== id); save(); prog();
     const st = c.closest(".step"); st.classList.toggle("done", c.checked);
     st.querySelector(".num").textContent = c.checked ? "✓" : (all.indexOf(id)+1); });
+})();
+
+/* What defence needs */
+(() => {
+  const I = DATA.insights; if (!I) { $("#needs").hidden = true; return; }
+  $("#needs-note").textContent = `${I.note} Last reviewed ${fmtDate(I.reviewed)}.`;
+  const draw = v => {
+    $("#needs-grid").innerHTML = ["Norway","Europe"].map(reg => `<div class="ncol"><header><b>${reg}</b><span class="muted" style="font-size:13px">${v==="problems"?"Biggest problems":"Most wanted technologies"}</span></header>
+      ${I[v][reg].map((x,i) => `<div class="nitem2"><span class="rank2">${i+1}</span><div><b>${esc(x.title)}</b><p>${esc(x.why)}</p>
+        <p class="opp" data-l="${v==="problems"?"Startup angle":"Who builds it"}">${esc(v==="problems"?x.startup:x.examples)}</p>
+        <div class="srcs"><span>Sources:</span>${x.src.map(s=>`<a href="${esc(s.url)}"${linkAttrs(s.url)}>${esc(s.label)}</a>`).join("")}</div></div></div>`).join("")}</div>`).join("");
+  };
+  document.querySelectorAll("[data-nv]").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll("[data-nv]").forEach(x => x.setAttribute("aria-pressed", x===b)); draw(b.dataset.nv); }));
+  draw("problems");
+})();
+
+/* Investors & rounds */
+(() => {
+  const ctx = L.roundsContext; if (ctx) $("#roundsctx").innerHTML = `${esc(ctx.text)} <a href="${esc(ctx.url)}" target="_blank" rel="noopener">Source ↗</a>`;
+  const ORDER = ["Norway","Nordics","Europe","NATO"];
+  const filt = (box, regs, cb) => { let cur = "all";
+    box.innerHTML = `<button type="button" data-r="all" aria-pressed="true">All</button>` + regs.map(r=>`<button type="button" data-r="${r}" aria-pressed="false">${r}</button>`).join("");
+    box.addEventListener("click", e => { const b = e.target.closest("[data-r]"); if (!b) return; cur = b.dataset.r;
+      box.querySelectorAll("[data-r]").forEach(x => x.setAttribute("aria-pressed", x===b)); cb(cur); }); cb(cur); };
+  const dlabel = d => /^\d{4}-\d\d$/.test(d) ? new Date(d+"-15T12:00:00").toLocaleDateString("en-GB",{month:"short",year:"numeric"}) : esc(d);
+  const rounds = (L.rounds||[]).slice().sort((a,b) => ORDER.indexOf(a.region)-ORDER.indexOf(b.region) || String(b.date).localeCompare(String(a.date)) || b.usdM-a.usdM);
+  filt($("#rfilters"), ORDER.filter(r => rounds.some(x=>x.region===r)), cur => {
+    const list = rounds.filter(r => cur==="all" || r.region===cur);
+    $("#roundlist").innerHTML = list.map(r => `<div class="trow"><div class="amt">${esc(r.amount)}<small>${esc(r.round)} · ${dlabel(r.date)}</small></div>
+      <div class="cbody"><b>${esc(r.company)}</b><span class="cmeta"><span class="rgn">${esc(r.region)}</span>${esc(r.country)} · ${esc(r.what)}</span><span class="cmeta">Investors: ${esc(r.investors)}</span></div>
+      <a class="cgo" href="${esc(r.url)}" target="_blank" rel="noopener">Source ↗</a></div>`).join("") || `<div class="empty">No rounds listed.</div>`;
+    delete $("#roundlist").dataset.open; clamp($("#roundlist"), ".trow", 5, "rounds");
+  });
+  const inv = L.investors || [];
+  filt($("#ifilters"), ORDER.filter(r => inv.some(x=>x.region===r)), cur => {
+    const list = inv.filter(i => cur==="all" || i.region===cur).sort((a,b)=>ORDER.indexOf(a.region)-ORDER.indexOf(b.region));
+    $("#invlist").innerHTML = list.map(i => `<article class="fcard"><div class="fhead"><h4>${esc(i.name)}</h4><span class="st rolling">${esc(i.region)}</span></div>
+      <div class="fmeta"><span><b>${esc(i.base)}</b> · ${esc(i.stage)}</span><span>${esc(i.focus)}</span><span>Fund: ${esc(i.size)}</span></div>
+      <p class="bl"><b>Bottom line</b>${esc(i.note)}</p><a class="go" style="font-weight:600;font-size:14px" href="${esc(i.url)}" target="_blank" rel="noopener">More ↗</a></article>`).join("") || `<div class="empty">No investors listed.</div>`;
+    delete $("#invlist").dataset.open; clamp($("#invlist"), ".fcard", 4, "investors");
+  });
 })();
 
 /* Funding & tenders */

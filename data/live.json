@@ -1074,5 +1074,403 @@
    "tldr": "Hosting and operations incl. Azure. For IT and cloud operators.",
    "url": "https://www.doffin.no/notices/2026-117219"
   }
+ ],
+ "rounds": [
+  {
+   "company": "Stendr",
+   "country": "Norway",
+   "region": "Norway",
+   "what": "AI-native drone detection and defence software",
+   "round": "Pre-seed",
+   "amount": "USD 5.4 m",
+   "usdM": 5.4,
+   "date": "2026-04",
+   "investors": "Rainfall, ACME, Skyfall; Sisyphus, Antler, StartupLab, Andøya Ventures",
+   "url": "https://stendr.com/news/stendr-pre-seed-announcement"
+  },
+  {
+   "company": "Six Robotics",
+   "country": "Norway",
+   "region": "Norway",
+   "what": "Autonomy software for unmanned systems",
+   "round": "Venture",
+   "amount": "EUR 12 m",
+   "usdM": 13,
+   "date": "2026-06",
+   "investors": "DTCP Defence (lead), EIFO",
+   "url": "https://www.eu-startups.com/2026/06/six-robotics-lands-e12-million-to-advance-unmanned-systems-software-with-norwegian-defence-partners/"
+  },
+  {
+   "company": "ICEYE",
+   "country": "Finland",
+   "region": "Nordics",
+   "what": "SAR radar satellites for ISR",
+   "round": "Series F",
+   "amount": "USD 520 m",
+   "usdM": 520,
+   "date": "2026",
+   "investors": "Not stated",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "company": "Sensofusion",
+   "country": "Finland",
+   "region": "Nordics",
+   "what": "Counter-drone systems",
+   "round": "Venture",
+   "amount": "EUR 45 m",
+   "usdM": 49,
+   "date": "2026",
+   "investors": "Not stated",
+   "url": "https://www.vestbee.com/insights/articles/europ-s-defence-top-deals-in-early-2026"
+  },
+  {
+   "company": "Kelluu",
+   "country": "Finland",
+   "region": "Nordics",
+   "what": "Airship-based aerial surveillance for NATO",
+   "round": "Venture",
+   "amount": "EUR 15 m",
+   "usdM": 16,
+   "date": "2026",
+   "investors": "Not stated",
+   "url": "https://www.vestbee.com/insights/articles/europ-s-defence-top-deals-in-early-2026"
+  },
+  {
+   "company": "Arctic RAVN",
+   "country": "Finland",
+   "region": "Nordics",
+   "what": "Drone electronics without Chinese parts",
+   "round": "Convertible loans",
+   "amount": "EUR 2.5 m",
+   "usdM": 2.7,
+   "date": "2026-10",
+   "investors": "Not stated",
+   "url": "https://www.eu-startups.com/2026/10/finnish-defencetech-arctic-ravn-secures-e2-5-million-in-loan-commitments-before-its-first-product-launch"
+  },
+  {
+   "company": "Helsing",
+   "country": "Germany",
+   "region": "Europe",
+   "what": "AI for defence, strike drones, autonomy",
+   "round": "Series E",
+   "amount": "USD 1.8 bn",
+   "usdM": 1800,
+   "date": "2026-07",
+   "investors": "Not stated (USD 18 bn valuation)",
+   "url": "https://www.trendingtopics.eu/european-defense-tech-funding-record-2026/"
+  },
+  {
+   "company": "Quantum Systems",
+   "country": "Germany",
+   "region": "Europe",
+   "what": "Reconnaissance drones",
+   "round": "Series D",
+   "amount": "USD 1.2 bn",
+   "usdM": 1200,
+   "date": "2026-07",
+   "investors": "Not stated",
+   "url": "https://www.trendingtopics.eu/european-defense-tech-funding-record-2026/"
+  },
+  {
+   "company": "TEKEVER",
+   "country": "Portugal / UK",
+   "region": "Europe",
+   "what": "Long-range surveillance drones",
+   "round": "Series D",
+   "amount": "EUR 520 m",
+   "usdM": 570,
+   "date": "2026-09",
+   "investors": "EIFO joining second close (USD 6.4 bn valuation)",
+   "url": "https://eu-startups.com/2026/11/defencetech-unicorn-tekever-strengthens-nordic-ambitions-amid-e520-million-funding-round"
+  },
+  {
+   "company": "STARK",
+   "country": "Germany",
+   "region": "Europe",
+   "what": "Loitering munitions",
+   "round": "Series C",
+   "amount": "EUR 500 m",
+   "usdM": 550,
+   "date": "2026-06",
+   "investors": "Not stated",
+   "url": "https://en.wikipedia.org/wiki/STARK"
+  },
+  {
+   "company": "Onodrim Industries",
+   "country": "Netherlands",
+   "region": "Europe",
+   "what": "Buys and scales European defence and industrial firms",
+   "round": "Series A",
+   "amount": "USD 300 m",
+   "usdM": 300,
+   "date": "2026-11",
+   "investors": "Lux Capital (USD 1.3 bn valuation)",
+   "url": "https://tech.eu/2026/11/09/onodrim-industries-hits-13b-valuation-with-300m-series-a-to-strengthen-european-defence"
+  },
+  {
+   "company": "Cambridge Aerospace",
+   "country": "UK",
+   "region": "Europe",
+   "what": "Low-cost interceptor missiles",
+   "round": "Series C",
+   "amount": "USD 300 m",
+   "usdM": 300,
+   "date": "2026-08",
+   "investors": "Not stated",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "company": "Open Cosmos",
+   "country": "UK",
+   "region": "Europe",
+   "what": "Satellites for sovereign space ISR",
+   "round": "Series C",
+   "amount": "USD 350 m",
+   "usdM": 350,
+   "date": "2026",
+   "investors": "Not stated",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "company": "Harmattan AI",
+   "country": "France",
+   "region": "Europe",
+   "what": "AI for autonomous defence systems",
+   "round": "Series B",
+   "amount": "USD 200 m",
+   "usdM": 200,
+   "date": "2026",
+   "investors": "Not stated",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "company": "Kraken Technology",
+   "country": "UK",
+   "region": "Europe",
+   "what": "Uncrewed surface vessels",
+   "round": "Series B",
+   "amount": "USD 175 m",
+   "usdM": 175,
+   "date": "2026",
+   "investors": "Not stated",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  }
+ ],
+ "roundsContext": {
+  "text": "European defence startups are set to raise a record USD 10.5 bn in 2026, about four times 2024, according to Dealroom.",
+  "url": "https://resiliencemedia.co/state-of-defence-tech-2026-european-defence-startup-funding-to-quadruple-to-10-5b/"
+ },
+ "investors": [
+  {
+   "name": "Investinor",
+   "region": "Norway",
+   "base": "Trondheim",
+   "focus": "State investor; runs the NOK 1 bn scheme for funds backing Ukrainian defence",
+   "stage": "Fund of funds, growth",
+   "size": "NOK 1 bn (Ukraine scheme)",
+   "note": "Talk to them if you have a Ukrainian partner or JV.",
+   "url": "https://www.investinor.no/"
+  },
+  {
+   "name": "Gardar",
+   "region": "Norway",
+   "base": "Oslo",
+   "focus": "Ukrainian defence tech already in use at the front",
+   "stage": "Seed to Series B",
+   "size": "About EUR 80 m (target EUR 100 m)",
+   "note": "Invests in Ukrainian teams already proven at the front.",
+   "url": "https://www.tectonicdefense.com/meet-gardar-norways-new-e80m-defense-fund/"
+  },
+  {
+   "name": "Skyfall Ventures",
+   "region": "Norway",
+   "base": "Oslo",
+   "focus": "Nordic tech, now backing defence (co-led Stendr)",
+   "stage": "Seed",
+   "size": "Fund III NOK 400 m",
+   "note": "Best Norwegian seed lead for a defence startup today.",
+   "url": "https://crunchbase.com/organization/skyfall-ventures"
+  },
+  {
+   "name": "StartupLab",
+   "region": "Norway",
+   "base": "Oslo",
+   "focus": "Early-stage tech; co-hosts the EUDIS defence hackathon",
+   "stage": "Pre-seed",
+   "size": "Not stated",
+   "note": "Invested in Stendr. Good first door in Oslo.",
+   "url": "https://startuplab.no/"
+  },
+  {
+   "name": "Final Frontier",
+   "region": "Nordics",
+   "base": "Copenhagen",
+   "focus": "Early-stage defence across the Nordics, Baltics and Ukraine",
+   "stage": "Pre-seed to seed",
+   "size": "Fund I EUR 4.5 m; raising about EUR 100 m with Myriad",
+   "note": "Dedicated Nordic defence fund.",
+   "url": "https://siliconcanals.com/final-frontier-secures-e4-5m-in-first-fund/"
+  },
+  {
+   "name": "EIFO",
+   "region": "Nordics",
+   "base": "Copenhagen",
+   "focus": "Danish state investor, active co-investor in defence",
+   "stage": "All stages",
+   "size": "Not stated",
+   "note": "Backed Six Robotics and TEKEVER; LP in DTCP Defence.",
+   "url": "https://bebeez.eu/2026/09/29/dtcp-backs-norwegian-defence-tech-as-new-e455m-fund-expands-across-nordics/"
+  },
+  {
+   "name": "Front Ventures",
+   "region": "Nordics",
+   "base": "Sweden",
+   "focus": "Defence and drones (co-founded Scandinavian X drone factory)",
+   "stage": "Early stage",
+   "size": "Not stated",
+   "note": "Six European defence deals in 2026.",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "name": "Hede Capital",
+   "region": "Nordics",
+   "base": "Kungsbacka, Sweden",
+   "focus": "Direct investor with a defence-tech initiative",
+   "stage": "Early stage",
+   "size": "Not stated",
+   "note": "Four defence deals in 2026.",
+   "url": "https://f4.fund/firms/hede-capital-partners"
+  },
+  {
+   "name": "Gungnir Capital",
+   "region": "Nordics",
+   "base": "Sweden",
+   "focus": "Defence and dual-use",
+   "stage": "Early stage",
+   "size": "Not stated",
+   "note": "Four defence deals in 2026.",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "name": "SmartCap",
+   "region": "Nordics",
+   "base": "Tallinn, Estonia",
+   "focus": "Estonian state VC with a dedicated defence fund",
+   "stage": "Early stage",
+   "size": "EUR 100 m defence fund",
+   "note": "Baltic route; close to the eastern flank users.",
+   "url": "https://www.vestbee.com/insights/articles/europes-defence-and-dual-use-investors"
+  },
+  {
+   "name": "DTCP Defence Fund I",
+   "region": "Europe",
+   "base": "Hamburg",
+   "focus": "Defence, security and resilience",
+   "stage": "Series B and later",
+   "size": "EUR 455 m first close (target EUR 500 m)",
+   "note": "Led Six Robotics; expanding across the Nordics.",
+   "url": "https://arcticstartup.com/dtcp-closes-first-e455m-of-its-dtcp-defence-fund-i/"
+  },
+  {
+   "name": "Lakestar",
+   "region": "Europe",
+   "base": "Zurich",
+   "focus": "Defence and dual-use across Europe and NATO (Resilience I)",
+   "stage": "Seed to growth",
+   "size": "USD 300 m (Resilience I)",
+   "note": "Most active defence investor in Europe in 2026, 21 deals.",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "name": "Keen Venture Partners",
+   "region": "Europe",
+   "base": "Amsterdam",
+   "focus": "European Defence and Security Tech Fund",
+   "stage": "Series A and later",
+   "size": "EUR 180 m (target EUR 200 m)",
+   "note": "Strong in the Ukraine ecosystem and Dutch, UK and German markets.",
+   "url": "https://www.vestbee.com/insights/articles/europes-defence-and-dual-use-investors"
+  },
+  {
+   "name": "AVP and Earlybird (E2D)",
+   "region": "Europe",
+   "base": "Paris and Berlin",
+   "focus": "Dual-use defence",
+   "stage": "Growth",
+   "size": "EUR 500 m fund, first close June 2026",
+   "note": "Large joint dual-use fund.",
+   "url": "https://www.vestbee.com/insights/articles/vc-funds-raised-in-q2-2026"
+  },
+  {
+   "name": "Expeditions",
+   "region": "Europe",
+   "base": "Warsaw",
+   "focus": "Defence and dual-use, Central and Eastern Europe",
+   "stage": "Early stage",
+   "size": "EUR 197 m Fund II",
+   "note": "Five defence deals in 2026.",
+   "url": "https://www.vestbee.com/insights/articles/europes-defence-and-dual-use-investors"
+  },
+  {
+   "name": "OTB Ventures",
+   "region": "Europe",
+   "base": "Warsaw and Amsterdam",
+   "focus": "Deep tech incl. space and defence",
+   "stage": "Series A to B",
+   "size": "Not stated",
+   "note": "Eight defence deals in 2026.",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "name": "Sisyphus Ventures",
+   "region": "Europe",
+   "base": "London",
+   "focus": "Early-stage European defence founders",
+   "stage": "Pre-seed to seed",
+   "size": "Not stated",
+   "note": "Invested in Stendr.",
+   "url": "https://www.startuphub.ai/investors/sisyphus"
+  },
+  {
+   "name": "MITS Capital",
+   "region": "Europe",
+   "base": "Ukraine",
+   "focus": "Ukrainian defence tech",
+   "stage": "Early stage",
+   "size": "Not stated",
+   "note": "Ten defence deals in 2026.",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "name": "NATO Innovation Fund",
+   "region": "NATO",
+   "base": "Amsterdam",
+   "focus": "Deep tech for defence and security across NATO",
+   "stage": "Seed to growth",
+   "size": "EUR 1 bn",
+   "note": "Six defence deals in 2026. Pitch any time.",
+   "url": "https://www.nif.fund/"
+  },
+  {
+   "name": "Freedom Fund",
+   "region": "NATO",
+   "base": "USA",
+   "focus": "Backs European defence startups",
+   "stage": "Early stage",
+   "size": "Not stated",
+   "note": "Four European defence deals in 2026.",
+   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "name": "Lux Capital",
+   "region": "NATO",
+   "base": "USA",
+   "focus": "Deep tech and defence",
+   "stage": "Seed to growth",
+   "size": "Not stated",
+   "note": "Led Onodrim's USD 300 m Series A.",
+   "url": "https://thenextweb.com/news/onodrim-raises-300m-series-a-lux-capital"
+  }
  ]
 }

@@ -73,6 +73,7 @@ def main():
         "live": live,
         "nato": load("data/nato.json"),
         "static": load("data/static.json" if (ROOT / "data/static.json").exists() else "data/static.example.json"),
+        "insights": load("data/insights.json"),
         "geo": load("vendor/countries-110m.json"),
     }
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
