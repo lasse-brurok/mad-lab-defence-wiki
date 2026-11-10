@@ -55,5 +55,26 @@
    ],
    "link": null
   }
- ]
+ ],
+ "startHere": {
+  "intro": "Example only. The real steps live in data/static.json.",
+  "phases": [
+   {
+    "name": "Week 1",
+    "goal": "Example",
+    "steps": [
+     {
+      "id": "example",
+      "title": "Example step",
+      "why": "Example",
+      "do": [
+       "Example"
+      ],
+      "ask": "",
+      "links": []
+     }
+    ]
+   }
+  ]
+ }
 }

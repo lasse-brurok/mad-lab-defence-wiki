@@ -875,6 +875,17 @@
    "url": "https://www.forskningsradet.no/utlysninger/2026/innovative-offentlige-anskaffelser/"
   },
   {
+   "id": "skattefunn",
+   "title": "SkatteFUNN R&D tax deduction",
+   "funder": "Research Council of Norway",
+   "status": "rolling",
+   "deadline": null,
+   "amount": "19% of R&D costs",
+   "who": "Norwegian companies with an R&D project",
+   "tldr": "Easiest non-dilutive money in Norway. Apply early; 1 September guarantees a same-year decision.",
+   "url": "https://www.forskningsradet.no/skattefunn/"
+  },
+  {
    "id": "in-usa",
    "title": "Defence and security technology in the USA",
    "funder": "Innovasjon Norge",

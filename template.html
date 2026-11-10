@@ -209,6 +209,47 @@ main section{padding-block:48px 8px;scroll-margin-top:60px}
 .cal.past .crow{opacity:.8}
 @media (max-width:640px){.crow{grid-template-columns:1fr}.crow a.cgo{justify-self:start}}
 
+/* Next 30 days */
+.nx{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:0 24px;border-top:2px solid var(--ink)}
+.nrow{display:grid;grid-template-columns:62px minmax(0,1fr) auto;gap:2px 12px;align-items:start;padding:11px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.nrow:hover b{color:var(--accent);text-decoration:underline}
+.nd{font:700 14px/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.nd small{display:block;font-weight:400;font-size:11.5px;color:var(--muted)}
+.nrow b{font-size:15px;line-height:1.3;display:block}
+.nrow .nsub{font-size:12.5px;color:var(--muted)}
+.nleft{font:700 12px var(--mono);white-space:nowrap;color:var(--muted);padding-top:2px}
+.nleft.urgent{color:var(--war)}
+.ty{display:inline-block;font:700 10px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;padding:3px 5px;border-radius:2px;margin-right:6px;vertical-align:1px}
+.ty.Funding{background:#dcefe3;color:#1d6b3a}.ty.Tender{background:var(--signal-soft);color:var(--signal)}.ty.Event{background:var(--accent-soft);color:var(--accent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ty.Funding{background:#173826;color:#7fd3a0}}
+:root[data-theme="dark"] .ty.Funding{background:#173826;color:#7fd3a0}
+/* Start here */
+.progress{display:flex;align-items:center;gap:12px;margin-bottom:16px;font-size:14px;color:var(--muted)}
+.progress .bar{flex:1;max-width:320px;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.progress .bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
+@media (prefers-reduced-motion:reduce){.progress .bar i{transition:none}}
+.phases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.phase{display:grid;gap:8px;align-content:start;min-width:0}
+.phase > header{border-top:3px solid var(--ink);padding-top:8px}
+.phase > header b{font:800 18px var(--display);font-stretch:85%;text-transform:uppercase;display:block}
+.phase > header span{font-size:13px;color:var(--muted)}
+.step{background:var(--surface);border:1px solid var(--line);min-width:0}
+.step.done{opacity:.6}
+.step summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;padding:12px;align-items:start}
+.step summary::-webkit-details-marker{display:none}
+.num{font:700 13px/26px var(--mono);width:26px;height:26px;text-align:center;border-radius:50%;background:var(--accent-soft);color:var(--accent)}
+.step.done .num{background:var(--accent);color:var(--surface)}
+.step summary b{font-size:15px;line-height:1.3;display:block}
+.step summary span.w{font-size:13px;color:var(--muted);display:block;margin-top:3px}
+.sbody{padding:0 12px 12px 48px;display:grid;gap:8px;font-size:14px}
+.sbody ul{margin:0;padding-left:18px;display:grid;gap:5px}
+.sbody .askp{font-size:13.5px}
+.sbody .askp b{font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--signal);margin-right:4px}
+.sbody .lks{display:flex;flex-wrap:wrap;gap:4px 14px;font-weight:600;font-size:13.5px}
+.donebox{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;cursor:pointer}
+.donebox input{width:18px;height:18px;accent-color:var(--accent)}
+@media (max-width:1000px){.phases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.phases{grid-template-columns:1fr}.sbody{padding-left:12px}}
 /* Network */
 .pitch{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:22px}
 .pitch > div{background:var(--surface);padding:18px 20px;display:grid;gap:10px;align-content:start;min-width:0}
@@ -302,7 +343,9 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
   </div>
   <nav class="toc" aria-label="Sections">
     <div class="wrap">
+      <a href="#next" data-scroll>Next 30 days</a>
       <a href="#situation" data-scroll>Situation</a>
+      <a href="#start" data-scroll>Start here</a>
       <a href="#nato" data-scroll>NATO map</a>
       <a href="#news" data-scroll>News</a>
       <a href="#press" data-scroll>Press releases</a>
@@ -315,9 +358,20 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
 </header>
 
 <main class="wrap">
+  <section id="next">
+    <div class="sec-head"><div><div class="eyebrow">Deadlines and dates</div><h2>Next 30 days</h2></div><p>Every funding deadline, tender deadline and event in the next 30 days, in one list.</p></div>
+    <div class="nx" id="nextlist"></div>
+  </section>
+
   <section id="situation">
     <div class="sec-head"><div><div class="eyebrow">Situation report</div><h2>Where things stand</h2></div><p>War, threats and security in four sentences each, from Oslo outward.</p></div>
     <div class="sit" id="sit"></div>
+  </section>
+
+  <section id="start">
+    <div class="sec-head"><div><div class="eyebrow">For new founders</div><h2>Start here</h2></div><p id="startintro"></p></div>
+    <div class="progress" id="progress"></div>
+    <div class="phases" id="phases"></div>
   </section>
 
   <section id="nato">
@@ -444,6 +498,14 @@ function clamp(box, sel, n, noun){
 phoneMQ.addEventListener("change", () => { clamps.forEach((v, box) => clamp(box, ...v)); if (typeof drawMap === "function") drawMap(); });
 
 
+/* In-page jumps for links that point at a section */
+document.addEventListener("click", e => {
+  const a = e.target.closest("a[data-jump]"); if (!a) return; e.preventDefault();
+  const go = () => { const t = document.querySelector(a.getAttribute("href")); if (t) t.scrollIntoView(); };
+  if (location.hash) { history.replaceState(null,"",location.pathname+location.search); route(); requestAnimationFrame(go); } else go();
+});
+const linkAttrs = u => u.startsWith("#event-") || u.startsWith("#press-") ? "" : u.startsWith("#") ? " data-jump" : ' target="_blank" rel="noopener"';
+
 /* Timestamp */
 (() => { const d = new Date(L.updatedAt);
   $("#updated").textContent = d.toLocaleString("en-GB",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Oslo"}) + " (Oslo)"; })();
@@ -491,6 +553,47 @@ $("#toolkit").innerHTML = L.toolkit.map(t => `<li><a href="${esc(t.url)}" target
 $("#evlist").innerHTML = S.events.map(e => `
   <a class="ev" href="#event-${esc(e.id)}"><div class="kind"><span class="eyebrow">${esc(e.kind)}</span><span class="eyebrow">${/^\d{4}-\d\d-\d\d$/.test(e.date)?fmtDate(e.date):esc(e.date)}</span></div>
   <h3>${esc(e.title)}</h3><p class="muted" style="font-size:13.5px">${esc(e.where)}</p><p class="bl"><b>Bottom line</b>${esc(e.tldr)}</p><span class="more">Read the notes →</span></a>`).join("");
+
+/* Next 30 days */
+(() => {
+  const today = new Date().toLocaleDateString("en-CA",{timeZone:"Europe/Oslo"});
+  const lim = new Date(Date.parse(today+"T12:00:00Z")+30*864e5).toISOString().slice(0,10);
+  const days = s => Math.round((Date.parse(s+"T12:00:00Z")-Date.parse(today+"T12:00:00Z"))/864e5);
+  const items = [];
+  (L.funding||[]).forEach(f => { if (f.status==="open" && f.deadline && f.deadline>=today && f.deadline<=lim) items.push({d:f.deadline, t:"Funding", title:f.title, sub:`Deadline · ${f.funder}`, url:f.url}); });
+  (L.tenders||[]).forEach(t => { if (t.deadline && t.deadline>=today && t.deadline<=lim) items.push({d:t.deadline, t:"Tender", title:t.title, sub:`Deadline · ${t.buyer} · ${t.value}`, url:t.url}); });
+  (L.calendar||[]).forEach(e => { if (!e.approx && e.end>=today && e.start<=lim) items.push({d:e.start<today?today:e.start, live:e.start<=today, t:"Event", title:e.title, sub:`${e.city}${e.country!=="Norway"?", "+e.country:""} · ${e.kind}`, url:e.url}); });
+  items.sort((a,b)=>a.d.localeCompare(b.d));
+  const dd = s => { const x=new Date(s+"T12:00:00"); return `${x.toLocaleDateString("en-GB",{day:"numeric",month:"short"})}<small>${x.toLocaleDateString("en-GB",{weekday:"short"})}</small>`; };
+  const left = i => { if (i.live) return "On now"; const n = days(i.d); return n===0 ? "Today" : n===1 ? "Tomorrow" : `${n} days`; };
+  $("#nextlist").innerHTML = items.map(i => `<a class="nrow" href="${esc(i.url)}"${linkAttrs(i.url)}><span class="nd">${dd(i.d)}</span>
+    <span><b><span class="ty ${i.t}">${i.t}</span>${esc(i.title)}</b><span class="nsub">${esc(i.sub)}</span></span>
+    <span class="nleft${!i.live && days(i.d)<=7 && i.t!=="Event" ? " urgent" : ""}">${left(i)}</span></a>`).join("") || `<div class="empty">Nothing due in the next 30 days.</div>`;
+  clamp($("#nextlist"), ".nrow", 6, "dates");
+})();
+
+/* Start here */
+(() => {
+  const SH = S.startHere; if (!SH) { $("#start").hidden = true; return; }
+  $("#startintro").textContent = SH.intro;
+  let done = []; try { done = JSON.parse(localStorage.getItem("mlw-start-done") || "[]"); } catch(_) {}
+  const all = SH.phases.flatMap(p => p.steps.map(s => s.id));
+  const save = () => { try { localStorage.setItem("mlw-start-done", JSON.stringify(done)); } catch(_) {} };
+  const prog = () => { const n = all.filter(id => done.includes(id)).length;
+    $("#progress").innerHTML = `<span>${n} of ${all.length} done</span><span class="bar"><i style="width:${n/all.length*100}%"></i></span>`; };
+  let k = 0;
+  $("#phases").innerHTML = SH.phases.map(p => `<div class="phase"><header><b>${esc(p.name)}</b><span>${esc(p.goal)}</span></header>
+    ${p.steps.map(st => { k++; const d = done.includes(st.id); return `<details class="step${d?" done":""}" data-id="${esc(st.id)}"><summary><span class="num">${d?"✓":k}</span><span><b>${esc(st.title)}</b><span class="w">${esc(st.why)}</span></span></summary>
+      <div class="sbody"><ul>${st.do.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+      ${st.ask?`<span class="askp"><b>Ask</b>${esc(st.ask)}</span>`:""}
+      ${st.links.length?`<span class="lks">${st.links.map(l=>`<a href="${esc(l.url)}"${linkAttrs(l.url)}>${esc(l.label)}${l.url.startsWith("#")?" →":" ↗"}</a>`).join("")}</span>`:""}
+      <label class="donebox"><input type="checkbox" data-done="${esc(st.id)}"${d?" checked":""}> Mark as done</label></div></details>`; }).join("")}</div>`).join("");
+  prog();
+  $("#phases").addEventListener("change", e => { const c = e.target.closest("[data-done]"); if (!c) return; const id = c.dataset.done;
+    done = c.checked ? [...new Set([...done, id])] : done.filter(x => x !== id); save(); prog();
+    const st = c.closest(".step"); st.classList.toggle("done", c.checked);
+    st.querySelector(".num").textContent = c.checked ? "✓" : (all.indexOf(id)+1); });
+})();
 
 /* Funding & tenders */
 (() => {
