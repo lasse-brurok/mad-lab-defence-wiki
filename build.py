@@ -92,7 +92,18 @@ def main():
         "insights": load("data/insights.json"),
         "geo": load("vendor/countries-110m.json"),
     }
-    blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    text = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+    import importlib.util  # load our site.py by path ("site" is also a stdlib module)
+    spec = importlib.util.spec_from_file_location("wiki_site", ROOT / "site.py")
+    wiki_site = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(wiki_site)
+    pw = wiki_site.password(required=False)
+    if pw:
+        blob = json.dumps(wiki_site.encrypt_json(text, pw))
+        locked = "password-protected"
+    else:
+        blob = text.replace("</", "<\\/")
+        locked = "NOT password-protected (no .site-password)"
     html = (ROOT / "template.html").read_text(encoding="utf-8")
     marker = "/*__DATA__*/null"
     if marker not in html:
@@ -101,7 +112,7 @@ def main():
     out = ROOT / "dist" / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(html.replace(marker, blob), encoding="utf-8")
-    print(f"Wrote {out} ({out.stat().st_size // 1024} KB), "
+    print(f"Wrote {out} ({out.stat().st_size // 1024} KB, {locked}), "
           f"{len(live['news'])} news, {len(live['press'])} press, {len(live['readings'])} readings")
 
 

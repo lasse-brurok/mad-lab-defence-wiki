@@ -27,6 +27,19 @@
   --land:#24313b; --sea:#111b22; --partner:#d4a71f; --adversary:#4a4642; --stroke:#0d151b; color-scheme:dark}
 
 *{box-sizing:border-box}
+html.locked #home,html.locked #detail,html.locked footer.page{display:none}
+#gate{min-height:100vh;display:grid;place-items:center;background:var(--band);color:var(--band-ink);padding-block:24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#gate[hidden]{display:none}
+#gate-form{width:min(420px,100%);display:grid;gap:14px;background:var(--band-line);border:1px solid var(--band-line);padding:28px}
+#gate-form .eyebrow{color:var(--signal)}
+#gate-form h1{margin:0;font:800 40px/1 var(--display);font-stretch:78%;text-transform:uppercase}
+#gate-form p{margin:0;color:var(--band-muted);font-size:15px}
+#gate-form label{display:grid;gap:6px;font-size:13px;font-weight:600;color:var(--band-muted)}
+#gate-pw{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--band-muted);background:var(--band);color:var(--band-ink);border-radius:3px}
+#gate-form .gate-row{display:flex;align-items:center;gap:8px;font-size:14px}
+#gate-go{font:600 15px var(--body);padding:11px;border:0;border-radius:3px;background:var(--signal);color:#1a1006;cursor:pointer}
+#gate-go:disabled{opacity:.6;cursor:wait}
+#gate-err{color:var(--war);font-size:14px;min-height:1.2em}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body)}
@@ -421,6 +434,17 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
 }
 </style>
 
+<div id="gate" hidden>
+  <form id="gate-form" autocomplete="on">
+    <span class="eyebrow">AI Mad Lab · Defence</span>
+    <h1>Mad Lab Defence Wiki</h1>
+    <p>This page is for AI Mad Lab founders and partners. Enter the password you were given.</p>
+    <label for="gate-pw">Password<input id="gate-pw" type="password" autocomplete="current-password" required></label>
+    <label class="gate-row"><input id="gate-remember" type="checkbox" checked> Remember on this device</label>
+    <button id="gate-go" type="submit">Open the wiki</button>
+    <div id="gate-err" role="alert"></div>
+  </form>
+</div>
 <div id="home">
 <header class="band">
   <div class="wrap">
@@ -583,7 +607,31 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 <script>
-const DATA = /*__DATA__*/null;
+const RAW = /*__DATA__*/null;
+/* Password gate: the wiki's data is encrypted (AES-GCM, key from the password via PBKDF2) and only decrypted in this browser. */
+(() => {
+  if (!RAW || !RAW.enc) { boot(RAW); return; }
+  const P = RAW.enc, root = document.documentElement;
+  root.classList.add("locked");
+  const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+  const STORE = "mlw-key-" + P.salt;
+  const keyFrom = async pw => { const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveBits"]);
+    return new Uint8Array(await crypto.subtle.deriveBits({name:"PBKDF2", hash:"SHA-256", salt:b64(P.salt), iterations:P.iter}, base, 256)); };
+  const unlock = async raw => { const key = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+    const txt = new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(P.iv)}, key, b64(P.ct)));
+    root.classList.remove("locked"); document.getElementById("gate").hidden = true; boot(JSON.parse(txt)); };
+  const gate = document.getElementById("gate"), form = document.getElementById("gate-form"), err = document.getElementById("gate-err"), btn = document.getElementById("gate-go");
+  (async () => { let k = null; try { k = localStorage.getItem(STORE); } catch(_) {}
+    if (k) { try { await unlock(b64(k)); return; } catch(_) { try { localStorage.removeItem(STORE); } catch(_) {} } }
+    gate.hidden = false; document.getElementById("gate-pw").focus(); })();
+  form.addEventListener("submit", async e => { e.preventDefault(); btn.disabled = true; btn.textContent = "Unlocking…"; err.textContent = "";
+    try { const raw = await keyFrom(document.getElementById("gate-pw").value);
+      await unlock(raw);
+      if (document.getElementById("gate-remember").checked) { try { localStorage.setItem(STORE, btoa(String.fromCharCode(...raw))); } catch(_) {} }
+    } catch(_) { err.textContent = "That password is not right. Check it and try again."; btn.disabled = false; btn.textContent = "Open the wiki"; } });
+})();
+
+function boot(DATA){
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmtDate = (iso, opts) => { if(!iso) return "Recent"; const d = new Date(iso.length===10 ? iso+"T12:00:00" : iso); if (isNaN(d)) return esc(iso); return d.toLocaleDateString("en-GB", opts || {day:"numeric", month:"short", year:"numeric", timeZone:"Europe/Oslo"}); };
@@ -1156,4 +1204,5 @@ $("#v-eu").addEventListener("click", ()=>setView("eu")); $("#v-atl").addEventLis
 drawMap();
 const mq = matchMedia("(prefers-color-scheme: dark)"); mq.addEventListener && mq.addEventListener("change", drawMap);
 new MutationObserver(drawMap).observe(document.documentElement, {attributes:true, attributeFilter:["data-theme"]});
+}
 </script>
