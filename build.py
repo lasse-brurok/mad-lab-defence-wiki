@@ -92,6 +92,7 @@ def main():
         "insights": load("data/insights.json"),
         "geo": load("vendor/countries-110m.json"),
     }
+    contacts = ROOT / "data" / "contacts.json"
     text = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     import importlib.util  # load our site.py by path ("site" is also a stdlib module)
     spec = importlib.util.spec_from_file_location("wiki_site", ROOT / "site.py")
@@ -99,6 +100,9 @@ def main():
     spec.loader.exec_module(wiki_site)
     pw = wiki_site.password(required=False)
     if pw:
+        if contacts.exists():  # private copy of the live Network contacts; only ever stored encrypted
+            data["contacts"] = json.loads(contacts.read_text(encoding="utf-8"))
+            text = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
         blob = json.dumps(wiki_site.encrypt_json(text, pw))
         locked = "password-protected"
     else:

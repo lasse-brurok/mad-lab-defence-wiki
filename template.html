@@ -949,7 +949,9 @@ $("#pitch").innerHTML = `<div><span class="eyebrow">From ${esc(P.source)}</span>
   <div><span class="eyebrow">Who we collect</span><ul style="margin:0;padding-left:18px;display:grid;gap:4px">${P.categories.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`;
 const TEAM = S.network.map(o=>o.owner);
 const BASE_CATS = ["Defence founders","Combat operators","Superconnectors","Manufacturers and research labs","Defence contractors","Military buyers"];
-const fallback = S.network.flatMap(o=>o.people.map(p=>({...p, owner:o.owner})));
+const COPY = DATA.contacts && Array.isArray(DATA.contacts.people) && DATA.contacts.people.length ? DATA.contacts : null;
+const fallback = COPY ? COPY.people : S.network.flatMap(o=>o.people.map(p=>({...p, owner:o.owner})));
+const copyNote = COPY ? `Showing the contact list as of ${fmtDate(COPY.syncedAt)}. Team members signed in to claude.ai see changes live and can add contacts.` : "Showing the starting contact list.";
 let people = fallback, live = false, canWrite = false, db = null, uid = null, editing = null, confirmDel = null, netCat = "all", saving = false;
 const setStatus = t => { $("#netstatus").textContent = t; };
 const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "";
@@ -1036,23 +1038,25 @@ document.addEventListener("click", e => { const b = e.target.closest("[data-copy
 function selectText(el){ if(!el) return; const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }
 renderCats(); renderNet();
 (async () => {
-  if (!window.claude || !window.claude.use) { setStatus("This is an offline copy. Open the wiki on claude.ai to see live contacts and add your own."); return; }
+  if (!window.claude || !window.claude.use) { setStatus(copyNote); return; }
   const [d, user] = await Promise.all([claude.use("db"), claude.use("user")]);
-  if (!d) { setStatus("Sign in to claude.ai to see the live contact list and add your own. Showing the starting list."); return; }
+  if (!d) { setStatus(copyNote); return; }
   db = d;
   let w = null;
   if (user) { try { uid = await user.id(); } catch(_) {} try { w = await user.can("data.write"); } catch(_) {} }
   canWrite = w !== false;
+  if (w === false) { setStatus(copyNote); return; }  // only team members (Contributor and up) can read the live list
   setStatus("Loading contacts…");
-  const timer = setTimeout(() => setStatus(live ? "Can't reach the contact list right now. This may be out of date." : "Can't reach the contact list right now. Showing the starting list."), 10000);
+  const timer = setTimeout(() => setStatus(live ? "Can't reach the contact list right now. This may be out of date." : "Can't reach the live contact list right now. " + copyNote), 10000);
   db.collection("contacts").onSnapshot(snap => {
     if (!snap.metadata.fromCache) { clearTimeout(timer); if (/^(Loading|Can't)/.test($("#netstatus").textContent)) setStatus(""); }
     if (snap.empty && snap.metadata.fromCache) return;
+    if (snap.empty && COPY) { canWrite = false; $("#addc").hidden = true; setStatus(copyNote); return; }  // no read access: keep the encrypted copy
     people = snap.docs.map(x => ({id:x.id, ...x.data()})); live = true;
     if (confirmDel && !people.some(p=>p.id===confirmDel)) confirmDel = null;
     $("#addc").hidden = !canWrite; renderCats(); renderNet();
   }, err => { clearTimeout(timer); live = false; people = fallback; $("#addc").hidden = true; closeForm(); renderCats(); renderNet();
-    if (err.code !== "revoked") setStatus("The live contact list is unavailable. Showing the starting list."); });
+    if (err.code !== "revoked") setStatus("The live contact list is unavailable. " + copyNote); });
 })();
 
 /* In-page section links (hash is reserved for detail views) */
