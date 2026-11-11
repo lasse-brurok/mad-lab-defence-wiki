@@ -46,7 +46,7 @@ button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:v
 
 /* Command band */
 .band{background:var(--band);color:var(--band-ink)}
-.band > .wrap:first-child{padding-block:36px 0;display:grid;gap:18px}
+.band > .wrap:first-child{padding-block:36px 6px;display:grid;gap:18px}
 .band .eyebrow{color:var(--signal)}
 .band h1{font-size:clamp(38px,6.4vw,68px);font-weight:800;font-stretch:78%;text-transform:uppercase;letter-spacing:.01em}
 .band h1 span{color:var(--band-muted);font-weight:600}
@@ -411,7 +411,6 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
     <p>The situation, the market, the reading list and the people. Everything a founder in the defence track needs to get up to speed and stay updated on the latest.</p>
     <div class="stamp"><span><i class="dot"></i>Last updated <b id="updated">–</b></span><span>Refreshes every morning at 08:00</span></div>
   </div>
-    <div class="wrap" style="padding-block:18px 0"><div class="glance" id="glance" aria-label="At a glance"></div></div>
   <nav class="toc" aria-label="Sections">
     <div class="wrap" id="navbar">
       <button type="button" class="menu" data-menu="week" aria-expanded="false">This week <i aria-hidden="true">▾</i></button>
@@ -957,10 +956,10 @@ addEventListener("hashchange", route); route();
 
 /* Sections: fold, counts, grouped menu, at-a-glance */
 const GROUPS = {week:["news","press","next","situation"], start:["needs","nato"], money:["funding","capital"], learn:["events","readings","start","network"]};
-const DEFAULT_FOLDED = ["nato","readings","network"];
-let folded; try { folded = JSON.parse(localStorage.getItem("mlw-folded") || "null"); } catch(_) {}
+const DEFAULT_FOLDED = [...document.querySelectorAll("main section[id]")].map(x => x.id).filter(id => id !== "news");
+let folded; try { folded = JSON.parse(localStorage.getItem("mlw-folded-v2") || "null"); } catch(_) {}
 if (!Array.isArray(folded)) folded = DEFAULT_FOLDED.slice();
-const saveFolded = () => { try { localStorage.setItem("mlw-folded", JSON.stringify(folded)); } catch(_) {} };
+const saveFolded = () => { try { localStorage.setItem("mlw-folded-v2", JSON.stringify(folded)); } catch(_) {} };
 const sections = [...document.querySelectorAll("main section[id]")];
 function setCollapsed(sec, on, persist = true){
   sec.classList.toggle("collapsed", on);
@@ -999,15 +998,6 @@ const DESC = {next:"Deadlines and events, next 30 days", situation:"Norway, Nord
 function updateCounts(){
   const c = counts();
   sections.forEach(sec => { const el = sec.querySelector("[data-cnt]"); if (el) el.textContent = c[sec.id] || ""; });
-  const tiles = [
-    ["next", document.querySelectorAll("#nextlist .nrow").length, "dates in the next 30 days"],
-    ["funding", (L.funding||[]).filter(f => f.status==="open" && f.deadline >= today0).length, "funding calls open now", true, "funding call open now"],
-    ["funding", (L.tenders||[]).filter(t => !t.deadline || t.deadline >= today0).length, "open tenders for startups"],
-    ["news", L.news.filter(n => n.pri===1).length, "Norway news items"],
-    ["capital", (L.rounds||[]).length, "recent defence funding rounds"],
-    ["network", c.network.split(" ")[0], "people who can introduce you"]
-  ];
-  $("#glance").innerHTML = tiles.map(([id, v, label, hot, one]) => `<a href="#${id}" data-jump><b class="${hot && +v > 0 ? "hot" : ""}">${esc(String(v))}</b><span>${esc(+v === 1 && one ? one : label)}</span></a>`).join("");
 }
 updateCounts(); window.__countsReady = true;
 
