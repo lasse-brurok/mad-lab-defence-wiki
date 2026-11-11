@@ -63,8 +63,24 @@ def check_live(live):
     return errors
 
 
+def fix_timestamp(live):
+    """Never show a 'Last updated' time in the future: clamp it to the real clock."""
+    from datetime import datetime, timedelta
+    now = datetime.now().astimezone()
+    try:
+        ts = datetime.fromisoformat(live["updatedAt"])
+    except (KeyError, ValueError):
+        ts = None
+    if ts is None or ts > now + timedelta(minutes=2):
+        fixed = now.replace(microsecond=0).isoformat()
+        print(f"updatedAt {live.get('updatedAt')!r} is not a valid past time; using the real clock: {fixed}")
+        live["updatedAt"] = fixed
+        (ROOT / "data/live.json").write_text(json.dumps(live, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def main():
     live = load("data/live.json")
+    fix_timestamp(live)
     errors = check_live(live)
     if errors:
         print("Build stopped:\n  " + "\n  ".join(errors))
