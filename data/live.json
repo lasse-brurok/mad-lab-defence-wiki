@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T21:00:00+01:00",
+ "updatedAt": "2026-11-11T08:45:00+01:00",
  "situation": [
   {
    "region": "Norway",
@@ -19,11 +19,15 @@
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "All four Nordic allies are rearming fast: Denmark spends 3.49% of GDP in 2026, Sweden 3.22%, Norway 3.17% and Finland 2.65%. Nordic defence ministers meet in Oslo on 11–12 November under Norway's NORDEFCO chairmanship, while NATO's Dynamic Merlin anti-submarine exercise started in the Baltic Sea on 9 November.",
+   "text": "All four Nordic allies are rearming fast: Denmark spends 3.49% of GDP in 2026, Sweden 3.22%, Norway 3.17% and Finland 2.65%. Nordic defence ministers meet in Oslo today and tomorrow under Norway's NORDEFCO chairmanship. Denmark keeps buying directly from Nordic industry, most recently 26 Saab Trackfire weapon stations for its frigates without a public tender.",
    "sources": [
     {
      "label": "Regjeringen",
      "url": "https://www.regjeringen.no/en/whats-new/nordic-defence-ministers-meeting-in-oslo-1112-november/id3191962/"
+    },
+    {
+     "label": "NordicDefenceWatch",
+     "url": "https://nordicdefencewatch.com/news/production/article19817791.ece"
     },
     {
      "label": "NATO",
@@ -34,15 +38,19 @@
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "The front is largely deadlocked, with 127–190 clashes a day and the heaviest fighting around Pokrovsk and Kostiantynivka. Russia, Ukraine and the US held about four hours of talks in Abu Dhabi on 10 November. Ukraine keeps scaling drone buying: units have ordered more than 903,000 items worth USD 1.39 bn through Brave1 Market.",
+   "text": "The front is largely deadlocked, with 125 clashes on 10 November and the heaviest fighting around Kostiantynivka and Pokrovsk. After the Abu Dhabi talks, a large prisoner exchange may follow, while Ukrainian drones hit Russia's Ust-Luga port overnight. Ukraine and Poland are setting up joint working groups on drones and counter-drone technology.",
    "sources": [
     {
-     "label": "NPR",
-     "url": "https://npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks"
+     "label": "Ukrinform",
+     "url": "https://www.ukrinform.net/rubric-ato/4183554-war-update-116-clashes-on-front-line-since-morning.html"
     },
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4183175-war-update-156-clashes-on-front-line-over-past-day-fiercest-fighting-in-pokrovsk-sector.html"
+     "url": "https://www.ukrinform.net/rubric-ato/4183535-ukraine-and-poland-to-establish-joint-working-groups-on-drone-and-counterdrone-technologies.html"
+    },
+    {
+     "label": "NPR",
+     "url": "https://npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks"
     }
    ]
   },
@@ -66,11 +74,29 @@
   {
    "pri": 1,
    "region": "Norway",
+   "date": "2026-11-11",
+   "title": "Norway's NORDSEC cluster and France's EDEN sign cooperation agreement",
+   "summary": "The MoU covers knowledge exchange, joint projects and meeting places. EDEN represents more than 280 French defence SMEs. A French delegation visits Norway in 2027.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en/article/norwegian-nordsec-and-french-eden-sign-cooperation-agreement"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
    "date": "2026-11-10",
    "title": "MoD orders Forsvaret, FFI, FMA and Forsvarsbygg to fix audit findings",
    "summary": "The Auditor General found possible material errors in the 2025 accounts. FMA risks booking purchases in the wrong year, so suppliers should expect tighter invoicing and delivery documentation.",
    "source": "Regjeringen",
    "url": "https://www.regjeringen.no/no/aktuelt/ber-etatane-utarbeida-tiltak/id3192243/"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-10",
+   "title": "Cyviz wins US military contract",
+   "summary": "The Norwegian control-room and visualisation company has won a contract with the US military.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/production/article19818672.ece"
   },
   {
    "pri": 1,
@@ -118,24 +144,6 @@
    "url": "https://www.regjeringen.no/no/aktuelt/styrker-evnen-til-a-oppdage-droner-i-finnmark/id3191003/"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-03",
-   "title": "Government proposes tougher anti-espionage laws and more PST powers",
-   "summary": "The proposal widens what counts as illegal intelligence activity and gives PST broader investigative tools.",
-   "source": "Nordic Defence Sector",
-   "url": "https://nordicdefencesector.com/en/briefs"
-  },
-  {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-03",
-   "title": "Poland's army recommends Kongsberg's Protector RS4 for K2PL tanks",
-   "summary": "A Polish alternative weapon station fell short in tests, opening the door for Kongsberg.",
-   "source": "Nordic Defence Sector",
-   "url": "https://nordicdefencesector.com/en/briefs"
-  },
-  {
    "pri": 2,
    "region": "Nordics",
    "date": "2026-11-11",
@@ -143,6 +151,24 @@
    "summary": "Norway hosts NORDEFCO as 2026 chair. Agenda: Nordic cooperation within NATO and total defence. Press briefing on 12 November.",
    "source": "Regjeringen",
    "url": "https://www.regjeringen.no/en/whats-new/nordic-defence-ministers-meeting-in-oslo-1112-november/id3191962/"
+  },
+  {
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-10",
+   "title": "Denmark to buy 26 Saab Trackfire weapon stations without tender",
+   "summary": "DALO intends to negotiate directly with Saab for frigate weapon stations, estimated at DKK 334 m, with an option for up to 20 years of maintenance.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/production/article19817791.ece"
+  },
+  {
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-10",
+   "title": "Sønderborg Defence Hub launched to pull local firms into defence supply chains",
+   "summary": "Backed by Saab Denmark, the network links companies, SDU and authorities. Local defence jobs have grown from about 60–70 to 600–700 in a few years.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/policy/article19815636.ece"
   },
   {
    "pri": 2,
@@ -186,11 +212,29 @@
   {
    "pri": 3,
    "region": "Ukraine",
+   "date": "2026-11-11",
+   "title": "Drones hit Russia's Ust-Luga port",
+   "summary": "A drone attack sparked a fire at the strategic Baltic port, showing Ukraine's long-range drone reach.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4183614-drones-attack-russias-strategic-ustluga-port-sparking-fire.html"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
    "date": "2026-11-10",
    "title": "Russia–Ukraine–US talks in Abu Dhabi",
    "summary": "Nearly four hours of US-mediated talks, while the armies remain largely deadlocked on the front.",
    "source": "NPR",
    "url": "https://npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-10",
+   "title": "Ukraine and Poland set up joint drone and counter-drone working groups",
+   "summary": "The two countries will cooperate on drone and C-UAS technology, a sign that front-line know-how is moving into NATO's eastern flank.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4183535-ukraine-and-poland-to-establish-joint-working-groups-on-drone-and-counterdrone-technologies.html"
   },
   {
    "pri": 3,
@@ -1255,6 +1299,18 @@
    "date": "2026",
    "investors": "Not stated",
    "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
+  },
+  {
+   "company": "Hypersonica",
+   "country": "Germany / UK",
+   "region": "Europe",
+   "what": "Hypersonic missile systems",
+   "round": "Series B",
+   "amount": "EUR 100 m",
+   "usdM": 116,
+   "date": "2026-11",
+   "investors": "Lightspeed and General Catalyst (co-leads), Plural, 201 Ventures",
+   "url": "https://startuprise.co.uk/hypersonica-raises-e100mn-series-b-to-advance-europes-hypersonic-defence-technology/"
   }
  ],
  "roundsContext": {
