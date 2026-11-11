@@ -255,6 +255,24 @@ main section{padding-block:48px 8px;scroll-margin-top:60px}
 .flags{display:inline-flex;align-items:center;margin-right:7px;vertical-align:-1px;flex:none}
 .flag{display:block;width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);flex:none}
 .flags .flag+.flag{margin-left:-5px;box-shadow:0 0 0 1px rgba(0,0,0,.18),-1px 0 0 1px var(--surface)}
+/* What's new */
+.feed{border-top:2px solid var(--ink)}
+.frow{display:grid;grid-template-columns:86px minmax(0,1fr) auto;gap:4px 14px;align-items:start;padding:13px 4px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.frow:hover b{color:var(--accent);text-decoration:underline}
+.frow.brk{background:var(--war-soft);border-left:3px solid var(--war);padding-left:10px}
+.fty{font:700 10.5px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;padding:5px 6px;border-radius:2px;text-align:center;background:var(--accent-soft);color:var(--accent);margin-top:2px}
+.fty.Press,.fty.Tender{background:var(--signal-soft);color:var(--signal)}
+.fty.Round,.fty.Investor,.fty.Funding{background:#dcefe3;color:#1d6b3a}
+.fty.Contact{background:var(--land);color:var(--ink)}
+.frow.brk .fty{background:var(--war);color:var(--surface)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fty.Round,:root:not([data-theme="light"]) .fty.Investor,:root:not([data-theme="light"]) .fty.Funding{background:#173826;color:#7fd3a0}}
+:root[data-theme="dark"] .fty.Round,:root[data-theme="dark"] .fty.Investor,:root[data-theme="dark"] .fty.Funding{background:#173826;color:#7fd3a0}
+.fmain{display:grid;gap:3px;min-width:0}
+.fmain b{font-size:16px;line-height:1.3}
+.fsub{font-size:14px;color:var(--muted)}
+.fwhen{font:600 12px var(--mono);color:var(--muted);white-space:nowrap;display:flex;gap:8px;align-items:center;padding-top:3px}
+.newdot{font:700 10px/1 var(--mono);font-style:normal;text-transform:uppercase;letter-spacing:.06em;background:var(--signal);color:var(--surface);padding:4px 5px;border-radius:2px}
+@media (max-width:640px){.frow{grid-template-columns:auto minmax(0,1fr)}.frow .fmain{grid-column:1/-1;order:3}.fty{justify-self:start}.fwhen{justify-self:end}}
 /* Next 30 days */
 .nx{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:0 24px;border-top:2px solid var(--ink)}
 .nrow{display:grid;grid-template-columns:62px minmax(0,1fr) auto;gap:2px 12px;align-items:start;padding:11px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
@@ -424,6 +442,10 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
 </header>
 
 <main class="wrap">
+  <section id="new">
+    <div class="sec-head"><div><div class="eyebrow">Home</div><h2>What's new</h2></div><p id="feedintro"></p></div>
+    <div class="feed" id="feedlist"></div>
+  </section>
   <section id="news">
     <div class="sec-head"><div><div class="eyebrow">Defence sector news</div><h2>What happened this week</h2></div>
       <div class="filters" role="group" aria-label="Filter news by region">
@@ -571,11 +593,11 @@ const L = DATA.live, N = DATA.nato, S = DATA.static;
 /* Long lists: show the first few, with Show more / Show less */
 const phoneMQ = matchMedia("(max-width:700px)");
 const clamps = new Map();
-function clamp(box, sel, n, noun){
-  if (!box) return; clamps.set(box, [sel, n, noun]);
+function clamp(box, sel, n, noun, fixed){
+  if (!box) return; clamps.set(box, [sel, n, noun, fixed]);
   box.querySelectorAll(":scope > .more-btn").forEach(b => b.remove());
   const items = [...box.querySelectorAll(sel)];
-  const lim = phoneMQ.matches ? n : Math.ceil(n * 1.6);
+  const lim = phoneMQ.matches || fixed ? n : Math.ceil(n * 1.6);
   if (items.length <= lim + 1) { items.forEach(it => it.hidden = false); box.querySelectorAll(":scope > .month").forEach(m => m.hidden = false); return; }
   const open = box.dataset.open === "1";
   items.forEach((it, i) => it.hidden = !open && i >= lim);
@@ -583,7 +605,7 @@ function clamp(box, sel, n, noun){
   const b = document.createElement("button"); b.type = "button"; b.className = "more-btn" + (open ? " less-btn" : "");
   b.textContent = open ? `Show less` : `Show ${items.length - lim} more ${noun}`;
   b.setAttribute("aria-expanded", open);
-  b.addEventListener("click", () => { box.dataset.open = open ? "" : "1"; clamp(box, sel, n, noun); if (open) box.scrollIntoView({block:"nearest"}); });
+  b.addEventListener("click", () => { box.dataset.open = open ? "" : "1"; clamp(box, sel, n, noun, fixed); if (open) box.scrollIntoView({block:"nearest"}); });
   box.append(b);
 }
 phoneMQ.addEventListener("change", () => { clamps.forEach((v, box) => clamp(box, ...v)); if (typeof drawMap === "function") drawMap(); });
@@ -857,6 +879,7 @@ function renderNet(){
   }).join("");
   $("#owners").innerHTML = html || `<div class="empty">No one matches that search.</div>`;
   if (typeof updateCounts === "function" && window.__countsReady) updateCounts();
+  if (window.__feedReady) renderFeed();
   if (!$("#q").value.trim()) document.querySelectorAll("#owners .people").forEach(b => clamp(b, ".person", 4, "contacts"));
 }
 function openForm(p){
@@ -954,9 +977,53 @@ function route(){
 }
 addEventListener("hashchange", route); route();
 
+/* What's new: one feed across every source */
+let lastVisit = null;
+try { lastVisit = localStorage.getItem("mlw-last-visit"); localStorage.setItem("mlw-last-visit", new Date().toISOString()); } catch(_) {}
+function renderFeed(){
+  const box = $("#feedlist"); if (!box) return;
+  const today = new Date().toLocaleDateString("en-CA",{timeZone:"Europe/Oslo"});
+  const since = new Date(Date.parse(today+"T12:00:00Z")-14*864e5).toISOString().slice(0,10);
+  const day = s => (s||"").slice(0,10);
+  const full = s => /^\d{4}-\d\d-\d\d/.test(s||"");
+  const items = [];
+  const add = o => { if (full(o.d) && day(o.d) >= since && day(o.d) <= today) items.push(o); };
+  (L.news||[]).forEach(n => add({d:n.added||n.date, t:"News", fl:n.region, title:n.title, sub:n.summary, url:n.url, breaking:!!n.breaking}));
+  (L.press||[]).forEach(p => add({d:p.added||p.date, t:"Press", fl:"Norway", title:p.title, sub:p.tldr||p.summary, url:"#press-"+p.id}));
+  (L.tenders||[]).forEach(t => add({d:t.added||t.published, t:"Tender", fl:"Norway", title:t.title, sub:`${t.buyer} · ${t.value}${t.deadline?" · deadline "+fmtDate(t.deadline):""}`, url:t.url}));
+  (L.funding||[]).forEach(f => f.added && add({d:f.added, t:"Funding", fl:f.funder+" "+f.title, title:f.title, sub:f.tldr, url:f.url}));
+  (L.rounds||[]).forEach(r => add({d:r.added||r.date, t:"Round", fl:r.country, title:`${r.company} raises ${r.amount}`, sub:`${r.round} · ${r.what}`, url:r.url}));
+  (L.investors||[]).forEach(i => i.added && add({d:i.added, t:"Investor", fl:i.base, title:`New investor: ${i.name}`, sub:i.note, url:i.url}));
+  (L.calendar||[]).forEach(e => e.added && add({d:e.added, t:"Event", fl:e.country+" "+e.title, title:`New event: ${e.title}`, sub:`${fmtDate(e.start)} · ${e.city}`, url:e.url}));
+  (L.readings||[]).forEach(r => add({d:r.added||r.date, t:"Reading", fl:(r.tags||[]).join(" "), title:r.title, sub:r.tldr, url:r.url||"#readings"}));
+  // contacts added in the shared network (live data only; seeded contacts share one day and become one entry)
+  const byDay = {};
+  (typeof people !== "undefined" ? people : []).forEach(p => { if (p.createdAt) (byDay[day(p.createdAt)] ||= []).push(p); });
+  Object.entries(byDay).forEach(([d, ps]) => {
+    if (ps.length > 3) add({d, t:"Contact", fl:"", title:`${ps.length} contacts added to the network`, sub:ps.slice(0,4).map(p=>p.name).join(", ")+"…", url:"#network"});
+    else ps.forEach(p => add({d:p.createdAt, t:"Contact", fl:p.org+" "+(p.note||""), title:`New contact: ${p.name}`, sub:[p.role,p.org].filter(Boolean).join(" · ") + (p.owner?` · ask ${p.owner}`:""), url:"#network"}));
+  });
+  const recentBreak = i => i.breaking && day(i.d) >= new Date(Date.parse(today+"T12:00:00Z")-2*864e5).toISOString().slice(0,10);
+  items.sort((a,b) => (recentBreak(b)-recentBreak(a)) || day(b.d).localeCompare(day(a.d)) || String(b.d).localeCompare(String(a.d)));
+  const list = items.slice(0, 20);
+  const ago = d => { const n = Math.round((Date.parse(today+"T12:00:00Z")-Date.parse(day(d)+"T12:00:00Z"))/864e5); return n<=0?"Today":n===1?"Yesterday":`${n} days ago`; };
+  const isNew = i => lastVisit && (i.d.length > 10 ? i.d > lastVisit : day(i.d) > day(lastVisit));
+  const fresh = list.filter(isNew).length;
+  $("#feedintro").textContent = lastVisit ? (fresh ? `${fresh} new since your last visit, newest first.` : "Nothing new since your last visit. The latest updates are below.") : "The latest updates from every part of the wiki, newest first.";
+  box.innerHTML = list.map(i => `<a class="frow${recentBreak(i)?" brk":""}" href="${esc(i.url)}"${linkAttrs(i.url)}>
+    <span class="fty ${i.t}">${recentBreak(i)?"Breaking":i.t}</span>
+    <span class="fmain"><b>${i.fl?flags(i.fl):""}${esc(i.title)}</b><span class="fsub">${esc((i.sub||"").length>160?(i.sub||"").slice(0,157)+"…":(i.sub||""))}</span></span>
+    <span class="fwhen">${isNew(i)?'<i class="newdot">New</i>':""}${ago(i.d)}</span></a>`).join("") || `<div class="empty">Nothing new in the last two weeks.</div>`;
+  delete box.dataset.open; clamp(box, ".frow", 3, "updates", true);
+  if (typeof updateCounts === "function" && window.__countsReady) updateCounts();
+}
+renderFeed();
+
+window.__feedReady = true;
+
 /* Sections: fold, counts, grouped menu, at-a-glance */
-const GROUPS = {week:["news","press","next","situation"], start:["needs","nato"], money:["funding","capital"], learn:["events","readings","start","network"]};
-const DEFAULT_FOLDED = [...document.querySelectorAll("main section[id]")].map(x => x.id).filter(id => id !== "news");
+const GROUPS = {week:["new","news","press","next","situation"], start:["needs","nato"], money:["funding","capital"], learn:["events","readings","start","network"]};
+const DEFAULT_FOLDED = [...document.querySelectorAll("main section[id]")].map(x => x.id).filter(id => id !== "news" && id !== "new");
 let folded; try { folded = JSON.parse(localStorage.getItem("mlw-folded-v2") || "null"); } catch(_) {}
 if (!Array.isArray(folded)) folded = DEFAULT_FOLDED.slice();
 const saveFolded = () => { try { localStorage.setItem("mlw-folded-v2", JSON.stringify(folded)); } catch(_) {} };
@@ -987,12 +1054,12 @@ function counts(){
   return {
     next: `${document.querySelectorAll("#nextlist .nrow").length} dates`, situation: `${L.situation.length} regions`,
     start: `${S.startHere ? S.startHere.phases.reduce((a,p)=>a+p.steps.length,0) : 0} steps`, needs: "Top 5 + 5", nato: `${N.countries.length} allies`,
-    news: `${L.news.length} items`, press: `${L.press.length} releases`, funding: `${openF} open · ${tend} tenders`,
+    new: `${document.querySelectorAll("#feedlist .frow").length} updates`, news: `${L.news.length} items`, press: `${L.press.length} releases`, funding: `${openF} open · ${tend} tenders`,
     capital: `${(L.rounds||[]).length} rounds · ${(L.investors||[]).length} investors`, events: `${up} upcoming`,
     readings: `${L.readings.length} reports`, network: `${ppl} contacts`
   };
 }
-const DESC = {next:"Deadlines and events, next 30 days", situation:"Norway, Nordics, Ukraine, Europe", news:"Defence-sector news by priority", press:"FD, Forsvaret and FMA releases",
+const DESC = {new:"Everything new across the wiki", next:"Deadlines and events, next 30 days", situation:"Norway, Nordics, Ukraine, Europe", news:"Defence-sector news by priority", press:"FD, Forsvaret and FMA releases",
   start:"Ten steps from idea to first contract", needs:"Top problems and wanted technologies", nato:"Map of all 32 allies",
   funding:"Open calls and live tenders", capital:"Who is raising and who invests", events:"Calendar and meeting notes", readings:"Reports with bottom lines", network:"Who can introduce you"};
 function updateCounts(){
