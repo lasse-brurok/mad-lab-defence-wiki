@@ -327,6 +327,26 @@ main section{padding-block:48px 8px;scroll-margin-top:60px}
 .donebox input{width:18px;height:18px;accent-color:var(--accent)}
 @media (max-width:1000px){.phases{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.phases{grid-template-columns:1fr}.sbody{padding-left:12px}}
+/* Players */
+.pfilters{display:grid;gap:8px;margin-bottom:18px}
+.pfilters .filters button small{font:600 10.5px var(--mono);color:var(--muted);margin-left:4px}
+.pfilters .filters button[aria-pressed="true"] small{color:inherit;opacity:.75}
+#psegsel{display:none;font:15px var(--body);padding:9px 10px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);width:100%}
+@media (max-width:640px){#pseg{display:none}#psegsel{display:block}}
+.pgroup{margin-bottom:22px}
+.pgroup > header{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:10px}
+.pgroup > header b{font:800 19px var(--display);font-stretch:85%}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(270px,100%),1fr));gap:10px}
+.pcard{background:var(--surface);border:1px solid var(--line);padding:12px 14px;display:grid;gap:5px;align-content:start;color:var(--ink);text-decoration:none;min-width:0}
+.pcard:hover{border-color:var(--accent)}
+.pcard:hover b{color:var(--accent)}
+.pcard .ph{display:flex;justify-content:space-between;gap:8px;align-items:start}
+.pcard b{font-size:15.5px;line-height:1.3}
+.pcard p{margin:0;font-size:14px;color:var(--muted)}
+.pcard .pc{font:600 11.5px var(--mono);color:var(--muted)}
+.ptype{font:700 10px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;padding:4px 6px;border-radius:2px;white-space:nowrap;background:var(--accent-soft);color:var(--accent)}
+.ptype.Prime{background:var(--ink);color:var(--surface)}
+.ptype.Startup{background:var(--signal-soft);color:var(--signal)}
 /* What defence needs */
 .needs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
 .ncol > header{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:4px}
@@ -537,6 +557,16 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
       </div></div>
     <div class="needs" id="needs-grid"></div>
     <p class="foot" id="needs-note"></p>
+  </section>
+
+  <section id="players">
+    <div class="sec-head"><div><div class="eyebrow">Who builds what</div><h2>Players</h2></div><p>Defence companies by region and segment, from primes to startups. Filter to find partners, competitors and customers' suppliers.</p></div>
+    <div class="pfilters">
+      <div class="filters" role="group" aria-label="Filter players by region" id="preg"></div>
+      <div class="filters" role="group" aria-label="Filter players by segment" id="pseg"></div>
+      <select id="psegsel" aria-label="Filter players by segment"></select>
+    </div>
+    <div id="playerlist"></div>
   </section>
 
   <section id="nato">
@@ -800,6 +830,34 @@ $("#evlist").innerHTML = S.events.map(e => `
     st.querySelector(".num").textContent = c.checked ? "✓" : (all.indexOf(id)+1); });
 })();
 
+/* Players */
+(() => {
+  const PL = L.players || []; if (!PL.length) { $("#players").hidden = true; return; }
+  const REG = ["Norway","Nordics","Europe","NATO"];
+  const SEGS = [...new Set(PL.map(p => p.segment))].sort((a,b) => PL.filter(p=>p.segment===b).length - PL.filter(p=>p.segment===a).length);
+  let reg = "all", seg = "all";
+  const chips = (box, list, cur, attr, counts) => box.innerHTML = [["all","All"]].concat(list.map(x=>[x,x])).map(([v,l]) =>
+    `<button type="button" data-${attr}="${esc(v)}" aria-pressed="${v===cur}">${v!=="all"&&attr==="pr"?flags(v==="Nordics"?"Nordic":v==="Europe"?"EU":v)+" ":""}${esc(l)}<small>${counts(v)}</small></button>`).join("");
+  const TYPEORD = {Prime:0,"Scale-up":1,Startup:2};
+  function draw(){
+    const inReg = p => reg==="all" || p.region===reg, inSeg = p => seg==="all" || p.segment===seg;
+    chips($("#preg"), REG, reg, "pr", v => PL.filter(p => (v==="all"||p.region===v) && inSeg(p)).length);
+    chips($("#pseg"), SEGS, seg, "ps", v => PL.filter(p => (v==="all"||p.segment===v) && inReg(p)).length);
+    $("#psegsel").innerHTML = [["all","All segments"]].concat(SEGS.map(x=>[x,x])).map(([v,l]) => `<option value="${esc(v)}"${v===seg?" selected":""}>${esc(l)} (${PL.filter(p => (v==="all"||p.segment===v) && inReg(p)).length})</option>`).join("");
+    const list = PL.filter(p => inReg(p) && inSeg(p));
+    const groups = SEGS.filter(sg => list.some(p => p.segment===sg));
+    $("#playerlist").innerHTML = groups.map(sg => { const ps = list.filter(p=>p.segment===sg).sort((a,b) => REG.indexOf(a.region)-REG.indexOf(b.region) || TYPEORD[a.type]-TYPEORD[b.type] || a.name.localeCompare(b.name));
+      return `<div class="pgroup"><header><b>${esc(sg)}</b><span class="muted" style="font-size:13px">${ps.length} ${ps.length===1?"company":"companies"}</span></header>
+      <div class="pgrid">${ps.map(p => `<a class="pcard" href="${esc(p.url)}" target="_blank" rel="noopener"><span class="ph"><b>${flags(p.country, p.region)}${esc(p.name)}</b><span class="ptype ${esc(p.type)}">${esc(p.type)}</span></span>
+        <span class="pc">${esc(p.country)}</span><p>${esc(p.what)}</p></a>`).join("")}</div></div>`; }).join("") || `<div class="empty">No players match those filters.</div>`;
+    document.querySelectorAll("#playerlist .pgrid").forEach(g => clamp(g, ".pcard", 4, "companies"));
+  }
+  $("#preg").addEventListener("click", e => { const b = e.target.closest("[data-pr]"); if (!b) return; reg = b.dataset.pr; draw(); });
+  $("#pseg").addEventListener("click", e => { const b = e.target.closest("[data-ps]"); if (!b) return; seg = b.dataset.ps; draw(); });
+  $("#psegsel").addEventListener("change", e => { seg = e.target.value; draw(); });
+  draw();
+})();
+
 /* What defence needs */
 (() => {
   const I = DATA.insights; if (!I) { $("#needs").hidden = true; return; }
@@ -1043,6 +1101,7 @@ function renderFeed(){
   (L.rounds||[]).forEach(r => add({d:r.added||r.date, t:"Round", fl:r.country, title:`${r.company} raises ${r.amount}`, sub:`${r.round} · ${r.what}`, url:r.url}));
   (L.investors||[]).forEach(i => i.added && add({d:i.added, t:"Investor", fl:i.base, title:`New investor: ${i.name}`, sub:i.note, url:i.url}));
   (L.calendar||[]).forEach(e => e.added && add({d:e.added, t:"Event", fl:e.country+" "+e.title, title:`New event: ${e.title}`, sub:`${fmtDate(e.start)} · ${e.city}`, url:e.url}));
+  (L.players||[]).forEach(p => p.added && add({d:p.added, t:"Player", fl:p.country, title:`New player: ${p.name}`, sub:`${p.segment} · ${p.what}`, url:"#players"}));
   (L.readings||[]).forEach(r => add({d:r.added||r.date, t:"Reading", fl:(r.tags||[]).join(" "), title:r.title, sub:r.tldr, url:r.url||"#readings"}));
   // contacts added in the shared network (live data only; seeded contacts share one day and become one entry)
   const byDay = {};
@@ -1070,7 +1129,7 @@ renderFeed();
 window.__feedReady = true;
 
 /* Sections: fold, counts, grouped menu, at-a-glance */
-const GROUPS = {week:["new","news","press","next","situation"], start:["needs","nato"], money:["funding","capital"], learn:["events","readings","start","network"]};
+const GROUPS = {week:["new","news","press","next","situation"], start:["needs","players","nato"], money:["funding","capital"], learn:["events","readings","start","network"]};
 const DEFAULT_FOLDED = [...document.querySelectorAll("main section[id]")].map(x => x.id).filter(id => id !== "news" && id !== "new");
 let folded; try { folded = JSON.parse(localStorage.getItem("mlw-folded-v2") || "null"); } catch(_) {}
 if (!Array.isArray(folded)) folded = DEFAULT_FOLDED.slice();
@@ -1101,13 +1160,13 @@ function counts(){
   const up = (L.calendar||[]).filter(e => e.end >= today0).length;
   return {
     next: `${document.querySelectorAll("#nextlist .nrow").length} dates`, situation: `${L.situation.length} regions`,
-    start: `${S.startHere ? S.startHere.phases.reduce((a,p)=>a+p.steps.length,0) : 0} steps`, needs: "Top 5 + 5", nato: `${N.countries.length} allies`,
+    start: `${S.startHere ? S.startHere.phases.reduce((a,p)=>a+p.steps.length,0) : 0} steps`, needs: "Top 5 + 5", players: `${(L.players||[]).length} companies`, nato: `${N.countries.length} allies`,
     new: `${document.querySelectorAll("#feedlist .frow").length} updates`, news: `${L.news.length} items`, press: `${L.press.length} releases`, funding: `${openF} open · ${tend} tenders`,
     capital: `${(L.rounds||[]).length} rounds · ${(L.investors||[]).length} investors`, events: `${up} upcoming`,
     readings: `${L.readings.length} reports`, network: `${ppl} contacts`
   };
 }
-const DESC = {new:"Everything new across the wiki", next:"Deadlines and events, next 30 days", situation:"Norway, Nordics, Ukraine, Europe", news:"Defence-sector news by priority", press:"FD, Forsvaret and FMA releases",
+const DESC = {new:"Everything new across the wiki", players:"Defence companies by region and segment", next:"Deadlines and events, next 30 days", situation:"Norway, Nordics, Ukraine, Europe", news:"Defence-sector news by priority", press:"FD, Forsvaret and FMA releases",
   start:"Ten steps from idea to first contract", needs:"Top problems and wanted technologies", nato:"Map of all 32 allies",
   funding:"Open calls and live tenders", capital:"Who is raising and who invests", events:"Calendar and meeting notes", readings:"Reports with bottom lines", network:"Who can introduce you"};
 function updateCounts(){

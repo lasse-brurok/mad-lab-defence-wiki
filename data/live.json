@@ -1539,5 +1539,691 @@
    "note": "Led Onodrim's USD 300 m Series A.",
    "url": "https://thenextweb.com/news/onodrim-raises-300m-series-a-lux-capital"
   }
+ ],
+ "players": [
+  {
+   "name": "Kongsberg Defence & Aerospace",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "NASAMS air defence, NSM/JSM missiles, remote weapon stations and C2.",
+   "url": "https://www.kongsberg.com/"
+  },
+  {
+   "name": "Nammo",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Missiles & munitions",
+   "type": "Prime",
+   "what": "Ammunition, rocket motors and shoulder-fired weapons; owned by the Norwegian state and Patria.",
+   "url": "https://www.nammo.com/"
+  },
+  {
+   "name": "Chemring Nobel",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Missiles & munitions",
+   "type": "Scale-up",
+   "what": "High explosives made at Sætre, a key part of the ammunition supply chain.",
+   "url": "https://www.chemring.com/"
+  },
+  {
+   "name": "Kitron",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Manufacturing & components",
+   "type": "Scale-up",
+   "what": "Electronics manufacturing for defence and aerospace systems.",
+   "url": "https://www.kitron.com/"
+  },
+  {
+   "name": "Radionor Communications",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Comms & EW",
+   "type": "Scale-up",
+   "what": "Long-range radio links for drones and unmanned systems; in demand in Ukraine.",
+   "url": "https://www.radionor.no/"
+  },
+  {
+   "name": "Cyviz",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Software, AI & C2",
+   "type": "Scale-up",
+   "what": "Command-centre visualisation; won a US military contract in November 2026.",
+   "url": "https://www.cyviz.com/"
+  },
+  {
+   "name": "Six Robotics",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Software, AI & C2",
+   "type": "Startup",
+   "what": "Swarm autonomy and C2 software for mixed drone fleets, spun out of FFI.",
+   "url": "https://sixrobotics.com/"
+  },
+  {
+   "name": "Stendr",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "AI-driven multi-sensor drone detection and tracking.",
+   "url": "https://stendr.com/"
+  },
+  {
+   "name": "Squarehead Technology",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "Acoustic drone detection.",
+   "url": "https://www.sqhead.com/"
+  },
+  {
+   "name": "Rift Dynamics",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Drones",
+   "type": "Startup",
+   "what": "Compact, low-cost drones built for harsh conditions.",
+   "url": "https://businessnorway.com/articles/rift-dynamics-cutting-edge-drone-technology-made-in-norway"
+  },
+  {
+   "name": "Aviant",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Drones",
+   "type": "Startup",
+   "what": "Long-range drone delivery and drone certification.",
+   "url": "https://www.aviant.no/"
+  },
+  {
+   "name": "Griff Aviation",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Drones",
+   "type": "Startup",
+   "what": "Heavy-lift drones.",
+   "url": "https://www.griffaviation.com/"
+  },
+  {
+   "name": "Ubiq Aerospace",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Drones",
+   "type": "Startup",
+   "what": "Ice protection so drones can fly in Arctic weather.",
+   "url": "https://www.ubiqaerospace.com/"
+  },
+  {
+   "name": "Maritime Robotics",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Maritime & underwater",
+   "type": "Scale-up",
+   "what": "Uncrewed surface vessels and maritime autonomy.",
+   "url": "https://www.maritimerobotics.com/"
+  },
+  {
+   "name": "Eelume",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Maritime & underwater",
+   "type": "Startup",
+   "what": "Snake-like underwater robots for subsea inspection and repair.",
+   "url": "https://eelume.com/"
+  },
+  {
+   "name": "Blueye Robotics",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Maritime & underwater",
+   "type": "Startup",
+   "what": "Portable underwater drones used by navies and coast guards.",
+   "url": "https://www.blueyerobotics.com/"
+  },
+  {
+   "name": "Water Linked",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Maritime & underwater",
+   "type": "Startup",
+   "what": "Underwater positioning and navigation.",
+   "url": "https://waterlinked.com/"
+  },
+  {
+   "name": "Kongsberg Ferrotech",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Maritime & underwater",
+   "type": "Startup",
+   "what": "Subsea repair robot that creates a dry workspace underwater.",
+   "url": "https://www.kongsbergferrotech.com/"
+  },
+  {
+   "name": "KSAT",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Space & ISR",
+   "type": "Scale-up",
+   "what": "Global satellite ground-station network.",
+   "url": "https://www.ksat.no/"
+  },
+  {
+   "name": "Andøya Space",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Space & ISR",
+   "type": "Scale-up",
+   "what": "Launch site and military test range in the Arctic.",
+   "url": "https://www.andoyaspace.no/"
+  },
+  {
+   "name": "Vake",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Space & ISR",
+   "type": "Startup",
+   "what": "Satellite analytics for maritime and defence use.",
+   "url": "https://www.vake.ai/"
+  },
+  {
+   "name": "Testnor",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Comms & EW",
+   "type": "Startup",
+   "what": "Arctic test range for GNSS jamming and spoofing.",
+   "url": "https://testnor.no/"
+  },
+  {
+   "name": "Mnemonic",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Cyber",
+   "type": "Scale-up",
+   "what": "Managed cyber defence and threat intelligence.",
+   "url": "https://www.mnemonic.io/"
+  },
+  {
+   "name": "Hiddn Technology",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Cyber",
+   "type": "Startup",
+   "what": "Hardware encryption for data at rest.",
+   "url": "https://www.hiddn.no/"
+  },
+  {
+   "name": "Fieldmade",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Manufacturing & components",
+   "type": "Startup",
+   "what": "Deployable micro factories that 3D-print spare parts in the field.",
+   "url": "https://www.fieldmade.no/"
+  },
+  {
+   "name": "Alva Industries",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Manufacturing & components",
+   "type": "Startup",
+   "what": "Lightweight electric motors for drones and robotics.",
+   "url": "https://www.alvaindustries.com/"
+  },
+  {
+   "name": "Saab",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "Gripen, GlobalEye, Carl-Gustaf, radars and submarines.",
+   "url": "https://www.saab.com/"
+  },
+  {
+   "name": "BAE Systems Hägglunds",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Land systems & robotics",
+   "type": "Prime",
+   "what": "CV90 infantry fighting vehicles.",
+   "url": "https://www.baesystems.com/"
+  },
+  {
+   "name": "Patria",
+   "country": "Finland",
+   "region": "Nordics",
+   "segment": "Land systems & robotics",
+   "type": "Prime",
+   "what": "Armoured vehicles and mortar systems; co-owner of Nammo.",
+   "url": "https://www.patriagroup.com/"
+  },
+  {
+   "name": "Terma",
+   "country": "Denmark",
+   "region": "Nordics",
+   "segment": "Sensors & radar",
+   "type": "Prime",
+   "what": "Radars and aircraft self-protection systems.",
+   "url": "https://www.terma.com/"
+  },
+  {
+   "name": "Weibel Scientific",
+   "country": "Denmark",
+   "region": "Nordics",
+   "segment": "Sensors & radar",
+   "type": "Scale-up",
+   "what": "Doppler radars for air defence and tracking.",
+   "url": "https://www.weibel.dk/"
+  },
+  {
+   "name": "Systematic",
+   "country": "Denmark",
+   "region": "Nordics",
+   "segment": "Software, AI & C2",
+   "type": "Scale-up",
+   "what": "SitaWare battlefield command-and-control software.",
+   "url": "https://systematic.com/"
+  },
+  {
+   "name": "ICEYE",
+   "country": "Finland",
+   "region": "Nordics",
+   "segment": "Space & ISR",
+   "type": "Scale-up",
+   "what": "SAR radar satellites that see through cloud and darkness.",
+   "url": "https://www.iceye.com/"
+  },
+  {
+   "name": "Kelluu",
+   "country": "Finland",
+   "region": "Nordics",
+   "segment": "Space & ISR",
+   "type": "Startup",
+   "what": "Hydrogen airships for long-endurance aerial surveillance.",
+   "url": "https://www.kelluu.com/"
+  },
+  {
+   "name": "Sensofusion",
+   "country": "Finland",
+   "region": "Nordics",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "Counter-drone detection and takeover systems.",
+   "url": "https://sensofusion.com/"
+  },
+  {
+   "name": "Arctic RAVN",
+   "country": "Finland",
+   "region": "Nordics",
+   "segment": "Manufacturing & components",
+   "type": "Startup",
+   "what": "Drone electronics free of Chinese-origin parts.",
+   "url": "https://www.eu-startups.com/2026/10/finnish-defencetech-arctic-ravn-secures-e2-5-million-in-loan-commitments-before-its-first-product-launch"
+  },
+  {
+   "name": "Nordic Air Defence",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "Kreuger 100 low-cost interceptor drone.",
+   "url": "https://nordicairdefence.com/"
+  },
+  {
+   "name": "Frankenburg Technologies",
+   "country": "Estonia",
+   "region": "Nordics",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "Low-cost, mass-produced interceptor missiles against drones.",
+   "url": "https://frankenburg.tech/"
+  },
+  {
+   "name": "Origin Robotics",
+   "country": "Latvia",
+   "region": "Nordics",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "BLAZE interceptor and BEAK strike drone, proven in Ukraine.",
+   "url": "https://www.originrobotics.com/"
+  },
+  {
+   "name": "Milrem Robotics",
+   "country": "Estonia",
+   "region": "Nordics",
+   "segment": "Land systems & robotics",
+   "type": "Scale-up",
+   "what": "THeMIS uncrewed ground vehicles.",
+   "url": "https://milremrobotics.com/"
+  },
+  {
+   "name": "Marduk Technologies",
+   "country": "Estonia",
+   "region": "Nordics",
+   "segment": "Software, AI & C2",
+   "type": "Startup",
+   "what": "AI battlefield management for NATO forces.",
+   "url": "https://marduk.ee/"
+  },
+  {
+   "name": "Kongsberg NanoAvionics",
+   "country": "Lithuania",
+   "region": "Nordics",
+   "segment": "Space & ISR",
+   "type": "Scale-up",
+   "what": "Small satellites and satellite buses.",
+   "url": "https://nanoavionics.com/"
+  },
+  {
+   "name": "Rheinmetall",
+   "country": "Germany",
+   "region": "Europe",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "Ammunition, armoured vehicles and air defence.",
+   "url": "https://www.rheinmetall.com/"
+  },
+  {
+   "name": "Airbus Defence and Space",
+   "country": "Europe",
+   "region": "Europe",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "Military aircraft, satellites and secure communications.",
+   "url": "https://www.airbus.com/"
+  },
+  {
+   "name": "Thales",
+   "country": "France",
+   "region": "Europe",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "Radars, communications, cyber and missiles.",
+   "url": "https://www.thalesgroup.com/"
+  },
+  {
+   "name": "Leonardo",
+   "country": "Italy",
+   "region": "Europe",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "Helicopters, electronics and defence systems.",
+   "url": "https://www.leonardo.com/"
+  },
+  {
+   "name": "BAE Systems",
+   "country": "United Kingdom",
+   "region": "Europe",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "Ships, submarines, combat aircraft and electronics.",
+   "url": "https://www.baesystems.com/"
+  },
+  {
+   "name": "MBDA",
+   "country": "Europe",
+   "region": "Europe",
+   "segment": "Missiles & munitions",
+   "type": "Prime",
+   "what": "Europe's missile maker.",
+   "url": "https://www.mbda-systems.com/"
+  },
+  {
+   "name": "KNDS",
+   "country": "France / Germany",
+   "region": "Europe",
+   "segment": "Land systems & robotics",
+   "type": "Prime",
+   "what": "Leopard tanks, Caesar howitzers and armoured vehicles.",
+   "url": "https://en.wikipedia.org/wiki/KNDS"
+  },
+  {
+   "name": "Hensoldt",
+   "country": "Germany",
+   "region": "Europe",
+   "segment": "Sensors & radar",
+   "type": "Prime",
+   "what": "Radars, optronics and electronic warfare sensors.",
+   "url": "https://www.hensoldt.net/"
+  },
+  {
+   "name": "Helsing",
+   "country": "Germany",
+   "region": "Europe",
+   "segment": "Software, AI & C2",
+   "type": "Scale-up",
+   "what": "AI for defence, strike drones and autonomy; Europe's most valuable defence startup.",
+   "url": "https://helsing.ai/"
+  },
+  {
+   "name": "Quantum Systems",
+   "country": "Germany",
+   "region": "Europe",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Reconnaissance drones used widely in Ukraine.",
+   "url": "https://quantum-systems.com/"
+  },
+  {
+   "name": "STARK",
+   "country": "Germany",
+   "region": "Europe",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Loitering munitions.",
+   "url": "https://www.stark-defence.com/"
+  },
+  {
+   "name": "TEKEVER",
+   "country": "Portugal / UK",
+   "region": "Europe",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Long-range surveillance drones.",
+   "url": "https://www.tekever.com/"
+  },
+  {
+   "name": "TYTAN Technologies",
+   "country": "Germany",
+   "region": "Europe",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "Autonomous interceptor drones.",
+   "url": "https://tytan-technologies.com/"
+  },
+  {
+   "name": "Harmattan AI",
+   "country": "France",
+   "region": "Europe",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "AI-guided low-cost interceptors.",
+   "url": "https://www.harmattan.ai/"
+  },
+  {
+   "name": "Alta Ares",
+   "country": "France",
+   "region": "Europe",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "AI-powered air defence and counter-drone systems.",
+   "url": "https://www.alta-ares.com/"
+  },
+  {
+   "name": "Cambridge Aerospace",
+   "country": "United Kingdom",
+   "region": "Europe",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "Low-cost interceptor missiles.",
+   "url": "https://cambridgeaerospace.com/"
+  },
+  {
+   "name": "Hypersonica",
+   "country": "Germany / UK",
+   "region": "Europe",
+   "segment": "Missiles & munitions",
+   "type": "Scale-up",
+   "what": "Hypersonic missile systems.",
+   "url": "https://startuprise.co.uk/hypersonica-raises-e100mn-series-b-to-advance-europes-hypersonic-defence-technology/"
+  },
+  {
+   "name": "Kraken Technology",
+   "country": "United Kingdom",
+   "region": "Europe",
+   "segment": "Maritime & underwater",
+   "type": "Scale-up",
+   "what": "Uncrewed surface vessels.",
+   "url": "https://www.krakentechnologygroup.com/"
+  },
+  {
+   "name": "Open Cosmos",
+   "country": "United Kingdom",
+   "region": "Europe",
+   "segment": "Space & ISR",
+   "type": "Scale-up",
+   "what": "Satellites for sovereign European space ISR.",
+   "url": "https://www.open-cosmos.com/"
+  },
+  {
+   "name": "Onodrim Industries",
+   "country": "Netherlands",
+   "region": "Europe",
+   "segment": "Manufacturing & components",
+   "type": "Scale-up",
+   "what": "Buys and scales European defence and industrial suppliers.",
+   "url": "https://tech.eu/2026/11/09/onodrim-industries-hits-13b-valuation-with-300m-series-a-to-strengthen-european-defence"
+  },
+  {
+   "name": "Vyriy",
+   "country": "Ukraine",
+   "region": "Europe",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Large Ukrainian drone maker; Saliut and Zirka interceptors.",
+   "url": "https://vyriy.com/"
+  },
+  {
+   "name": "Fire Point",
+   "country": "Ukraine",
+   "region": "Europe",
+   "segment": "Missiles & munitions",
+   "type": "Scale-up",
+   "what": "FP-1 long-range strike drones.",
+   "url": "https://en.wikipedia.org/wiki/Fire_Point_FP-1"
+  },
+  {
+   "name": "Buntar Aerospace",
+   "country": "Ukraine",
+   "region": "Europe",
+   "segment": "Drones",
+   "type": "Startup",
+   "what": "EW-resistant reconnaissance drones that fly without GPS.",
+   "url": "https://therecursive.com/ukraines-buntar-aerospace-raises-eur14-3m-for-drones-built-to-operate-without-gps"
+  },
+  {
+   "name": "Lockheed Martin",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "F-35 fighter jets, missiles and space.",
+   "url": "https://www.lockheedmartin.com/"
+  },
+  {
+   "name": "RTX",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Primes",
+   "type": "Prime",
+   "what": "Patriot and AMRAAM; partner on NASAMS with Kongsberg.",
+   "url": "https://www.rtx.com/"
+  },
+  {
+   "name": "Anduril",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Software, AI & C2",
+   "type": "Scale-up",
+   "what": "Lattice AI software, autonomous drones and counter-drone systems.",
+   "url": "https://www.anduril.com/"
+  },
+  {
+   "name": "Shield AI",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Software, AI & C2",
+   "type": "Scale-up",
+   "what": "Hivemind AI pilot for drones and aircraft.",
+   "url": "https://shield.ai/"
+  },
+  {
+   "name": "Palantir",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Software, AI & C2",
+   "type": "Prime",
+   "what": "Data and AI platforms for defence and intelligence.",
+   "url": "https://www.palantir.com/"
+  },
+  {
+   "name": "Skydio",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Autonomous drones; supplies X10D drones to the Norwegian Armed Forces.",
+   "url": "https://www.skydio.com/"
+  },
+  {
+   "name": "General Atomics",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Drones",
+   "type": "Prime",
+   "what": "MQ-9 Reaper and large uncrewed aircraft.",
+   "url": "https://www.ga-asi.com/"
+  },
+  {
+   "name": "Epirus",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "High-power microwave weapons against drone swarms.",
+   "url": "https://www.epirusinc.com/"
+  },
+  {
+   "name": "Baykar",
+   "country": "Türkiye",
+   "region": "NATO",
+   "segment": "Drones",
+   "type": "Prime",
+   "what": "Bayraktar TB2 and Akıncı drones.",
+   "url": "https://baykartech.com/"
+  },
+  {
+   "name": "Aselsan",
+   "country": "Türkiye",
+   "region": "NATO",
+   "segment": "Sensors & radar",
+   "type": "Prime",
+   "what": "Radars, electronic warfare and communications.",
+   "url": "https://www.aselsan.com/"
+  },
+  {
+   "name": "CAE",
+   "country": "Canada",
+   "region": "NATO",
+   "segment": "Software, AI & C2",
+   "type": "Prime",
+   "what": "Military simulation and training.",
+   "url": "https://www.cae.com/"
+  }
  ]
 }
