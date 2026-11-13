@@ -10,3 +10,4 @@ __pycache__/
 # Private: copy of the team Network contacts (encrypted into the page by build.py)
 data/contacts.json
 .contacts-export/
+.network-password

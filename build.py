@@ -102,9 +102,28 @@ def main():
     if pw:
         if contacts.exists():  # private copy of the live Network contacts; only ever stored encrypted
             data["contacts"] = json.loads(contacts.read_text(encoding="utf-8"))
-            text = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
-        blob = json.dumps(wiki_site.encrypt_json(text, pw))
         locked = "password-protected"
+        netpw_file = ROOT / ".network-password"
+        netpw = netpw_file.read_text(encoding="utf-8").strip() if netpw_file.exists() else ""
+        if netpw:
+            # Network gets its own layer: the contact list and the contacts copy are encrypted with the
+            # Network password, inside the page data that is itself encrypted with the site password.
+            static = dict(data["static"])
+            net = {"network": static.pop("network", []), "contacts": data.pop("contacts", None), "asks": {}}
+            if static.get("startHere"):  # "who to ask" names live behind the Network password too
+                sh = json.loads(json.dumps(static["startHere"]))
+                for ph in sh.get("phases", []):
+                    for st in ph.get("steps", []):
+                        if st.get("ask"):
+                            net["asks"][st["id"]] = st["ask"]
+                            st["ask"] = ""
+                static["startHere"] = sh
+            static["network"] = []
+            data["static"] = static
+            data["netEnc"] = wiki_site.encrypt_json(json.dumps(net, ensure_ascii=False), netpw)["enc"]
+            locked += " + Network password"
+        text = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+        blob = json.dumps(wiki_site.encrypt_json(text, pw))
     else:
         blob = text.replace("</", "<\\/")
         locked = "NOT password-protected (no .site-password)"

@@ -389,6 +389,14 @@ main section{padding-block:48px 8px;scroll-margin-top:60px}
 .person .acts button.danger{color:var(--war);border-color:var(--war)}
 button.primary{background:var(--accent);color:var(--surface);border-color:var(--accent)}
 button.primary:hover{filter:brightness(1.08)}
+.netlock{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--signal);padding:18px;display:grid;gap:10px;max-width:440px;margin-bottom:18px}
+.netlock[hidden]{display:none}
+.netlock b{font-size:16px}
+.netlock span{font-size:14px;color:var(--muted)}
+.netlock label{display:grid;gap:5px;font-size:13px;font-weight:600;color:var(--muted)}
+.netlock input[type=password]{font:inherit;font-size:16px;padding:9px 11px;border:1px solid var(--line);border-radius:3px;background:var(--bg);color:var(--ink)}
+.netlock .gate-row2{display:flex;align-items:center;gap:8px;font-weight:500;font-size:14px}
+#network.netlocked .netbar,#network.netlocked #owners,#network.netlocked #netstatus,#network.netlocked #cform{display:none !important}
 .netstatus{margin:-6px 0 14px;font-size:13.5px;color:var(--muted);min-height:1em}
 .netstatus:empty{display:none}
 .cform{background:var(--surface);border:1px solid var(--accent);padding:18px;margin-bottom:22px;display:grid;gap:14px}
@@ -600,6 +608,14 @@ footer.page .wrap{display:grid;gap:6px;border-top:1px solid var(--line);padding-
   <section id="network">
     <div class="sec-head"><div><div class="eyebrow">Who we know</div><h2>Network</h2></div><p>People the team can introduce you to, grouped by who holds the relationship. Ask that person for the intro. Team members can add and edit contacts here.</p></div>
     <div class="pitch" id="pitch"></div>
+    <form id="netlock" class="netlock" hidden autocomplete="off">
+      <b>The contact list has its own password</b>
+      <span>Ask the AI Mad Lab team for the Network password.</span>
+      <label for="netpw">Network password<input id="netpw" type="password" required></label>
+      <label class="gate-row2"><input id="netremember" type="checkbox" checked> Remember on this device</label>
+      <button type="submit" id="netgo" class="primary">Open the network</button>
+      <span class="ferr" id="neterr" role="alert"></span>
+    </form>
     <div class="netbar">
       <input id="q" type="search" placeholder="Search name, company or topic" aria-label="Search the network">
       <button type="button" id="addc" class="primary" hidden>+ Add contact</button>
@@ -947,11 +963,11 @@ $("#evlist").innerHTML = S.events.map(e => `
 const P = S.networkPitch;
 $("#pitch").innerHTML = `<div><span class="eyebrow">From ${esc(P.source)}</span><h3>${esc(P.intro)}</h3><dl>${P.offers.map(o=>`<div><dt>${esc(o.title)}</dt><dd>${esc(o.text)}</dd></div>`).join("")}</dl></div>
   <div><span class="eyebrow">Who we collect</span><ul style="margin:0;padding-left:18px;display:grid;gap:4px">${P.categories.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`;
-const TEAM = S.network.map(o=>o.owner);
+let TEAM = S.network.map(o=>o.owner);
 const BASE_CATS = ["Defence founders","Combat operators","Superconnectors","Manufacturers and research labs","Defence contractors","Military buyers"];
-const COPY = DATA.contacts && Array.isArray(DATA.contacts.people) && DATA.contacts.people.length ? DATA.contacts : null;
-const fallback = COPY ? COPY.people : S.network.flatMap(o=>o.people.map(p=>({...p, owner:o.owner})));
-const copyNote = COPY ? `Showing the contact list as of ${fmtDate(COPY.syncedAt)}. Team members signed in to claude.ai see changes live and can add contacts.` : "Showing the starting contact list.";
+let COPY = DATA.contacts && Array.isArray(DATA.contacts.people) && DATA.contacts.people.length ? DATA.contacts : null;
+let fallback = COPY ? COPY.people : S.network.flatMap(o=>o.people.map(p=>({...p, owner:o.owner})));
+let copyNote = COPY ? `Showing the contact list as of ${fmtDate(COPY.syncedAt)}. Team members signed in to claude.ai see changes live and can add contacts.` : "Showing the starting contact list.";
 let people = fallback, live = false, canWrite = false, db = null, uid = null, editing = null, confirmDel = null, netCat = "all", saving = false;
 const setStatus = t => { $("#netstatus").textContent = t; };
 const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "";
@@ -1037,7 +1053,7 @@ document.addEventListener("click", e => { const b = e.target.closest("[data-copy
   try { navigator.clipboard.writeText(t).then(done).catch(()=>selectText(b.previousElementSibling)); } catch(_) { selectText(b.previousElementSibling); } });
 function selectText(el){ if(!el) return; const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }
 renderCats(); renderNet();
-(async () => {
+async function startLive(){
   if (!window.claude || !window.claude.use) { setStatus(copyNote); return; }
   const [d, user] = await Promise.all([claude.use("db"), claude.use("user")]);
   if (!d) { setStatus(copyNote); return; }
@@ -1057,6 +1073,37 @@ renderCats(); renderNet();
     $("#addc").hidden = !canWrite; renderCats(); renderNet();
   }, err => { clearTimeout(timer); live = false; people = fallback; $("#addc").hidden = true; closeForm(); renderCats(); renderNet();
     if (err.code !== "revoked") setStatus("The live contact list is unavailable. " + copyNote); });
+}
+
+/* Network password: the contact data has its own encryption layer */
+let netLocked = !!DATA.netEnc;
+(() => {
+  const NE = DATA.netEnc, sec = $("#network");
+  if (!NE) { startLive(); return; }
+  sec.classList.add("netlocked"); $("#netlock").hidden = false;
+  const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+  const STORE = "mlw-netkey-" + NE.salt;
+  const derive = async pw => { const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveBits"]);
+    return new Uint8Array(await crypto.subtle.deriveBits({name:"PBKDF2", hash:"SHA-256", salt:b64(NE.salt), iterations:NE.iter}, base, 256)); };
+  const open = async raw => {
+    const key = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+    const net = JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(NE.iv)}, key, b64(NE.ct))));
+    S.network = net.network || [];
+    Object.entries(net.asks || {}).forEach(([id, who]) => { const st = document.querySelector(`#phases .step[data-id="${CSS.escape(id)}"] .sbody`); if (st && !st.querySelector(".askp")) { const el = document.createElement("span"); el.className = "askp"; el.innerHTML = `<b>Ask</b>${esc(who)}`; st.insertBefore(el, st.querySelector(".lks, .donebox")); } });
+    COPY = net.contacts && Array.isArray(net.contacts.people) && net.contacts.people.length ? net.contacts : null;
+    TEAM = S.network.map(o=>o.owner);
+    fallback = COPY ? COPY.people : S.network.flatMap(o=>o.people.map(p=>({...p, owner:o.owner})));
+    copyNote = COPY ? `Showing the contact list as of ${fmtDate(COPY.syncedAt)}. Team members signed in to claude.ai see changes live and can add contacts.` : "Showing the starting contact list.";
+    people = fallback; netLocked = false;
+    sec.classList.remove("netlocked"); $("#netlock").hidden = true;
+    renderCats(); renderNet(); startLive();
+  };
+  (async () => { let k = null; try { k = localStorage.getItem(STORE); } catch(_) {}
+    if (k) { try { await open(b64(k)); } catch(_) { try { localStorage.removeItem(STORE); } catch(_) {} } } })();
+  $("#netlock").addEventListener("submit", async e => { e.preventDefault(); const btn = $("#netgo"); btn.disabled = true; btn.textContent = "Unlocking…"; $("#neterr").textContent = "";
+    try { const raw = await derive($("#netpw").value); await open(raw);
+      if ($("#netremember").checked) { try { localStorage.setItem(STORE, btoa(String.fromCharCode(...raw))); } catch(_) {} } }
+    catch(_) { $("#neterr").textContent = "That password is not right."; } finally { btn.disabled = false; btn.textContent = "Open the network"; } });
 })();
 
 /* In-page section links (hash is reserved for detail views) */
@@ -1167,7 +1214,7 @@ function counts(){
     start: `${S.startHere ? S.startHere.phases.reduce((a,p)=>a+p.steps.length,0) : 0} steps`, needs: "Top 5 + 5", players: `${(L.players||[]).length} companies`, nato: `${N.countries.length} allies`,
     new: `${document.querySelectorAll("#feedlist .frow").length} updates`, news: `${L.news.length} items`, press: `${L.press.length} releases`, funding: `${openF} open · ${tend} tenders`,
     capital: `${(L.rounds||[]).length} rounds · ${(L.investors||[]).length} investors`, events: `${up} upcoming`,
-    readings: `${L.readings.length} reports`, network: `${ppl} contacts`
+    readings: `${L.readings.length} reports`, network: netLocked ? "Password" : `${ppl} contacts`
   };
 }
 const DESC = {new:"Everything new across the wiki", players:"Defence companies by region and segment", next:"Deadlines and events, next 30 days", situation:"Norway, Nordics, Ukraine, Europe", news:"Defence-sector news by priority", press:"FD, Forsvaret and FMA releases",
