@@ -1,79 +1,79 @@
 {
- "updatedAt": "2026-11-13T09:07:57+01:00",
+ "updatedAt": "2026-11-14T08:14:25+01:00",
  "situation": [
   {
    "region": "Norway",
    "level": "elevated",
-   "text": "PST raised the sabotage threat on 12 November and expects Russian intelligence to try sabotage in Norway within a year, most likely against the defence industry and its suppliers. A Russian analyst has already called Kongsberg's plants legitimate targets. NASAMS sensors now watch for drones at Kirkenes, and the UK has agreed to buy three Norwegian-built mine-hunting motherships.",
+   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their subcontractors and military logistics. People linked to Russian services have already scouted possible targets. On 13 November the government turned its Ukraine industry portal into a marketplace where offers are matched to confirmed Ukrainian needs, with no money set aside in advance.",
    "sources": [
     {
      "label": "PST",
      "url": "https://www.pst.no/sabotasjetrusselen-i-norge-er-skjerpet/"
     },
     {
-     "label": "NordicDefenceWatch",
-     "url": "https://nordicdefencewatch.com/news/policy/article19824419.ece"
+     "label": "Regjeringen",
+     "url": "https://www.regjeringen.no/no/aktuelt/industriportalen-er-endret/id3192892/"
     },
     {
-     "label": "Forsvarets forum",
-     "url": "https://www.forsvaretsforum.no/innkjop-marinefartoy-materiell/storbritannia-kjoper-mineryddere-av-norge/532610"
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/norwegian-intelligence-risk-russia-sabotage/"
     }
    ]
   },
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "Nordic defence ministers agreed in Oslo on 12 November to start work on a Nordic defence agreement so forces can move and fight across borders. Finland reported a strike on a Russian warship in the Gulf of Finland on 11 November, as Ukrainian drones hit targets around St Petersburg. Sweden warns of Russian attempts at destructive cyberattacks on power, water and heating systems.",
+   "text": "Nordic defence ministers have started work on a Nordic defence agreement so forces can move and fight across borders. Bild reports that Russia demanded in Abu Dhabi talks that Finland leave NATO, which Finland's defence minister rejected outright. Finland also reported a strike on a Russian warship in the Gulf of Finland on 11 November.",
    "sources": [
     {
      "label": "Regjeringen",
      "url": "https://www.regjeringen.no/no/aktuelt/begynner-arbeidet-med-nordisk-forsvarsavtale/id3192484/"
     },
     {
-     "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4183906-finland-reports-strike-on-russian-warship-in-baltic-sea.html"
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/finland-leave-nato-troops-out-of-baltics-russia-demands/"
     },
     {
-     "label": "Nordic Defence Sector",
-     "url": "https://nordicdefencesector.com/en/article/government-holds-press-briefing-on-cyberattacks"
+     "label": "Ukrinform",
+     "url": "https://www.ukrinform.net/rubric-ato/4183906-finland-reports-strike-on-russian-warship-in-baltic-sea.html"
     }
    ]
   },
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "Russia keeps up nightly drone and missile attacks on Kyiv, Odesa, Rivne and energy sites, while fighting is fiercest around Kostiantynivka and Pokrovsk. Ukraine has hit five of Russia's largest refineries since 30 October. Air defence remains the bottleneck: interceptor missiles are short, and a speed limit on Starshield links makes it harder to catch jet-powered drones.",
+   "text": "Russia launched 96 drones overnight into 14 November and Ukraine downed 81; a strike on Zaporizhzhia injured 50 people. The front saw 273 clashes in a day, fiercest around Pokrovsk. Ukraine shot down a Geran-5 jet drone with a Swedish RBS-70 for the first time, but interceptors and Starshield limits remain bottlenecks.",
    "sources": [
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4184096-zelensky-rutte-discuss-air-defense-missile-shortages-starshield-disruptions.html"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/new-starshield-restrictions-in-ukraine-complicate-russian-drone-interceptions-zelensky/"
+     "url": "https://www.ukrinform.net/rubric-ato/4184585-air-defenses-neutralize-81-of-96-drones-launched-by-russia-against-ukraine-since-evening.html"
     },
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4183910-ukrainian-forces-strike-five-of-russias-largest-oil-refineries-since-oct-30.html"
+     "url": "https://www.ukrinform.net/rubric-ato/4184587-war-update-273-clashes-on-front-lines-over-past-day-pokrovsk-sector-hottest.html"
+    },
+    {
+     "label": "Ukrinform",
+     "url": "https://www.ukrinform.net/rubric-ato/4184527-ukraines-air-defenders-down-russian-geran5-jet-drone-for-first-time-using-swedish-rbs70-manpads.html"
     }
    ]
   },
   {
    "region": "Europe",
    "level": "elevated",
-   "text": "A drone from Belarus crossed Lithuania on 11 November and NATO jets failed twice to shoot it down, while Spain used helicopters against drones over Romania for the first time. Russia's hybrid campaign of sabotage, cyberattacks and drone incursions goes on, and Moscow now offers bilateral non-aggression pacts to single NATO states. The EU agreed a EUR 3.1 bn defence budget for 2027.",
+   "text": "Hackers planted a fake software update on Quantum Systems' server, and the Bundeswehr grounded its fleet of the company's drones while it was contained. A drone from Belarus crossed Lithuania on 11 November and NATO jets failed twice to shoot it down. Spain approved EUR 11.86 bn for 13 defence programmes, including EUR 1.45 bn for counter-drone systems.",
    "sources": [
+    {
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/cyberattack-on-quantum-systems-hackers-attempted-to-infect-updates-for-drones-used-by-ukraine-in-particular/"
+    },
     {
      "label": "Militarnyi",
      "url": "https://militarnyi.com/en/news/nato-fighter-jets-twice-fail-to-shoot-down-unknown-drone-over-lithuania/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/spanish-nh90-helicopters-deployed-for-first-ever-drone-interception-in-romania/"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/moscow-non-aggression-pacts-nato-countries/"
+     "url": "https://militarnyi.com/en/news/s-80-taurus-spain-12-billion-for-13-defense/"
     }
    ]
   }
@@ -88,6 +88,16 @@
    "source": "NordicDefenceWatch",
    "url": "https://nordicdefencewatch.com/news/production/article19824414.ece",
    "added": "2026-11-13"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-13",
+   "title": "Norway turns its Ukraine industry portal into a marketplace",
+   "summary": "The defence ministry's portal for Norwegian offers to Ukraine no longer has earmarked Nansen money. Proposals are now matched to needs that Ukraine's defence ministry confirms, and FMA assesses those that match. Unused funds move into the ordinary Ukraine support budget.",
+   "source": "Regjeringen",
+   "url": "https://www.regjeringen.no/no/aktuelt/industriportalen-er-endret/id3192892/",
+   "added": "2026-11-14"
   },
   {
    "pri": 1,
@@ -151,15 +161,6 @@
    "added": "2026-11-12"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-11",
-   "title": "Norway's NORDSEC cluster and France's EDEN sign cooperation agreement",
-   "summary": "The MoU covers knowledge exchange, joint projects and meeting places. EDEN represents more than 280 French defence SMEs. A French delegation visits Norway in 2027.",
-   "source": "Nordic Defence Sector",
-   "url": "https://nordicdefencesector.com/en/article/norwegian-nordsec-and-french-eden-sign-cooperation-agreement"
-  },
-  {
    "pri": 2,
    "region": "Denmark",
    "date": "2026-11-13",
@@ -168,6 +169,36 @@
    "source": "NordicDefenceWatch",
    "url": "https://nordicdefencewatch.com/news/policy/article19830679.ece",
    "added": "2026-11-13"
+  },
+  {
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-13",
+   "title": "Terma's OSL picked for NATO's counter-drone marketplace",
+   "summary": "NATO's new C-UAS marketplace, launched on 5 November, lets allies buy counter-drone systems from a catalogue without a separate tender. Terma's UK subsidiary OSL Technology is one of five suppliers chosen.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/drones/article19820229.ece",
+   "added": "2026-11-14"
+  },
+  {
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-13",
+   "title": "Gatehouse Satcom buys small-satellite radio maker Satlab",
+   "summary": "Gatehouse Satcom, which builds software that links satellites to 5G networks, is buying Aalborg-based Satlab. The deal should close by the end of 2026 and takes the group to about 140 staff.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/space/article19826828.ece",
+   "added": "2026-11-14"
+  },
+  {
+   "pri": 2,
+   "region": "Finland",
+   "date": "2026-11-13",
+   "title": "Finland puts EUR 37.3 m into Ukraine's defence industry",
+   "summary": "The money, from the EU's Investment Framework for Ukraine, will help Ukrainian security, defence and dual-use firms grow, export and raise financing. It follows about EUR 300 m of Finnish-Ukrainian defence and industry deals signed earlier in November.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/finland-37-million-develop-ukraine-defense-industry-help-enter-global-markets/",
+   "added": "2026-11-14"
   },
   {
    "pri": 2,
@@ -210,33 +241,24 @@
    "added": "2026-11-12"
   },
   {
-   "pri": 2,
-   "region": "Finland",
-   "date": "2026-11-11",
-   "title": "Elisa and Sensofusion launch drone detection joint venture",
-   "summary": "The Finnish telecom operator and counter-drone company, who already ran a border drone-detection trial together, are forming a joint venture.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/drones/article19822930.ece",
-   "added": "2026-11-12"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-13",
+   "title": "Ukraine downs a Geran-5 jet drone with RBS-70 for the first time",
+   "summary": "A Ukrainian air defence regiment shot down a Russian jet-powered Geran-5 over the Kyiv region with a Swedish RBS-70. Jet drones are faster and harder to catch than the older Shaheds.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4184527-ukraines-air-defenders-down-russian-geran5-jet-drone-for-first-time-using-swedish-rbs70-manpads.html",
+   "added": "2026-11-14"
   },
   {
-   "pri": 2,
-   "region": "Sweden",
-   "date": "2026-11-11",
-   "title": "Nordic Air Defence hires former UK armed forces minister, prepares round",
-   "summary": "The Stockholm interceptor-drone startup hired James Heappey as chief growth officer and a former Helsing manager. Its K100 is close to testing in Ukraine. It lost SEK 33.7 m in 2025 and is raising to start production.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/people/article19824114.ece",
-   "added": "2026-11-12"
-  },
-  {
-   "pri": 2,
-   "region": "Nordics",
-   "date": "2026-11-11",
-   "title": "Nordic defence ministers meet in Oslo, 11–12 November",
-   "summary": "Norway hosts NORDEFCO as 2026 chair. Agenda: Nordic cooperation within NATO and total defence. Press briefing on 12 November.",
-   "source": "Regjeringen",
-   "url": "https://www.regjeringen.no/en/whats-new/nordic-defence-ministers-meeting-in-oslo-1112-november/id3191962/"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-13",
+   "title": "Report: Russia demanded Finland leave NATO in Abu Dhabi talks",
+   "summary": "Bild reports that Russia's demands in informal talks include Finland leaving NATO and no NATO bases in the Baltic states. Finland's defence minister said this cannot be negotiated.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/finland-leave-nato-troops-out-of-baltics-russia-demands/",
+   "added": "2026-11-14"
   },
   {
    "pri": 3,
@@ -299,22 +321,14 @@
    "added": "2026-11-12"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-11",
-   "title": "Drones hit Russia's Ust-Luga port",
-   "summary": "A drone attack sparked a fire at the strategic Baltic port, showing Ukraine's long-range drone reach.",
-   "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4183614-drones-attack-russias-strategic-ustluga-port-sparking-fire.html"
-  },
-  {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-10",
-   "title": "Russia–Ukraine–US talks in Abu Dhabi",
-   "summary": "Nearly four hours of US-mediated talks, while the armies remain largely deadlocked on the front.",
-   "source": "NPR",
-   "url": "https://npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks"
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-13",
+   "title": "Hackers plant fake update on Quantum Systems' drone software server",
+   "summary": "Malicious code disguised as an update to the Qbase mission planner reached Bundeswehr and other customer servers, but not the drones. The Bundeswehr grounded its Quantum Systems fleet for a time. The company says the attack was found in late October and contained.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/cyberattack-on-quantum-systems-hackers-attempted-to-infect-updates-for-drones-used-by-ukraine-in-particular/",
+   "added": "2026-11-14"
   },
   {
    "pri": 4,
@@ -344,7 +358,6 @@
    "summary": "A drone from Belarus crossed Lithuania, passing over Kaunas. Jets missed twice near Biržai and missile debris fell there. Its type and payload are unknown. A clear case for cheap detection and interception.",
    "source": "Militarnyi",
    "url": "https://militarnyi.com/en/news/nato-fighter-jets-twice-fail-to-shoot-down-unknown-drone-over-lithuania/",
-   "breaking": true,
    "added": "2026-11-12"
   },
   {
@@ -385,18 +398,22 @@
    "summary": "Arson, sabotage, cyberattacks and armed drone incursions aimed at countries that back Kyiv.",
    "source": "Bloomberg",
    "url": "https://www.bloomberg.com/news/articles/2026-11-10/russia-s-hybrid-warfare-how-moscow-uses-sabotage-cyberattacks-disinformation"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-09",
-   "title": "Newsroom bomb threats follow wave of European flight hoaxes",
-   "summary": "A new pattern of disruptive hoaxes adds to pressure on European infrastructure and services.",
-   "source": "Insurance Journal",
-   "url": "https://www.insurancejournal.com/news/international/2026/11/09/892102.htm"
   }
  ],
  "press": [
+  {
+   "id": "fd-industry-portal",
+   "org": "FD",
+   "date": "2026-11-13",
+   "type": "Nyhet",
+   "titleNo": "Industriportalen er endret",
+   "title": "The industry portal for Ukraine has changed",
+   "summary": "The portal, set up in November 2024 for Norwegian offers of technology and materiel to Ukraine, is now a marketplace showing defence capacities and opportunities. Ukraine's defence ministry should as a rule verify that a product matches a Ukrainian need. The portal no longer gets annual earmarked Nansen funds; unused money moves to the ordinary military support budget. FMA assesses the commercial, technical and legal side of proposals that match confirmed needs, and Forsvaret decides based on Ukrainian priorities and the budget. A ministry review found the old setup lacked clear rules for handling cases.",
+   "startup": "Registering an offer no longer means a funded project; buys happen only when Ukraine confirms a concrete need. Startups should register and also build direct contact with Ukrainian units and Brave1 to get needs confirmed (inference).",
+   "tldr": "Register on the portal, but get Ukraine to confirm the need first.",
+   "url": "https://www.regjeringen.no/no/aktuelt/industriportalen-er-endret/id3192892/",
+   "added": "2026-11-14"
+  },
   {
    "id": "fd-nordic-defence-agreement",
    "org": "FD",
@@ -1229,6 +1246,18 @@
    "kind": "Competition",
    "tldr": "Hosting and operations incl. Azure. For IT and cloud operators.",
    "url": "https://www.doffin.no/notices/2026-117219"
+  },
+  {
+   "id": "dps-software-licences",
+   "title": "Dynamic purchasing system: software licences",
+   "buyer": "Forsvarsmateriell (FMA IKT-kapasiteter)",
+   "value": "NOK 650 m",
+   "published": "2024-09-11",
+   "deadline": "2034-10-31",
+   "kind": "Open purchasing system",
+   "tldr": "Software vendors and resellers can qualify any time to sell licences and subscriptions to the defence sector.",
+   "url": "https://www.doffin.no/notices/2024-112883",
+   "added": "2026-11-14"
   }
  ],
  "rounds": [
@@ -1450,6 +1479,19 @@
    "investors": "Hexa (lead), defence tech angels",
    "url": "https://www.suasnews.com/2026/11/valkyrie-dynamics-raises-e1m-for-a-miniature-radar-seeker-that-lets-interceptor-drones-hunt-in-any-weather/",
    "added": "2026-11-13"
+  },
+  {
+   "company": "Gallium Defense",
+   "country": "France",
+   "region": "Europe",
+   "what": "X-band radar to detect small and FPV drones",
+   "round": "Seed",
+   "amount": "EUR 7.1 m",
+   "usdM": 8.2,
+   "date": "2026-11",
+   "investors": "Keen Venture Partners, 360 Capital; Omnes Capital, Polytechnique Ventures",
+   "url": "https://angelinvestorsnetwork.com/startups/gallium-defense-comes-out-of-stealth-with-a-7-1m-seed-round-to-enable-drone-dete",
+   "added": "2026-11-14"
   }
  ],
  "roundsContext": {
@@ -2422,6 +2464,26 @@
    "what": "Ukrainian-Lithuanian maker of a 100 g radar seeker that lets interceptor drones hunt in bad weather.",
    "url": "https://www.suasnews.com/2026/11/valkyrie-dynamics-raises-e1m-for-a-miniature-radar-seeker-that-lets-interceptor-drones-hunt-in-any-weather/",
    "added": "2026-11-13"
+  },
+  {
+   "name": "Gallium Defense",
+   "country": "France",
+   "region": "Europe",
+   "segment": "Sensors & radar",
+   "type": "Startup",
+   "what": "Paris startup building an X-band radar to spot small and FPV drones at about 10 km; orders planned from 2027.",
+   "url": "https://angelinvestorsnetwork.com/startups/gallium-defense-comes-out-of-stealth-with-a-7-1m-seed-round-to-enable-drone-dete",
+   "added": "2026-11-14"
+  },
+  {
+   "name": "Gatehouse Satcom",
+   "country": "Denmark",
+   "region": "Nordics",
+   "segment": "Space & ISR",
+   "type": "Scale-up",
+   "what": "Danish maker of software that links satellites to 5G networks; buying small-satellite radio maker Satlab.",
+   "url": "https://nordicdefencewatch.com/news/space/article19826828.ece",
+   "added": "2026-11-14"
   }
  ]
 }
