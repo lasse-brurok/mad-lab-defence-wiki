@@ -1,79 +1,79 @@
 {
- "updatedAt": "2026-11-15T08:17:38+01:00",
+ "updatedAt": "2026-11-16T08:29:45+01:00",
  "situation": [
   {
    "region": "Norway",
    "level": "elevated",
-   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. The head of the Royal Navy, visiting Oslo, says Russian activity in waters of interest to the UK rose more than 40% in the first nine months of the year and warns against treating it as normal. At the Atlantic Future Forum in Oslo, 29 countries backed faster production and innovation, including start-ups and SMEs alongside the primes.",
+   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. The weekend's foiled attack on an Estonian drone maker shows what that looks like in practice. The head of the Royal Navy says Russian activity in waters of interest to the UK rose more than 40% in the first nine months of the year.",
    "sources": [
     {
      "label": "PST",
      "url": "https://www.pst.no/sabotasjetrusselen-i-norge-er-skjerpet/"
     },
     {
-     "label": "Forsvarets forum",
-     "url": "https://www.forsvaretsforum.no/norge-russland-storbritannia/advarer-mot-a-venne-seg-til-russisk-aktivitet-i-nord/532804"
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/estonia-foils-russian-intelligence-plot-against-threod-systems-ukrainian-drone-supplier-since-2022/"
     },
     {
-     "label": "Regjeringen",
-     "url": "https://www.regjeringen.no/no/whats-new/atlantic-future-forum-2026-co-hosts-statement/id3192945/"
+     "label": "Forsvarets forum",
+     "url": "https://www.forsvaretsforum.no/norge-russland-storbritannia/advarer-mot-a-venne-seg-til-russisk-aktivitet-i-nord/532804"
     }
    ]
   },
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "Nordic defence ministers have started work on a Nordic defence agreement so forces can move and fight across borders. Estonia says the Ukrainian drone strike on a Russian missile ship in the Gulf of Finland on 11 November knocked out its propulsion and caused casualties; the drones briefly crossed Estonian airspace. Russia's reported demand that Finland leave NATO was rejected by Helsinki.",
+   "text": "Estonia says Russian military intelligence planned a bomb and arson attack on drone maker Threod Systems near Tallinn on 14 November; it failed and eight Latvians were detained. Estonia plans to close its three road crossings to Russia from 1 December. Nordic defence ministers have started work on a Nordic defence agreement, and Denmark has pledged a new EUR 645 m package for Ukraine.",
    "sources": [
     {
-     "label": "Regjeringen",
-     "url": "https://www.regjeringen.no/no/aktuelt/begynner-arbeidet-med-nordisk-forsvarsavtale/id3192484/"
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/estonia-foils-russian-intelligence-plot-against-threod-systems-ukrainian-drone-supplier-since-2022/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/estonia-details-ukrainian-drone-strike-russian-ship-gulf-of-finland/"
+     "url": "https://militarnyi.com/en/news/estonia-plans-to-close-border-with-russia-after-sabotage-attempt-against-threod-systems/"
     },
     {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/finland-leave-nato-troops-out-of-baltics-russia-demands/"
+     "label": "Nordic Defence Sector",
+     "url": "https://nordicdefencesector.com/en/article/denmark-allocates-645-million-in-new-military-aid-to-ukraine"
     }
    ]
   },
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "Russia carried out about 884 attacks on Zaporizhzhia region in one day, 661 of them with drones, killing three and injuring 62. SpaceX blames Starshield disruptions on technical causes, which Zelensky rejects, and the Pentagon has still not issued Ukraine's licence to make Patriot missiles. Poland has paused its payments into NATO's PURL scheme for buying US weapons for Ukraine.",
+   "text": "Russia launched 158 drones overnight into 16 November, 77 of them jet-powered Shaheds; Ukraine says it downed or jammed 131. Zelensky says Ukrainian long-range strikes have now disabled more than 55% of Russia's oil refining capacity. Germany has set aside EUR 11.6 bn in military aid for Ukraine in its 2027 budget.",
    "sources": [
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4184591-three-killed-62-injured-in-russian-attacks-on-zaporizhzhia-region-over-past-day.html"
+     "url": "https://www.ukrinform.net/rubric-ato/4185017-ukraines-adf-down-131-of-158-russian-drones-launched-since-evening.html"
+    },
+    {
+     "label": "Ukrinform",
+     "url": "https://www.ukrinform.net/rubric-ato/4184999-ukraine-disables-over-55-of-russias-oil-refining-capacity-zelensky.html"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/spacex-technical-reasons-starshield-restrictions-ukraine/"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/pentagon-delays-ukraine-license-manufacture-patriot/"
+     "url": "https://militarnyi.com/en/news/germany-allocates-11-6-billion-in-military-aid-to-ukraine-for-2027/"
     }
    ]
   },
   {
    "region": "Europe",
    "level": "elevated",
-   "text": "Unidentified drones over RAF Lakenheath in England forced US personnel to take cover on 13 November. Germany's parliament gave the BND foreign intelligence service powers to act abroad, including against drone makers and weapons supply chains. Hackers recently planted a fake update on Quantum Systems' drone software server, and the Bundeswehr grounded its fleet while it was contained.",
+   "text": "Drones hit three civilian ships near Romania's Sulina channel on 14 and 15 November; no one was hurt, and Romania will ask EU partners for patrol aircraft and counter-drone help this week. EU naval forces boarded a shadow-fleet tanker sailing under a false flag in the Mediterranean. Unidentified drones over RAF Lakenheath forced US personnel to take cover on 13 November.",
    "sources": [
     {
      "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/drones-strike-three-civilian-vessels-off-romania-s-coast/"
+    },
+    {
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/eu-forces-board-russian-shadow-fleet-tanker-mv-midag-sailing-under-false-flag/"
+    },
+    {
+     "label": "Militarnyi",
      "url": "https://militarnyi.com/en/news/unidentified-drones-raf-lakenheath-air-base/"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/sabotage-supply-germany-bnd-granted-authority-special-operations-abroad/"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/cyberattack-on-quantum-systems-hackers-attempted-to-infect-updates-for-drones-used-by-ukraine-in-particular/"
     }
    ]
   }
@@ -161,6 +161,27 @@
   },
   {
    "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-16",
+   "title": "Ovzon doubts the EU's IRIS² satellite timeline",
+   "summary": "The CEO of Swedish satellite communications firm Ovzon says IRIS² will probably take longer than planned. Ovzon is seeking an extension of its current contract with FMV and is close to deciding on two new satellites. Delays to IRIS² leave room for national and commercial secure satcom.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/space/article19823328.ece",
+   "added": "2026-11-16"
+  },
+  {
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-15",
+   "breaking": true,
+   "title": "Estonia foils Russian bomb and arson plot against drone maker Threod",
+   "summary": "Estonia's security service says Russian military intelligence planned the attack on Threod Systems' site in Viimsi early on 14 November. Security measures and a fast police response stopped it; no one was hurt and production was not affected. Eight Latvians were detained, and Latvian police seized explosives in nine searches. Estonia now plans to close its three road crossings to Russia from 1 December. It is exactly the kind of attack PST warns Norwegian defence firms about.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/estonia-foils-russian-intelligence-plot-against-threod-systems-ukrainian-drone-supplier-since-2022/",
+   "added": "2026-11-16"
+  },
+  {
+   "pri": 2,
    "region": "Denmark",
    "date": "2026-11-13",
    "title": "Danish navy memo: six frigates needed to meet NATO targets",
@@ -220,24 +241,24 @@
    "added": "2026-11-15"
   },
   {
-   "pri": 2,
-   "region": "Finland",
-   "date": "2026-11-12",
-   "title": "Finland reports strike on a Russian warship in the Gulf of Finland",
-   "summary": "The Finnish Defence Forces detected a strike on a Russian warship on 11 November. Estonia says the Buyan-M missile ship Naro-Fominsk was hit by more than three Ukrainian drones near Gogland, lost propulsion and had casualties; the drones briefly crossed Estonian airspace. The war is now reaching Nordic waters.",
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-16",
+   "title": "Half of Russia's overnight attack drones were jet-powered",
+   "summary": "Russia launched 158 drones from 18:00 on 15 November, including 77 jet-powered Shaheds, Gerbera drones and decoys. Ukraine says it shot down or jammed 131, with hits at 19 locations. Faster jet drones push counter-drone systems toward quicker sensors and interceptors.",
    "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4183906-finland-reports-strike-on-russian-warship-in-baltic-sea.html",
-   "added": "2026-11-13"
+   "url": "https://www.ukrinform.net/rubric-ato/4185017-ukraines-adf-down-131-of-158-russian-drones-launched-since-evening.html",
+   "added": "2026-11-16"
   },
   {
-   "pri": 2,
-   "region": "Denmark",
-   "date": "2026-11-12",
-   "title": "Missile maker Covenant signs more NATO deals after Denmark goes first",
-   "summary": "Denmark ordered Covenant's Anthem strike missile in October as launch customer, and the minister says it was the best option on price and range. Covenant says more NATO countries have since bought it and aims to build 1,000 missiles in 2027. A sign that Nordic buyers will back new, unproven suppliers when price and speed are right.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/production/article19824063.ece",
-   "added": "2026-11-13"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-15",
+   "title": "Zelensky: over 55% of Russia's oil refining capacity disabled",
+   "summary": "Zelensky says Ukrainian long-range strikes have now knocked out more than 55% of Russia's refining capacity. The defence ministry says the strikes pressure Russian production, domestic supply and exports. Long-range drones remain Ukraine's main tool for hitting Russia's economy.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4184999-ukraine-disables-over-55-of-russias-oil-refining-capacity-zelensky.html",
+   "added": "2026-11-16"
   },
   {
    "pri": 3,
@@ -300,24 +321,15 @@
    "added": "2026-11-15"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-12",
-   "title": "UFORCE raises USD 700 m at a USD 6 bn valuation",
-   "summary": "The Ukrainian maker of bomber and interceptor drones, MAGURA sea drones and ground robots raised a Series A led by the UK's National Wealth Fund and Valor Equity Partners. Lakestar, Shield Capital and the US–Ukraine Reconstruction Investment Fund also joined.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-15",
+   "breaking": true,
+   "title": "Drones hit three civilian ships off Romania",
+   "summary": "Unidentified drones struck a tanker and two cargo ships near the entrance to the Sulina channel on 14 and 15 November; crews put out the fires and no one was hurt. Romania scrambled fighters twice and warned residents in Tulcea county. Its defence minister will ask EU colleagues in Brussels on 17–18 November for patrol aircraft and counter-drone capability, and wants faster delivery of Thales gap-filler radars.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/uforce-secures-record-investment-to-expand-production-and-develop-new-products/",
-   "added": "2026-11-13"
-  },
-  {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-12",
-   "title": "Ukraine and the Netherlands work on ballistic missile interception",
-   "summary": "The two projects are FREYJA, expected to show first results next year, and Bliksem, which starts simulation tests at the end of this year. Patriot output is too small when one Russian attack on Kyiv can involve about 40 ballistic missiles.",
-   "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4184104-ukraine-netherlands-developing-projects-to-intercept-ballistic-missiles.html",
-   "added": "2026-11-13"
+   "url": "https://militarnyi.com/en/news/drones-strike-three-civilian-vessels-off-romania-s-coast/",
+   "added": "2026-11-16"
   },
   {
    "pri": 4,
@@ -362,42 +374,32 @@
   {
    "pri": 4,
    "region": "Europe",
+   "date": "2026-11-13",
+   "title": "Germany approves EUR 139 bn defence budget for 2027",
+   "summary": "The Bundestag budget committee approved the budget, including EUR 11.6 bn in military aid for Ukraine. It also funds faster buying of commercial technology, innovation challenges and research. Ammunition spending was cut from a planned EUR 11 bn to EUR 9.6 bn.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/germany-allocates-11-6-billion-in-military-aid-to-ukraine-for-2027/",
+   "added": "2026-11-16"
+  },
+  {
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-13",
+   "title": "EU forces board a shadow-fleet tanker under a false flag",
+   "summary": "Personnel from the EU's Operation IRINI boarded the tanker MIDAG in the Mediterranean and found its Zimbabwe flag was false. EU foreign ministers are set to approve new sanctions on banks and firms that support the shadow fleet on 16 November. Monitoring and boarding shadow-fleet ships is becoming routine work for European navies.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/eu-forces-board-russian-shadow-fleet-tanker-mv-midag-sailing-under-false-flag/",
+   "added": "2026-11-16"
+  },
+  {
+   "pri": 4,
+   "region": "Europe",
    "date": "2026-11-12",
    "title": "Moscow offers non-aggression pacts to individual NATO states",
    "summary": "A Russian foreign ministry official floated bilateral non-aggression deals at a Moscow security forum. Russia's chief negotiator said a new European security architecture was the main topic of the Abu Dhabi talks.",
    "source": "Militarnyi",
    "url": "https://militarnyi.com/en/news/moscow-non-aggression-pacts-nato-countries/",
    "added": "2026-11-13"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-12",
-   "title": "Spanish NH90 helicopters used against drones over Romania for the first time",
-   "summary": "Spain's air policing detachment scrambled two NH90s after unidentified drones were detected on 6 November. Its commander says helicopters add to fighter jets but do not replace them. NATO is still improvising cheaper ways to stop drones.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/spanish-nh90-helicopters-deployed-for-first-ever-drone-interception-in-romania/",
-   "added": "2026-11-13"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-11",
-   "title": "EU agrees EUR 3.1 bn defence and security budget for 2027",
-   "summary": "The budget includes EUR 650 m from the Ukraine Support Loan. It is the last year of the current long-term budget; talks on 2028–2034 are contentious.",
-   "source": "Breaking Defense",
-   "url": "https://breakingdefense.com/2026/11/eu-sets-out-3-4b-defense-budget-for-2027-boosts-ukraine-spending/",
-   "added": "2026-11-12"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-11",
-   "title": "Bundeswehr bans Chinese drones and cars from military bases",
-   "summary": "The ban is driven by espionage fears. Products free of Chinese parts gain an edge with European militaries.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/bundeswehr-bans-chinese-drones-and-cars-from-military-bases-over-espionage-fears/",
-   "added": "2026-11-12"
   }
  ],
  "press": [
@@ -451,6 +453,19 @@
    "startup": "Expect stricter documentation on deliveries, invoice timing and inventory traceability when you sell to FMA or Forsvaret. There may be demand for inventory, traceability and financial-control tools.",
    "url": "https://www.regjeringen.no/no/aktuelt/ber-etatane-utarbeida-tiltak/id3192243/",
    "tldr": "Expect stricter paperwork when you deliver to FMA and Forsvaret."
+  },
+  {
+   "id": "fors-nodnett-terminals",
+   "org": "Forsvaret",
+   "date": "2026-11-06",
+   "type": "Nyhet",
+   "titleNo": "Forsvaret moderniserer Nødnett-terminalene",
+   "title": "Forsvaret modernises its emergency-network radios",
+   "summary": "Forsvaret will buy 1,320 new terminals for Nødnett, the radio network shared with police, fire and health services. About 650 replace first-generation equipment; the Army gets 280 and the Home Guard 290. The new handheld Motorola MXP600 replaces the MT P850S, delivered through TC Connect and funded through the Defence Staff's ICT portfolio. Forsvaret says it needs several ways to communicate, including robust ground systems alongside satellite and broadband, and that the upgrade also eases cooperation with Nordic emergency services.",
+   "startup": "The contract is already placed, so there is nothing to bid on. It shows Forsvaret values redundant communications and civil-military interoperability in total defence, a theme comms and C2 startups can pitch to (inference).",
+   "tldr": "No tender, but Forsvaret wants redundant comms that work with civilian services.",
+   "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/forsvaret-moderniserer-nodnett-terminalene",
+   "added": "2026-11-16"
   },
   {
    "id": "fd-nordefco-oslo",
@@ -523,18 +538,6 @@
    "startup": "A new buyer organisation for logistics, maintenance and medical solutions. Map who owns what in FOSK before 2027.",
    "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/vapenskjold-til-forsvarets-nye-avdeling",
    "tldr": "A new logistics and medical buyer from January 2027."
-  },
-  {
-   "id": "fd-engineering-education",
-   "org": "FD",
-   "date": "2026-10-20",
-   "type": "Nyhet",
-   "titleNo": "Regjeringen foreslår fireårig militær ingeniørutdanning",
-   "title": "Four-year military engineering degree proposed",
-   "summary": "The government proposes a four-year military engineering education and more flexible engineering studies to meet the defence sector's need for technical staff.",
-   "startup": "Competition for engineers will grow. Partnerships with the Defence University College and student projects can be a recruitment channel.",
-   "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-foreslar-firearig-militar-ingeniorutdanning-og-mer-fleksible-ingeniorstudier/id3179024/",
-   "tldr": "Hiring engineers will get harder; partner with the military schools early."
   },
   {
    "id": "fma-p1118-signal",
@@ -1445,18 +1448,6 @@
    "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
   },
   {
-   "company": "Kraken Technology",
-   "country": "UK",
-   "region": "Europe",
-   "what": "Uncrewed surface vessels",
-   "round": "Series B",
-   "amount": "USD 175 m",
-   "usdM": 175,
-   "date": "2026",
-   "investors": "Not stated",
-   "url": "https://vulpesetleo.substack.com/p/68-deals-the-most-active-investors"
-  },
-  {
    "company": "Hypersonica",
    "country": "Germany / UK",
    "region": "Europe",
@@ -1507,6 +1498,19 @@
    "investors": "Keen Venture Partners, 360 Capital; Omnes Capital, Polytechnique Ventures",
    "url": "https://angelinvestorsnetwork.com/startups/gallium-defense-comes-out-of-stealth-with-a-7-1m-seed-round-to-enable-drone-dete",
    "added": "2026-11-14"
+  },
+  {
+   "company": "Mistt",
+   "country": "UK",
+   "region": "Europe",
+   "what": "4D data platform as a GPS alternative for autonomous systems",
+   "round": "Pre-seed",
+   "amount": "GBP 5 m",
+   "usdM": 6.6,
+   "date": "2026-11",
+   "investors": "Expeditions (lead), Seedcamp, NSSIF, Watchkeeper, Overmatch, FJ Labs",
+   "url": "https://www.mishcon.com/news/mishcon-de-reya-advises-mistt-on-5-million-pre-seed-fundraising-round",
+   "added": "2026-11-16"
   }
  ],
  "roundsContext": {
@@ -1751,7 +1755,7 @@
    "region": "Norway",
    "segment": "Missiles & munitions",
    "type": "Prime",
-   "what": "Ammunition, rocket motors and shoulder-fired weapons; owned by the Norwegian state and Patria.",
+   "what": "Ammunition, rocket motors and shoulder-fired weapons; now aims to become a drone prime supplying complete drones. Owned by the Norwegian state and Patria.",
    "url": "https://www.nammo.com/"
   },
   {
@@ -2519,6 +2523,56 @@
    "what": "Maker of the Anthem strike missile; Denmark is launch customer and it is building a European supply chain for production in Germany.",
    "url": "https://nordicdefencewatch.com/news/production/article19824063.ece",
    "added": "2026-11-15"
+  },
+  {
+   "name": "Threod Systems",
+   "country": "Estonia",
+   "region": "Nordics",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Estonian maker of EOS C VTOL reconnaissance drones used in Ukraine; target of a foiled Russian bomb and arson plot in November 2026.",
+   "url": "https://threod.com/",
+   "added": "2026-11-16"
+  },
+  {
+   "name": "Ovzon",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Space & ISR",
+   "type": "Scale-up",
+   "what": "Swedish secure satellite communications provider to FMV; weighing two new satellites.",
+   "url": "https://www.ovzon.com/",
+   "added": "2026-11-16"
+  },
+  {
+   "name": "Umoe Mandal",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Maritime & underwater",
+   "type": "Scale-up",
+   "what": "Composite naval shipbuilder; will build hulls for Saildrone's 20 m Surveyor uncrewed vessel at a new plant in Norway.",
+   "url": "https://breakingdefense.com/2026/11/saildrone-inks-agreement-with-norwegian-shipbuilder-umoe-mandal-to-produce-usvs/",
+   "added": "2026-11-16"
+  },
+  {
+   "name": "Saildrone",
+   "country": "United States",
+   "region": "NATO",
+   "segment": "Maritime & underwater",
+   "type": "Scale-up",
+   "what": "Uncrewed surface vessels for maritime surveillance; runs Sweden's Baltic patrol fleet and will build hulls in Norway.",
+   "url": "https://www.saildrone.com/",
+   "added": "2026-11-16"
+  },
+  {
+   "name": "Mistt",
+   "country": "United Kingdom",
+   "region": "Europe",
+   "segment": "Software, AI & C2",
+   "type": "Startup",
+   "what": "London startup building a 4D data map of the physical world as a GPS alternative for autonomous systems.",
+   "url": "https://www.mishcon.com/news/mishcon-de-reya-advises-mistt-on-5-million-pre-seed-fundraising-round",
+   "added": "2026-11-16"
   }
  ]
 }
