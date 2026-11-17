@@ -1,10 +1,10 @@
 {
- "updatedAt": "2026-11-16T08:29:45+01:00",
+ "updatedAt": "2026-11-17T08:29:26+01:00",
  "situation": [
   {
    "region": "Norway",
    "level": "elevated",
-   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. The weekend's foiled attack on an Estonian drone maker shows what that looks like in practice. The head of the Royal Navy says Russian activity in waters of interest to the UK rose more than 40% in the first nine months of the year.",
+   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. Estonia's foiled plot against drone maker Threod, and its warning that ten more Estonian defence firms are targeted, show how this works in practice. The head of the Royal Navy says Russian activity in waters of interest to the UK rose more than 40% in the first nine months of the year.",
    "sources": [
     {
      "label": "PST",
@@ -12,7 +12,7 @@
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/estonia-foils-russian-intelligence-plot-against-threod-systems-ukrainian-drone-supplier-since-2022/"
+     "url": "https://militarnyi.com/en/news/russian-security-services-preparing-sabotage-at-ten-estonian-defense-companies-security-service-chief-says/"
     },
     {
      "label": "Forsvarets forum",
@@ -23,57 +23,57 @@
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "Estonia says Russian military intelligence planned a bomb and arson attack on drone maker Threod Systems near Tallinn on 14 November; it failed and eight Latvians were detained. Estonia plans to close its three road crossings to Russia from 1 December. Nordic defence ministers have started work on a Nordic defence agreement, and Denmark has pledged a new EUR 645 m package for Ukraine.",
+   "text": "Estonia's security service says Russia is preparing sabotage against about ten Estonian defence companies, after the failed bomb and arson plot against Threod Systems on 14 November. Estonia plans to close its three road crossings to Russia from 1 December. In Sweden, two men are in custody over the theft of a supplier shipment bound for defence firm Kebni.",
    "sources": [
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/estonia-foils-russian-intelligence-plot-against-threod-systems-ukrainian-drone-supplier-since-2022/"
+     "url": "https://militarnyi.com/en/news/russian-security-services-preparing-sabotage-at-ten-estonian-defense-companies-security-service-chief-says/"
     },
     {
      "label": "Militarnyi",
      "url": "https://militarnyi.com/en/news/estonia-plans-to-close-border-with-russia-after-sabotage-attempt-against-threod-systems/"
     },
     {
-     "label": "Nordic Defence Sector",
-     "url": "https://nordicdefencesector.com/en/article/denmark-allocates-645-million-in-new-military-aid-to-ukraine"
+     "label": "NordicDefenceWatch",
+     "url": "https://nordicdefencewatch.com/news/financials/article19838829.ece"
     }
    ]
   },
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "Russia launched 158 drones overnight into 16 November, 77 of them jet-powered Shaheds; Ukraine says it downed or jammed 131. Zelensky says Ukrainian long-range strikes have now disabled more than 55% of Russia's oil refining capacity. Germany has set aside EUR 11.6 bn in military aid for Ukraine in its 2027 budget.",
+   "text": "Ukraine struck the Kerch bridge twice in two days; overnight into 17 November the arch over the shipping channel and a road section collapsed, stopping traffic between Crimea and Russia. Ukrainian drones also hit the Salavat petrochemical plant and the Ilsky refinery. The EU has paid a further EUR 1.7 bn for drones, ammunition and air defence, with about 60% going to Ukrainian producers.",
    "sources": [
     {
-     "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4185017-ukraines-adf-down-131-of-158-russian-drones-launched-since-evening.html"
-    },
-    {
-     "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4184999-ukraine-disables-over-55-of-russias-oil-refining-capacity-zelensky.html"
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/ukrainian-strike-destroys-arch-and-section-of-crimean-bridge/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/germany-allocates-11-6-billion-in-military-aid-to-ukraine-for-2027/"
+     "url": "https://militarnyi.com/en/news/ukraine-strikes-gazprom-neftekhim-salavat-one-of-russia-s-largest-petrochemical-facilities/"
+    },
+    {
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/eu-provides-ukraine-with-1-7-billion-for-drones-ammunition-and-air-defense/"
     }
    ]
   },
   {
    "region": "Europe",
    "level": "elevated",
-   "text": "Drones hit three civilian ships near Romania's Sulina channel on 14 and 15 November; no one was hurt, and Romania will ask EU partners for patrol aircraft and counter-drone help this week. EU naval forces boarded a shadow-fleet tanker sailing under a false flag in the Mediterranean. Unidentified drones over RAF Lakenheath forced US personnel to take cover on 13 November.",
+   "text": "Romania wants EU help with patrol aircraft and counter-drone capability after drones hit three civilian ships near the Sulina channel, and has fined Rheinmetall for late air defence deliveries. The EU has widened sanctions on Russia to banks, refineries and online retailers. Belgium has ordered Thales radars and Rheinmetall Skyranger guns for its Blue Dome air defence.",
    "sources": [
     {
      "label": "Militarnyi",
      "url": "https://militarnyi.com/en/news/drones-strike-three-civilian-vessels-off-romania-s-coast/"
     },
     {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/eu-forces-board-russian-shadow-fleet-tanker-mv-midag-sailing-under-false-flag/"
+     "label": "Defence Industry Europe",
+     "url": "https://defence-industry.eu/romania-imposes-contractual-penalties-on-rheinmetall-over-delays-in-delivering-air-defence-systems-defence-minister-says/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/unidentified-drones-raf-lakenheath-air-base/"
+     "url": "https://militarnyi.com/en/news/ozon-wildberries-oil-refineries-banks-eu-sanctions-russia/"
     }
    ]
   }
@@ -161,6 +161,16 @@
   },
   {
    "pri": 2,
+   "region": "Finland",
+   "date": "2026-11-17",
+   "title": "Kelluu turns its airships into passive radars",
+   "summary": "The Finnish firm unveiled Halo, a passive radar built into its airship hulls that tracks targets using reflected radio, TV and mobile signals and never transmits. Kelluu says it can more than double the range of ground-based passive radars at far lower hourly cost than crewed radar aircraft. A closed pilot with five partner nations is planned for early 2027.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/production/article19840365.ece",
+   "added": "2026-11-17"
+  },
+  {
+   "pri": 2,
    "region": "Sweden",
    "date": "2026-11-16",
    "title": "Ovzon doubts the EU's IRIS² satellite timeline",
@@ -168,6 +178,26 @@
    "source": "NordicDefenceWatch",
    "url": "https://nordicdefencewatch.com/news/space/article19823328.ece",
    "added": "2026-11-16"
+  },
+  {
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-16",
+   "title": "Estonia: Russia is preparing sabotage at ten defence companies",
+   "summary": "The head of Estonia's security service says about ten Estonian defence industry sites are being targeted, and that the service knew of the Threod plot in advance. Russia recruits saboteurs through criminal networks and social media, sometimes for a few hundred euros. Estonia has exposed more than 50 people working for Russian services in recent years. Defence startups across the Nordics should treat site security as part of the product.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/russian-security-services-preparing-sabotage-at-ten-estonian-defense-companies-security-service-chief-says/",
+   "added": "2026-11-17"
+  },
+  {
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-16",
+   "title": "Two held over stolen shipment bound for Kebni",
+   "summary": "A supplier's shipment worth millions of kronor went missing near Kebni's Karlskoga site around 6 November and has not been found. Two men are held on suspicion of aggravated theft. Kebni says its operations are not affected. Supply-chain security is now a real risk for small defence suppliers.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/financials/article19838829.ece",
+   "added": "2026-11-17"
   },
   {
    "pri": 2,
@@ -202,16 +232,6 @@
   },
   {
    "pri": 2,
-   "region": "Denmark",
-   "date": "2026-11-13",
-   "title": "Gatehouse Satcom buys small-satellite radio maker Satlab",
-   "summary": "Gatehouse Satcom, which builds software that links satellites to 5G networks, is buying Aalborg-based Satlab. The deal should close by the end of 2026 and takes the group to about 140 staff.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/space/article19826828.ece",
-   "added": "2026-11-14"
-  },
-  {
-   "pri": 2,
    "region": "Finland",
    "date": "2026-11-13",
    "title": "Finland puts EUR 37.3 m into Ukraine's defence industry",
@@ -221,24 +241,15 @@
    "added": "2026-11-14"
   },
   {
-   "pri": 2,
-   "region": "Denmark",
-   "date": "2026-11-13",
-   "title": "Terma moves into cybersecurity",
-   "summary": "Denmark's largest defence group is buying Danish encryption company Dencrypt and plans to keep its staff and sites. Terma has also launched a tool that watches mission-critical systems for suspicious cyber activity.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/production/article19833644.ece",
-   "added": "2026-11-15"
-  },
-  {
-   "pri": 2,
-   "region": "Denmark",
-   "date": "2026-11-13",
-   "title": "Denmark cautious about joining Norway's naval vessel plan",
-   "summary": "Both defence ministers suggest Denmark may want a different type of ship than the one Norway offers in its standardized vessel programme. Fewer partner navies would mean a smaller common market for systems on those ships.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/policy/article19831215.ece",
-   "added": "2026-11-15"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-17",
+   "breaking": true,
+   "title": "Kerch bridge arch collapses after second Ukrainian strike",
+   "summary": "Ukraine hit the bridge between Crimea and Russia on 16 November and again overnight into 17 November. The arch over the shipping channel and an adjacent road section fell into the water and traffic has stopped. Ukraine has struck at least six bridges on Russia's key logistics routes since early October.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/ukrainian-strike-destroys-arch-and-section-of-crimean-bridge/",
+   "added": "2026-11-17"
   },
   {
    "pri": 3,
@@ -249,6 +260,26 @@
    "source": "Ukrinform",
    "url": "https://www.ukrinform.net/rubric-ato/4185017-ukraines-adf-down-131-of-158-russian-drones-launched-since-evening.html",
    "added": "2026-11-16"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-16",
+   "title": "EU pays Ukraine EUR 1.7 bn for drones, ammunition and air defence",
+   "summary": "The money is the eighth defence tranche from the EUR 90 bn Ukraine Support Loan. About 40% pays for contracts with EU manufacturers and the rest goes to Ukrainian defence companies. Partnering with a Ukrainian producer is one of the most direct routes to this money.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/eu-provides-ukraine-with-1-7-billion-for-drones-ammunition-and-air-defense/",
+   "added": "2026-11-17"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-16",
+   "title": "Dutch AIA plans air defence production in Ukraine",
+   "summary": "Artillerie Inrichtingen Armaments has opened an office in Ukraine and plans joint production with Ukrainian firms, starting with engineering and possibly a plant in western Ukraine. Ukrainian firms are also set to join the Dutch WARDEN missile programme, with first trials in 2027.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/dutch-aia-plans-to-establish-air-defense-production-in-ukraine/",
+   "added": "2026-11-17"
   },
   {
    "pri": 3,
@@ -291,40 +322,29 @@
    "added": "2026-11-15"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-13",
-   "title": "Ukraine downs a Geran-5 jet drone with RBS-70 for the first time",
-   "summary": "A Ukrainian air defence regiment shot down a Russian jet-powered Geran-5 over the Kyiv region with a Swedish RBS-70. Jet drones are faster and harder to catch than the older Shaheds.",
-   "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4184527-ukraines-air-defenders-down-russian-geran5-jet-drone-for-first-time-using-swedish-rbs70-manpads.html",
-   "added": "2026-11-14"
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-17",
+   "title": "Belgium orders radars and Skyranger air defence",
+   "summary": "As part of its Blue Dome programme, Belgium ordered 14 Thales Ground Master 200 radars and 20 Rheinmetall Skyranger 30 short-range air defence systems, a contract worth several hundred million euros. Short-range air defence against drones is now standard on European shopping lists.",
+   "source": "Forsvarets forum",
+   "url": "https://www.forsvaretsforum.no/belgia-luftvern-materiell/belgia-har-bestilt-radarer-og-luftvernsystemer/532874",
+   "added": "2026-11-17"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-13",
-   "title": "Report: Russia demanded Finland leave NATO in Abu Dhabi talks",
-   "summary": "Bild reports that Russia's demands in informal talks include Finland leaving NATO and no NATO bases in the Baltic states. Finland's defence minister said this cannot be negotiated.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/finland-leave-nato-troops-out-of-baltics-russia-demands/",
-   "added": "2026-11-14"
-  },
-  {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-13",
-   "title": "Brave1 tests Ukrainian drones to replace the Mavic",
-   "summary": "Brave1 and the defence ministry tested reconnaissance drones from nine Ukrainian makers for jamming resistance, video link and flight time. The target is at least 60 minutes of flight without GPS. The best will move toward ministry contracts.",
-   "source": "Brave1",
-   "url": "https://brave1.gov.ua/en/news/tested-mavic-like-drones/",
-   "added": "2026-11-15"
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-17",
+   "title": "Romania fines Rheinmetall for late air defence deliveries",
+   "summary": "Romania's defence minister says a first EUR 8.7 m penalty was invoiced on 8 November, apparently over a 2023 contract to upgrade Oerlikon guns to Skynex. More penalties may follow if the systems miss specifications. Delays by primes open doors for faster suppliers.",
+   "source": "Defence Industry Europe",
+   "url": "https://defence-industry.eu/romania-imposes-contractual-penalties-on-rheinmetall-over-delays-in-delivering-air-defence-systems-defence-minister-says/",
+   "added": "2026-11-17"
   },
   {
    "pri": 4,
    "region": "Europe",
    "date": "2026-11-15",
-   "breaking": true,
    "title": "Drones hit three civilian ships off Romania",
    "summary": "Unidentified drones struck a tanker and two cargo ships near the entrance to the Sulina channel on 14 and 15 November; crews put out the fires and no one was hurt. Romania scrambled fighters twice and warned residents in Tulcea county. Its defence minister will ask EU colleagues in Brussels on 17–18 November for patrol aircraft and counter-drone capability, and wants faster delivery of Thales gap-filler radars.",
    "source": "Militarnyi",
@@ -365,16 +385,6 @@
    "pri": 4,
    "region": "Europe",
    "date": "2026-11-13",
-   "title": "Drones over RAF Lakenheath send US personnel to shelter",
-   "summary": "Unidentified drones appeared over the US-operated base in England on the evening of 13 November. No one was hurt and nothing was damaged. Security at Lakenheath and Mildenhall had already been raised on 10 November over a possible threat from Iran.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/unidentified-drones-raf-lakenheath-air-base/",
-   "added": "2026-11-15"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-13",
    "title": "Germany approves EUR 139 bn defence budget for 2027",
    "summary": "The Bundestag budget committee approved the budget, including EUR 11.6 bn in military aid for Ukraine. It also funds faster buying of commercial technology, innovation challenges and research. Ammunition spending was cut from a planned EUR 11 bn to EUR 9.6 bn.",
    "source": "Militarnyi",
@@ -390,16 +400,6 @@
    "source": "Militarnyi",
    "url": "https://militarnyi.com/en/news/eu-forces-board-russian-shadow-fleet-tanker-mv-midag-sailing-under-false-flag/",
    "added": "2026-11-16"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-12",
-   "title": "Moscow offers non-aggression pacts to individual NATO states",
-   "summary": "A Russian foreign ministry official floated bilateral non-aggression deals at a Moscow security forum. Russia's chief negotiator said a new European security architecture was the main topic of the Abu Dhabi talks.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/moscow-non-aggression-pacts-nato-countries/",
-   "added": "2026-11-13"
   }
  ],
  "press": [
@@ -1237,11 +1237,12 @@
    "title": "Laboratory services for the Norwegian defence",
    "buyer": "FMA",
    "value": "NOK 6 m",
-   "published": "2026-10-19",
-   "deadline": "2026-11-19",
+   "published": "2026-11-16",
+   "deadline": "2026-12-07",
    "kind": "Competition",
-   "tldr": "Small, closing soon. Relevant for testing and lab companies.",
-   "url": "https://www.doffin.no/notices/2026-116170"
+   "tldr": "Re-announced with a new deadline. Relevant for testing and lab companies.",
+   "url": "https://www.doffin.no/notices/2026-117791",
+   "added": "2026-11-17"
   },
   {
    "id": "fma-advisory",
@@ -2043,7 +2044,7 @@
    "region": "Nordics",
    "segment": "Space & ISR",
    "type": "Startup",
-   "what": "Hydrogen airships for long-endurance aerial surveillance.",
+   "what": "Hydrogen airships for long-endurance surveillance; launched Halo, an airship-borne passive radar, in November 2026.",
    "url": "https://www.kelluu.com/"
   },
   {
@@ -2573,6 +2574,26 @@
    "what": "London startup building a 4D data map of the physical world as a GPS alternative for autonomous systems.",
    "url": "https://www.mishcon.com/news/mishcon-de-reya-advises-mistt-on-5-million-pre-seed-fundraising-round",
    "added": "2026-11-16"
+  },
+  {
+   "name": "Kebni",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Sensors & radar",
+   "type": "Scale-up",
+   "what": "Swedish defence supplier in Karlskoga; a supplier shipment bound for it was stolen in November 2026.",
+   "url": "https://nordicdefencewatch.com/news/financials/article19838829.ece",
+   "added": "2026-11-17"
+  },
+  {
+   "name": "Artillerie Inrichtingen Armaments (AIA)",
+   "country": "Netherlands",
+   "region": "Europe",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "Dutch defence firm that has opened an office in Ukraine and plans joint air defence production there.",
+   "url": "https://militarnyi.com/en/news/dutch-aia-plans-to-establish-air-defense-production-in-ukraine/",
+   "added": "2026-11-17"
   }
  ]
 }
