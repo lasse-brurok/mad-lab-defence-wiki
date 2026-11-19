@@ -1,10 +1,10 @@
 {
- "updatedAt": "2026-11-18T09:09:11+01:00",
+ "updatedAt": "2026-11-19T08:33:41+01:00",
  "situation": [
   {
    "region": "Norway",
    "level": "elevated",
-   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. At the Ramstein meeting in Brussels on 17 November, Germany said Norway and Germany will jointly fund a new air defence package for Ukraine through NATO's PURL scheme. MPs are pressing the government to stop a businessman with past ties to a sanctioned Russian oligarch from buying the Nussir copper mine near Hammerfest.",
+   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. Forsvaret has cancelled Valiant Defender, a large allied exercise planned for March 2027, to put resources into Joint Viking in Indre Troms, the Heimdall autonomy trial and NATO's Formidable Shield at Andøya. Germany says Norway and Germany will jointly fund a new air defence package for Ukraine through NATO's PURL scheme.",
    "sources": [
     {
      "label": "PST",
@@ -12,18 +12,18 @@
     },
     {
      "label": "Forsvarets forum",
-     "url": "https://www.forsvaretsforum.no/luftforsvar-nato-tyskland/tysklands-forsvarsminister-norge-og-tyskland-med-ny-vapenpakke-til-ukraina/533321"
+     "url": "https://www.forsvaretsforum.no/cold-response-forsvaret-forsvarets-operative-hovedkvarter/storovelse-er-avlyst/533428"
     },
     {
-     "label": "The Barents Observer",
-     "url": "https://thebarentsobserver.com/news/pressure-builds-on-wellconnected-russian-businessman-who-wants-to-buy-norwegian-arctic-copper-mine/462079"
+     "label": "Forsvarets forum",
+     "url": "https://www.forsvaretsforum.no/luftforsvar-nato-tyskland/tysklands-forsvarsminister-norge-og-tyskland-med-ny-vapenpakke-til-ukraina/533321"
     }
    ]
   },
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "Estonia's security service says Russia is preparing sabotage against about ten Estonian defence companies after the foiled plot against Threod Systems, and Estonia plans to close its road crossings to Russia from 1 December. Finland and Ukraine signed a memorandum on joint weapons production in Finland, and Sweden and the UK agreed to supply weapons, including Meteor missiles, for Ukraine's future Gripens.",
+   "text": "Estonia's security service says Russia is preparing sabotage against about ten Estonian defence companies, and the Baltic states received the same warning as Poland about a Russian plot near Kaliningrad. Latvia showed its first naval drones at its Independence Day parade. Finland and Ukraine agreed to produce weapons together in Finland, while Swedish founders complain that the fast-track procurement route is closed to small firms.",
    "sources": [
     {
      "label": "Militarnyi",
@@ -31,54 +31,64 @@
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/ukraine-and-finland-agree-to-joint-weapons-production/"
+     "url": "https://militarnyi.com/en/news/new-challenge-for-russia-s-navy-latvia-parades-fog-and-ray-naval-drones-for-the-first-time/"
     },
     {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/gripen-meteor-against-russian-bomb-carriers/"
+     "label": "NordicDefenceWatch",
+     "url": "https://nordicdefencewatch.com/news/policy/article19845155.ece"
     }
    ]
   },
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "Ukraine has cut traffic on the Kerch bridge after strikes that brought down the arch over the shipping channel, and its drones hit the Afipsky and Ilsky refineries overnight into 18 November. Ukraine says it shot down or jammed 126 Russian drones the same night. At the Ramstein meeting the UK pledged GBP 240 m for more than 1,000 short-range air defence missiles and over a dozen radars, with deliveries from mid-December.",
+   "text": "Ukraine struck the Kerch bridge for the third time in a week overnight into 19 November, and rail traffic has stopped after the road section already collapsed. Russia launched 98 drones the same night and Ukraine says it downed 69, while strikes on energy left 99 settlements in Mykolaiv region without power. The European Commission proposes a new EUR 45 bn loan for 2027, of which EUR 25 bn is for military needs.",
    "sources": [
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/ukrainian-drones-hit-two-russian-oil-refineries-in-kuban-ilskiy-and-afipsky/"
+     "url": "https://militarnyi.com/en/news/ukraine-attacks-railway-section-of-crimean-kerch-bridge-halting-train-traffic/"
     },
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4185864-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html"
+     "url": "https://www.ukrinform.net/rubric-ato/4186225-air-defense-downs-69-drones-launched-by-russia-in-overnight-attack-on-ukraine.html"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/uk-ukraine-over-1000-air-defense-missiles-new-radars/"
+     "url": "https://militarnyi.com/en/news/european-commission-proposes-allocating-25-billion-to-ukraine-s-military-needs-in-2027-under-new-loan/"
     }
    ]
   },
   {
    "region": "Europe",
    "level": "elevated",
-   "text": "Moldova closed its airspace on 17 November when a Russian attack drone flew toward Chisinau, days after drones hit three civilian ships off Romania. Google says Russian-speaking hackers have run the first fully automated AI cyberattack, against French websites. Germany is integrating IRIS-T missiles into NASAMS for Ukraine and Belgium has ordered Skyranger guns and Thales radars for its air defence.",
+   "text": "Polish media report that Poland foiled a Russian plot near the Kaliningrad border meant to cause mass casualties and be blamed on Ukraine. A Russian drone forced Moldova to close its airspace on 17 November. NATO has agreed to use OpenAI's tools for cyber defence, and Germany ordered four more MEKO frigates from TKMS.",
    "sources": [
+    {
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/poland-foils-russian-plot-to-cause-mass-casualties-and-frame-ukraine/"
+    },
     {
      "label": "Militarnyi",
      "url": "https://militarnyi.com/en/news/moldova-close-airspace-russian-uav-chisinau/"
     },
     {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/russians-autonomous-ai-cyberattack-google/"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/iris-t-missiles-to-be-integrated-into-nasams-systems-supplied-to-ukraine/"
+     "label": "Forsvarets forum",
+     "url": "https://www.forsvaretsforum.no/cyber-cyberforsvaret-datasikkerhet/skal-samarbeide-med-ki-gigant/533375"
     }
    ]
   }
  ],
  "news": [
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-19",
+   "title": "Forsvaret cancels the big Valiant Defender exercise planned for 2027",
+   "summary": "The Chief of Defence has dropped Valiant Defender, a large allied exercise planned for March 2027, possibly in Finnmark and Indre Troms, citing changed strategic priorities. Resources go instead to Heimdall in February, a trial of autonomous systems in Arctic conditions, and NATO's Formidable Shield missile exercise at Andøya in April. Joint Viking will be held in Indre Troms in March with about 4,000 troops, and Cold Response 2028 is planned to be larger. Heimdall is the 2027 test window to watch for autonomy startups.",
+   "source": "Forsvarets forum",
+   "url": "https://www.forsvaretsforum.no/cold-response-forsvaret-forsvarets-operative-hovedkvarter/storovelse-er-avlyst/533428",
+   "added": "2026-11-19"
+  },
   {
    "pri": 1,
    "region": "Norway",
@@ -150,16 +160,6 @@
    "added": "2026-11-13"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-12",
-   "title": "Nordic countries start work on a Nordic defence agreement",
-   "summary": "Norway, Denmark, Finland, Sweden and Iceland agreed at the NORDEFCO meeting in Oslo to build a legal and political framework for closer defence cooperation in peace, crisis and war. The aim is to let forces move and operate across borders with fewer obstacles. Ministers also welcomed the industry-led Nordic Compass initiative.",
-   "source": "Regjeringen",
-   "url": "https://www.regjeringen.no/no/aktuelt/begynner-arbeidet-med-nordisk-forsvarsavtale/id3192484/",
-   "added": "2026-11-13"
-  },
-  {
    "pri": 2,
    "region": "Finland",
    "date": "2026-11-18",
@@ -168,6 +168,36 @@
    "source": "NordicDefenceWatch",
    "url": "https://nordicdefencewatch.com/news/financials/article19842664.ece",
    "added": "2026-11-18"
+  },
+  {
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-18",
+   "title": "Founders say Sweden's defence fast track is closed to small companies",
+   "summary": "The CEO of Polar Mist says FMV's fast-track procurement is open to only a few players, according to Dagens industri. Stark Defence's Nordic chairman says foreign firms can wait months to set up in Sweden. A fast track that only primes can use limits the gain for startups.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/financials/article19848085.ece",
+   "added": "2026-11-19"
+  },
+  {
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-18",
+   "title": "Latvia shows its first naval drones",
+   "summary": "Four uncrewed surface vessels from Latvian firm NEWT21 appeared at the Independence Day parade in Riga. FOG is a fast craft for reconnaissance, interception and strike; RAY is a catamaran for logistics, reconnaissance and evacuation. Baltic states are building their own maritime drone capacity.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/new-challenge-for-russia-s-navy-latvia-parades-fog-and-ray-naval-drones-for-the-first-time/",
+   "added": "2026-11-19"
+  },
+  {
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-18",
+   "title": "Navantia courts Danish suppliers in the frigate race",
+   "summary": "Spanish shipbuilder Navantia expects to sign agreements with Danish companies within about a month as part of its F110 bid for Denmark's new frigates. It competes with Babcock and Naval Group, which has already signed with three Danish partners. Bidders are shopping for local partners now, a chance for Nordic subsuppliers.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/production/article19846113.ece",
+   "added": "2026-11-19"
   },
   {
    "pri": 2,
@@ -210,34 +240,34 @@
    "added": "2026-11-17"
   },
   {
-   "pri": 2,
-   "region": "Sweden",
-   "date": "2026-11-16",
-   "title": "Ovzon doubts the EU's IRIS² satellite timeline",
-   "summary": "The CEO of Swedish satellite communications firm Ovzon says IRIS² will probably take longer than planned. Ovzon is seeking an extension of its current contract with FMV and is close to deciding on two new satellites. Delays to IRIS² leave room for national and commercial secure satcom.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/space/article19823328.ece",
-   "added": "2026-11-16"
-  },
-  {
-   "pri": 2,
-   "region": "Nordics",
-   "date": "2026-11-16",
-   "title": "Estonia: Russia is preparing sabotage at ten defence companies",
-   "summary": "The head of Estonia's security service says about ten Estonian defence industry sites are being targeted, and that the service knew of the Threod plot in advance. Russia recruits saboteurs through criminal networks and social media, sometimes for a few hundred euros. Estonia has exposed more than 50 people working for Russian services in recent years. Defence startups across the Nordics should treat site security as part of the product.",
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-19",
+   "title": "Third strike on the Kerch bridge halts rail traffic",
+   "summary": "Ukraine hit the railway section of the bridge overnight into 19 November, after strikes on 16 and 17 November brought down an arch and part of the road. Russian-installed authorities in Crimea say train traffic has stopped. Ukraine's defence ministry says the bridge no longer works as a transport route.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/russian-security-services-preparing-sabotage-at-ten-estonian-defense-companies-security-service-chief-says/",
-   "added": "2026-11-17"
+   "url": "https://militarnyi.com/en/news/ukraine-attacks-railway-section-of-crimean-kerch-bridge-halting-train-traffic/",
+   "added": "2026-11-19"
   },
   {
-   "pri": 2,
-   "region": "Sweden",
-   "date": "2026-11-16",
-   "title": "Two held over stolen shipment bound for Kebni",
-   "summary": "A supplier's shipment worth millions of kronor went missing near Kebni's Karlskoga site around 6 November and has not been found. Two men are held on suspicion of aggravated theft. Kebni says its operations are not affected. Supply-chain security is now a real risk for small defence suppliers.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/financials/article19838829.ece",
-   "added": "2026-11-17"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-18",
+   "title": "EU proposes a new EUR 45 bn loan for Ukraine in 2027",
+   "summary": "The European Commission proposes EUR 25 bn for military needs and EUR 20 bn for budget support, on top of the EUR 90 bn Ukraine Support Loan. Ukraine would repay only after receiving Russian reparations. EU leaders discuss it at a summit on 26–27 November. More EU money for Ukrainian procurement means more demand for drones and air defence next year.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/european-commission-proposes-allocating-25-billion-to-ukraine-s-military-needs-in-2027-under-new-loan/",
+   "added": "2026-11-19"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-18",
+   "title": "Russia reportedly tests a Geran-6 jet drone at up to 1,000 km/h",
+   "summary": "A member of the Ukrainian parliament's security committee says intelligence shows Russia testing the Geran-6, a small cruise missile with a large warhead. The claim is not independently confirmed. Faster one-way attack drones raise the bar for detection and interceptors.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/russia-tests-new-geran-6-missile-with-a-speed-of-up-to-1-000-km-h/",
+   "added": "2026-11-19"
   },
   {
    "pri": 3,
@@ -273,7 +303,6 @@
    "pri": 3,
    "region": "Ukraine",
    "date": "2026-11-17",
-   "breaking": true,
    "title": "Kerch bridge arch collapses after second Ukrainian strike",
    "summary": "Ukraine hit the bridge between Crimea and Russia on 16 November and again overnight into 17 November. The arch over the shipping channel and an adjacent road section fell into the water and traffic has stopped. Ukraine has struck at least six bridges on Russia's key logistics routes since early October.",
    "source": "Militarnyi",
@@ -291,34 +320,34 @@
    "added": "2026-11-16"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-16",
-   "title": "EU pays Ukraine EUR 1.7 bn for drones, ammunition and air defence",
-   "summary": "The money is the eighth defence tranche from the EUR 90 bn Ukraine Support Loan. About 40% pays for contracts with EU manufacturers and the rest goes to Ukrainian defence companies. Partnering with a Ukrainian producer is one of the most direct routes to this money.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/eu-provides-ukraine-with-1-7-billion-for-drones-ammunition-and-air-defense/",
-   "added": "2026-11-17"
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-18",
+   "title": "NATO signs cyber defence deal with OpenAI",
+   "summary": "Announced at the NATO Edge conference in Izmir, the deal gives NATO access to OpenAI's Daybreak security platform to review software, fix weak points and examine suspicious activity. OpenAI already supported NATO's Crossed Swords exercise in Tallinn, where operators tested AI agents for cyber defence. Big AI firms are moving into defence cyber, which raises the bar for small cyber startups.",
+   "source": "Forsvarets forum",
+   "url": "https://www.forsvaretsforum.no/cyber-cyberforsvaret-datasikkerhet/skal-samarbeide-med-ki-gigant/533375",
+   "added": "2026-11-19"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-16",
-   "title": "Dutch AIA plans air defence production in Ukraine",
-   "summary": "Artillerie Inrichtingen Armaments has opened an office in Ukraine and plans joint production with Ukrainian firms, starting with engineering and possibly a plant in western Ukraine. Ukrainian firms are also set to join the Dutch WARDEN missile programme, with first trials in 2027.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-18",
+   "title": "Poland foils Russian plot meant to kill many and blame Ukraine",
+   "summary": "Rzeczpospolita reports that Polish intelligence and the military stopped a Russian sabotage plan near the Kaliningrad border, after a warning from foreign services. Police, ABW officers and special forces were sent to the area, and Lithuania, Latvia and Estonia got similar warnings. Hybrid attacks are escalating from sabotage toward mass-casualty plots.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/dutch-aia-plans-to-establish-air-defense-production-in-ukraine/",
-   "added": "2026-11-17"
+   "url": "https://militarnyi.com/en/news/poland-foils-russian-plot-to-cause-mass-casualties-and-frame-ukraine/",
+   "added": "2026-11-19"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-15",
-   "title": "Zelensky: over 55% of Russia's oil refining capacity disabled",
-   "summary": "Zelensky says Ukrainian long-range strikes have now knocked out more than 55% of Russia's refining capacity. The defence ministry says the strikes pressure Russian production, domestic supply and exports. Long-range drones remain Ukraine's main tool for hitting Russia's economy.",
-   "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4184999-ukraine-disables-over-55-of-russias-oil-refining-capacity-zelensky.html",
-   "added": "2026-11-16"
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-18",
+   "title": "KNDS unveils FENNEK AIR counter-drone vehicle",
+   "summary": "KNDS Deutschland will show a FENNEK AIR prototype at NEDS in Rotterdam, with a 30 mm cannon and AI that detects, tracks and prioritises drones. The vehicles share sensor data over a network, and the kit could fit other platforms. Primes are bundling AI targeting into mobile air defence, where software and sensor startups can partner.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/knds-to-unveil-fennek-air-counter-drone-system-with-30mm-cannon/",
+   "added": "2026-11-19"
   },
   {
    "pri": 4,
@@ -369,36 +398,6 @@
    "source": "Defence Industry Europe",
    "url": "https://defence-industry.eu/romania-imposes-contractual-penalties-on-rheinmetall-over-delays-in-delivering-air-defence-systems-defence-minister-says/",
    "added": "2026-11-17"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-15",
-   "title": "Drones hit three civilian ships off Romania",
-   "summary": "Unidentified drones struck a tanker and two cargo ships near the entrance to the Sulina channel on 14 and 15 November; crews put out the fires and no one was hurt. Romania scrambled fighters twice and warned residents in Tulcea county. Its defence minister will ask EU colleagues in Brussels on 17–18 November for patrol aircraft and counter-drone capability, and wants faster delivery of Thales gap-filler radars.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/drones-strike-three-civilian-vessels-off-romania-s-coast/",
-   "added": "2026-11-16"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-14",
-   "title": "Germany lets the BND act against drone makers and supply chains abroad",
-   "summary": "The Bundestag passed the reform on 13 November by 309 votes to 190. The foreign intelligence service may now actively counter threats abroad, including by disrupting drone makers and swapping in faulty parts in weapons supply chains. Berlin cites rising espionage, sabotage and hybrid attacks.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/sabotage-supply-germany-bnd-granted-authority-special-operations-abroad/",
-   "added": "2026-11-15"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-14",
-   "title": "Royal Navy chief: Russian activity in the north up more than 40%",
-   "summary": "Speaking during the carrier visit to Oslo, General Gwyn Jenkins warned against accepting Russian activity in the north as normal. He said ten years ago the UK would have read it as preparation for war. Shadow-fleet tankers, sometimes with naval escort, are part of the rise.",
-   "source": "Forsvarets forum",
-   "url": "https://www.forsvaretsforum.no/norge-russland-storbritannia/advarer-mot-a-venne-seg-til-russisk-aktivitet-i-nord/532804",
-   "added": "2026-11-15"
   }
  ],
  "press": [
@@ -866,7 +865,7 @@
    "country": "Finland",
    "kind": "Startup conference",
    "org": "Slush",
-   "tldr": "On now: Europe's biggest startup event, with growing dual-use and defence tracks.",
+   "tldr": "Last day today: Europe's biggest startup event, with growing dual-use and defence tracks.",
    "url": "https://slush.org/"
   },
   {
@@ -879,7 +878,7 @@
    "country": "Netherlands",
    "kind": "Trade fair",
    "org": "NIDV",
-   "tldr": "Matchmaking day on 18 Nov (separate sign-up), expo on 19 Nov. A door into the Dutch MoD and MINDbase.",
+   "tldr": "Expo day today; KNDS shows its FENNEK AIR counter-drone vehicle. A door into the Dutch MoD.",
    "url": "https://www.hollandhightech.nl/en/news-calendar/calendar/neds-2026"
   },
   {
@@ -909,17 +908,18 @@
    "url": "https://nordicdefencesector.com/events/arctic-lion-defence-summit"
   },
   {
-   "id": "secd-day-2027",
-   "title": "SecD-Day Conference & Exhibition",
-   "start": "2027-02-02",
-   "end": "2027-02-03",
+   "id": "dark-drones-2027",
+   "title": "Dark Drones",
+   "start": "2027-01-28",
+   "end": "2027-01-29",
    "approx": false,
-   "city": "Helsinki",
-   "country": "Finland",
-   "kind": "Conference + expo",
-   "org": "SecD-Day",
-   "tldr": "Finland's defence and security tech show. The Finnish MoD is easier to approach than most.",
-   "url": "https://nordicdefencesector.com/events/secd-day-conference-exhibition"
+   "city": "Trondheim",
+   "country": "Norway",
+   "kind": "Conference + demo",
+   "org": "Ocean Autonomy Cluster",
+   "tldr": "Operating and detecting drones in cold, dark Norwegian waters, with an outdoor demo. Mainly for cluster members and invitees.",
+   "url": "https://oceanautonomy.no/dark-drones",
+   "added": "2026-11-19"
   },
   {
    "id": "osc-2027",
@@ -933,6 +933,19 @@
    "org": "Norwegian Atlantic Committee (formerly Leangkollen)",
    "tldr": "Norway's main security-policy conference, usually in the first half of February. Dates not yet announced.",
    "url": "https://atlanterhavskomiteen.no/en/leangkollen-security-conference"
+  },
+  {
+   "id": "secd-day-2027",
+   "title": "SecD-Day Conference & Exhibition",
+   "start": "2027-02-02",
+   "end": "2027-02-03",
+   "approx": false,
+   "city": "Helsinki",
+   "country": "Finland",
+   "kind": "Conference + expo",
+   "org": "SecD-Day",
+   "tldr": "Finland's defence and security tech show. The Finnish MoD is easier to approach than most.",
+   "url": "https://nordicdefencesector.com/events/secd-day-conference-exhibition"
   },
   {
    "id": "msc-2027",
@@ -985,6 +998,20 @@
    "org": "DSEI",
    "tldr": "New German edition of DSEI. A route into the Bundeswehr supply chain.",
    "url": "https://www.dsei-germany.com/"
+  },
+  {
+   "id": "nordsec-hackathon-2027",
+   "title": "NORDSEC Defence Hackathon 2027",
+   "start": "2027-03-16",
+   "end": "2027-03-18",
+   "approx": false,
+   "city": "Trondheim",
+   "country": "Norway",
+   "kind": "Hackathon",
+   "org": "NORDSEC (Nordic Defence and Security Cluster) and NTNU",
+   "tldr": "Three days on real defence problems with mentors and defence users. Good for finding talent and first users.",
+   "url": "https://www.nordsec-cluster.no/en/nordsec-defence-hackathon-2027",
+   "added": "2026-11-19"
   },
   {
    "id": "defence-expo-sweden-2027",
@@ -1061,7 +1088,7 @@
    "deadline": "2026-12-01",
    "amount": "Project support",
    "who": "Public-sector buyers apply; startups join as the supplier side",
-   "tldr": "Find a public buyer, Forsvaret included, that will apply with you before 1 December.",
+   "tldr": "Closes 1 December at 13:00. Find a public buyer, Forsvaret included, to apply with you now.",
    "url": "https://www.forskningsradet.no/utlysninger/2026/innovative-offentlige-anskaffelser/"
   },
   {
@@ -1107,6 +1134,18 @@
    "who": "Norwegian companies preparing EU defence bids",
    "tldr": "Free help to get ready for the 2027 EDF calls. Start now; consortia take months.",
    "url": "https://www.innovasjonnorge.no/tjeneste/det-europeiske-forsvarsfondet-(edf)"
+  },
+  {
+   "id": "fr-pes",
+   "title": "PES: support to build EU and EDF applications",
+   "funder": "Research Council of Norway",
+   "status": "rolling",
+   "deadline": null,
+   "amount": "Up to NOK 500k per application (depends on role)",
+   "who": "Norwegian actors with a formal role in an EU or EDF application",
+   "tldr": "Get paid to write your EDF bid. Apply at least four weeks before the EU deadline.",
+   "url": "https://www.forskningsradet.no/utlysninger/2025/pes--stotte-til-prosjektetablering-rettet-mot-horisont-europa/",
+   "added": "2026-11-19"
   },
   {
    "id": "fr-centres",
@@ -2179,7 +2218,7 @@
    "region": "Europe",
    "segment": "Land systems & robotics",
    "type": "Prime",
-   "what": "Leopard tanks, Caesar howitzers and armoured vehicles.",
+   "what": "Leopard tanks, Caesar howitzers and armoured vehicles; unveiled the FENNEK AIR counter-drone vehicle with AI targeting in November 2026.",
    "url": "https://en.wikipedia.org/wiki/KNDS"
   },
   {
@@ -2624,6 +2663,36 @@
    "what": "State-owned operator of Sweden's resilient broadcast and secure networks; bought the Västervik drone test site in November 2026.",
    "url": "https://www.teracom.se/",
    "added": "2026-11-18"
+  },
+  {
+   "name": "NEWT21",
+   "country": "Latvia",
+   "region": "Nordics",
+   "segment": "Maritime & underwater",
+   "type": "Startup",
+   "what": "Latvian maker of the FOG fast attack and reconnaissance boat and the RAY catamaran, uncrewed vessels shown at Latvia's 2026 parade.",
+   "url": "https://newt21.com",
+   "added": "2026-11-19"
+  },
+  {
+   "name": "Navantia",
+   "country": "Spain",
+   "region": "Europe",
+   "segment": "Maritime & underwater",
+   "type": "Prime",
+   "what": "Spanish state shipbuilder bidding its F110 frigate for Denmark and signing up Danish suppliers.",
+   "url": "https://www.navantia.es/en/",
+   "added": "2026-11-19"
+  },
+  {
+   "name": "TKMS",
+   "country": "Germany",
+   "region": "Europe",
+   "segment": "Maritime & underwater",
+   "type": "Prime",
+   "what": "German builder of submarines and frigates; partner with Kongsberg on 212CD submarines and now building eight MEKO A-200 frigates for Germany.",
+   "url": "https://defence-industry.eu/germany-orders-four-more-meko-a-200-deu-frigates-from-tkms-taking-programme-to-eight-ships/",
+   "added": "2026-11-19"
   }
  ]
 }
