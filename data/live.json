@@ -1,29 +1,29 @@
 {
- "updatedAt": "2026-11-19T08:33:41+01:00",
+ "updatedAt": "2026-11-20T08:23:14+01:00",
  "situation": [
   {
    "region": "Norway",
    "level": "elevated",
-   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. Forsvaret has cancelled Valiant Defender, a large allied exercise planned for March 2027, to put resources into Joint Viking in Indre Troms, the Heimdall autonomy trial and NATO's Formidable Shield at Andøya. Germany says Norway and Germany will jointly fund a new air defence package for Ukraine through NATO's PURL scheme.",
+   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. Norway and the UK will split the cost of two fast attack boats for Ukraine's navy, and Kongsberg has joined Ukraine's Brave Prime programme to test systems and integrate Ukrainian technology. Forsvaret has dropped the Valiant Defender exercise to focus 2027 on Joint Viking, the Heimdall autonomy trial and Formidable Shield.",
    "sources": [
     {
      "label": "PST",
      "url": "https://www.pst.no/sabotasjetrusselen-i-norge-er-skjerpet/"
     },
     {
-     "label": "Forsvarets forum",
-     "url": "https://www.forsvaretsforum.no/cold-response-forsvaret-forsvarets-operative-hovedkvarter/storovelse-er-avlyst/533428"
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/ukraine-two-boats-support-from-uk-norway/"
     },
     {
-     "label": "Forsvarets forum",
-     "url": "https://www.forsvaretsforum.no/luftforsvar-nato-tyskland/tysklands-forsvarsminister-norge-og-tyskland-med-ny-vapenpakke-til-ukraina/533321"
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/nasams-manufacturer-joins-brave-prime-to-find-ukrainian-technologies-for-integration-into-its-systems/"
     }
    ]
   },
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "Estonia's security service says Russia is preparing sabotage against about ten Estonian defence companies, and the Baltic states received the same warning as Poland about a Russian plot near Kaliningrad. Latvia showed its first naval drones at its Independence Day parade. Finland and Ukraine agreed to produce weapons together in Finland, while Swedish founders complain that the fast-track procurement route is closed to small firms.",
+   "text": "Estonia's security service says Russia is preparing sabotage against about ten Estonian defence companies. Estonia launched Euroguard, an EDF-funded test ship that can sail unmanned, and Denmark is close to choosing between Systematic, Netcompany and Terma for its warfare software. Sweden has joined NATO's STARLIFT satellite launch project with Esrange in Kiruna.",
    "sources": [
     {
      "label": "Militarnyi",
@@ -31,54 +31,84 @@
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/new-challenge-for-russia-s-navy-latvia-parades-fog-and-ray-naval-drones-for-the-first-time/"
+     "url": "https://militarnyi.com/en/news/estonia-largest-military-vessel-since-1991/"
     },
     {
      "label": "NordicDefenceWatch",
-     "url": "https://nordicdefencewatch.com/news/policy/article19845155.ece"
+     "url": "https://nordicdefencewatch.com/news/financials/article19853152.ece"
     }
    ]
   },
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "Ukraine struck the Kerch bridge for the third time in a week overnight into 19 November, and rail traffic has stopped after the road section already collapsed. Russia launched 98 drones the same night and Ukraine says it downed 69, while strikes on energy left 99 settlements in Mykolaiv region without power. The European Commission proposes a new EUR 45 bn loan for 2027, of which EUR 25 bn is for military needs.",
+   "text": "Russian ballistic missiles hit Kyiv overnight into 20 November, killing three people and damaging two bridges over the Dnipro. Ukraine struck the Kerch bridge rail section again and hit the Dorogobuzh chemical plant in Smolensk region. After a Berlin summit, European leaders asked Russia for a winter energy truce, and the US says it is open to Article 5-like guarantees for Ukraine.",
    "sources": [
     {
+     "label": "Ukrinform",
+     "url": "https://www.ukrinform.net/rubric-ato/4186645-three-killed-15-injured-in-russian-attack-on-kyiv.html"
+    },
+    {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/ukraine-attacks-railway-section-of-crimean-kerch-bridge-halting-train-traffic/"
+     "url": "https://militarnyi.com/en/news/drones-strike-russia-s-dorogobuzh-chemical-plant-which-produces-explosives-components/"
     },
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4186225-air-defense-downs-69-drones-launched-by-russia-in-overnight-attack-on-ukraine.html"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/european-commission-proposes-allocating-25-billion-to-ukraine-s-military-needs-in-2027-under-new-loan/"
+     "url": "https://www.ukrinform.net/rubric-polytics/4186635-coalition-of-the-willing-leaders-urge-russia-to-agree-to-winter-energy-truce.html"
     }
    ]
   },
   {
    "region": "Europe",
    "level": "elevated",
-   "text": "Polish media report that Poland foiled a Russian plot near the Kaliningrad border meant to cause mass casualties and be blamed on Ukraine. A Russian drone forced Moldova to close its airspace on 17 November. NATO has agreed to use OpenAI's tools for cyber defence, and Germany ordered four more MEKO frigates from TKMS.",
+   "text": "Poland raised its air defence alert on 20 November after a Russian cruise missile was tracked near its border, though entry into Polish airspace is not confirmed. Poland also says it foiled a Russian plot meant to cause mass casualties and be blamed on Ukraine. The US warned the EU against shutting American suppliers out of European defence markets, and China now requires export licences for some drone components.",
    "sources": [
+    {
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/russian-missile-crosses-polish-border-monitoring-channels-report/"
+    },
     {
      "label": "Militarnyi",
      "url": "https://militarnyi.com/en/news/poland-foils-russian-plot-to-cause-mass-casualties-and-frame-ukraine/"
     },
     {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/moldova-close-airspace-russian-uav-chisinau/"
-    },
-    {
-     "label": "Forsvarets forum",
-     "url": "https://www.forsvaretsforum.no/cyber-cyberforsvaret-datasikkerhet/skal-samarbeide-med-ki-gigant/533375"
+     "label": "Defence Industry Europe",
+     "url": "https://defence-industry.eu/elbridge-colby-opposes-excluding-u-s-suppliers-from-european-defense-markets-calls-for-more-joint-weapons-production/"
     }
    ]
   }
  ],
  "news": [
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-19",
+   "title": "Kongsberg joins Ukraine's Brave Prime programme",
+   "summary": "Kongsberg Defence & Aerospace has signed a memorandum with Brave1 and joined Brave Prime, after Airbus and Saab. Kongsberg will test its systems in Ukraine under Test in Ukraine. The two sides will also look for Ukrainian companies whose technology and components can be built into Kongsberg's systems, and for joint research areas. The deal was signed in Kyiv by Kongsberg Defence & Aerospace Ukraine.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/nasams-manufacturer-joins-brave-prime-to-find-ukrainian-technologies-for-integration-into-its-systems/",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-19",
+   "title": "Norway and the UK fund two fast attack boats for Ukraine",
+   "summary": "The UK and Norway will pay more than USD 131 m, split equally, for two 30-metre attack boats for the Ukrainian Navy. The boats will be built at British yards and carry air defence, missiles and self-defence systems. Their main job is to protect the Black Sea grain corridor. The money comes through the Maritime Capability Coalition, which the two countries lead.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/ukraine-two-boats-support-from-uk-norway/",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-19",
+   "title": "Teleplan Globe links Ukraine's Raybird drone into its FACNAV battle system",
+   "summary": "Norwegian Teleplan Globe and Ukrainian drone maker Skyeton have integrated the ACS-3 Raybird long-endurance drone into the FACNAV battle management system. Operators get live video from the Raybird in the same view as other drones, ground cameras and satellites, which cuts the time from detection to strike. When the work is done, operators will be able to plan missions and control the drone and its payload from FACNAV.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/ukrainian-raybird-uas-integrated-into-norwegian-facnav-battle-management-system/",
+   "added": "2026-11-20"
+  },
   {
    "pri": 1,
    "region": "Norway",
@@ -123,26 +153,6 @@
    "pri": 1,
    "region": "Norway",
    "date": "2026-11-13",
-   "title": "Syncrolift wins NOK 940 m contract for world's largest shiplift at a US naval yard",
-   "summary": "The Norwegian firm, part of Nekkar, calls it the largest contract in its history. It more than doubles its order backlog. Norwegian maritime suppliers are finding a way into the US naval build-up.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/production/article19824414.ece",
-   "added": "2026-11-13"
-  },
-  {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-13",
-   "title": "Norway turns its Ukraine industry portal into a marketplace",
-   "summary": "The defence ministry's portal for Norwegian offers to Ukraine no longer has earmarked Nansen money. Proposals are now matched to needs that Ukraine's defence ministry confirms, and FMA assesses those that match. Unused funds move into the ordinary Ukraine support budget.",
-   "source": "Regjeringen",
-   "url": "https://www.regjeringen.no/no/aktuelt/industriportalen-er-endret/id3192892/",
-   "added": "2026-11-14"
-  },
-  {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-13",
    "title": "Norwegian Robot Aviation builds Arctic-ready drones for Norway's military",
    "summary": "The company has grown from five to almost 60 staff since 2023. It aims to be as independent of foreign suppliers as possible and says its finances are sound. A Norwegian example of the supply-chain independence buyers now ask for.",
    "source": "NordicDefenceWatch",
@@ -150,24 +160,44 @@
    "added": "2026-11-15"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-12",
-   "title": "PST raises sabotage threat in Norway",
-   "summary": "PST expects Russian intelligence to attempt sabotage in Norway in the coming year, often through hired proxies. The defence industry, defence-related firms and their suppliers, such as logistics companies, are the most likely targets. Methods include arson, explosives and drones. Every defence startup should review site security and report anything unusual to PST.",
-   "source": "PST",
-   "url": "https://www.pst.no/sabotasjetrusselen-i-norge-er-skjerpet/",
-   "added": "2026-11-13"
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-20",
+   "title": "Systematic, Netcompany and Terma compete for Danish warfare software",
+   "summary": "Denmark is close to choosing a supplier for its future military software. Systematic, Netcompany and Terma are competing for a first contract worth several hundred million Danish kroner. All three bidders are Danish.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/financials/article19853152.ece",
+   "added": "2026-11-20"
   },
   {
    "pri": 2,
-   "region": "Finland",
-   "date": "2026-11-18",
-   "title": "Business Finland doubled its defence funding",
-   "summary": "Finnish companies received about EUR 75 m in defence and security funding from Business Finland in 2025, double the year before. The money runs through its Defense and Digital Resilience programme, and a new two-year growth project starts in January. Finland's state innovation agency is now a serious funder of defence startups, a benchmark for Innovasjon Norge.",
+   "region": "Denmark",
+   "date": "2026-11-20",
+   "title": "Ukrainian Norda Dynamics looks at drone production in Denmark",
+   "summary": "Ukrainian drone company Norda Dynamics, which has Swedish backing, is looking at production in Denmark. It is seeking investors, university partners and engineers as it moves towards autonomous deep-strike drones.",
    "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/financials/article19842664.ece",
-   "added": "2026-11-18"
+   "url": "https://nordicdefencewatch.com/news/drones/article19837999.ece",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-19",
+   "title": "Estonia launches Euroguard, an EDF-funded test ship that can sail unmanned",
+   "summary": "Baltic Workboats launched the 45-metre Euroguard on Saaremaa, the largest warship built in Estonia since 1991. It cost EUR 95 m, of which EUR 65 m came from the European Defence Fund, in a project with ten countries. The ship can be run remotely from shore and is a test platform for anti-submarine, mine warfare, sensors, weapons and autonomous control. Navies and suppliers can fit their own modules to test them.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/estonia-largest-military-vessel-since-1991/",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-19",
+   "title": "Promoteq confirms SEK 950 m FMV framework, including anti-drone gear",
+   "summary": "Promoteq says its framework agreement with FMV for military police and security units is worth about SEK 950 m over up to seven years. It covers body armour, cameras, tents and anti-drone equipment. Development and production take place in the group, with EmbeddedArt Granit as subcontractor for documentation and logistics support.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en/article/promoteq-fmv-contract-worth-sek-950-million",
+   "added": "2026-11-20"
   },
   {
    "pri": 2,
@@ -202,42 +232,62 @@
   {
    "pri": 2,
    "region": "Finland",
-   "date": "2026-11-17",
-   "title": "Finland and Ukraine agree to make weapons together in Finland",
-   "summary": "The two defence ministers signed a memorandum at the Ramstein meeting in Brussels. It covers technology transfer, new production sites in Finland and joint development of new systems. No products, companies or amounts were named.",
+   "date": "2026-11-18",
+   "title": "Business Finland doubled its defence funding",
+   "summary": "Finnish companies received about EUR 75 m in defence and security funding from Business Finland in 2025, double the year before. The money runs through its Defense and Digital Resilience programme, and a new two-year growth project starts in January. Finland's state innovation agency is now a serious funder of defence startups, a benchmark for Innovasjon Norge.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/financials/article19842664.ece",
+   "added": "2026-11-18"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-20",
+   "title": "Russian ballistic missiles hit Kyiv bridges and kill three",
+   "summary": "Russia attacked Kyiv with ballistic missiles overnight into 20 November. Three people were killed and about 15 injured, and the Podilskyi and Darnytskyi bridges over the Dnipro were damaged along with a critical infrastructure site. Traffic between the two banks is badly disrupted and the mayor asked businesses to work remotely.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4186643-kyivs-podilskyi-and-darnytskyi-bridges-damaged-in-russian-ballistic-attack-mayor.html",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-20",
+   "title": "Ukraine says drones hit over 2 million targets this year",
+   "summary": "Ukraine's Ministry of Defence says its forces struck more than 2 million targets with drones in 2026, all logged in the DELTA system and verified by Brave1. October was the busiest month with over 257,000 verified strikes, almost 2.5 times January. Targets include air defence, EW systems, drones, vehicles, boats and ground robots.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4186397-ukraines-defense-forces-strike-over-two-million-enemy-targets-with-drones-this-year.html",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-20",
+   "title": "Quantum Systems' Ukraine joint venture to grow drone output fivefold",
+   "summary": "Quantum Frontline Industries, a joint venture of Quantum Systems and Frontline Robotics, plans to raise drone production capacity fivefold in 2027 after a larger follow-on order from Ukraine's National Guard. It builds Ukrainian-designed Linza and Zoom drones in Germany. The partners will also spend over EUR 10 m on training, support and maintenance in Ukraine.",
+   "source": "Defence Industry Europe",
+   "url": "https://defence-industry.eu/quantum-systems-joint-venture-plans-fivefold-increase-in-drone-production-capacity-in-2027/",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-19",
+   "title": "Coalition of the Willing asks Russia for a winter energy truce",
+   "summary": "After a summit in Berlin on 19 November, Germany, France, the UK and Ukraine called on Russia to agree to an energy ceasefire for the winter as a first step. They also want a deal on safe Black Sea shipping and stronger Ukrainian air defence against ballistic missiles. Jared Kushner said the US is open to Article 5-like security guarantees for Ukraine.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-polytics/4186635-coalition-of-the-willing-leaders-urge-russia-to-agree-to-winter-energy-truce.html",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-19",
+   "title": "UK sends over 1,000 long-range strike drones, mostly bought from SMEs",
+   "summary": "The UK's GBP 260 m package includes more than 1,000 long-range strike drones, some able to reach targets over 1,000 km away, plus maritime, logistics and reconnaissance drones. Over 80% of the value goes to orders from British manufacturers, especially small and medium-sized firms.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/ukraine-and-finland-agree-to-joint-weapons-production/",
-   "added": "2026-11-18"
-  },
-  {
-   "pri": 2,
-   "region": "Sweden",
-   "date": "2026-11-17",
-   "title": "Teracom buys Sweden's national drone test site",
-   "summary": "The state-owned secure network operator has bought Västervik Drone Science Park, home to Sweden's first and largest zone for unmanned aircraft. Teracom wants to make it a national and international hub for testing drones, with its own know-how in resilient connectivity, control and data links. It is also in talks to buy the local airport area.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/drones/article19841822.ece",
-   "added": "2026-11-18"
-  },
-  {
-   "pri": 2,
-   "region": "Finland",
-   "date": "2026-11-17",
-   "title": "Iceye bids about EUR 2 bn for Italian rocket maker Avio",
-   "summary": "The Finnish radar-satellite company offers EUR 41 per share in cash for Avio, maker of the Vega rocket, and promises EUR 1 bn of further investment in Italy over five years. Iceye wants to build a vertically integrated European space and defence group with its own launch capacity. The offer needs regulatory approval.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/financials/article19840560.ece",
-   "added": "2026-11-18"
-  },
-  {
-   "pri": 2,
-   "region": "Finland",
-   "date": "2026-11-17",
-   "title": "Kelluu turns its airships into passive radars",
-   "summary": "The Finnish firm unveiled Halo, a passive radar built into its airship hulls that tracks targets using reflected radio, TV and mobile signals and never transmits. Kelluu says it can more than double the range of ground-based passive radars at far lower hourly cost than crewed radar aircraft. A closed pilot with five partner nations is planned for early 2027.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/production/article19840365.ece",
-   "added": "2026-11-17"
+   "url": "https://militarnyi.com/en/news/united-kingdom-will-provide-ukraine-over-1000-drones/",
+   "added": "2026-11-20"
   },
   {
    "pri": 3,
@@ -270,54 +320,64 @@
    "added": "2026-11-19"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-17",
-   "title": "UK sends over 1,000 air defence missiles and a dozen radars",
-   "summary": "The GBP 240 m package, part of GBP 500 m set aside in the UK budget, covers short-range air defence missiles that have worked well against jet-powered Shaheds, plus more than a dozen radars. Deliveries start in mid-December to close gaps this winter.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-20",
+   "title": "Poland raises air defence alert as a Russian missile may have crossed its border",
+   "summary": "During Russia's large missile attack on Ukraine on 20 November, monitoring channels tracked a cruise missile near Cieszanów in south-east Poland before it disappeared from radar. There is no official confirmation that it entered Polish airspace. Poland raised its air defence alert, warned residents in Lublin and Podkarpackie, and sirens sounded in Lublin.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/uk-ukraine-over-1000-air-defense-missiles-new-radars/",
-   "added": "2026-11-18"
+   "url": "https://militarnyi.com/en/news/russian-missile-crosses-polish-border-monitoring-channels-report/",
+   "added": "2026-11-20"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-17",
-   "title": "Bundeswehr tests Ukraine's DELTA battle management system",
-   "summary": "Germany's defence minister said the German Army tested DELTA, Ukraine's digital situational awareness system, during drone exercises last month with help from Ukrainian instructors. Germany wants to develop it further with Ukraine and test it in the Bundeswehr. Ukrainian software is starting to flow back into European armies.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-19",
+   "title": "China puts export licences on some drone components",
+   "summary": "Since 18 November Chinese exporters need a licence to ship some drone parts, including jet engines used in Russia's jet Shaheds, autopilots and radio modules. It is not a ban, and several components Russia uses are still not covered. Ukraine's sanctions envoy called it a start.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/bundeswehr-interest-ukrainian-delta-system/",
-   "added": "2026-11-18"
+   "url": "https://militarnyi.com/en/news/china-restricts-exports-of-drone-components-including-jet-engines-autopilots-and-radio-modules/",
+   "added": "2026-11-20"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-17",
-   "title": "Destinus says its Ruta missiles brought down the Kerch bridge span",
-   "summary": "The European company says Ruta missiles hit the bridge on two days running, and that seven more missiles caused a span to collapse. Its Lord long-range drones, called Da Vinci in Ukraine, were used to suppress Russian air defence. The claims come from the company and are not independently confirmed.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-19",
+   "title": "NATO launches STARLIFT for fast military satellite launches",
+   "summary": "NATO unveiled STARLIFT at NATO Edge 26 in Izmir. Ten allies, including Norway, Sweden and Finland, plus South Korea fund it through NSPA. It reserves slots with commercial launch providers and uses a network of spaceports, and will test urgent launches of military satellites. Sweden says Esrange in Kiruna will play a key role.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/ruta-missiles-and-da-vinci-drones-destinus-reveals-details-of-strikes-on-crimean-bridge/",
-   "added": "2026-11-18"
+   "url": "https://militarnyi.com/en/news/starlift-nato-program-satellites-deployment/",
+   "added": "2026-11-20"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-17",
-   "title": "Kerch bridge arch collapses after second Ukrainian strike",
-   "summary": "Ukraine hit the bridge between Crimea and Russia on 16 November and again overnight into 17 November. The arch over the shipping channel and an adjacent road section fell into the water and traffic has stopped. Ukraine has struck at least six bridges on Russia's key logistics routes since early October.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/ukrainian-strike-destroys-arch-and-section-of-crimean-bridge/",
-   "added": "2026-11-17"
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-19",
+   "title": "US warns EU against shutting out American defence suppliers",
+   "summary": "US Under Secretary Elbridge Colby told EU defence ministers on 17 November that Washington strongly opposes measures that exclude American firms from European defence markets. He proposed joint ventures, licensed co-production and shared development, especially in air and missile defence, artillery and munitions.",
+   "source": "Defence Industry Europe",
+   "url": "https://defence-industry.eu/elbridge-colby-opposes-excluding-u-s-suppliers-from-european-defense-markets-calls-for-more-joint-weapons-production/",
+   "added": "2026-11-20"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-16",
-   "title": "Half of Russia's overnight attack drones were jet-powered",
-   "summary": "Russia launched 158 drones from 18:00 on 15 November, including 77 jet-powered Shaheds, Gerbera drones and decoys. Ukraine says it shot down or jammed 131, with hits at 19 locations. Faster jet drones push counter-drone systems toward quicker sensors and interceptors.",
-   "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4185017-ukraines-adf-down-131-of-158-russian-drones-launched-since-evening.html",
-   "added": "2026-11-16"
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-19",
+   "title": "EU ministers back eight joint capability areas, including a defence cloud",
+   "summary": "EU defence ministers approved the 2026 Coordinated Annual Review on Defence and endorsed eight cooperation areas, including cruise missiles, space-based early warning, strategic air transport and a secure federated defence cloud. The European Defence Agency gets EUR 78 m for 2027, 8.7% more than this year.",
+   "source": "Nordic Defence Sector",
+   "url": "https://nordicdefencesector.com/en/article/eu-agrees-on-eight-areas-for-defence-cooperation",
+   "added": "2026-11-20"
+  },
+  {
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-19",
+   "title": "UK buys hundreds of attack drones and EW kit for its troops in Estonia",
+   "summary": "The UK will spend GBP 25 m to equip 4th Light Brigade in Estonia with hundreds of one-way attack and FPV drones, double its reconnaissance drones and add electronic warfare and protection by April 2027. The money comes from Project RAPSTONE, a fund for fast buys that build the Army's recce-strike approach.",
+   "source": "Defence Industry Europe",
+   "url": "https://defence-industry.eu/uk-ministry-of-defence-says-25-million-package-will-equip-troops-in-estonia-with-more-drones-and-electronic-warfare-systems/",
+   "added": "2026-11-20"
   },
   {
    "pri": 4,
@@ -338,66 +398,6 @@
    "source": "Militarnyi",
    "url": "https://militarnyi.com/en/news/poland-foils-russian-plot-to-cause-mass-casualties-and-frame-ukraine/",
    "added": "2026-11-19"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-18",
-   "title": "KNDS unveils FENNEK AIR counter-drone vehicle",
-   "summary": "KNDS Deutschland will show a FENNEK AIR prototype at NEDS in Rotterdam, with a 30 mm cannon and AI that detects, tracks and prioritises drones. The vehicles share sensor data over a network, and the kit could fit other platforms. Primes are bundling AI targeting into mobile air defence, where software and sensor startups can partner.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/knds-to-unveil-fennek-air-counter-drone-system-with-30mm-cannon/",
-   "added": "2026-11-19"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-17",
-   "title": "Germany puts IRIS-T missiles into NASAMS for Ukraine",
-   "summary": "Germany's defence minister says IRIS-T missiles are being integrated into the NASAMS systems supplied to Ukraine, which today fire US AIM-9X and AMRAAM missiles. It is framed as a step to cut reliance on US weapons, and could widen export options for NASAMS, which Kongsberg makes with RTX.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/iris-t-missiles-to-be-integrated-into-nasams-systems-supplied-to-ukraine/",
-   "added": "2026-11-18"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-17",
-   "title": "Google: Russian-speaking hackers ran the first fully automated AI cyberattack",
-   "summary": "Google says AI agents compared code before and after security updates, found flaws and built exploits with no human in the loop, hitting French media, entertainment and education websites. Google expects these tools to be used against organisations worldwide. Small defence firms are exposed targets and need to patch fast.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/russians-autonomous-ai-cyberattack-google/",
-   "added": "2026-11-18"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-17",
-   "title": "Moldova closes its airspace as a Russian drone heads for Chisinau",
-   "summary": "A Geran-2 attack drone entered Moldovan airspace twice from Ukraine's Odesa region, and authorities closed the whole airspace. The foreign minister called it a serious violation of sovereignty. Drone spillover into neighbouring countries keeps widening demand for cheap detection.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/moldova-close-airspace-russian-uav-chisinau/",
-   "added": "2026-11-18"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-17",
-   "title": "Belgium orders radars and Skyranger air defence",
-   "summary": "As part of its Blue Dome programme, Belgium ordered 14 Thales Ground Master 200 radars and 20 Rheinmetall Skyranger 30 short-range air defence systems, a contract worth several hundred million euros. Short-range air defence against drones is now standard on European shopping lists.",
-   "source": "Forsvarets forum",
-   "url": "https://www.forsvaretsforum.no/belgia-luftvern-materiell/belgia-har-bestilt-radarer-og-luftvernsystemer/532874",
-   "added": "2026-11-17"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-17",
-   "title": "Romania fines Rheinmetall for late air defence deliveries",
-   "summary": "Romania's defence minister says a first EUR 8.7 m penalty was invoiced on 8 November, apparently over a 2023 contract to upgrade Oerlikon guns to Skynex. More penalties may follow if the systems miss specifications. Delays by primes open doors for faster suppliers.",
-   "source": "Defence Industry Europe",
-   "url": "https://defence-industry.eu/romania-imposes-contractual-penalties-on-rheinmetall-over-delays-in-delivering-air-defence-systems-defence-minister-says/",
-   "added": "2026-11-17"
   }
  ],
  "press": [
@@ -1281,17 +1281,6 @@
    "tldr": "Re-announced with a new deadline. Relevant for testing and lab companies.",
    "url": "https://www.doffin.no/notices/2026-117791",
    "added": "2026-11-17"
-  },
-  {
-   "id": "fma-advisory",
-   "title": "Procurement advisory to FMA",
-   "buyer": "FMA",
-   "value": "NOK 126 m",
-   "published": "2026-10-21",
-   "deadline": "2026-11-19",
-   "kind": "Framework agreement",
-   "tldr": "Consultancy work inside FMA; useful if you sell procurement expertise.",
-   "url": "https://www.doffin.no/notices/2026-116324"
   },
   {
    "id": "unclassified-it",
@@ -2693,6 +2682,46 @@
    "what": "German builder of submarines and frigates; partner with Kongsberg on 212CD submarines and now building eight MEKO A-200 frigates for Germany.",
    "url": "https://defence-industry.eu/germany-orders-four-more-meko-a-200-deu-frigates-from-tkms-taking-programme-to-eight-ships/",
    "added": "2026-11-19"
+  },
+  {
+   "name": "Teleplan Globe",
+   "country": "Norway",
+   "region": "Norway",
+   "segment": "Software, AI & C2",
+   "type": "Scale-up",
+   "what": "Norwegian maker of the FACNAV battle management and targeting system, now integrating Ukraine's Raybird drone.",
+   "url": "https://www.teleplanglobe.no/",
+   "added": "2026-11-20"
+  },
+  {
+   "name": "Skyeton",
+   "country": "Ukraine",
+   "region": "Europe",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Ukrainian maker of the long-endurance ACS-3 Raybird reconnaissance drone.",
+   "url": "https://skyeton.com",
+   "added": "2026-11-20"
+  },
+  {
+   "name": "Baltic Workboats",
+   "country": "Estonia",
+   "region": "Nordics",
+   "segment": "Maritime & underwater",
+   "type": "Scale-up",
+   "what": "Estonian shipyard that built Euroguard, an EDF-funded test ship that can be run unmanned.",
+   "url": "https://www.balticworkboats.ee",
+   "added": "2026-11-20"
+  },
+  {
+   "name": "Promoteq",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Manufacturing & components",
+   "type": "Scale-up",
+   "what": "Swedish supplier of equipment for military police and security units, including anti-drone gear, under a SEK 950 m FMV framework.",
+   "url": "https://promoteq.se",
+   "added": "2026-11-20"
   }
  ]
 }
