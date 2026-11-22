@@ -1,84 +1,121 @@
 {
- "updatedAt": "2026-11-20T08:23:14+01:00",
+ "updatedAt": "2026-11-22T08:28:13+01:00",
  "situation": [
   {
    "region": "Norway",
    "level": "elevated",
-   "text": "PST expects Russian intelligence to attempt sabotage in Norway within the next year, most likely against defence firms, their suppliers and military logistics. Norway and the UK will split the cost of two fast attack boats for Ukraine's navy, and Kongsberg has joined Ukraine's Brave Prime programme to test systems and integrate Ukrainian technology. Forsvaret has dropped the Valiant Defender exercise to focus 2027 on Joint Viking, the Heimdall autonomy trial and Formidable Shield.",
+   "text": "The government wants to spend about NOK 21 bn on new AIM-9X and AMRAAM missiles for NASAMS to protect Ørland, Evenes, critical infrastructure and allied reception areas. Russian tugs that circled subsea cables off Denmark later passed Norwegian gas pipelines and sailed along Finnmark with distorted AIS signals. PST still expects Russian sabotage attempts against defence firms and military logistics within the next year.",
    "sources": [
+    {
+     "label": "Forsvarsdepartementet",
+     "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-vil-investere-i-luftvernraketter/id3194195/"
+    },
+    {
+     "label": "The Barents Observer",
+     "url": "https://thebarentsobserver.com/news/russian-tugs-sail-suspiciously-over-underwater-infrastructure/462175"
+    },
     {
      "label": "PST",
      "url": "https://www.pst.no/sabotasjetrusselen-i-norge-er-skjerpet/"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/ukraine-two-boats-support-from-uk-norway/"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/nasams-manufacturer-joins-brave-prime-to-find-ukrainian-technologies-for-integration-into-its-systems/"
     }
    ]
   },
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "Estonia's security service says Russia is preparing sabotage against about ten Estonian defence companies. Estonia launched Euroguard, an EDF-funded test ship that can sail unmanned, and Denmark is close to choosing between Systematic, Netcompany and Terma for its warfare software. Sweden has joined NATO's STARLIFT satellite launch project with Esrange in Kiruna.",
+   "text": "Drones hit the Russian cargo ship Sparta II in the Gulf of Finland on 21 November, after a night when NATO jets were scrambled over Estonia and Finland restricted flights and shipping in the eastern gulf. Denmark is expelling Russia's military attaché after its security service said Russian intelligence organised a foiled murder plot near Copenhagen. Finland has ordered EUR 462 m of explosives from Nammo and Componenta.",
    "sources": [
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/russian-security-services-preparing-sabotage-at-ten-estonian-defense-companies-security-service-chief-says/"
+     "url": "https://militarnyi.com/en/news/drones-russian-ship-heading-for-kaliningrad/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/estonia-largest-military-vessel-since-1991/"
+     "url": "https://militarnyi.com/en/news/denmark-expel-russian-attache-attempted-assassination-kyivstoner/"
     },
     {
      "label": "NordicDefenceWatch",
-     "url": "https://nordicdefencewatch.com/news/financials/article19853152.ece"
+     "url": "https://nordicdefencewatch.com/news/financials/article19855164.ece"
     }
    ]
   },
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "Russian ballistic missiles hit Kyiv overnight into 20 November, killing three people and damaging two bridges over the Dnipro. Ukraine struck the Kerch bridge rail section again and hit the Dorogobuzh chemical plant in Smolensk region. After a Berlin summit, European leaders asked Russia for a winter energy truce, and the US says it is open to Article 5-like guarantees for Ukraine.",
+   "text": "Russian ballistic missiles and drones hit Kryvyi Rih on 20–21 November, killing two people and injuring 73. The General Staff reported 116 clashes on 21 November, with the heaviest pressure near Pokrovsk and Kostiantynivka, while Ukraine says it retook 14 settlements in northern Kharkiv region. The EU approved another EUR 1 bn from the European Peace Facility for drones, air defence and ammunition.",
    "sources": [
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4186645-three-killed-15-injured-in-russian-attack-on-kyiv.html"
-    },
-    {
-     "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/drones-strike-russia-s-dorogobuzh-chemical-plant-which-produces-explosives-components/"
+     "url": "https://www.ukrinform.net/rubric-ato/4187248-injury-toll-in-russian-attack-on-kryvyi-rih-rises-to-73-including-nine-children.html"
     },
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-polytics/4186635-coalition-of-the-willing-leaders-urge-russia-to-agree-to-winter-energy-truce.html"
+     "url": "https://www.ukrinform.net/rubric-ato/4187253-war-update-116-clashes-on-front-line-russian-forces-pressing-hardest-in-pokrovsk-kostiantynivka-sectors.html"
+    },
+    {
+     "label": "Militarnyi",
+     "url": "https://militarnyi.com/en/news/eu-council-allocates-1-billion-in-military-aid-to-ukraine/"
     }
    ]
   },
   {
    "region": "Europe",
    "level": "elevated",
-   "text": "Poland raised its air defence alert on 20 November after a Russian cruise missile was tracked near its border, though entry into Polish airspace is not confirmed. Poland also says it foiled a Russian plot meant to cause mass casualties and be blamed on Ukraine. The US warned the EU against shutting American suppliers out of European defence markets, and China now requires export licences for some drone components.",
+   "text": "Poland's defence minister confirmed that two Russian Kh-101 cruise missiles and a jet-powered Shahed crashed on Polish territory during the 20 November attack on Ukraine. The Netherlands signed a deal to start WARDEN, a sovereign family of interceptor missiles meant to cost EUR 30,000–75,000 each. Europe is racing to build cheap interceptors against fast one-way attack drones.",
    "sources": [
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/russian-missile-crosses-polish-border-monitoring-channels-report/"
+     "url": "https://militarnyi.com/en/news/two-russian-kh-101-missiles-and-jet-powered-shahed-crash-in-poland/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/poland-foils-russian-plot-to-cause-mass-casualties-and-frame-ukraine/"
-    },
-    {
-     "label": "Defence Industry Europe",
-     "url": "https://defence-industry.eu/elbridge-colby-opposes-excluding-u-s-suppliers-from-european-defense-markets-calls-for-more-joint-weapons-production/"
+     "url": "https://militarnyi.com/en/news/warden-30000-dutch-mod-launching-program/"
     }
    ]
   }
  ],
  "news": [
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-21",
+   "title": "FMA keeps the Navy vessel race national but will not demand Norwegian hulls",
+   "summary": "FMA says the 28 standardised vessels will be bought through a national competition, split into two contracts so more Norwegian yards can meet the financial requirements. Yards can also team up or use a supporting company to meet them. Hulls may be built in Norway, but FMA will not require it. Prime Minister Støre told DN that most value for Norwegian industry lies in what goes on board, and Parliament's defence committee wants the ships built in Norway.",
+   "source": "Forsvarsmateriell",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/fma-gjennomforer-nasjonal-konkurranse-om-bygging-av-standardiserte-fartoy",
+   "added": "2026-11-22"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-20",
+   "title": "Norway plans NOK 21 bn buy of NASAMS missiles",
+   "summary": "The government's revised 2026 defence budget proposes buying AIM-9X, AMRAAM 120C and AMRAAM-ER missiles for NASAMS, with a cost frame (P85) of NOK 21.3 bn. The missiles will protect the fighter base at Ørland, Evenes, critical infrastructure, allied reception areas and Army units against drones, aircraft and helicopters. The buy replaces old missiles and those donated to Ukraine, and builds larger stocks. NordicDefenceWatch reports that Kongsberg may soon produce AMRAAM missiles in Norway.",
+   "source": "Forsvarsdepartementet",
+   "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-vil-investere-i-luftvernraketter/id3194195/",
+   "breaking": true,
+   "added": "2026-11-22"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-20",
+   "title": "Report: labour shortage pushes Norwegian defence growth abroad",
+   "summary": "A Menon Economics report finds that some larger Norwegian defence companies are already putting new capacity abroad because the home labour market is exhausted. Kongsberg companies account for about 45% of the Norwegian defence industry's turnover. Access to skilled staff, not orders, is becoming the bottleneck.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/production/article19850589.ece",
+   "added": "2026-11-22"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-20",
+   "title": "Norway's next battlegroup in Lithuania takes attack drones",
+   "summary": "Contingent 21 deploys to NATO's battlegroup in Lithuania in January with drones for reconnaissance, observation and attack. The force commander says this follows NATO's push and the growing drone community in Norway. Drones are moving from trials into regular Norwegian units.",
+   "source": "Forsvarets forum",
+   "url": "https://www.forsvaretsforum.no/2-bataljon-beredskap-enhanced-forward-presence/spisser-norges-litauen-bidrag/533540",
+   "added": "2026-11-22"
+  },
   {
    "pri": 1,
    "region": "Norway",
@@ -120,44 +157,64 @@
    "added": "2026-11-19"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-17",
-   "title": "Norway and Germany to fund a new air defence package for Ukraine",
-   "summary": "German defence minister Boris Pistorius announced at the Ramstein meeting in Brussels that Norway and Germany will jointly pay for a package of mainly air defence through NATO's PURL scheme, which buys US-made equipment for Ukraine. No amount was given, and NTB could not get the Norwegian government to confirm it. Most PURL money goes to US suppliers, not Norwegian industry.",
-   "source": "Forsvarets forum",
-   "url": "https://www.forsvaretsforum.no/luftforsvar-nato-tyskland/tysklands-forsvarsminister-norge-og-tyskland-med-ny-vapenpakke-til-ukraina/533321",
-   "added": "2026-11-18"
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-21",
+   "title": "Drones hit a Russian cargo ship in the Gulf of Finland",
+   "summary": "The Russian cargo ship Sparta II, bound for Kaliningrad, caught fire in the Gulf of Finland on 21 November; the Leningrad region governor says two drones hit it. Overnight, NATO jets were scrambled over Estonia after drone warnings, and Finland restricted flights and shipping in the eastern gulf. No violation of Estonian or Finnish airspace is confirmed.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/drones-russian-ship-heading-for-kaliningrad/",
+   "added": "2026-11-22"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-17",
-   "title": "MPs want security review of Russian-linked bid for Arctic copper mine",
-   "summary": "Artem Volynets, a former close associate of sanctioned oligarch Oleg Deripaska, is trying to buy the Nussir copper mine near Hammerfest through ACG Metals, and also a mine in Sulitjelma. Several MPs say the deal could threaten national security and want it stopped. A Green Party proposal to pause it until security services clear it did not get enough support. Ownership of critical minerals and sites in the north is becoming a security question.",
-   "source": "The Barents Observer",
-   "url": "https://thebarentsobserver.com/news/pressure-builds-on-wellconnected-russian-businessman-who-wants-to-buy-norwegian-arctic-copper-mine/462079",
-   "added": "2026-11-18"
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-21",
+   "title": "Denmark expels Russia's military attaché over a murder plot",
+   "summary": "Denmark's security service PET says Russian intelligence planned the attempted murder of a Ukrainian-American citizen that was stopped north of Copenhagen in September. The killing was to be carried out by people linked to the banned gang Loyal to Familia. Two people are charged, and the attaché must leave within seven days.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/denmark-expel-russian-attache-attempted-assassination-kyivstoner/",
+   "added": "2026-11-22"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-14",
-   "title": "Norway and the UK agree to work closer on AI",
-   "summary": "Norway's digitalisation minister and the UK's AI minister met aboard HMS Prince of Wales in Oslo. They agreed on cooperation on responsible AI, countering AI-driven cyber threats and keeping control of advanced AI systems. It is part of the two countries' strategic partnership.",
-   "source": "Forsvarets forum",
-   "url": "https://www.forsvaretsforum.no/alliert-cybersikkerhet-hangarskip/noreg-og-storbritannia-samarbeider-om-kunstig-intelligens/532519",
-   "added": "2026-11-15"
+   "pri": 2,
+   "region": "Nordics",
+   "date": "2026-11-21",
+   "title": "Latvian Rannon readies mini anti-drone rockets for Ukraine",
+   "summary": "Rannon is finishing 1.2 kg unguided air-to-air rockets that can be fitted to fixed-wing drones or quadcopters, typically 4 to 12 per carrier. They have a proximity fuse and use a ballistic computer and AI target recognition. The company is preparing tests in Ukraine.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/rannon-small-anti-drone-missiles-testing-in-ukraine/",
+   "added": "2026-11-22"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-13",
-   "title": "Norwegian Robot Aviation builds Arctic-ready drones for Norway's military",
-   "summary": "The company has grown from five to almost 60 staff since 2023. It aims to be as independent of foreign suppliers as possible and says its finances are sound. A Norwegian example of the supply-chain independence buyers now ask for.",
+   "pri": 2,
+   "region": "Finland",
+   "date": "2026-11-20",
+   "title": "Finland orders EUR 462 m of explosives from Nammo and Componenta",
+   "summary": "The purchases are part of Finland's ammunition production programme. The defence ministry says they will create almost 1,200 person-years of work in Finland. Nammo is jointly owned by Norway and Finland.",
    "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/drones/article19829220.ece",
-   "added": "2026-11-15"
+   "url": "https://nordicdefencewatch.com/news/financials/article19855164.ece",
+   "added": "2026-11-22"
+  },
+  {
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-20",
+   "title": "Nordic Air Defence tests its K200 interceptor in Ukraine",
+   "summary": "Swedish startup Nordic Air Defence will hand its new K200 interceptor drones to Ukrainian forces for testing and has opened an office in Ukraine. The company says the K200 can catch jet-powered drones such as the Geran-4. It plans to make 1,000 interceptors a month by March 2027, with development and assembly in Sweden.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/nordic-air-defense-ukraine-high-speed-k200-interceptor-drones/",
+   "added": "2026-11-22"
+  },
+  {
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-20",
+   "title": "Vidhance to track drones for Valkyr's Hildr system",
+   "summary": "Swedish video software firm Vidhance and Valkyr Defense Systems have signed an agreement for drone tracking in the Hildr system. A prototype will be shown to FMV, Sweden's procurement agency, in March 2027.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/drones/article19853480.ece",
+   "added": "2026-11-22"
   },
   {
    "pri": 2,
@@ -180,64 +237,34 @@
    "added": "2026-11-20"
   },
   {
-   "pri": 2,
-   "region": "Nordics",
-   "date": "2026-11-19",
-   "title": "Estonia launches Euroguard, an EDF-funded test ship that can sail unmanned",
-   "summary": "Baltic Workboats launched the 45-metre Euroguard on Saaremaa, the largest warship built in Estonia since 1991. It cost EUR 95 m, of which EUR 65 m came from the European Defence Fund, in a project with ten countries. The ship can be run remotely from shore and is a test platform for anti-submarine, mine warfare, sensors, weapons and autonomous control. Navies and suppliers can fit their own modules to test them.",
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-21",
+   "title": "Russian strike on Kryvyi Rih injures 73",
+   "summary": "Ballistic missiles and drones hit Kryvyi Rih on the evening of 20 November and overnight. Two people were killed and 73 injured, including nine children. About 26 apartment buildings, a hospital and schools were damaged.",
+   "source": "Ukrinform",
+   "url": "https://www.ukrinform.net/rubric-ato/4187248-injury-toll-in-russian-attack-on-kryvyi-rih-rises-to-73-including-nine-children.html",
+   "added": "2026-11-22"
+  },
+  {
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-20",
+   "title": "EU approves another EUR 1 bn for Ukrainian weapons",
+   "summary": "The EU Council approved EUR 1 bn from the European Peace Facility for joint procurement of drones, air defence, ammunition, electronic warfare, radars and explosives for delivery by the end of 2027. It is part of a EUR 6.6 bn political decision on EPF support to Ukraine.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/estonia-largest-military-vessel-since-1991/",
-   "added": "2026-11-20"
+   "url": "https://militarnyi.com/en/news/eu-council-allocates-1-billion-in-military-aid-to-ukraine/",
+   "added": "2026-11-22"
   },
   {
-   "pri": 2,
-   "region": "Sweden",
-   "date": "2026-11-19",
-   "title": "Promoteq confirms SEK 950 m FMV framework, including anti-drone gear",
-   "summary": "Promoteq says its framework agreement with FMV for military police and security units is worth about SEK 950 m over up to seven years. It covers body armour, cameras, tents and anti-drone equipment. Development and production take place in the group, with EmbeddedArt Granit as subcontractor for documentation and logistics support.",
-   "source": "Nordic Defence Sector",
-   "url": "https://nordicdefencesector.com/en/article/promoteq-fmv-contract-worth-sek-950-million",
-   "added": "2026-11-20"
-  },
-  {
-   "pri": 2,
-   "region": "Sweden",
-   "date": "2026-11-18",
-   "title": "Founders say Sweden's defence fast track is closed to small companies",
-   "summary": "The CEO of Polar Mist says FMV's fast-track procurement is open to only a few players, according to Dagens industri. Stark Defence's Nordic chairman says foreign firms can wait months to set up in Sweden. A fast track that only primes can use limits the gain for startups.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/financials/article19848085.ece",
-   "added": "2026-11-19"
-  },
-  {
-   "pri": 2,
-   "region": "Nordics",
-   "date": "2026-11-18",
-   "title": "Latvia shows its first naval drones",
-   "summary": "Four uncrewed surface vessels from Latvian firm NEWT21 appeared at the Independence Day parade in Riga. FOG is a fast craft for reconnaissance, interception and strike; RAY is a catamaran for logistics, reconnaissance and evacuation. Baltic states are building their own maritime drone capacity.",
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-20",
+   "title": "SkyFall and Auterion to build a drone factory in Germany",
+   "summary": "Ukrainian SkyFall and Auterion are forming the joint venture SkyFall x Auterion to make drones in Germany under the Build with Ukraine programme. They have already supplied over 50,000 Shrike strike drones to Ukraine. The plant starts with Shrike FPV drones and later adds interceptors and medium- and long-range strike drones, possibly for the Bundeswehr too.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/new-challenge-for-russia-s-navy-latvia-parades-fog-and-ray-naval-drones-for-the-first-time/",
-   "added": "2026-11-19"
-  },
-  {
-   "pri": 2,
-   "region": "Denmark",
-   "date": "2026-11-18",
-   "title": "Navantia courts Danish suppliers in the frigate race",
-   "summary": "Spanish shipbuilder Navantia expects to sign agreements with Danish companies within about a month as part of its F110 bid for Denmark's new frigates. It competes with Babcock and Naval Group, which has already signed with three Danish partners. Bidders are shopping for local partners now, a chance for Nordic subsuppliers.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/production/article19846113.ece",
-   "added": "2026-11-19"
-  },
-  {
-   "pri": 2,
-   "region": "Finland",
-   "date": "2026-11-18",
-   "title": "Business Finland doubled its defence funding",
-   "summary": "Finnish companies received about EUR 75 m in defence and security funding from Business Finland in 2025, double the year before. The money runs through its Defense and Digital Resilience programme, and a new two-year growth project starts in January. Finland's state innovation agency is now a serious funder of defence startups, a benchmark for Innovasjon Norge.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/financials/article19842664.ece",
-   "added": "2026-11-18"
+   "url": "https://militarnyi.com/en/news/drones-for-ukraine-and-bundeswehr-skyfall-auterion-plant-in-germany/",
+   "added": "2026-11-22"
   },
   {
    "pri": 3,
@@ -290,34 +317,35 @@
    "added": "2026-11-20"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-19",
-   "title": "Third strike on the Kerch bridge halts rail traffic",
-   "summary": "Ukraine hit the railway section of the bridge overnight into 19 November, after strikes on 16 and 17 November brought down an arch and part of the road. Russian-installed authorities in Crimea say train traffic has stopped. Ukraine's defence ministry says the bridge no longer works as a transport route.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-21",
+   "title": "Dutch startup Hope Industries builds jet interceptor for a ministry challenge",
+   "summary": "Hope Industries makes the electric Patronus E and is building the jet-powered Patronus H in response to a Dutch defence ministry challenge. The target is Shahed-type drones flying about 600 km/h at 5 km altitude within a 30 km radius. Work began three months ago, showing how fast challenge-based buying can move.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/ukraine-attacks-railway-section-of-crimean-kerch-bridge-halting-train-traffic/",
-   "added": "2026-11-19"
+   "url": "https://militarnyi.com/en/news/dutch-hope-industries-patronus-interceptors/",
+   "added": "2026-11-22"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-18",
-   "title": "EU proposes a new EUR 45 bn loan for Ukraine in 2027",
-   "summary": "The European Commission proposes EUR 25 bn for military needs and EUR 20 bn for budget support, on top of the EUR 90 bn Ukraine Support Loan. Ukraine would repay only after receiving Russian reparations. EU leaders discuss it at a summit on 26–27 November. More EU money for Ukrainian procurement means more demand for drones and air defence next year.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-20",
+   "title": "Two Russian Kh-101 missiles and a jet Shahed crash in Poland",
+   "summary": "Poland's defence minister confirmed that two Kh-101 cruise missiles came down at Nowy Lipowiec and Rudnik nad Sanem, and a jet-powered Shahed at Mołodycz, during Russia's attack on Ukraine on 20 November. Eleven aerial objects threatened Polish airspace, and he called it a deliberate provocation. Swedish Gripens were in the air but the pilot could not identify the missile to shoot it down.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/european-commission-proposes-allocating-25-billion-to-ukraine-s-military-needs-in-2027-under-new-loan/",
-   "added": "2026-11-19"
+   "url": "https://militarnyi.com/en/news/two-russian-kh-101-missiles-and-jet-powered-shahed-crash-in-poland/",
+   "breaking": true,
+   "added": "2026-11-22"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-18",
-   "title": "Russia reportedly tests a Geran-6 jet drone at up to 1,000 km/h",
-   "summary": "A member of the Ukrainian parliament's security committee says intelligence shows Russia testing the Geran-6, a small cruise missile with a large warhead. The claim is not independently confirmed. Faster one-way attack drones raise the bar for detection and interceptors.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-20",
+   "title": "Netherlands starts WARDEN low-cost interceptor missile programme",
+   "summary": "The Dutch defence ministry and Guardian Dynamics signed an MoU to develop WARDEN, a modular family of interceptor missiles priced at about EUR 30,000–75,000 each. Partners include Demcon, TNO and Aalberts, and the first phase starts in Q1 2027. The focus is the missile itself, to be integrated into existing air defence systems.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/russia-tests-new-geran-6-missile-with-a-speed-of-up-to-1-000-km-h/",
-   "added": "2026-11-19"
+   "url": "https://militarnyi.com/en/news/warden-30000-dutch-mod-launching-program/",
+   "added": "2026-11-22"
   },
   {
    "pri": 4,
@@ -368,39 +396,48 @@
    "source": "Nordic Defence Sector",
    "url": "https://nordicdefencesector.com/en/article/eu-agrees-on-eight-areas-for-defence-cooperation",
    "added": "2026-11-20"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-19",
-   "title": "UK buys hundreds of attack drones and EW kit for its troops in Estonia",
-   "summary": "The UK will spend GBP 25 m to equip 4th Light Brigade in Estonia with hundreds of one-way attack and FPV drones, double its reconnaissance drones and add electronic warfare and protection by April 2027. The money comes from Project RAPSTONE, a fund for fast buys that build the Army's recce-strike approach.",
-   "source": "Defence Industry Europe",
-   "url": "https://defence-industry.eu/uk-ministry-of-defence-says-25-million-package-will-equip-troops-in-estonia-with-more-drones-and-electronic-warfare-systems/",
-   "added": "2026-11-20"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-18",
-   "title": "NATO signs cyber defence deal with OpenAI",
-   "summary": "Announced at the NATO Edge conference in Izmir, the deal gives NATO access to OpenAI's Daybreak security platform to review software, fix weak points and examine suspicious activity. OpenAI already supported NATO's Crossed Swords exercise in Tallinn, where operators tested AI agents for cyber defence. Big AI firms are moving into defence cyber, which raises the bar for small cyber startups.",
-   "source": "Forsvarets forum",
-   "url": "https://www.forsvaretsforum.no/cyber-cyberforsvaret-datasikkerhet/skal-samarbeide-med-ki-gigant/533375",
-   "added": "2026-11-19"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-18",
-   "title": "Poland foils Russian plot meant to kill many and blame Ukraine",
-   "summary": "Rzeczpospolita reports that Polish intelligence and the military stopped a Russian sabotage plan near the Kaliningrad border, after a warning from foreign services. Police, ABW officers and special forces were sent to the area, and Lithuania, Latvia and Estonia got similar warnings. Hybrid attacks are escalating from sabotage toward mass-casualty plots.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/poland-foils-russian-plot-to-cause-mass-casualties-and-frame-ukraine/",
-   "added": "2026-11-19"
   }
  ],
  "press": [
+  {
+   "id": "fd-nasams-missiles",
+   "org": "FD",
+   "date": "2026-11-20",
+   "type": "Nyhet",
+   "titleNo": "Regjeringen vil investere i luftvernraketter",
+   "title": "Government to invest in air defence missiles",
+   "summary": "The revised 2026 defence budget proposes buying air defence missiles for about NOK 22 bn, with a P85 cost frame of NOK 21,257 m. The missiles are AIM-9X, AMRAAM 120C and AMRAAM Extended Range, all for NASAMS ground launchers. They will protect Ørland, Evenes, critical infrastructure, allied reception areas and Army forces against drones, aircraft and helicopters. The aim is to replace old missiles, replace those donated to Ukraine and build larger stocks. The minister says stocks also deter.",
+   "startup": "The money goes to US missiles and Kongsberg, not to startups. The opening is around it: sensors, C2, cheap effectors and drone detection that let costly missiles be saved for the right targets (inference).",
+   "tldr": "Big missile money goes to primes; sell what makes each missile count.",
+   "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-vil-investere-i-luftvernraketter/id3194195/",
+   "added": "2026-11-22"
+  },
+  {
+   "id": "fma-standard-vessels-national",
+   "org": "FMA",
+   "date": "2026-11-21",
+   "type": "Nyhet",
+   "titleNo": "FMA gjennomfører nasjonal konkurranse om bygging av standardiserte fartøy",
+   "title": "FMA runs a national competition to build the standardised vessels",
+   "summary": "FMA says interest in the standardised vessels is high and it will run a national competition among Norwegian suppliers. The buy is split into two contracts and financial security requirements are reduced, so more yards can compete. Key figures such as equity are not absolute minimums, and yards can meet them through joint bids or a supporting company. Hulls may be built in Norway, but there is no general requirement for it. Prequalification is now under way.",
+   "startup": "Two contracts and joint bids mean more yards in play, and each will need subsuppliers for sensors, autonomy and onboard systems. Talk to the yards that prequalify now (inference).",
+   "tldr": "Navy ship race stays Norwegian; pitch onboard tech to the bidding yards.",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/fma-gjennomforer-nasjonal-konkurranse-om-bygging-av-standardiserte-fartoy",
+   "added": "2026-11-22"
+  },
+  {
+   "id": "fors-ai-pax-six",
+   "org": "Forsvaret",
+   "date": null,
+   "type": "Nyhet",
+   "titleNo": "USA hentet norsk KI-hjelp til øvelse i Stillehavet",
+   "title": "US brought in Norwegian AI help for a Pacific exercise",
+   "summary": "A team from Cyberforsvaret and NOBLE, the battle lab at the Joint Headquarters, took a Norwegian AI tool to the PAX-SIX intelligence-sharing activity in Hawaii in October. The US organisers had seen it at Bold Quest in September. The tool combines language models, databases and dedicated hardware so it runs on closed networks. It translated Japanese and English, explained logs and error messages and helped make databases exchange ISR data. Kongsberg Defence staff were part of the team.",
+   "startup": "Forsvaret builds and fields its own AI on closed networks with NOBLE. Startups with secure, offline AI tools should seek NOBLE as a test partner (inference).",
+   "tldr": "Offline AI on closed networks works; NOBLE is the door in.",
+   "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/norsk-ki-hjelp-stotter-usa",
+   "added": "2026-11-22"
+  },
   {
    "id": "fd-atlantic-future-forum",
    "org": "FD",
@@ -466,18 +503,6 @@
    "added": "2026-11-16"
   },
   {
-   "id": "fd-nordefco-oslo",
-   "org": "FD",
-   "date": "2026-11-06",
-   "type": "Presseinvitasjon",
-   "titleNo": "Nordisk forsvarsministermøte i Oslo 11.–12. november",
-   "title": "Nordic defence ministers' meeting in Oslo",
-   "summary": "Norway chairs NORDEFCO in 2026 and hosts the Nordic defence ministers in Oslo on 11–12 November. Topics include stronger Nordic defence cooperation within NATO and total defence. A press briefing is held on 12 November.",
-   "startup": "Nordic joint procurement and shared test arenas are growing. A product that fits several Nordic forces is easier to scale than one built for Norway only.",
-   "url": "https://www.regjeringen.no/no/aktuelt/nordisk-forsvarsministermote-i-oslo-11.12.-november/id3191962/",
-   "tldr": "Build for all the Nordic forces, not Norway alone."
-  },
-  {
    "id": "fma-m3n",
    "org": "FMA",
    "date": "2026-11-06",
@@ -524,30 +549,6 @@
    "startup": "Clear demand signal for low-cost drone detection and early warning in Arctic conditions. No tender is attached, but this is a use case to pitch to the Home Guard, FFI and FMA.",
    "url": "https://www.regjeringen.no/no/aktuelt/styrker-evnen-til-a-oppdage-droner-i-finnmark/id3191003/",
    "tldr": "Clear demand for cheap Arctic drone detection, but no tender yet."
-  },
-  {
-   "id": "fors-fosk",
-   "org": "Forsvaret",
-   "date": "2026-10-23",
-   "type": "Nyhet",
-   "titleNo": "Våpenskjold til Forsvarets nye avdeling",
-   "title": "New Operational Support Command (FOSK) from 1 January 2027",
-   "summary": "FLO and the Armed Forces Medical Services merge into the Norwegian Armed Forces Operational Support Command (FOSK) on 1 January 2027. FOSK supports other units with resources from the defence sector and the wider total defence system.",
-   "startup": "A new buyer organisation for logistics, maintenance and medical solutions. Map who owns what in FOSK before 2027.",
-   "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/vapenskjold-til-forsvarets-nye-avdeling",
-   "tldr": "A new logistics and medical buyer from January 2027."
-  },
-  {
-   "id": "fma-p1118-signal",
-   "org": "FMA",
-   "date": "2026-10-20",
-   "type": "Markedssignal",
-   "titleNo": "Forsvarsmateriell signaliserer konkurransemodell for standardiserte fartøy",
-   "title": "Market signal: competition model for standardized vessels (P1118)",
-   "summary": "Up to 20 ocean-going vessels planned for Norway, the UK and Lithuania, split into one contract for up to 14 naval vessels and one for up to 6 coast guard vessels. One bidder should not win both. Target: contracts in 2027 and first delivery in 2030. The signal is preliminary and may change.",
-   "startup": "Market signals are FMA's early warning to industry. Read P1118 now if your product belongs on a ship; integration slots are decided early.",
-   "url": "https://www.fma.no/aktuelt-og-media/2026/forsvarsmateriell-signaliserer-konkurransemodell-for-standardiserte-fartoy-til-sjoforsvaret",
-   "tldr": "Contracts in 2027, first ships in 2030; integration slots are decided now."
   }
  ],
  "toolkit": [
@@ -1040,6 +1041,20 @@
    "url": "https://www.unmannedsystemstechnology.com/events/counter-uas-technology-europe/"
   },
   {
+   "id": "dmme-2027",
+   "title": "Defence Manufacturing & Materials Expo (DMME) 2027",
+   "start": "2027-04-28",
+   "end": "2027-04-29",
+   "approx": false,
+   "city": "Katowice",
+   "country": "Poland",
+   "kind": "Trade fair",
+   "org": "DMME",
+   "tldr": "Defence production and supply-chain fair in Poland; useful for component, materials and automation suppliers.",
+   "url": "https://defence-industry.eu/dmme-2027-to-bring-europes-defence-manufacturing-leaders-together-in-poland/",
+   "added": "2026-11-22"
+  },
+  {
    "id": "hsbo-2027",
    "title": "HSBO 2027",
    "start": "2027-05-25",
@@ -1304,6 +1319,18 @@
    "tldr": "Software vendors and resellers can qualify any time to sell licences and subscriptions to the defence sector.",
    "url": "https://www.doffin.no/notices/2024-112883",
    "added": "2026-11-14"
+  },
+  {
+   "id": "fb-visitor-system",
+   "title": "Visitor registration system for Forsvarsbygg",
+   "buyer": "Forsvarsbygg",
+   "value": "NOK 10 m",
+   "published": "2026-11-20",
+   "deadline": "2026-12-23",
+   "kind": "Competition",
+   "tldr": "Self-service digital reception and visitor control, open to other defence agencies. Fits security software firms.",
+   "url": "https://www.doffin.no/notices/2026-118042",
+   "added": "2026-11-22"
   }
  ],
  "rounds": [
@@ -2099,7 +2126,7 @@
    "region": "Nordics",
    "segment": "Counter-drone & air defence",
    "type": "Startup",
-   "what": "Kreuger 100 (K100) low-cost interceptor drone, close to testing in Ukraine; raising capital to start production.",
+   "what": "Swedish maker of interceptor drones; testing its new K200 in Ukraine and aiming for 1,000 interceptors a month by March 2027.",
    "url": "https://nordicairdefence.com/"
   },
   {
@@ -2722,6 +2749,66 @@
    "what": "Swedish supplier of equipment for military police and security units, including anti-drone gear, under a SEK 950 m FMV framework.",
    "url": "https://promoteq.se",
    "added": "2026-11-20"
+  },
+  {
+   "name": "Vidhance",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Software, AI & C2",
+   "type": "Scale-up",
+   "what": "Swedish video stabilisation and tracking software, now tracking drones in Valkyr's Hildr system.",
+   "url": "https://nordicdefencewatch.com/news/drones/article19853480.ece",
+   "added": "2026-11-22"
+  },
+  {
+   "name": "Valkyr Defense Systems",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "Swedish developer of the Hildr system, to be demonstrated to FMV in March 2027.",
+   "url": "https://nordicdefencewatch.com/news/drones/article19853480.ece",
+   "added": "2026-11-22"
+  },
+  {
+   "name": "Componenta",
+   "country": "Finland",
+   "region": "Nordics",
+   "segment": "Manufacturing & components",
+   "type": "Scale-up",
+   "what": "Finnish manufacturer sharing a EUR 462 m explosives order from Finland with Nammo.",
+   "url": "https://nordicdefencewatch.com/news/financials/article19855164.ece",
+   "added": "2026-11-22"
+  },
+  {
+   "name": "Rannon",
+   "country": "Latvia",
+   "region": "Nordics",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "Latvian maker of 1.2 kg drone-launched anti-drone rockets, preparing tests in Ukraine.",
+   "url": "https://militarnyi.com/en/news/rannon-small-anti-drone-missiles-testing-in-ukraine/",
+   "added": "2026-11-22"
+  },
+  {
+   "name": "SkyFall",
+   "country": "Ukraine",
+   "region": "Europe",
+   "segment": "Drones",
+   "type": "Scale-up",
+   "what": "Ukrainian drone maker behind the Shrike FPV; building a German factory with Auterion.",
+   "url": "https://militarnyi.com/en/news/drones-for-ukraine-and-bundeswehr-skyfall-auterion-plant-in-germany/",
+   "added": "2026-11-22"
+  },
+  {
+   "name": "Hope Industries",
+   "country": "Netherlands",
+   "region": "Europe",
+   "segment": "Counter-drone & air defence",
+   "type": "Startup",
+   "what": "Dutch maker of Patronus interceptor drones, building a jet version for a Dutch MoD challenge.",
+   "url": "https://militarnyi.com/en/news/dutch-hope-industries-patronus-interceptors/",
+   "added": "2026-11-22"
   }
  ]
 }
