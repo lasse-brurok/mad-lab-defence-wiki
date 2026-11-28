@@ -1,75 +1,71 @@
 {
- "updatedAt": "2026-11-27T08:52:38+01:00",
+ "updatedAt": "2026-11-28T09:28:55+01:00",
  "situation": [
   {
    "region": "Norway",
    "level": "elevated",
-   "text": "Norway joins Sweden, Finland, Lithuania and the Netherlands in a record order for more than 400 CV90 vehicles, signed in Stockholm on 27 November. Ukraine says Norway will give USD 7 bn in military aid in 2027 and wants most of it spent on drones; DESNA air defence, built by Kongsberg with Ukrainian partners, is now in service in Ukraine. PST warns that Russia is mapping Norwegian arms makers and recruiting proxies.",
+   "text": "Norway signed for 70 CV90 infantry fighting vehicles worth just over NOK 20 bn in Stockholm on 27 November, as part of a five-nation order, with large orders promised to Norwegian subcontractors. Ukraine's former commander-in-chief Syrskyi toured the Russian border with Norway's defence chief this week to help strengthen air defences against drones and missiles. A sanctioned Russian ship that has carried weapons for Russia's defence ministry is docked in Svalbard.",
    "sources": [
     {
-     "label": "NordicDefenceWatch",
-     "url": "https://nordicdefencewatch.com/news/policy/article19871647.ece"
+     "label": "Forsvarsmateriell",
+     "url": "https://www.fma.no/aktuelt-og-media/2026/norge-kjoper-nye-kampvogner-til-haeren"
     },
     {
-     "label": "Defence Industry Europe",
-     "url": "https://defence-industry.eu/ukraine-says-norway-backs-its-air-defence-with-patriot-funding-and-f-16-support/"
+     "label": "The Barents Observer",
+     "url": "https://www.thebarentsobserver.com/security/ukraines-former-commanderinchief-helps-norway-improve-air-defences-along-the-border-with-russia/462650"
     },
     {
-     "label": "Forsvarets forum",
-     "url": "https://www.forsvaretsforum.no/innenriks-pst-rekruttering/pst-advarer-om-russisk-rekruttering-i-norge/533897"
+     "label": "The Barents Observer",
+     "url": "https://www.thebarentsobserver.com/news/sanctioned-russian-vessel-with-a-record-of-weapons-transport-docks-in-svalbard/462853"
     }
    ]
   },
   {
    "region": "The Nordics",
    "level": "elevated",
-   "text": "Estonia will close its last rail crossing with Russia at Narva, citing sabotage, and closes its land border on 1 December after Russia accused it of letting Ukrainian drones use its airspace. Finnish police are investigating suspected drone spying on Nammo's powder plant, and Saab, Nammo and KNDS report more attempts to target them. Finland confirmed 160 CV90s in the joint Nordic buy.",
+   "text": "Sweden, Finland, Norway, Lithuania and the Netherlands signed the SEK 60 bn CV90 order on 27 November, the largest in BAE Systems Hägglunds' history, and it includes counter-drone systems shaped by Ukraine. Estonia closes its land border with Russia on 1 December, citing sabotage. Finnish police are investigating suspected drone spying on Nammo's powder plant.",
    "sources": [
+    {
+     "label": "NordicDefenceWatch",
+     "url": "https://nordicdefencewatch.com/news/policy/article19872472.ece"
+    },
     {
      "label": "Militarnyi",
      "url": "https://militarnyi.com/en/news/estonia-seeks-to-close-railway-border-with-russia-over-sabotage-by-russian-intelligence-services/"
-    },
-    {
-     "label": "NordicDefenceWatch",
-     "url": "https://nordicdefencewatch.com/news/policy/article19865390.ece"
     }
    ]
   },
   {
    "region": "Ukraine",
    "level": "war",
-   "text": "President Zelensky warns that Russia is preparing a new large-scale strike and asks partners for more weapons to protect infrastructure from drones. Ukrainian drones hit St Petersburg overnight on 27 November, after strikes on Savasleyka air base and a Russian corvette in Libya. Ukraine's first laser air defence system, Tryzub-3000, has entered combat use.",
+   "text": "Russia launched 162 drones overnight on 28 November and struck Kharkiv with missiles, after an attack on Nizhyn that killed seven. Ukraine hit the Novoshakhtinsk refinery and a Samara oil pumping station for the second time this week. Cheap interceptor drones are now a main tool against Shaheds: one maker says its Bullet downed 1,200 in a month.",
    "sources": [
     {
      "label": "Ukrinform",
-     "url": "https://www.ukrinform.net/rubric-ato/4189052-zelensky-warns-russia-is-preparing-new-largescale-attack.html"
+     "url": "https://www.ukrinform.net/rubric-ato/4189482-air-defenses-down-141-of-162-russian-drones-launched-against-ukraine-overnight.html"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/drones-attack-saint-petersburg-and-leningrad-region-in-russia/"
+     "url": "https://militarnyi.com/en/news/drone-strikes-spark-fires-at-novoshakhtinsk-oil-refinery-and-samara-oil-station-in-russia/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/ukraine-combat-deployment-of-tryzub-laser/"
+     "url": "https://militarnyi.com/en/news/over-past-month-1200-shaheds-shot-down-over-ukraine-bullet-interceptor/"
     }
    ]
   },
   {
    "region": "Europe",
    "level": "elevated",
-   "text": "Poland has asked NATO allies to consider shooting down Russian missiles over Ukraine that head for NATO territory; no decision was made. The UK is moving money from Storm Shadow missiles to cheap mass-produced munitions, and Germany will form its first drone regiment from 2027. The EU plans a EUR 50 bn tech sovereignty fund, while the proposed 2028–2034 budget cuts defence industry money.",
+   "text": "The EU is preparing tens of billions of euros in loans and grants, from the second half of 2027, to cut Europe's reliance on the US for intelligence, air defence and logistics. Poland has asked NATO to consider shooting down Russian missiles over Ukraine that head for allied territory. The UK is moving money from Storm Shadow to cheap mass-produced munitions.",
    "sources": [
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/poland-calls-on-nato-to-shoot-down-russian-missiles-over-ukraine-alliance-seeks-to-avoid-crossing-this-line/"
+     "url": "https://militarnyi.com/en/news/eu-prepares-new-defense-loans-for-european-countries-to-reduce-reliance-on-u-s/"
     },
     {
      "label": "Militarnyi",
-     "url": "https://militarnyi.com/en/news/united-kingdom-redirected-funds-from-storm-shadow-low-cost-missiles/"
-    },
-    {
-     "label": "NordicDefenceWatch",
-     "url": "https://nordicdefencewatch.com/news/policy/article19866848.ece"
+     "url": "https://militarnyi.com/en/news/poland-calls-on-nato-to-shoot-down-russian-missiles-over-ukraine-alliance-seeks-to-avoid-crossing-this-line/"
     }
    ]
   }
@@ -78,13 +74,23 @@
   {
    "pri": 1,
    "region": "Norway",
-   "date": "2026-11-26",
-   "title": "Norway joins record five-nation CV90 order",
-   "summary": "Sweden, Finland, Norway, Lithuania and the Netherlands are jointly buying more than 400 CV90 infantry fighting vehicles from BAE Systems Hägglunds, with Sweden as lead nation. Sweden's defence minister hosts a signing ceremony in Stockholm on 27 November. Based on earlier CV90 prices the order is worth more than SEK 50 bn. The contract only takes effect when all five countries sign their purchase orders.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/policy/article19871647.ece",
-   "added": "2026-11-27",
+   "date": "2026-11-27",
+   "title": "Norway signs for 70 CV90s worth NOK 20 bn",
+   "summary": "FMA signed the contract in Stockholm for 70 CV9035 MkIV Nordic Edition vehicles, with an option for four more, as part of the five-nation order led by Sweden. Deliveries are planned for 2030–2034 to Brigade Nord and Finnmark Brigade. The value of just over NOK 20 bn includes spares, ammunition and training material, plus rebuilding some older CV90s and buying 120 mm mortars. BAE Systems Hägglunds will place large orders with Norwegian subcontractors, and the vehicles get protection against drones and an active protection system.",
+   "source": "Forsvarsmateriell",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/norge-kjoper-nye-kampvogner-til-haeren",
+   "added": "2026-11-28",
    "breaking": true
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-27",
+   "title": "Sanctioned Russian weapons-transport ship docks in Svalbard",
+   "summary": "A Barents Observer investigation shows the Tambey, now docked in Barentsburg, has repeatedly carried military cargo, including weapons, for Russia's defence ministry in the Arctic. Russia has protested Norway's seizure of another ship, the Professor Molchanov, held in Barentsburg on a claim by Naftogaz.",
+   "source": "The Barents Observer",
+   "url": "https://www.thebarentsobserver.com/news/sanctioned-russian-vessel-with-a-record-of-weapons-transport-docks-in-svalbard/462853",
+   "added": "2026-11-28"
   },
   {
    "pri": 1,
@@ -105,6 +111,16 @@
    "source": "NordicDefenceWatch",
    "url": "https://nordicdefencewatch.com/news/financials/article19869050.ece",
    "added": "2026-11-26"
+  },
+  {
+   "pri": 1,
+   "region": "Norway",
+   "date": "2026-11-25",
+   "title": "Syrskyi helps Norway plan air defence on the Russian border",
+   "summary": "Ukraine's former commander-in-chief Oleksandr Syrskyi toured the 198 km border with Russia with Norway's Chief of Defence Eirik Kristoffersen. The aim is to strengthen air defences against drones and missiles. Syrskyi said Norway should be ready for provocations and keep air defences on standby around the clock.",
+   "source": "The Barents Observer",
+   "url": "https://www.thebarentsobserver.com/security/ukraines-former-commanderinchief-helps-norway-improve-air-defences-along-the-border-with-russia/462650",
+   "added": "2026-11-28"
   },
   {
    "pri": 1,
@@ -137,24 +153,34 @@
    "added": "2026-11-26"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-25",
-   "title": "Bergen navy repair yard goes bankrupt",
-   "summary": "Endúr Maritime lost access to new navy maintenance work after overbilling on the Norwegian royal yacht, and has now gone bankrupt. Around 60 people lose their jobs. It shows how hard FMA now comes down on billing errors.",
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-27",
+   "title": "Clavister to supply cyber protection for the new CV90s",
+   "summary": "Swedish cybersecurity company Clavister will supply its CyberArmour for the vehicles in the five-nation CV90 deal, with deliveries from 2028. Hägglunds says the order will spread work across scores of subcontractors and includes counter-drone systems shaped by the war in Ukraine.",
    "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/financials/article19865280.ece",
-   "added": "2026-11-26"
+   "url": "https://nordicdefencewatch.com/news/production/article19875922.ece",
+   "added": "2026-11-28"
   },
   {
-   "pri": 1,
-   "region": "Norway",
-   "date": "2026-11-24",
-   "title": "Norway to widen DESNA air defence and test Ukraine's Delta platform",
-   "summary": "Defence Minister Sandvik and Ukraine's Yevhenii Khmara met in Oslo. DESNA links cheap Ukrainian-made air defence missiles and launchers to Norwegian-donated Kongsberg fire control, and is already protecting Ukraine against drones; the government wants to expand it to cover larger areas. The ministers also signed a letter of intent that lets Forsvaret test Delta, Ukraine's data platform for situational awareness and battle management. No operational data will be shared.",
-   "source": "Forsvarsdepartementet",
-   "url": "https://www.regjeringen.no/no/aktuelt/styrker-det-norsk-ukrainske-sikkerhetssamarbeidet/id3194577/",
-   "added": "2026-11-26"
+   "pri": 2,
+   "region": "Sweden",
+   "date": "2026-11-27",
+   "title": "FMV orders twelve more Gavia underwater drones",
+   "summary": "Sweden's procurement agency FMV has taken over last year's Teledyne Gavia autonomous underwater vehicles and ordered twelve more for delivery in 2027 and 2028.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/production/article19869686.ece",
+   "added": "2026-11-28"
+  },
+  {
+   "pri": 2,
+   "region": "Denmark",
+   "date": "2026-11-27",
+   "title": "STARK's sea drone production in Denmark is delayed",
+   "summary": "STARK and Seasight Solutions planned to start building Vanta uncrewed surface vessels in Ringkøbing in October. Nearly two months later no vessels have been built in Denmark.",
+   "source": "NordicDefenceWatch",
+   "url": "https://nordicdefencewatch.com/news/production/article19865999.ece",
+   "added": "2026-11-28"
   },
   {
    "pri": 2,
@@ -207,34 +233,34 @@
    "added": "2026-11-26"
   },
   {
-   "pri": 2,
-   "region": "Nordics",
-   "date": "2026-11-25",
-   "title": "Saab, Nammo and KNDS report more attempts to target them",
-   "summary": "Executives at Saab, Nammo and KNDS say attempts to target their operations are increasing, as sabotage and arson attacks on critical infrastructure surge. Saab's CEO warned Europe against accepting Russian hybrid attacks as normal.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/policy/article19865390.ece",
-   "added": "2026-11-26"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-28",
+   "title": "Ukraine hits Novoshakhtinsk refinery and Samara oil station again",
+   "summary": "Ukrainian drones struck the Novoshakhtinsk oil refinery in Rostov region and an oil pumping station in Samara region overnight, starting fires at both. It was the second strike on these sites this week.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/drone-strikes-spark-fires-at-novoshakhtinsk-oil-refinery-and-samara-oil-station-in-russia/",
+   "added": "2026-11-28"
   },
   {
-   "pri": 2,
-   "region": "Denmark",
-   "date": "2026-11-25",
-   "title": "Systematic hit by cyberattack",
-   "summary": "The Danish defence software company says attackers only reached a test environment, not source code, critical systems or customer data. Operations are back to normal. Systematic is bidding for Denmark's new military software contract.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/production/article19865745.ece",
-   "added": "2026-11-26"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-27",
+   "title": "Bullet interceptor drones downed 1,200 Shaheds in a month",
+   "summary": "Maker General Cherry says its Bullet interceptors destroyed 1,200 Shahed-type drones in the past month. Their share of Shahed interceptions rose from about 15% in September to about 37% in November. Units bought them with ePoints on the Brave1 Market.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/over-past-month-1200-shaheds-shot-down-over-ukraine-bullet-interceptor/",
+   "added": "2026-11-28"
   },
   {
-   "pri": 2,
-   "region": "Denmark",
-   "date": "2026-11-24",
-   "title": "Dropla supplies the Danish Army's first armed ground drones",
-   "summary": "The Danish Army has ordered machine-gun-armed unmanned ground vehicles from Dropla. It is the army's third ground robot purchase in a year.",
-   "source": "NordicDefenceWatch",
-   "url": "https://nordicdefencewatch.com/news/drones/article19863752.ece",
-   "added": "2026-11-26"
+   "pri": 3,
+   "region": "Ukraine",
+   "date": "2026-11-27",
+   "title": "Ukraine now makes over half its own artillery shells",
+   "summary": "Rheinmetall's CEO says Ukrainian production covers more than half of the 1 to 1.3 million shells Ukraine uses a year. Ukrainian officers still report an acute shortage of ammunition.",
+   "source": "Militarnyi",
+   "url": "https://militarnyi.com/en/news/domestic-production-supplies-over-50-of-ukraine-artillery-shells/",
+   "added": "2026-11-28"
   },
   {
    "pri": 3,
@@ -287,34 +313,14 @@
    "added": "2026-11-26"
   },
   {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-25",
-   "title": "Ukraine strikes Savasleyka air base",
-   "summary": "Ukraine's General Staff says drones hit three MiG-31s and two Su-34s at Savasleyka, the base for MiG-31K jets that carry Kinzhal missiles. President Zelensky says Russian aircraft, warships and vessels carrying Russian weapons are legitimate targets.",
-   "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4188644-russian-aircraft-and-vessels-carrying-military-cargo-legitimate-targets-for-ukraine-zelensky.html",
-   "added": "2026-11-26"
-  },
-  {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-25",
-   "title": "Ukraine speeds up approval of new drones and EW systems",
-   "summary": "The government simplified codification, the official approval of new equipment for military use. Drone makers no longer need the military to confirm a need first, and EW systems that pass testing are codified within 10 days based on the test report. Explosives get a clear procedure and timeframe too.",
-   "source": "Ukrinform",
-   "url": "https://www.ukrinform.net/rubric-ato/4188677-cabinet-eases-approval-of-new-ukrainian-drones-ew-systems-and-explosives-for-military-use.html",
-   "added": "2026-11-26"
-  },
-  {
-   "pri": 3,
-   "region": "Ukraine",
-   "date": "2026-11-25",
-   "title": "Ukrainian laser downs a jet-powered Geran drone",
-   "summary": "A Blysk laser from Ukrainian company Carmine Sky, protecting a critical infrastructure site, destroyed a jet-powered Geran drone, which an adviser to the President calls a world first. The work runs under the Private Air Defense programme with Brave1 support. Serial production is not yet in sight.",
+   "pri": 4,
+   "region": "Europe",
+   "date": "2026-11-27",
+   "title": "EU prepares new defence loans to cut reliance on the US",
+   "summary": "The EU is preparing loans and grants worth tens of billions of euros to help countries build intelligence, surveillance, air and missile defence and logistics they now get from the US. The programme is expected to start in the second half of 2027, and the amount is not set.",
    "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/ukrainian-blysk-laser-system-shoots-down-geran-jet-powered-drone-for-the-first-time/",
-   "added": "2026-11-26"
+   "url": "https://militarnyi.com/en/news/eu-prepares-new-defense-loans-for-european-countries-to-reduce-reliance-on-u-s/",
+   "added": "2026-11-28"
   },
   {
    "pri": 4,
@@ -385,19 +391,35 @@
    "source": "Defence Industry Europe",
    "url": "https://defence-industry.eu/germany-says-virtus-and-hx-2-loitering-munitions-pass-live-fire-trials-with-first-deliveries-due-by-end-of-2026/",
    "added": "2026-11-26"
-  },
-  {
-   "pri": 4,
-   "region": "Europe",
-   "date": "2026-11-24",
-   "title": "Russian ship suspected of jamming GPS for 140 flights over the North Sea",
-   "summary": "Analysis of flight data shows GPS jamming on 9 November over the southern North Sea, the Netherlands, eastern England and north-west Germany for about 19 minutes. About 140 aircraft were affected. Researchers link it to a Russian ship that was probably escorting a convoy.",
-   "source": "Militarnyi",
-   "url": "https://militarnyi.com/en/news/gps-jamming-russian-ship-140-flights-over-united-kingdom-and-north-sea/",
-   "added": "2026-11-26"
   }
  ],
  "press": [
+  {
+   "id": "fma-cv90-contract",
+   "org": "FMA",
+   "date": "2026-11-27",
+   "type": "Nyhet",
+   "titleNo": "Norge kjøper nye kampvogner til Hæren",
+   "title": "Norway buys new infantry fighting vehicles for the Army",
+   "summary": "Norway, Sweden, Finland, the Netherlands and Lithuania signed contracts for the same CV90 vehicle in Stockholm on 27 November. FMA is buying 70 CV9035 MkIV Nordic Edition vehicles, with an option for four more, for delivery in 2030–2034 to Brigade Nord and Finnmark Brigade. The value is just over NOK 20 bn including spares, special tools, ammunition and training material; the project also rebuilds some older CV90s and buys 120 mm mortars. BAE Systems Hägglunds will place large orders with Norwegian subcontractors. The vehicles are protected against drone attacks and get an automatic protection system against incoming drones and missiles.",
+   "startup": "Large orders will flow to Norwegian subcontractors over 2027–2034. Inference: makers of counter-drone, sensor, cyber and digital vehicle systems should approach Hägglunds' supply chain and its Norwegian partners now.",
+   "tldr": "NOK 20 bn CV90 deal opens Norwegian subcontracting work into the 2030s.",
+   "url": "https://www.fma.no/aktuelt-og-media/2026/norge-kjoper-nye-kampvogner-til-haeren",
+   "added": "2026-11-28"
+  },
+  {
+   "id": "fors-framework-agreements",
+   "org": "Forsvaret",
+   "date": "2026-11-27",
+   "type": "Fakta om saken",
+   "titleNo": "Fakta om rammeavtaler i Forsvaret: Dette gjør vi",
+   "title": "Facts about framework agreements in Forsvaret: what we are doing",
+   "summary": "Forsvaret says missing framework agreements cause problems for units, and the Office of the Auditor General has confirmed weaknesses in how agreements are followed up. Causes include limited capacity, trouble recruiting procurement staff and poor digital tools. Forsvaret has created local purchasing units and raised local purchasing limits. FMA and Forsvaret will move to fewer, broader agreements with longer terms, and FMA and Forsvarsbygg are now responsible for signing framework agreements.",
+   "startup": "Inference: fewer, larger and longer framework agreements make it harder to get in as a small supplier, so partnering with a prime or bidding through dynamic purchasing systems matters more. Higher local purchasing limits may help small direct sales to units.",
+   "tldr": "Fewer, bigger framework deals ahead: partner up or use dynamic purchasing systems.",
+   "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/fakta-om-saken/rammeavtaler",
+   "added": "2026-11-28"
+  },
   {
    "id": "fd-desna-delta",
    "org": "FD",
@@ -410,19 +432,6 @@
    "tldr": "Cheap Ukrainian tech plus Norwegian integration is what Norway now funds.",
    "url": "https://www.regjeringen.no/no/aktuelt/styrker-det-norsk-ukrainske-sikkerhetssamarbeidet/id3194577/",
    "added": "2026-11-26"
-  },
-  {
-   "id": "fors-ai-pax-six",
-   "org": "Forsvaret",
-   "date": null,
-   "type": "Nyhet",
-   "titleNo": "USA hentet norsk KI-hjelp til øvelse i Stillehavet",
-   "title": "US brought in Norwegian AI help for a Pacific exercise",
-   "summary": "A team from Cyberforsvaret and NOBLE, the battle lab at the Joint Headquarters, took a Norwegian AI tool to the PAX-SIX intelligence-sharing activity in Hawaii in October. The US organisers had seen it at Bold Quest in September. The tool combines language models, databases and dedicated hardware so it runs on closed networks. It translated Japanese and English, explained logs and error messages and helped make databases exchange ISR data. Kongsberg Defence staff were part of the team.",
-   "startup": "Forsvaret builds and fields its own AI on closed networks with NOBLE. Startups with secure, offline AI tools should seek NOBLE as a test partner (inference).",
-   "tldr": "Offline AI on closed networks works; NOBLE is the door in.",
-   "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/norsk-ki-hjelp-stotter-usa",
-   "added": "2026-11-22"
   },
   {
    "id": "fma-standard-vessels-national",
@@ -539,18 +548,6 @@
    "tldr": "No tender, but Forsvaret wants redundant comms that work with civilian services.",
    "url": "https://www.forsvaret.no/aktuelt-og-presse/aktuelt/forsvaret-moderniserer-nodnett-terminalene",
    "added": "2026-11-16"
-  },
-  {
-   "id": "fma-vessels-pq",
-   "org": "FMA",
-   "date": "2026-11-04",
-   "type": "Konkurranse",
-   "titleNo": "Forsvarsmateriell inviterer norske verft til konkurranse om nye fartøy til Sjøforsvaret",
-   "title": "Norwegian yards invited to compete for new Navy vessels",
-   "summary": "National prequalification for up to 28 standardized vessels for the Navy, Coast Guard and allies: up to 10 ocean-going and 18 coastal. Split into two contracts to widen Norwegian participation. Vessels must be built in Norway; hulls may be built abroad. Apply via Mercell (documents, timeline, deadline); the notice is also on Doffin. Only a limited number of qualified suppliers will be invited to bid. Contact: forsvarsmateriell@fma.no, +47 23 09 30 03.",
-   "startup": "Startups will not build ships, but autonomy, sensors, C2 software, drone hangars and maintenance tech can ride along as subsuppliers. Talk to the yards that prequalify.",
-   "url": "https://www.fma.no/aktuelt-og-media/2026/forsvarsmateriell-inviterer-norske-verft-til-konkurranse-om-nye-fartoy-til-sjoforsvaret",
-   "tldr": "Big ship deal: get in as a subsupplier through the yards."
   }
  ],
  "toolkit": [
@@ -1071,6 +1068,20 @@
    "url": "https://www.unmannedsystemstechnology.com/events/counter-uas-technology-europe/"
   },
   {
+   "id": "cyber-security-2027-oslo",
+   "title": "Cyber Security 2027",
+   "start": "2027-04-21",
+   "end": "2027-04-22",
+   "approx": false,
+   "city": "Oslo",
+   "country": "Norway",
+   "kind": "Conference",
+   "org": "NFEA",
+   "tldr": "Oslo conference on cyber threats to energy and critical infrastructure; useful for dual-use cyber founders.",
+   "url": "https://nfea.no/arrangementer/cyber-security-2027/",
+   "added": "2026-11-28"
+  },
+  {
    "id": "dmme-2027",
    "title": "Defence Manufacturing & Materials Expo (DMME) 2027",
    "start": "2027-04-28",
@@ -1147,7 +1158,7 @@
    "deadline": "2026-12-01",
    "amount": "Project support",
    "who": "Public-sector buyers apply; startups join as the supplier side",
-   "tldr": "Closes 1 December at 13:00. Find a public buyer, Forsvaret included, to apply with you now.",
+   "tldr": "Closes Monday 1 December at 13:00. Last chance to join a public buyer, Forsvaret included, as the supplier.",
    "url": "https://www.forskningsradet.no/utlysninger/2026/innovative-offentlige-anskaffelser/"
   },
   {
@@ -2967,6 +2978,26 @@
    "what": "Makes the Tryzub-3000 laser air defence system, now in combat use against drones.",
    "url": "https://militarnyi.com/en/news/ukraine-combat-deployment-of-tryzub-laser/",
    "added": "2026-11-27"
+  },
+  {
+   "name": "Clavister",
+   "country": "Sweden",
+   "region": "Nordics",
+   "segment": "Cyber",
+   "type": "Scale-up",
+   "what": "Cybersecurity company supplying CyberArmour protection for the new five-nation CV90 vehicles.",
+   "url": "https://nordicdefencewatch.com/news/production/article19875922.ece",
+   "added": "2026-11-28"
+  },
+  {
+   "name": "General Cherry",
+   "country": "Ukraine",
+   "region": "Europe",
+   "segment": "Counter-drone & air defence",
+   "type": "Scale-up",
+   "what": "Makes Bullet interceptor drones that downed 1,200 Shahed-type drones in a month.",
+   "url": "https://militarnyi.com/en/news/over-past-month-1200-shaheds-shot-down-over-ukraine-bullet-interceptor/",
+   "added": "2026-11-28"
   }
  ]
 }
